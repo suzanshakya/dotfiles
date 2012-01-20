@@ -72,21 +72,30 @@ class Receiver(object):
             threading.Thread(target=target, args=(self.addr,)).start()
 
     def _start_tcp(self, addr):
-        sock = _create_socket("tcp")
-        sock.bind(addr)
-        sock.listen(1)
-        conn, addr = sock.accept()
-        self._recv_forever(conn)
+        while True:
+            sock = _create_socket("tcp")
+            sock.bind(addr)
+            sock.listen(1)
+            conn, addr = sock.accept()
+            logging.info("tcp connection from %r", addr)
+            self._recv_forever(conn)
+            _try_close_sockets(sock)
 
     def _start_udp(self, addr):
-        sock = _create_socket("udp")
-        sock.bind(addr)
-        self._recv_forever(sock)
+        while True:
+            sock = _create_socket("udp")
+            sock.bind(addr)
+            self._recv_forever(sock)
 
     def _recv_forever(self, conn):
-        while True:
-            data = conn.recv(1024)
-            self.q.put(data)
+        try:
+            while True:
+                data = conn.recv(1024)
+                self.q.put(data)
+        except Exception, err:
+            logging.warn(err)
+            _try_close_sockets(conn)
+            
 
 class Sender():
     def __init__(self, address, q):
@@ -94,11 +103,6 @@ class Sender():
         self.q = q
 
     def start(self):
-        if self.type_ is None:
-            socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
-        else:
-            socks = [self._get_socket(self.type_, self.addr)]
-
         threading.Thread(target=self._send_forever, args=(socks,)).start()
 
     def _get_socket(self, type_, addr):
@@ -106,13 +110,22 @@ class Sender():
         sock.connect(addr)
         return sock
 
-    def _send_forever(self, socks):
+    def _send_forever(self):
         while True:
-            data = self.q.get()
-            data = add_newline(data)
-            for sock in socks:
-                sock.sendall(data)
+            if self.type_ is None:
+                socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
+            else:
+                socks = [self._get_socket(self.type_, self.addr)]
 
+            try:
+                while True:
+                    data = self.q.get()
+                    data = add_newline(data)
+                    for sock in socks:
+                        sock.sendall(data)
+            except Exception, err:
+                logging.warn(err)
+                _try_close_sockets(*socks)
 
 def udp_forward(src_addr, dst_addr):
     while True:
