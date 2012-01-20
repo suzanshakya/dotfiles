@@ -43,7 +43,7 @@ def _get_addr_type(address):
 def _create_socket(sock_type):
     socks = {
         "tcp": socket.SOCK_DGRAM,
-        "ucp": socket.SOCK_STREAM,
+        "udp": socket.SOCK_STREAM,
     }
     sock = socket.socket(socket.AF_INET, socks[sock_type])
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -59,19 +59,22 @@ def _try_close_sockets(*socks):
 class Receiver(object):
     def __init__(self, address):
         self.q = Queue.Queue()
-        addr, type_ = _get_addr_type(address)
+        self.addr, self.type_ = _get_addr_type(address)
 
-        if type_ is None:
-            _create_threads("tcp", addr)
-            _create_threads("udp", addr)
+    def start(self):
+        if self.type_ is None:
+            self._create_threads("tcp", self.addr)
+            self._create_threads("udp", self.addr)
         else:
-            _create_threads("udp", addr)
+            self._create_threads(self.type_, self.addr)
 
     def _create_threads(self, type_, addr):
         if type_ == "tcp":
             target = self._start_tcp
-        elif type == "udp":
+        elif type_ == "udp":
             target = self._start_udp
+        else:
+            print type_
 
         threading.Thread(target=target, args=(addr,)).start()
 
@@ -89,31 +92,29 @@ class Receiver(object):
 
     def _recv_forever(self, conn):
         while True:
-            data = conn.recv()
+            data = conn.recv(1024)
             q.put(data)
 
 class Sender(Receiver):
     def __init__(self, address, q):
         super(Sender, self).__init__(address)
-        del self.q
         self.q = q
 
     def _start_tcp(self, addr):
         sock = _create_socket("tcp")
-        sock.bind(addr)
-        sock.listen(1)
-        conn, addr = sock.accept()
-        self._recv_forever(conn)
+        sock.connect(addr)
+        self._send_forever(sock)
 
     def _start_udp(self, addr):
-        sock = _create_socket("udp")
-        sock.bind(addr)
-        self._recv_forever(sock)
+        sock = _create_socket("tcp")
+        sock.connect(addr)
+        self._send_forever(sock)
 
     def _send_forever(self, conn):
         while True:
-            data = self.q
-            q.put(data)
+            data = self.q.get()
+            data = add_newline(data)
+            conn.sendall(data)
 
 
 def udp_forward(src_addr, dst_addr):
@@ -157,12 +158,14 @@ def tcp_forward(src_addr, dst_addr):
             _try_close_sockets(src_sock, dst_sock)
 
 
-def forward(src_addr, dst_addr):
-    logging.info("forwarding data from %r to %r (tcp, udp)", src_addr, dst_addr)
+def forward(src, dst):
+    logging.info("forwarding data from %r to %r (tcp, udp)", src, dst)
 
-    #threading.Thread(target=udp_forward, name="udp_forwarder",
-    #                 args=(src_addr, dst_addr)).start()
-    tcp_forward(src_addr, dst_addr)
+    receiver = Receiver(src)
+    sender = Sender(dst, receiver.q)
+
+    receiver.start()
+    sender.start()
 
 def main():
     logging.basicConfig(level=logging.INFO)
@@ -171,10 +174,9 @@ def main():
     try:
         src = args[0]
         dst = args[1]
-        src_addr, dst_addr = map(split_ip_port, [src, dst])
     except IndexError, err:
         parser.error("syntax error")
 
-    forward(src_addr, dst_addr)
+    forward(src, dst)
 
 main()
