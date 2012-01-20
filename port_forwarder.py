@@ -111,22 +111,20 @@ class Sender():
         return sock
 
     def _send_forever(self):
-        while True:
-            if self.type_ is None:
-                socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
-            else:
-                socks = [self._get_socket(self.type_, self.addr)]
+        if self.type_ is None:
+            socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
+        else:
+            socks = [self._get_socket(self.type_, self.addr)]
 
+        while True:
             try:
-                while True:
-                    data = self.q.get()
-                    data = add_newline(data)
-                    for sock in socks:
-                        sock.sendall(data)
+                data = self.q.get()
+                data = add_newline(data)
+                for sock in socks:
+                    sock.sendall(data)
             except Exception, err:
                 logging.warn(err)
                 _try_close_sockets(*socks)
-
 
 def forward(src, dst):
     logging.info("forwarding data from %r to %r", src, dst)
