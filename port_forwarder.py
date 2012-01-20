@@ -103,7 +103,7 @@ class Sender():
         self.q = q
 
     def start(self):
-        threading.Thread(target=self._send_forever, args=(socks,)).start()
+        threading.Thread(target=self._send_forever, args=()).start()
 
     def _get_socket(self, type_, addr):
         sock = _create_socket(type_)
