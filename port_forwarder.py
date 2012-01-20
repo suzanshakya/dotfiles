@@ -42,8 +42,8 @@ def _get_addr_type(address):
 
 def _create_socket(sock_type):
     socks = {
-        "tcp": socket.SOCK_DGRAM,
-        "udp": socket.SOCK_STREAM,
+        "tcp": socket.SOCK_STREAM,
+        "udp": socket.SOCK_DGRAM,
     }
     sock = socket.socket(socket.AF_INET, socks[sock_type])
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
