@@ -93,7 +93,7 @@ class Receiver(object):
     def _recv_forever(self, conn):
         while True:
             data = conn.recv(1024)
-            q.put(data)
+            self.q.put(data)
 
 class Sender(Receiver):
     def __init__(self, address, q):
@@ -106,7 +106,7 @@ class Sender(Receiver):
         self._send_forever(sock)
 
     def _start_udp(self, addr):
-        sock = _create_socket("tcp")
+        sock = _create_socket("udp")
         sock.connect(addr)
         self._send_forever(sock)
 
@@ -159,7 +159,7 @@ def tcp_forward(src_addr, dst_addr):
 
 
 def forward(src, dst):
-    logging.info("forwarding data from %r to %r (tcp, udp)", src, dst)
+    logging.info("forwarding data from %r to %r", src, dst)
 
     receiver = Receiver(src)
     sender = Sender(dst, receiver.q)
