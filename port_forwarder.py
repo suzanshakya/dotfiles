@@ -49,12 +49,6 @@ def _create_socket(sock_type):
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     return sock
 
-def _try_close_sockets(*socks):
-    for sock in socks:
-        try:
-            sock.close()
-        except:
-            pass
 
 class Receiver(object):
     def __init__(self, address):
@@ -72,29 +66,22 @@ class Receiver(object):
             threading.Thread(target=target, args=(self.addr,)).start()
 
     def _start_tcp(self, addr):
-        while True:
-            sock = _create_socket("tcp")
-            sock.bind(addr)
-            sock.listen(1)
-            conn, addr = sock.accept()
-            logging.info("tcp connection from %r", addr)
-            self._recv_forever(conn)
-            _try_close_sockets(sock)
+        sock = _create_socket("tcp")
+        sock.bind(addr)
+        sock.listen(1)
+        conn, addr = sock.accept()
+        logging.info("tcp connection from %r", addr)
+        self._recv_forever(conn)
 
     def _start_udp(self, addr):
-        while True:
-            sock = _create_socket("udp")
-            sock.bind(addr)
-            self._recv_forever(sock)
+        sock = _create_socket("udp")
+        sock.bind(addr)
+        self._recv_forever(sock)
 
     def _recv_forever(self, conn):
-        try:
-            while True:
-                data = conn.recv(1024)
-                self.q.put(data)
-        except Exception, err:
-            logging.warn(err)
-            _try_close_sockets(conn)
+        while True:
+            data = conn.recv(1024)
+            self.q.put(data)
 
 
 class Sender():
@@ -117,14 +104,10 @@ class Sender():
             socks = [self._get_socket(self.type_, self.addr)]
 
         while True:
-            try:
-                data = self.q.get()
-                data = add_newline(data)
-                for sock in socks:
-                    sock.sendall(data)
-            except Exception, err:
-                logging.warn(err)
-                _try_close_sockets(*socks)
+            data = self.q.get()
+            data = add_newline(data)
+            for sock in socks:
+                sock.sendall(data)
 
 def forward(src, dst):
     logging.info("forwarding data from %r to %r", src, dst)
