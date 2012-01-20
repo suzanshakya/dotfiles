@@ -92,6 +92,7 @@ class Receiver(object):
             while True:
                 data = conn.recv(1024)
                 self.q.put(data)
+                raise recv
         except Exception, err:
             logging.warn(err)
             _try_close_sockets(conn)
@@ -123,6 +124,7 @@ class Sender():
                     data = add_newline(data)
                     for sock in socks:
                         sock.sendall(data)
+                    raise sender
             except Exception, err:
                 logging.warn(err)
                 _try_close_sockets(*socks)
