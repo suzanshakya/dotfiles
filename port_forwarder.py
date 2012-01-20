@@ -20,7 +20,7 @@ import threading
 import Queue
 import logging
 
-new_line_appender_re = re.compile(r'<\d+>')
+new_line_appender_re = re.compile(r'(<\d+>)')
 
 def add_newline(data):
     return new_line_appender_re.sub(r"\n\1", data)
