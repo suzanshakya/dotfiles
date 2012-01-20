@@ -62,21 +62,14 @@ class Receiver(object):
         self.addr, self.type_ = _get_addr_type(address)
 
     def start(self):
-        if self.type_ is None:
-            self._create_threads("tcp", self.addr)
-            self._create_threads("udp", self.addr)
-        else:
-            self._create_threads(self.type_, self.addr)
-
-    def _create_threads(self, type_, addr):
-        if type_ == "tcp":
-            target = self._start_tcp
-        elif type_ == "udp":
-            target = self._start_udp
-        else:
-            print type_
-
-        threading.Thread(target=target, args=(addr,)).start()
+        socks = {
+            "tcp": [self._start_tcp],
+            "udp": [self._start_udp],
+            None: [self._start_tcp, self._start_udp],
+        }
+        targets = socks[self.type_]
+        for target in targets:
+            threading.Thread(target=target, args=(self.addr,)).start()
 
     def _start_tcp(self, addr):
         sock = _create_socket("tcp")
@@ -95,26 +88,30 @@ class Receiver(object):
             data = conn.recv(1024)
             self.q.put(data)
 
-class Sender(Receiver):
+class Sender():
     def __init__(self, address, q):
-        super(Sender, self).__init__(address)
+        self.addr, self.type_ = _get_addr_type(address)
         self.q = q
 
-    def _start_tcp(self, addr):
-        sock = _create_socket("tcp")
-        sock.connect(addr)
-        self._send_forever(sock)
+    def start(self):
+        if self.type_ is None:
+            socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
+        else:
+            socks = [self._get_socket(self.type_, self.addr)]
 
-    def _start_udp(self, addr):
-        sock = _create_socket("udp")
-        sock.connect(addr)
-        self._send_forever(sock)
+        threading.Thread(target=self._send_forever, args=(socks,)).start()
 
-    def _send_forever(self, conn):
+    def _get_socket(self, type_, addr):
+        sock = _create_socket(type_)
+        sock.connect(addr)
+        return sock
+
+    def _send_forever(self, socks):
         while True:
             data = self.q.get()
             data = add_newline(data)
-            conn.sendall(data)
+            for sock in socks:
+                sock.sendall(data)
 
 
 def udp_forward(src_addr, dst_addr):
