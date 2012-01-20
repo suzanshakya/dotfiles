@@ -95,7 +95,7 @@ class Receiver(object):
         except Exception, err:
             logging.warn(err)
             _try_close_sockets(conn)
-            
+
 
 class Sender():
     def __init__(self, address, q):
@@ -126,46 +126,6 @@ class Sender():
             except Exception, err:
                 logging.warn(err)
                 _try_close_sockets(*socks)
-
-def udp_forward(src_addr, dst_addr):
-    while True:
-        src_sock = _create_socket(socket.SOCK_DGRAM)
-        dst_sock = _create_socket(socket.SOCK_DGRAM)
-
-        src_sock.bind(src_addr)
-        dst_sock.connect(dst_addr)
-
-        try:
-            while True:
-                data = src_sock.recv(1024)
-                data = add_newline(data)
-                dst_sock.sendall(data, dst_addr)
-
-        except Exception, err:
-            logging.warn("udp_forward: %r", err)
-            _try_close_sockets(src_sock, dst_sock)
-
-def tcp_forward(src_addr, dst_addr):
-    while True:
-        src_sock = _create_socket(socket.SOCK_STREAM)
-        dst_sock = _create_socket(socket.SOCK_STREAM)
-
-        src_sock.bind(src_addr)
-        dst_sock.connect(dst_addr)
-
-        src_sock.listen(1)
-        conn, addr = src_sock.accept()
-        logging.info("tcp connection from %r", addr)
-
-        try:
-            while True:
-                data, addr = conn.recv(1024)
-                data = add_newline(data)
-                dst_sock.sendall(data)
-
-        except Exception, err:
-            logging.warn("tcp_forward: %r", err)
-            _try_close_sockets(src_sock, dst_sock)
 
 
 def forward(src, dst):
