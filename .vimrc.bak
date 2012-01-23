@@ -1,0 +1,262 @@
+set nocompatible
+" nomodeline reduces the potential for trojan-horse documents
+set nomodeline
+set nobackup
+set incsearch
+set bs=indent,eol,start
+set ruler
+" lepsi podpora copy/paste v xtermu
+set ttyfast
+set completeopt=menu
+" Disabled search in includes. It is slow for large C++ programs.
+set complete=.,w,b,u,t
+
+" ignorovani velikosti pri hledani, ale ponechani u i_C-N, i_C-P
+" smartcase zapne casesensitive pro vyraz s velkymi pismenky
+set ignorecase
+set smartcase
+
+" nastaveni gvimu (musi byt zde, aby se predeslo nacteni menu)
+set guioptions=aiMr
+set nofoldenable
+
+" obarvovat nalezene
+set hlsearch
+
+" zobrazovani prikazu
+set showcmd
+" inteligenti odsazovani
+set autoindent
+set cindent
+
+" velikost odsazeni
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set expandtab
+
+" automaticke ukladani pri opousteni buffru (napr:. pri :make)
+set autowrite
+set hidden
+
+" doplnovani jako na command line
+set wildmenu
+" nastaveni doplnovani tabulatorem ve stylu command line
+set wildmode=list:longest
+set wildignore=*.o,*.dvi,*.d,*.pyc,*.aux
+
+set textwidth=0
+set fileencodings=ucs-bom,utf-8,default,windows-1250
+
+" cerne pozadi
+set background=dark
+
+set formatoptions=crql
+
+" vypnuti bell
+set vb
+set t_vb=""
+
+" normal modu nepestuji cestinu (iso-8859-2 is needed for this file)
+set langmap=ì2,¹3,è4,ø5,¾6,ý7,á8,í9,é0
+" zobrazovat alespon kus strasne dlouheho odstavce
+set display=lastline
+
+" used recursive grep from ~/bin
+set grepprg=grepnow\ $*
+
+" ----------------------------------------------------
+" makra
+
+" nadefinovani ; za <Leader>
+let mapleader = ","
+" ',' sama vsak slouzi k zpetnemu hledani po f, t, ...
+" tudiz jeho cinost prenesu na <leader><leader>
+noremap <Leader><Leader> ,<Esc>
+
+" automaticke foldovani
+"noremap <Leader>syn :syn region myFold start="^{" end="^}" transparent fold<cr><cr>:syn sync fromstart<cr><cr>:set foldmethod=syntax<cr><cr>
+
+
+"pohyb i do wrap textu
+noremap k gk
+noremap j gj
+noremap  <up>    g<up>
+noremap  <down>  g<down>
+inoremap <up>    <c-o>gk
+inoremap <down>  <c-o>gj
+
+" pohyb mezi chybami
+noremap <CR>  :cc<CR>
+noremap <C-p> :cp<CR>
+noremap <C-n> :cn<CR>
+
+" rychle rolovani pomoci ctrl-j, ctrl-k
+noremap <C-k> 2<c-y>
+noremap <C-j> 2<c-e>
+
+" <Leader> mi slouzi jako uvadec do mych maker,
+" kopirovani a vkladani (do registru z)
+noremap <Leader>y "zy
+noremap <Leader>p "zp
+noremap <Leader>P "zP
+" paste clipboard
+noremap <Leader>v "*p
+noremap <Leader>V "*P
+" prerovnani celeho zdrojaku
+noremap <Leader>= mzgg=G`z
+
+" ctrl-f prevede slovo na upercase
+"inoremap <C-F> <Esc>gUiw`]a
+"noremap <C-F> gUiw`]
+
+noremap gf :e <cfile><cr>
+
+" save na f2
+noremap <f2> :w<cr>
+" prepinani alternativ
+noremap <f4> :A<cr>
+" make na f9
+noremap <f9> :make<cr>
+
+" vygenerovani aktualnich ctagu
+noremap <f7> :!ctags -R .<cr><cr>
+
+" vypnout zvyrazneni nalezu
+noremap <Leader>h :noh<CR>
+
+" Grep for the current word
+noremap <Leader>8 :grep <C-R><C-W><CR>
+
+" Edit a file in the same directory as the current file
+noremap <Leader>e :e <C-R>=escape(expand("%:p:h"), " \\") . "/" <CR>
+" Insert a file from the same directory as the current file
+noremap <Leader>r :r <C-R>=escape(expand("%:p:h"), " \\") . "/" <CR>
+
+" Yank the current filename
+noremap <Leader>f :let @*=expand("%:.") \| let @"=expand("%:.")<CR>
+
+" manualove stranky
+noremap K :Man <C-R><C-W><CR>
+
+" user completion
+inoremap <C-space> <C-X><C-U>
+
+"--------------------------------------------------
+" TAB smart completion s noignorecase
+"--------------------------------------------------
+"FIXME: predpoklad, ze chci jinde pouzivat ic
+"TODO: use :normal i to call the default completion function
+function! InsertTabCompl()
+    setlocal noic
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+function! SetAfterCompl()
+    setlocal ic
+    return ""
+endfunction
+inoremap <tab> <c-r>=InsertTabCompl()<cr><c-r>=SetAfterCompl()<cr>
+
+inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
+
+
+" Spell check
+noremap <F5> :setlocal spell<CR>
+noremap <F6> :setlocal nospell<CR>
+
+" vlozeni ---- linky
+noremap <Leader>- mzo<Esc>I//-----------------------------------------------------------------<Esc>`zjj
+
+" Checks that .swp is modified or still running
+func! IsSwapModified(swapname)
+    let swMod = system("swpModified " . fnamemodify(a:swapname, "%:p"))
+    return swMod !~ "^old"
+endfunc
+
+" Automatic delete of unmodified .swp
+au SwapExists * let v:swapchoice = IsSwapModified(v:swapname) ? '' : 'd'
+
+" Diffs the saved file and the buffer (see :help :DiffOrig).
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
+" last-position-jump
+au BufReadPost *.txt if line("'\"") > 0 && line("'\"") <= line("$") | exe "normal g'\"" | endif
+
+"//-----------------------------------------------------------------
+" filetype specific settings
+au FileType man setlocal nonu
+
+au FileType make setlocal noexpandtab softtabstop=0
+
+au FileType help setlocal spell iskeyword=!-~,^*,^\|,^",192-255
+
+au FileType php setlocal iskeyword=@,48-57,_,192-255
+
+" zapnuti podpory FileTypePluginu
+filetype plugin on
+" odsazovani dle typu
+filetype indent on
+
+" nakonec zapnout zvyrazneni syntaxe
+syntax on
+
+" Recognize ActionScript3 files
+au BufRead,BufNewFile *.as setlocal filetype=javascript
+
+" Recognize Haxe files
+au BufRead,BufNewFile *.hx setlocal filetype=haxe
+
+"//-----------------------------------------------------------------
+" a.vim plugin
+let g:alternateExtensions_html = "page,jwc"
+let g:alternateExtensions_jwc = "html"
+let g:alternateExtensions_page = "html"
+
+"//-----------------------------------------------------------------
+" JavaImp global setting
+let g:JavaImpDataDir = $HOME . "/.vim/JavaImp"
+
+"//-----------------------------------------------------------------
+" eclim general settings
+let g:EclimHtmlIndentDisabled = 1
+let g:EclimXmlIndentDisabled = 1
+let g:EclimDtdIndentDisabled = 1
+if filereadable(".classpath")
+    let g:EclimMakeLCD = 0
+    let g:EclimShowCurrentError = 0
+    let g:EclimJavaSetCommonOptions = 0
+    let g:EclimJavaSearchSingleResult = "edit"
+    let g:EclimLoggingDisabled = 1
+    let g:EclimSgmlCompleteEndTag = 0
+    noremap <Leader><cr> :echo eclim#util#GetLineError(line('.'))<cr>
+else
+    let g:EclimDisabled = 1
+endif
+
+" These are mine
+set pastetoggle=<F2>
+autocmd BufWritePre * :%s/\s\+$//e
+
+set background=light
+set gfn=Monaco:h12
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+set smartindent
+set autoindent
+
+set hlsearch
+set incsearch
+set showmatch
+
+set number
+
+filetype on
+filetype plugin on

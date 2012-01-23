@@ -1,0 +1,8 @@
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+Ctrl-p: history-search-backward
+Ctrl-n: history-search-forward
+
+set completion-ignore-case on
+

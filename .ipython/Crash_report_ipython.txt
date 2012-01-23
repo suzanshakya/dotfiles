@@ -1,0 +1,315 @@
+***************************************************************************
+
+IPython post-mortem report
+
+{'commit_hash': '<not found>',
+ 'commit_source': '(none found)',
+ 'ipython_path': '/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython',
+ 'ipython_version': '0.11',
+ 'os_name': 'posix',
+ 'platform': 'Darwin-10.8.0-x86_64-i386-64bit',
+ 'sys_executable': '/usr/local/Cellar/python2.6/2.6.5/bin/python',
+ 'sys_platform': 'darwin',
+ 'sys_version': '2.6.5 (r265:79063, Sep 12 2011, 13:05:33) \n[GCC 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2335.9)]'}
+
+***************************************************************************
+
+
+
+***************************************************************************
+
+Crash traceback:
+
+---------------------------------------------------------------------------
+KeyboardInterruptPython 2.6.5: /usr/local/Cellar/python2.6/2.6.5/bin/python
+                                                   Tue Nov 15 15:26:19 2011
+A problem occured executing Python code.  Here is the sequence of function
+calls leading up to the error, with the most recent (innermost) call last.
+/usr/local/Cellar/python2.6/2.6.5/bin/ipython in <module>()
+      1 #!/usr/local/Cellar/python2.6/2.6.5/bin/python
+      2 # EASY-INSTALL-ENTRY-SCRIPT: 'ipython==0.11','console_scripts','ipython'
+      3 __requires__ = 'ipython==0.11'
+      4 import sys
+      5 from pkg_resources import load_entry_point
+      6 
+      7 if __name__ == '__main__':
+      8     sys.exit(
+----> 9         load_entry_point('ipython==0.11', 'console_scripts', 'ipython')()
+        global load_entry_point = <function load_entry_point at 0x100488320>
+     10     )
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/frontend/terminal/ipapp.pyc in launch_new_instance()
+    354     if ipython_dir is None:
+    355         ipython_dir = get_ipython_dir()
+    356     profile_dir = os.path.join(ipython_dir, 'profile_default')
+    357     cl = PyFileConfigLoader(default_config_file_name, profile_dir)
+    358     try:
+    359         config = cl.load_config()
+    360     except IOError:
+    361         # no config found
+    362         config = Config()
+    363     return config
+    364 
+    365 
+    366 def launch_new_instance():
+    367     """Create and run a full blown IPython instance"""
+    368     app = TerminalIPythonApp.instance()
+--> 369     app.initialize()
+    370     app.start()
+    371 
+    372 
+    373 if __name__ == '__main__':
+    374     launch_new_instance()
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/frontend/terminal/ipapp.pyc in initialize(self=<IPython.frontend.terminal.ipapp.TerminalIPythonApp object>, argv=None)
+    268         
+    269         return super(TerminalIPythonApp, self).parse_command_line(argv)
+    270 
+    271     def initialize(self, argv=None):
+    272         """Do actions after construct, but before starting the app."""
+    273         super(TerminalIPythonApp, self).initialize(argv)
+    274         if self.subapp is not None:
+    275             # don't bother initializing further, starting subapp
+    276             return
+    277         if not self.ignore_old_config:
+    278             check_for_old_config(self.ipython_dir)
+    279         # print self.extra_args
+    280         if self.extra_args:
+    281             self.file_to_run = self.extra_args[0]
+    282         # create the shell
+--> 283         self.init_shell()
+    284         # and draw the banner
+    285         self.init_banner()
+    286         # Now a variety of things that happen after the banner is printed.
+    287         self.init_gui_pylab()
+    288         self.init_extensions()
+    289         self.init_code()
+    290 
+    291     def init_shell(self):
+    292         """initialize the InteractiveShell instance"""
+    293         # I am a little hesitant to put these into InteractiveShell itself.
+    294         # But that might be the place for them
+    295         sys.path.insert(0, '')
+    296 
+    297         # Create an InteractiveShell instance.
+    298         # shell.display_banner should always be False for the terminal 
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/frontend/terminal/ipapp.pyc in init_shell(self=<IPython.frontend.terminal.ipapp.TerminalIPythonApp object>)
+    288         self.init_extensions()
+    289         self.init_code()
+    290 
+    291     def init_shell(self):
+    292         """initialize the InteractiveShell instance"""
+    293         # I am a little hesitant to put these into InteractiveShell itself.
+    294         # But that might be the place for them
+    295         sys.path.insert(0, '')
+    296 
+    297         # Create an InteractiveShell instance.
+    298         # shell.display_banner should always be False for the terminal 
+    299         # based app, because we call shell.show_banner() by hand below
+    300         # so the banner shows *before* all extension loading stuff.
+    301         self.shell = TerminalInteractiveShell.instance(config=self.config,
+    302                         display_banner=False, profile_dir=self.profile_dir,
+--> 303                         ipython_dir=self.ipython_dir)
+    304 
+    305     def init_banner(self):
+    306         """optionally display the banner"""
+    307         if self.display_banner and self.interact:
+    308             self.shell.show_banner()
+    309         # Make sure there is a space below the banner.
+    310         if self.log_level <= logging.INFO: print
+    311 
+    312 
+    313     def init_gui_pylab(self):
+    314         """Enable GUI event loop integration, taking pylab into account."""
+    315         gui = self.gui
+    316 
+    317         # Using `pylab` will also require gui activation, though which toolkit
+    318         # to use may be chosen automatically based on mpl configuration.
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/config/configurable.pyc in instance(cls=<class 'IPython.frontend.terminal.interactiveshell.TerminalInteractiveShell'>, *args=(), **kwargs={'config': {'TerminalInteractiveShell': {'confirm_exit': Fa...pp': {'display_banner': False}, 'ProfileDir': {}}, 'display_banner': False, 'ipython_dir': u'/Users/suzanshakya/.ipython', 'profile_dir': <IPython.core.profiledir.ProfileDir object>})
+    280             >>> class Foo(SingletonConfigurable): pass
+    281             >>> foo = Foo.instance()
+    282             >>> foo == Foo.instance()
+    283             True
+    284 
+    285         Create a subclass that is retrived using the base class instance::
+    286 
+    287             >>> class Bar(SingletonConfigurable): pass
+    288             >>> class Bam(Bar): pass
+    289             >>> bam = Bam.instance()
+    290             >>> bam == Bar.instance()
+    291             True
+    292         """
+    293         # Create and save the instance
+    294         if cls._instance is None:
+--> 295             inst = cls(*args, **kwargs)
+    296             # Now make sure that the instance will also be returned by
+    297             # parent classes' _instance attribute.
+    298             for subclass in cls._walk_mro():
+    299                 subclass._instance = inst
+    300         
+    301         if isinstance(cls._instance, cls):
+    302             return cls._instance
+    303         else:
+    304             raise MultipleInstanceError(
+    305                 'Multiple incompatible subclass instances of '
+    306                 '%s are being created.' % cls.__name__
+    307             )
+    308 
+    309     @classmethod
+    310     def initialized(cls):
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/frontend/terminal/interactiveshell.pyc in __init__(self=<IPython.frontend.terminal.interactiveshell.TerminalInteractiveShell object>, config={'TerminalInteractiveShell': {'confirm_exit': Fa...pp': {'display_banner': False}, 'ProfileDir': {}}, ipython_dir=u'/Users/suzanshakya/.ipython', profile_dir=<IPython.core.profiledir.ProfileDir object>, user_ns=None, user_global_ns=None, custom_exceptions=((), None), usage=None, banner1=None, banner2=None, display_banner=False)
+     98         internally). If for some reason this isn't working well (it needs
+     99         curses support), specify it yourself. Otherwise don't change the
+    100         default.""",
+    101     )
+    102     term_title = CBool(False, config=True,
+    103         help="Enable auto setting the terminal title."
+    104     )
+    105 
+    106     def __init__(self, config=None, ipython_dir=None, profile_dir=None, user_ns=None,
+    107                  user_global_ns=None, custom_exceptions=((),None),
+    108                  usage=None, banner1=None, banner2=None,
+    109                  display_banner=None):
+    110 
+    111         super(TerminalInteractiveShell, self).__init__(
+    112             config=config, profile_dir=profile_dir, user_ns=user_ns,
+--> 113             user_global_ns=user_global_ns, custom_exceptions=custom_exceptions
+    114         )
+    115         # use os.system instead of utils.process.system by default, except on Windows
+    116         if os.name == 'nt':
+    117             self.system = self.system_piped
+    118         else:
+    119             self.system = self.system_raw
+    120         
+    121         self.init_term_title()
+    122         self.init_usage(usage)
+    123         self.init_banner(banner1, banner2, display_banner)
+    124 
+    125     #-------------------------------------------------------------------------
+    126     # Things related to the terminal
+    127     #-------------------------------------------------------------------------
+    128 
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/core/interactiveshell.pyc in __init__(self=<IPython.frontend.terminal.interactiveshell.TerminalInteractiveShell object>, config={'TerminalInteractiveShell': {'confirm_exit': Fa...pp': {'display_banner': False}, 'ProfileDir': {}}, ipython_dir=None, profile_dir=<IPython.core.profiledir.ProfileDir object>, user_ns=None, user_global_ns=None, custom_exceptions=((), None))
+    403 
+    404         # pre_config_initialization
+    405 
+    406         # The next section should contain everything that was in ipmaker.
+    407         self.init_logstart()
+    408 
+    409         # The following was in post_config_initialization
+    410         self.init_inspector()
+    411         # init_readline() must come before init_io(), because init_io uses
+    412         # readline related things.
+    413         self.init_readline()
+    414         # init_completer must come after init_readline, because it needs to
+    415         # know whether readline is present or not system-wide to configure the
+    416         # completers, since the completion machinery can now operate
+    417         # independently of readline (e.g. over the network)
+--> 418         self.init_completer()
+        global c = undefined
+        global C = undefined
+        global s = undefined
+        global y = undefined
+        global i = undefined
+        global d = undefined
+        global Wn = undefined
+        global t = undefined
+        global j = undefined
+    419         # TODO: init_io() needs to happen before init_traceback handlers
+    420         # because the traceback handlers hardcode the stdout/stderr streams.
+    421         # This logic in in debugger.Pdb and should eventually be changed.
+    422         self.init_io()
+    423         self.init_traceback_handlers(custom_exceptions)
+    424         self.init_prompts()
+    425         self.init_display_formatter()
+    426         self.init_display_pub()
+    427         self.init_displayhook()
+    428         self.init_reload_doctest()
+    429         self.init_magics()
+    430         self.init_pdb()
+    431         self.init_extension_manager()
+    432         self.init_plugin_manager()
+    433         self.init_payload()
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/core/interactiveshell.pyc in init_completer(self=<IPython.frontend.terminal.interactiveshell.TerminalInteractiveShell object>)
+   1733         """return the current level of indentation as a string"""
+   1734         return self.input_splitter.indent_spaces * ' '
+   1735 
+   1736     #-------------------------------------------------------------------------
+   1737     # Things related to text completion
+   1738     #-------------------------------------------------------------------------
+   1739 
+   1740     def init_completer(self):
+   1741         """Initialize the completion machinery.
+   1742 
+   1743         This creates completion machinery that can be used by client code,
+   1744         either interactively in-process (typically triggered by the readline
+   1745         library), programatically (such as in test suites) or out-of-prcess
+   1746         (typically over the network by remote frontends).
+   1747         """
+-> 1748         from IPython.core.completer import IPCompleter
+   1749         from IPython.core.completerlib import (module_completer,
+   1750                                                magic_run_completer, cd_completer)
+   1751         
+   1752         self.Completer = IPCompleter(self,
+   1753                                      self.user_ns,
+   1754                                      self.user_global_ns,
+   1755                                      self.readline_omit__names,
+   1756                                      self.alias_manager.alias_table,
+   1757                                      self.has_readline)
+   1758         
+   1759         # Add custom completers to the basic ones built into IPCompleter
+   1760         sdisp = self.strdispatchers.get('complete_command', StrDispatch())
+   1761         self.strdispatchers['complete_command'] = sdisp
+   1762         self.Completer.custom_completers = sdisp
+   1763 
+
+/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/IPython/core/completer.py in <module>()
+     32 - The evaluation of the NAME.NAME... form may cause arbitrary
+     33 application defined code to be executed if an object with a
+     34 __getattr__ hook is found.  Since it is the responsibility of the
+     35 application (or the user) to enable this feature, I consider this an
+     36 acceptable risk.  More complicated expressions (e.g. function calls or
+     37 indexing operations) are *not* evaluated.
+     38 
+     39 - GNU readline is also used by the built-in functions input() and
+     40 raw_input(), and thus these also benefit/suffer from the completer
+     41 features.  Clearly an interactive application can benefit by
+     42 specifying its own completer function and using raw_input() for all
+     43 its input.
+     44 
+     45 - When the original stdin is not a tty device, GNU readline is never
+     46 used, and this module (and the readline module) are silently inactive.
+---> 47 """
+        global Return = undefined
+        global whether = undefined
+        global a = undefined
+        global string = undefined
+        global has = undefined
+        global open = undefined
+        global quotes. = undefined
+     48 
+     49 #*****************************************************************************
+     50 #
+     51 # Since this file is essentially a minimally modified copy of the rlcompleter
+     52 # module which is part of the standard Python distribution, I assume that the
+     53 # proper procedure is to maintain its copyright as belonging to the Python
+     54 # Software Foundation (in addition to my own, for all new code).
+     55 #
+     56 #       Copyright (C) 2008-2010 IPython Development Team
+     57 #       Copyright (C) 2001-2007 Fernando Perez. <fperez@colorado.edu>
+     58 #       Copyright (C) 2001 Python Software Foundation, www.python.org
+     59 #
+     60 #  Distributed under the terms of the BSD License.  The full license is in
+     61 #  the file COPYING, distributed as part of this software.
+     62 #
+
+KeyboardInterrupt: 
+
+***************************************************************************
+
+History of session input:
