@@ -17,7 +17,7 @@ export PYHOME=/usr/local/Cellar/python2.6/2.6.5
 export PYSITE=$PYHOME/lib/python2.6/site-packages
 
 . $LI/etc/env.rc
-
+export PYTHONPATH="$PYTHONPATH":~/python
 export PATH="~/bin:$PYHOME/bin:${PATH}"
 export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
 
