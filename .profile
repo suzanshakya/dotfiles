@@ -82,7 +82,7 @@ vipy() {
         return
     fi
     pycfile=`python -c "import $1; print $1.__file__"`
-    if test "$cfile" = "" ; then
+    if test "$pycfile" = "" ; then
         return
     fi
     pyfile="${pycfile/%.pyc/.py}"
@@ -111,7 +111,7 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 . ~/bmark.sh
-source /usr/local/etc/profile.d/bash_completion.sh
+#source /usr/local/etc/profile.d/bash_completion.sh
 
 cache_opera() {
     (( count = 0 ))
