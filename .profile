@@ -39,9 +39,21 @@ alias gd='git diff'
 
 # for using git command from outside the git repo dir.
 agit() {
-    dir=`dirname "$2"`
-    base=`basename "$2"`
-    (cd "$dir" && git $1 "$base")
+    if test -n "$2"; then
+        command="$1"
+        path="$2"
+        shift
+        shift
+        if test "`file -b "$path" 2>/dev/null`" = "directory"; then
+            (cd "$path" && git "$command" "$@")
+        else
+            dir=`dirname "$path"`
+            base=`basename "$path"`
+            (cd "$dir" && git "$command" "$base" "$@")
+        fi
+    else
+        git "$@"
+    fi
 }
 
 # cd with automatic pushd
@@ -179,7 +191,7 @@ function rm() {
 
 function vim() {
     if test ! -z "$1"; then
-        if test `file -b "$1" 2>/dev/null` = "directory"; then
+        if test "`file -b "$1" 2>/dev/null`" = "directory"; then
             (cd "$1" && mvim)
             return
         fi
