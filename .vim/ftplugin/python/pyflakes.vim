@@ -25,7 +25,6 @@ if !exists("b:did_python_init")
     let b:did_python_init = 0
 
     if !has('python')
-        echoerr "Error: the pyflakes.vim plugin requires Vim to be compiled with +python"
         finish
     endif
 
@@ -225,20 +224,20 @@ if !exists("*s:RunPyflakes")
         else
             let b:cleared = 1
         endif
-        
+
         let b:matched = []
         let b:matchedlines = {}
 
         let b:qf_list = []
         let b:qf_window_count = -1
-        
+
         python << EOF
 for w in check(vim.current.buffer):
     vim.command('let s:matchDict = {}')
     vim.command("let s:matchDict['lineNum'] = " + str(w.lineno))
     vim.command("let s:matchDict['message'] = '%s'" % vim_quote(w.message % w.message_args))
     vim.command("let b:matchedlines[" + str(w.lineno) + "] = s:matchDict")
-    
+
     vim.command("let l:qf_item = {}")
     vim.command("let l:qf_item.bufnr = bufnr('%')")
     vim.command("let l:qf_item.filename = expand('%')")

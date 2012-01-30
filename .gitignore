@@ -2,3 +2,5 @@
 *.pyc
 .komodotools
 *.komodoproject
+.vim/.netrwhist
+.viminfo

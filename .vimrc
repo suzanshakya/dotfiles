@@ -62,14 +62,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 nnoremap <F8> :!ctags -R --python-kinds=i --languages=+python .<CR>
 
-""open nerdtree on startup
-"autocmd vimenter * NERDTree
-""focus on file instead of nerdtree
-autocmd vimenter * wincmd l
-""start nerdtree if no files specified
-"autocmd vimenter * if !argc() | NERDTree | endif
-""close vim if the only window left open is a NERDTree
-"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let NERDTreeIgnore = ['\.pyc$']
 nnoremap <F3> :NERDTreeTabsToggle<CR>
 

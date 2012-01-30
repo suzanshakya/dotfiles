@@ -36,7 +36,6 @@ alias pi='pip install'
 alias bi='brew install'
 alias gs='git status -s'
 alias gd='git diff'
-alias vim='mvim'
 
 # for using git command from outside the git repo dir.
 agit() {
@@ -160,7 +159,7 @@ module_version() {
 }
 alias v=module_version
 
-function rm () {
+function rm() {
   for path in "$@"; do
     # ignore any arguments
     if [[ "$path" = -* ]]; then :
@@ -170,10 +169,20 @@ function rm () {
       while [ -e ~/.Trash/"$dst" ]; do
         dst="$dst "$(date +%H-%M-%S)
       done
-      if test ! -d ~/.Trash ; then
+      if test ! -d ~/.Trash; then
           mkdir ~/.Trash
       fi
       mv "$path" ~/.Trash/"$dst"
     fi
   done
+}
+
+function vim() {
+    if test ! -z "$1"; then
+        if test `file -b "$1" 2>/dev/null` = "directory"; then
+            (cd "$1" && mvim)
+            return
+        fi
+    fi
+    mvim "$*"
 }
