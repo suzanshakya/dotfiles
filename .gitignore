@@ -4,3 +4,4 @@
 *.komodoproject
 .vim/.netrwhist
 .viminfo
+*.swp
