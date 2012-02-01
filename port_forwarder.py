@@ -4,12 +4,10 @@ Usage: %prog <source_address> <destination_address>
 
 Options:
 source_address: IP:PORT
-destination_address: IP:PORT
-
-If IP is omitted, IP is set to "127.0.0.1"
+destination_address: IP:PORT:udp
 
 Examples:
-%prog 192.168.2.3:514 192.168.2.4:514
+%prog 192.168.2.3:514 192.168.2.4:514:udp
 %prog 514 192.168.2.4:514\
 """
 
@@ -20,10 +18,10 @@ import threading
 import Queue
 import logging
 
-new_line_appender_re = re.compile(r'(<\d+>)')
+new_line_appender_re = re.compile(r'(<\d+>)(.+(?=<\d+>)|.+$)')
 
-def add_newline(data):
-    return new_line_appender_re.sub(r"\n\1", data)
+def add_newline(data, client_ip):
+    return new_line_appender_re.sub(r"\1\2 device_ip=%s\n" % client_ip, data)
 
 def _get_addr_type(address):
     addr_info = address.split(":")
@@ -69,20 +67,25 @@ class Receiver(object):
         sock = _create_socket("tcp")
         sock.bind(addr)
         sock.listen(1)
-        conn, addr = sock.accept()
-        logging.info("tcp connection from %r", addr)
-        self._recv_forever(conn)
+        while True:
+            conn, client_addr = sock.accept()
+            logging.info("tcp connection from %r", client_addr)
+            while True:
+                data = conn.recv(1024)
+                if not data:
+                    break
+                self._put(data, client_addr)
 
     def _start_udp(self, addr):
         sock = _create_socket("udp")
         sock.bind(addr)
-        self._recv_forever(sock)
-
-    def _recv_forever(self, conn):
         while True:
-            data = conn.recv(1024)
-            self.q.put(data)
+            data, client_addr = sock.recvfrom(1024)
+            self._put(data, client_addr)
 
+    def _put(self, data, client_addr):
+        data = add_newline(data, client_addr[0])
+        self.q.put(data)
 
 class Sender():
     def __init__(self, address, q):
@@ -98,16 +101,24 @@ class Sender():
         return sock
 
     def _send_forever(self):
-        if self.type_ is None:
-            socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
-        else:
-            socks = [self._get_socket(self.type_, self.addr)]
-
+        data = None
         while True:
-            data = self.q.get()
-            data = add_newline(data)
-            for sock in socks:
-                sock.sendall(data)
+            if self.type_ is None:
+                socks = map(self._get_socket, ("tcp", "udp"), (self.addr,)*2)
+            else:
+                socks = [self._get_socket(self.type_, self.addr)]
+
+            if data:
+                for sock in socks:
+                    sock.sendall(data)
+
+            try:
+                while True:
+                    data = self.q.get()
+                    for sock in socks:
+                        sock.sendall(data)
+            except socket.error:
+                pass
 
 def forward(src, dst):
     logging.info("forwarding data from %r to %r", src, dst)
