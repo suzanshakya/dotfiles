@@ -8,7 +8,7 @@ destination_address: IP:PORT:udp
 
 Examples:
 %prog 192.168.2.3:514 192.168.2.4:514:udp
-%prog 514 192.168.2.4:514\
+%prog 192.168.2.3:514:udp 192.168.2.4:514:udp
 """
 
 import re
