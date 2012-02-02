@@ -18,10 +18,15 @@ import threading
 import Queue
 import logging
 
-new_line_appender_re = re.compile(r'(<\d+>)(.+(?=<\d+>)|.+$)')
+new_line_appender_re = re.compile(r'(<\d+>.+?)(\S+)(?:(?=<\d+>)|$)')
 
 def add_newline(data, client_ip):
-    return new_line_appender_re.sub(r"\1\2 device_ip=%s\n" % client_ip, data)
+    def msg_enhancer(matchobj):
+        msg = matchobj.group(1)
+        hex_checksum = matchobj.group(2).encode("hex_codec")
+        new_data = "%s%s device_ip=%s\n" % (msg, hex_checksum, client_ip)
+        return new_data
+    return new_line_appender_re.sub(msg_enhancer, data)
 
 def _get_addr_type(address):
     addr_info = address.split(":")
