@@ -65,6 +65,11 @@ nnoremap <F8> :!ctags -R --python-kinds=i --languages=+python .<CR>
 let NERDTreeIgnore = ['\.pyc$']
 nnoremap <F3> :NERDTreeTabsToggle<CR>
 
+inoremap <D-r> <Esc>:w\|:!python %<CR>
+nnoremap <D-r> <Esc>:w\|:!python %<CR>
+map <D-1> :tabp<CR>
+map <D-2> :tabn<CR>
+
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " " and jump to it!
 if !has('python')
