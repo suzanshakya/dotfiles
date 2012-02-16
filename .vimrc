@@ -67,8 +67,16 @@ nnoremap <F3> :NERDTreeTabsToggle<CR>
 
 inoremap <D-r> <Esc>:w\|:!python %<CR>
 nnoremap <D-r> <Esc>:w\|:!python %<CR>
-map <D-1> :tabp<CR>
-map <D-2> :tabn<CR>
+
+nmap <D-1> <Esc>:tabp<CR>
+imap <D-1> <Esc>:tabp<CR>
+nmap <D-2> <Esc>:tabn<CR>
+imap <D-2> <Esc>:tabn<CR>
+
+nnoremap <C-h> <Esc><C-w>h<CR>
+nnoremap <C-j> <Esc><C-w>j<CR>
+nnoremap <C-k> <Esc><C-w>k<CR>
+nnoremap <C-l> <Esc><C-w>l<CR>
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " " and jump to it!
