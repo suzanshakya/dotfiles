@@ -78,6 +78,12 @@ nnoremap <C-j> <Esc><C-w>j<CR>
 nnoremap <C-k> <Esc><C-w>k<CR>
 nnoremap <C-l> <Esc><C-w>l<CR>
 
+set foldmethod=indent
+set foldnestmax=2
+set foldlevelstart=99
+nnoremap <space> zA
+vnoremap <space> zf
+
 " `gf` jumps to the filename under the cursor.  Point at an import statement
 " " and jump to it!
 if !has('python')
