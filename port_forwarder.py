@@ -23,7 +23,7 @@ import logging
 import hashlib
 from logging.handlers import RotatingFileHandler
 
-new_line_appender_re = re.compile(r'(<\d+>.+?)([^ ]+)(?:(?=<\d+>)|$)')
+new_line_appender_re = re.compile(r'(<\d+>.+?)(.{32})(?:(?=<\d+>)|$)')
 
 def get_checksum(msg):
      h = hashlib.sha256()
