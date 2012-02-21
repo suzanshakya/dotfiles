@@ -7,7 +7,10 @@ source_address: IP:PORT
 destination_address: IP:PORT:udp
 
 Examples:
+listens in both udp and tcp and forward to udp
 %prog 192.168.2.3:514 192.168.2.4:514:udp
+
+listens in udp and forwards in udp
 %prog 192.168.2.3:514:udp 192.168.2.4:514:udp
 """
 
@@ -17,14 +20,28 @@ import socket
 import threading
 import Queue
 import logging
+import hashlib
 
-new_line_appender_re = re.compile(r'(<\d+>.+?)(\S+)(?:(?=<\d+>)|$)')
+new_line_appender_re = re.compile(r'(<\d+>.+?)([^ ]+)(?:(?=<\d+>)|$)')
+
+def get_checksum(msg):
+     h = hashlib.sha256()
+     h.update(msg)
+     return h.digest(), h.hexdigest()
 
 def add_newline(data, client_ip):
     def msg_enhancer(matchobj):
         msg = matchobj.group(1)
-        hex_checksum = matchobj.group(2).encode("hex_codec")
-        new_data = "%s%s device_ip=%s\n" % (msg, hex_checksum, client_ip)
+        actual_checksum, actual_hex_checksum = get_checksum(msg)
+
+        checksum = matchobj.group(2)
+        hex_checksum = checksum.encode("hex_codec")
+        is_checksum_ok = actual_checksum == checksum
+        checksum_status = "ok" if is_checksum_ok else "fail"
+        if not is_checksum_ok:
+            logging.warning("invalid checksum for msg=%r; included_checksum=%r;\
+                    actual_checksum=%r", msg, hex_checksum, actual_hex_checksum)
+        new_data = "%s%s checksum=%s device_ip=%s\n" % (msg, hex_checksum, checksum_status, client_ip)
         return new_data
     return new_line_appender_re.sub(msg_enhancer, data)
 
@@ -79,6 +96,7 @@ class Receiver(object):
                 data = conn.recv(1024)
                 if not data:
                     break
+                logging.info("received data from %r in tcp mode: %r", client_addr, data)
                 self._put(data, client_addr)
 
     def _start_udp(self, addr):
@@ -86,6 +104,7 @@ class Receiver(object):
         sock.bind(addr)
         while True:
             data, client_addr = sock.recvfrom(1024)
+            logging.info("received data from %r in udp mode: %r", client_addr, data)
             self._put(data, client_addr)
 
     def _put(self, data, client_addr):
@@ -120,6 +139,7 @@ class Sender():
             try:
                 while True:
                     data = self.q.get()
+                    logging.info("sending msg: %r", data)
                     for sock in socks:
                         sock.sendall(data)
             except socket.error:
