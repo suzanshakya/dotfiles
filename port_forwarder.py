@@ -21,6 +21,7 @@ import threading
 import Queue
 import logging
 import hashlib
+from logging.handlers import RotatingFileHandler
 
 new_line_appender_re = re.compile(r'(<\d+>.+?)([^ ]+)(?:(?=<\d+>)|$)')
 
@@ -155,7 +156,11 @@ def forward(src, dst):
     sender.start()
 
 def main():
-    logging.basicConfig(level=logging.INFO)
+    logger = logging.getLogger()
+    handler = RotatingFileHandler('port_forwarder.log', maxBytes=1<<20, backupCount=0)
+    logger.addHandler(handler)
+    logger.setLevel(logging.INFO)
+
     parser = optparse.OptionParser(__doc__)
     options, args = parser.parse_args()
     try:
