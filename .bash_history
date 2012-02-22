@@ -4999,3 +4999,1015 @@ du -sch *
 df -h
 git commit .bash_history 
 git status .bash_history 
+git add .bash_history 
+git commit -m'added .bash_history'
+du -sh .git
+sudo du -sch *
+df -h
+ll suzanshakya\@192.168.2.205/
+ll suzanshakya\@192.168.2.205/127.0.0.1/
+rm -f suzanshakya\@192.168.2.205/
+cd projects/
+cd Softwares/
+sudo du -sch *
+sudo Movies/
+cd Movies/
+sudo du -sch *
+sudo du -sch *
+cd Library/
+cd Documents/
+cd Desktop/
+sudo du -sch *
+cd desk/
+sudo du -sch *
+sudo du -sch *
+cd makalu/
+sudo du -sch *
+ll Parallels/
+rm -rf Parallels/
+cd Stanford\ Online\ Classes/
+sudo du -sch *
+cd PES\ 2011\ MAC\ OSX/
+u
+rm -rf PES\ 2011\ MAC\ OSX/
+cd bikal
+du -sh .Trash/
+sudo du -sch /*
+ll /Library/
+cd /Library/
+open academic\ lectures\ \(suvash\)/
+u
+cd CPH/
+sudo du -sch Caches/*
+cd ptf
+open .
+sudo du -sch *
+sudo du -sch Caches/Google/Chrome/Default/*
+sudo du -sch Caches/Google/Chrome/Default/Cache/*
+sudo du -sch /*
+vi Library/Preferences/com.activestate.Komodo.plist 
+ll Library/Preferences/com.activestate.Komodo.plist 
+cd /Developer/
+sudo du -sch /*
+sudo du -sch *
+locate logitech
+locate logitech | grep x
+locate logitech | grep x | less
+locate logitech | grep ke | les
+locate logitech | grep ke | less
+df -h
+sudo -u root atsutil databases -remove User
+atsutil server -shutdown
+atsutil server -ping
+vim /opt/immune/installed/norm/lib/libnorm/matching.py
+cd $bld
+cd packages/
+cd python-pkgs/
+cd predownloaded/
+ll re2-fidlej-c0c885b.tar.gz 
+tar xzvf re2-fidlej-c0c885b.tar.gz 
+cd re2-fidlej-c0c885b
+vi README.rst 
+vim
+python setup.py install
+ipython
+ipython
+python -c 'import re2; re2.compile("", 1)'
+rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/re2*
+python setup.py install
+rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/re2*
+rm -rf build/
+python setup.py install
+ipython
+cd projects/
+l
+git clone git@github.com:suzanshakya/pyre2.git
+cd $bld
+cd packages/python-pkgs/
+cd predownloaded/
+cd re2-fidlej-c0c885b
+cd $projects 
+cd pyre2/
+l
+git status
+mv * ~/projects/pyre2/
+cd ..
+vi .gitignore 
+git diff
+git status
+git commit -am'api changed from re2.compile(pattern) to re2.compile(pattern, max_mem=8388608)'
+git push
+rm re2-fidlej-c0c885b
+gs
+cd $bld
+cd packages/python-pkgs/
+cd predownloaded/
+pi re2-fidlej-c0c885b.tar.gz 
+rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/re2*
+pi re2-fidlej-c0c885b.tar.gz 
+ipython
+python -c 'import re2; re2.compile("", 1)'
+gs
+rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/re2*
+pi suzanshakya-pyre2-f6e90c2.tar.gz 
+cd $bld
+cd packages/python-pkgs/
+cd predownloaded/r
+cd predownloaded/
+gs
+scp suzanshakya-pyre2-f6e90c2.tar.gz root@10.45.1.211
+scp suzanshakya-pyre2-f6e90c2.tar.gz root@10.45.1.211:
+ssh support@10.45.1.51
+ssh root@10.45.1.211
+ssh support@10.45.1.211
+ssh root@10.45.1.211
+cd 
+cd /opt/immune
+vim installed/col/
+cd installed/config-updater/
+vi apps/config_updater/libupdater/gens/idx.py
+vi apps/config_updater/libupdater/generating.py
+ipython
+ssh root@10.45.1.211
+pi inspector
+lh
+vim .profile 
+vi .profile 
+cd $bld
+cd packages/
+cd python-pkgs/
+gs
+scp root@10.45.1.211:/opt/immune/etc/config/normalizer_windows_policy/config.json .
+rm predownloaded/root\@10.45.1.211 
+rm predownloaded/suzanshakya-pyre2-f6e90c2.tar.gz 
+scp -r IP suzanshakya@192.168.2.205:.
+cd $bld
+cd packages/
+cd python-pkgs/
+cd predownloaded/
+scp root@10.45.1.211:/usr/local/src/repo/bld/packages/python-pkgs/predownloaded/re2-suzanshakya-f6e90c2.tar.gz .
+gs
+pi re2-suzanshakya-f6e90c2.tar.gz 
+ipython
+u
+cd $norm 
+cd apps/norm
+cd apps/normalizer/
+ping 10.45.1.211
+traceroute 10.45.1.211
+vi sujan-vpn/client.ovpn 
+mv ~/config.json normalizer_windows_policy.json
+ll normalizer_windows_policy.json 
+mv {normalizer,}_windows_policy.json 
+mv {_,}windows_policy.json 
+ll windows_policy.json 
+vi windows_policy.json 
+fgrep 'pattern' windows_policy.json | wc -l; 
+vi windows_policy.json 
+python -m pylib.util.receiver store_handler
+cd /opt/immune
+vi ./installed/pylib/pylib/wiring/wiring.conf 
+cd /opt/immune
+cd installed/logen/
+vi README 
+apython loggenerator.py -f log_templates/normalizer --handler=zmq --section=norm_front_out --repo=default
+./normalizer.py windows_policy.json 
+vi windows_policy.json 
+vi log_templates/normalizer/normalizer.prop 
+python loggenerator.py -f log_templates/normalizer --handler=zmq --section=norm_front_out --repo=default
+./normalizer.py windows_policy.json 
+python -m pylib.util.receiver storage_in
+python loggenerator.py -f log_templates/normalizer --handler=zmq --section=norm_front_out --repo=windows_policy
+./normalizer.py windows_policy.json -vv
+python loggenerator.py -f log_templates/normalizer --handler=zmq --section=norm_front_out --repo=windows_policy -rMax
+vi /opt/immune/installed/pylib/pylib/wiring/
+python loggenerator.py -f log_templates/normalizer --handler=file@windows_policy.log --section=norm_front_out --repo=windows_policy -rMax -l100000
+vi windows_policy.log 
+python -m pylib.util.sender norm_front_out
+python -m pylib.util.sender norm_front_out --repo windows_policy
+./normalizer.py windows_policy.json -v
+python -m pylib.util.sender norm_front_out --repo windows_policy < windows_policy.log 
+python -m pylib.util.receiver storage_in -q
+python -m pylib.util.sender norm_front_out --repo windows_policy < windows_policy.log --format json
+python -m pylib.util.receiver storage_in
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log 
+ps aux | grep python
+cd $logen 
+./normalizer.py windows_policy.json -vv
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log 
+./normalizer.py windows_policy.json -v
+./normalizer.py windows_policy.json
+vi ../../lib/libnorm/matching.py
+vim ../../lib/libnorm/matching.py
+./normalizer.py windows_policy.json
+cd /opt/immune
+loop python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log 
+./normalizer.py windows_policy.json 
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log; done
+while true; do echi hi; sleep 1; done
+while true; do echo hi; sleep 1; done
+python -m pylib.util.receiver storage_in -q
+vimpy -m pylib.util.receiver
+./normalizer.py windows_policy.json
+tail -F ./var/log/benchmarker/noname.log 
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log; done
+git diff
+vi windows_policy.json 
+cat windows_policy.json 
+fgrep pattern windows_policy.json | wc -l
+cat windows_policy.json 
+vi windows_policy.json 
+fgrep pattern windows_policy.json | wc -l
+./normalizer.py windows_policy.json
+vi windows_policy.json 
+fgrep pattern windows_policy.json | wc -l
+./normalizer.py windows_policy.json
+fgrep pattern windows_policy.json | wc -l
+vi windows_policy.json 
+fgrep pattern windows_policy.json | wc -l
+./normalizer.py windows_policy.json
+git dif
+git diff
+bi snort
+ssh root@10.45.1.211
+python -m pylib.util.receiver storage_in -q
+ping mail.dev.immunesecurity.com
+ping mail.immunesecurity.com
+ping mimmunesecurity.com
+ping immunesecurity.com
+ping dev.immunesecurity.com
+ping asdf.immunesecurity.com
+ping dev.immunesecurity.com
+ping mail.immunesecurity.com
+nmap -F immunesecurity.com
+nmap -FPn immunesecurity.com
+nmap -FPn mail.immunesecurity.com
+sudo nmap -FPn mail.immunesecurity.com
+sudo nmap -FPn dev.immunesecurity.com
+sudo nmap -FPn mail.immunesecurity.com
+sudo nmap -ts mail.immunesecurity.com
+man nmap
+sudo nmap -A -T4 mail.immunesecurity.com
+sudo nmap -APn -T4 mail.immunesecurity.com
+ping google.com
+ipython
+sudo dmesg
+git log .bash_history 
+q
+git status .bash_history 
+git dfif .bash_history 
+git diff .bash_history 
+bin/sms_ntc.py 
+bin/sms_ntc.py -h
+cd $norm 
+cd apps/
+cd normalizer/
+cython normalizer.py
+gs
+vi normalizer.c 
+vi setup.py
+python setup.py build_ext --inplace
+vi setup.py
+python setup.py build_ext --inplace
+gs
+vi setup.py
+python setup.py build_ext --inplace
+rm -rf build/
+python setup.py build_ext --inplace
+rm -rf normalizer.c 
+python setup.py build_ext --inplace
+cd $norm 
+cpython lib/libnorm/signatures.py
+cython lib/libnorm/signatures.py
+ll lib/libnorm/
+git diff lib/libnorm/signatures.py{,.bak}
+git diff lib/libnorm/matching.py{,.bak}
+rm lib/libnorm/matching.py.bak 
+gs
+git diff lib/libnorm/signatures.py{,.bak}
+rm lib/libnorm/signatures.py.bak 
+gs
+rm apps/normalizer/normalizer.c 
+rm apps/normalizer/normalizer.so
+rm lib/libnorm/signatures.c 
+gs
+vi apps/normalizer/util/patterns_performance.py 
+vi apps/normalizer/setup.py 
+cd $pylib 
+vim benchmarker.py
+cd /opt/immune
+cd $norm
+vim lib/libnorm/matching.py
+cd lib/libnorm/signatures.py
+ipython
+cd $norm 
+cd apps/normalizer/
+gs
+gd
+gs
+vi windows_policy.json 
+vim lib/libnorm/matching.py
+vim ../pylib/pylib/benchmarker.py
+cd $logen
+cd apps/normalizer/
+tail -F ./var/log/benchmarker/noname.log 
+cd /opt/immune
+python -m pylib.util.receiver storage_in
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log 
+python -m pylib.util.receiver storage_in -q
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json <windows_policy.log; done
+./normalizer.py windows_policy.json
+echo " Jan 14 05:32:42 outpost01.Outpost24.cph MSWinEventLog        1        Security        1662506        Sat Jan 14 05:32:38 2012        600        Security        SYSTEM        User        Success Audit        OUTPOST01        Detailed Tracking                A process was assigned a primary token.    Assigning Process Information:     Process ID: 6104     Image File Name: C:\WINDOWS\system32\winlogon.exe     Primary User Name: OUTPOST01$     Primary Domain: OUTPOST24     Primary Logon ID: (0x0,0x3E7)    New Process Information:     Process ID: 3668     Image File Name: C:\WINDOWS\system32\userinit.exe     Target User Name: phm     Target Domain: OUTPOST24     Target Logon ID: (0x0,0x81DFE1BD)            1652370"
+vi 600.txt
+vi windows_policy.log 
+vi 600.txt 
+vim 600.txt 
+open 600.txt 
+vi windows_policy.json 
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <600.txt 
+vim 600.txt 
+open 600.txt 
+vi 600.txt 
+ipython
+vi 600.txt 
+open 600.txt 
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <600.txt 
+./normalizer.py windows_policy.json
+vi example-config.json 
+open 600.txt 
+vi windows_policy.json 
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json <600.txt 
+python -m pylib.util.receiver storage_in
+python -m pylib.util.receiver storage_in -q
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json <600.txt; done
+vi /opt/immune/installed/pylib/pylib/util/sender.py 
+python -m pylib.util.sender -h
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r 5 <windows_policy.log 
+vi 600.txt 
+tail -F ./var/log/benchmarker/noname.log 
+python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r 5 <600.txt 
+./normalizer.py windows_policy.json
+apython -m cProfile -o prof ./normalizer.py windows_policy.json 
+vi /opt/immune/installed/pylib/pylib/wiring/wiring.conf 
+vi /opt/immune/installed/pylib/pylib/wiring/__init__.py
+python -m cProfile -o prof ./normalizer.py windows_policy.json 
+l
+vi /opt/immune/installed/pylib/pylib/wiring/wiring.conf 
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r10 <600.txt; done
+python -m pylib.util.receiver storage_in
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json <600.txt; done
+python -m cProfile -o prof ./normalizer.py windows_policy.json 
+vi /opt/immune/installed/pylib/pylib/wiring/wiring.conf 
+rm prof 
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r300 <600.txt; done
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r200 <600.txt; done
+python -m cProfile -o prof ./normalizer.py windows_policy.json 
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r150 <600.txt; done
+vi windows_policy.json 
+fgrep pattern windows_policy.json | wc -l
+scp root@10.45.1.211:/opt/immune/etc/config/normalizer_windows_policy/config.json .
+vi 600.txt 
+rm prof 
+./normalizer.py config.json 
+grep pattern config.json | wc -l
+ipython
+ssh root@10.45.1.211
+while true; do python -m pylib.util.sender norm_front_out --repo windows_policy --format json -r200 <600.txt; done
+python -m pylib.util.receiver storage_in -q
+ssh support@10.45.1.211
+ssh root@192.168.2.205
+sudo /opt/makalu/ptf/update.sh
+cd /opt/makalu/ptf
+u
+cd util/
+vim port_forwarder.py 
+git diff port_forwarder.py 
+scp port_forwarder.py support@10.45.1.50:.
+vim port_forwarder.py 
+bmark temp
+bmark temp
+cd $tem
+cd $temp
+pwd
+cd $temp
+vi test.log
+ipython
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+nc 127.0.0.1 1514 < test.log 
+vi cale_logs.log 
+vim port_forwarder.py 
+ipython
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+nc 127.0.0.1 1514 < test.log 
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+jobs 
+jobs
+git diff port_forwarder.py 
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+vi test.log
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+nc 127.0.0.1 1514 < test.log 
+rm abc
+rm abcd 
+vi cale_logs.log 
+rm cale_logs.log 
+git status
+jobs 
+git status
+git diff
+vim port_forwarder.py 
+git diff
+git diff port_forwarder.py 
+nc -lk 127.0.0.1 1515
+vi PyMon.sh
+vi RunPyMon.sh
+vi RunPyMon.sh 
+chmod +x PyMon.sh 
+chmod +x port_forwarder.py 
+vi PyMon.sh 
+chmod +x RunPyMon.sh 
+./RunPyMon.sh 
+tail -F nohup.out 
+tail -F port_forwarder.
+tail -F port_forwarder.log 
+vi RunPyMon.sh 
+vi PyMon.sh 
+./PyMon.sh 
+killjobs 
+vi PyMon.sh 
+vi RunPyMon.sh 
+vi PyMon.sh 
+./RunPyMon.sh 
+tail -F nohup.out 
+./RunPyMon.sh 
+tail -F nohup.out 
+rm nohup.out 
+jobs 
+vi PyMon.sh 
+jobs 
+vi PyMon.sh 
+./PyMon.sh 
+killjobs
+jobs 
+jobs
+lsof -i:11514
+lsof -i:11515
+./PyMon.sh 
+killjobs 
+jobs 
+jobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjob
+killjob 1
+jobs 
+lsof -i:1514
+lsof -i:1515
+lsof -i:1514
+kill 2574
+./PyMon.sh 
+killjobs
+jobs 
+jobs
+lsof -i:1514
+ssh root@192.168.2.205
+ssh root@10.45.1.211
+kill 2729
+ps aux | grep port_forwarder.py
+ps aux | grep PyMon.sh
+kill 2580
+kill 2573
+kill 2750
+ps aux | grep PyMon.sh
+kill 2546
+ps aux | grep PyMon.sh
+ps aux | grep RunPyMon.sh 
+./RunPyMon.sh 
+tail -F nohup.out 
+rm nohup.out 
+kill RunPyMon.sh
+ps aux | grep RunPyMon.sh 
+ps aux | grep Pymon.sh
+tail -F nohup.out 
+./RunPyMon.sh 
+tail -F nohup.out 
+tail -F port_forwarder.
+tail -F port_forwarder.log 
+ps aux | grep Pymon.sh
+ps aux | grep PyMon.sh
+kill 2779
+kill 2773
+kill 2760
+ps aux | grep PyMon.sh
+ps aux | grep RunPyMon.sh
+ll RunPyMon.sh 
+rm nohup.out 
+lsof -i:1514
+kill 2744
+lsof -i:1514
+rm no
+vi RunPyMon.sh 
+vi PyMon.sh 
+./RunPyMon.sh 
+tail -F port_forwarder.
+tail -F nohup.out 
+tail -F port_forwarder.log 
+ps aux | grep RunPyMon.sh
+ps aux | grep PyMon.sh
+kill 2817
+ps aux | grep PyMon.sh
+kill 2809
+ps aux | grep PyMon.sh
+lsof -i:1514
+kill 2810
+rm nohup.out 
+./PyMon.sh 
+killjobs 1
+jobs
+vi ./PyMon.sh 
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp 2>&1 >>port_forwarder.log
+killjobs 1
+killjobs
+jobs
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp 2>&1 >port_forwarder.log
+killjobs
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp >/dev/null 
+killjobs
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp 2>/dev/null 
+killjobs
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp 2>&1 >/dev/null
+killjobs
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp >/dev/null 2>&1
+killjobs
+vi ./PyMon.sh 
+ps aux | grep PyMon.sh
+lsof -i:1514
+rm port_forwarder.py 
+mv ~/.Trash/port_forwarder.py .
+git diff port_forwarder.
+git diff port_forwarder.py 
+git commit port_forwarder.py -m'added checksum checking'
+rm port_forwarder.log 
+./RunPyMon.sh 
+tail -F nohup.out 
+tail -F port_forwarder.log 
+vi ./PyMon.sh 
+ps aux | grep RunPyMon.sh
+ps aux | grep PyMon.sh
+scp port_forwarder.py support@10.45.1.50:CALE
+vi PyMon.sh 
+vim port_forwarder.
+cd $makalu
+cd util/
+vim port_forwarder.py 
+vim $pylib
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+ps aux | grep PyMon.sh
+kill 287
+kill 2877
+lsof -i:1514
+kill 2878
+lsof -i:1514
+cd $temp
+tail -F port_forwarder.
+tail -F port_forwarder.py 
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs
+tail -F port_forwarder.log 
+python port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjob
+jobs
+killjob
+vi PyMon.sh 
+./RunPyMon.sh 
+scp port_forwarder.py support@10.45.1.50:CALE
+git status
+git diff port_forwarder.
+git diff port_forwarder.py 
+git commit port_forwarder.py -m'added RotatingFileHandler'
+tail -F nohup.out 
+ipython
+ipython
+cd $temp
+ps aux | grep port_forwarder.py
+kill 2581
+kill 3118
+ps aux | grep port_forwarder.py
+kill 3158
+ps aux | grep port_forwarder.py
+ps aux | grep PyMon.sh 
+kill 3117
+ps aux | grep PyMon.sh 
+lsof -i:11514
+ssh support@10.45.1.51
+ssh support@10.45.1.50
+cd $col
+cd apps/liv4_collector/
+vim
+vimpy -m setuptools
+u
+find . -user root -exec sudo chown suzanshakya {} \;
+ll *.tbz
+cd apps/liv4_collector/
+vi example-config.json 
+ll IP/
+tar czvf storage.tbz IP/
+ll *.tbz
+ll IP/
+du -sh IP/
+ll storage.tbz 
+ll -h storage.tbz 
+cp storage.tbz /tmp
+cd /tmp
+tar xzvf storage.tbz 
+du -sh I
+du -sh IP/
+rm -rf IP/
+du -sh IP/
+rm -rf IP/
+ll ~/.Trash/IP
+rm -rf IP/
+ll ~/.Trash/IP
+ll ~/.Trash/
+du -sh IP/
+rm -rf IP/
+ll /opt/immune/I
+ll /opt/immune/IP
+du -sh /opt/immune/IP
+u
+cd apps/ftp_collector/
+vi example-config.json 
+python ftp_collector.py example-config.json -vv
+sudo ./ftp_collector.py example-config.json -vv
+cd /opt/immune/storage/col/ftp_collector/
+cd 127.0.0.1/
+cd alpha/
+rm -rf wiring.py 
+sudorm -rf wiring.py 
+sudo rm -rf wiring.py 
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+scp root@10.45.1.211:/home/sujan/java* .
+scp root@10.45.1.211:/home/sujan/java_pid2287.hprof.tar.gz
+vi ftpd.py
+python ftpd.py 
+pi --upgrade pyftpdlib
+python
+python -m pyftpdlib.ftpsever
+python -m pyftpdlib.ftpserver
+python -m pyftpdlib.ftpserver -h
+python -m pyftpdlib.ftpserver -v
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+python ftpd.py 
+cd $webserver 
+vim
+cd projects/
+svn checkout http://pyftpdlib.googlecode.com/svn/trunk/ pyftpdlib
+cd pyftpdlib
+nosetests
+vimpy -m pyftpdlib
+scp root@10.45.1.211:/home/sujan/java_pid2287.hprof.tar.gz .
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+python -m pyftdlib
+python -m pyftdlib --directory='.' --port=2021 --write
+python -m pyftpdlib --directory='.' --port=2021 --write
+cd $col
+cd apps/ftp_collector/
+python -m pyftpdlib.ftpserver --directory='.' --port=2021 --write
+python -m pyftpdlib.ftpserver --directory='.' --port=2021
+python -m pyftpdlib.ftpserver --directory='.' --port=2021 --write
+rm Advanced\ Queries\ -\ MongoDB.mht 
+rm Stanford\ Online\ Classes\ alias 
+rm cale.rtf 
+rm mongodb/
+rm ftpd.py 
+gs
+gs .
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+open
+open .
+python -m pyftpdlib.ftpserver --port=2021 --username=abc --password=def
+python -m pyftpdlib.ftpserver -h
+scp root@10.45.1.211:/home/sujan/java_pid2287.hprof.tar.gz
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+python -m pylib.util.receiver batch_processor_in
+python -m pyftpdlib.ftpserver --port=2021
+python
+vimpy -m pyftpdlib
+python -m pyftpdlib.ftpserver --port=2021
+python -m pyftpdlib.ftpserver --port=2021 --write
+pd
+pwd
+sudo /opt/immune/bin/envdo ./ftp_collector.py example-config.json -vv
+u
+cd ..
+cd apps/liv4_collector/
+cd li
+cd lib
+python ftp_server.py 
+ll /tmp/storage.tbz 
+u
+cd liv4_collector/
+cd v4/
+cd /opt/immune/installed/col/apps/liv4_collector/
+cd li
+cd lib
+python ftp_server.py 
+u
+rm -rf liv4_collector/
+cd col/
+git status
+ipython
+u
+gs .
+git diff lib/transformer.py
+git diff liv4_collector.py 
+vim
+pyflakes *.pyc
+pyflakes *.py
+pyflakes .
+git status
+git add lib/extracter.py 
+git add lib/ftp_server.py 
+gs
+gs .
+git diff example-config.json 
+gs .
+git diff .
+git status
+gs .
+git add lib/device_router.py
+git diff lib/transformer.py
+git add lib/transformer.py
+git status
+gs .
+git diff liv4_collector.py 
+git add liv4_collector.py 
+git status
+gs .
+git commit -m'ftp server and extracting before processing implemented'
+ssh root@192.168.2.205
+git push
+ssh root@10.45.1.211
+ps u -p119
+lsof -p 119
+sudo lsof -p 119
+sudo lsof -i -p 119
+sudo lsof -iN -p 119
+sudo lsof -i -n -p 119
+sudo lsof -i -nP -p 119
+du -sh .Trash/
+ssh root@10.45.1.211
+cd /opt/makalu/
+cd util/
+vi port_forwarder.py 
+vim port_forwarder.py 
+cd $temp
+ipython
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs 
+nc 127.0.0.1 1514 < test.log 
+jobs 
+jobs
+tail -F port_forwarder.log 
+killjobs 
+git diff port_forwarder.
+git diff port_forwarder.py 
+git commit port_forwarder.py -m'realized that checksum is 32 bytes in lenght'
+./port_forwarder.py 127.0.0.1:1514:tcp 127.0.0.1:1515:tcp
+killjobs 
+scp port_forwarder.py support@10.45.1.50:CALE
+git diff port_forwarder.py 
+git log -p port_forwarder.
+vimpy logging
+git log -p port_forwarder.py 
+scp port_forwarder.py support@10.45.1.50:CALE
+git diff port_forwarder.
+git diff port_forwarder.py 
+vi port_forwarder.py 
+ssh support@10.45.1.50
+git diff port_forwarder.py 
+git commit port_forwarder.py -m'removed rotatingfilehandler and used basic looging with console logging'
+vim port_forwarder.py 
+ssh support@10.45.1.50
+vi PyMon.sh 
+git add PyMon.sh 
+git add RunPyMon.sh 
+git commit -m'added PyMon.sh and RunPyMon.sh'
+git push
+git status
+rm nohup.out 
+ipython
+gs .
+git diff udp.py 
+git checkout udp.py 
+gs
+vi port_forwarder.log 
+rm port_forwarder.
+rm port_forwarder.log 
+git status
+git push
+git remote
+git remote show origin
+cd $installed 
+cd ~/projects/
+cd makalu/
+cd util/
+git status
+git push
+u
+git status
+git log
+git status 
+nc -lk 127.0.0.1 1515
+git push
+cd util/
+vi .git/co
+vi .git/config 
+u
+vi .gi
+cd util/
+git status
+vi .git/config 
+git remote add -f home-mac ~
+git merge -s ours --no-commit home-mac/master
+git read-tree --prefix=./ -u home-mac/master
+git read-tree --prefix=~/ -u home-mac/master
+git commit -m "Merge home-mac project as our subdirectory
+git commit -m "Merge home-mac project as our subdirectory"
+git pull -s subtree home-mac master
+git status
+git push
+git status
+git log
+git log -p
+git status
+u
+git push
+git status
+git diff
+gs
+git status | head
+git diff ../../.gitconfig 
+git commit ../../.gitconfig -m'ignored case'
+git push
+agit diff ~/.vimrc 
+git log -p
+cd util/
+git log
+git checkout HEAD^
+git log -p
+git log
+git log -p
+git status
+git branch
+git checkout master
+git log 
+git checkout master
+git checkout HEAD^
+git log
+git checkout master
+git reset --soft HEAD^
+git log
+git status
+vi .git/config 
+gs .
+git status
+vi .git/
+git remote remove
+git remote rm -f home-mac
+git remote rm home-mac
+vi .git/co
+vi .git/config 
+gs .
+git subtree
+git remote rm -f home-mac
+git remote rm home-mac
+git remote add -f home-mac ~
+vi .git/co
+vi .git/config 
+git remote rm home-mac
+vi .git/config 
+git status
+vi .git/config 
+vi .git/refs/heads/
+rm -rf .git/refs/remotes/home-mac
+gs
+gs .
+gs
+gs .
+git log -p
+git pull
+ll .git/description 
+vi .git/description 
+vi .git/FETCH_HEAD 
+git log -p
+git subtree
+git subtree split
+git-subtree
+git-commit
+git commit
+git subtree
+git remote
+git remote show
+git tree
+git status
+git reset --hard HEAD
+git status
+git log
+git status
+vi .git/config 
+git log
+git remote add -f makalu-utils /opt/makalu/util
+git branch
+git log
+git merge -s ours --no-commit makalu-utils/master
+git read-tree --prefix=/opt/makalu/util/ -u makalu-utils/master
+pwd
+git read-tree --prefix=~/projects/makalu/util -u makalu-utils/master
+git commit -m "Merge makalu/util into ~/projects/makalu/util"
+git pull -s subtree makalu-utils master
+git push
+git status
+vi PyMon.sh 
+gs 
+gs .
+git status
+git add ~/projects/makalu/util/
+git status
+git diff projects/makalu/util/
+git checkout PyMon.sh 
+git status
+vi PyMon.sh 
+git checkout PyMon.sh 
+git status | head
+git status | head -20
+git reset projects/makalu/util/
+git status | head
+git reset HEAD projects/makalu/util
+git status | head
+vi PyMon.sh 
+git status
+git status
+gs
+git checkout PyMon.sh 
+:
+gs | head
+cd $col
+git pull
+git log -p
+git branch
+git checkout ipv6
+git branch
+git log
+git branch
+git checkout master
+git branch
+gs .
+rm apps/ftp_collector/C__Users_suzan_Desktop_BIKAl_BIKAL\'S\ ARKITECTURE_ARch.Design_12.Arch.Corner\ Coffee_3.CORNER\ COFFEE\ -DRAWINGS_Corner\ Coffee\ Stat1.pdf 
+gs .
+git branch
+git log -p
+git log -p --author="ivo"
+git log -p
+git log
+git diff -p 16930d0d53e6a1c3ae1666b22ba1bc12705653c8
+git log -p 16930d0d53e6a1c3ae1666b22ba1bc12705653c8
+cd 
+file .profile 
+file -b .profile 
+file -b wiring.py 
+file -b while.py 
+cd $webserver 
+vi deploy/nginx.conf 
+vi deploy/mime.types 
+man file
+file -bI while.py 
+file -bI ~/while.py 
+file -bI ~/bin/dpaste.py 
+file -bI ~/bin/sms_ntc.py 
+ssh root@10.45.1.211
+sudo /opt/makalu/ptf/update.sh
+cd /opt/immunem
+cd /opt/immune
+cd $projects 
+cd scheduler/
+vim
+git diff .

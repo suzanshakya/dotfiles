@@ -87,9 +87,18 @@ psf() {
     ps -ef | grep -i "$1" | grep -v grep
 }
 
-vipy() {
+edit() {
+    editor=$1
+    shift
+    isPackage=$1
+    if test "$isPackage" = "-m" ; then
+        isPackage=true
+        shift
+    else
+        isPackage=false
+    fi
     if test ! -n "$1" ; then
-        echo "Usage: vipy <python-module>"
+        echo "Usage: vi(m)py <python-module>"
         return
     fi
     pycfile=`python -c "import $1; print $1.__file__"`
@@ -98,9 +107,20 @@ vipy() {
     fi
     pyfile="${pycfile/%.pyc/.py}"
     if test -f "$pyfile" ; then
-        echo "vi $pyfile"
-        vi "$pyfile"
+        if $isPackage ; then
+            pyfile=`dirname "$pyfile"`
+        fi
+        echo $editor "$pyfile"
+        $editor "$pyfile"
     fi
+}
+vipy() {
+    edit vi "$@"
+    return $?
+}
+vimpy() {
+    edit vim "$@"
+    return $?
 }
 
 alias killjobs='kill -9 `jobs -p`'
