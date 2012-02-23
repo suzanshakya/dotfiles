@@ -81,7 +81,7 @@ nnoremap <C-l> <Esc><C-w>l<CR>
 set foldmethod=indent
 set foldnestmax=2
 set foldlevelstart=99
-nnoremap <space> zA
+nnoremap <space> za
 vnoremap <space> zf
 
 " `gf` jumps to the filename under the cursor.  Point at an import statement
