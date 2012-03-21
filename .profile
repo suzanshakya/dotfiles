@@ -20,6 +20,7 @@ export PYSITE=$PYHOME/lib/python2.6/site-packages
 export PYTHONPATH="$PYTHONPATH":~/python
 export PATH="~/bin:$PYHOME/bin:${PATH}"
 export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
+export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
 
 alias ll='ls -lAF'
 alias lh='ls -lAh'
@@ -178,7 +179,7 @@ gman() {
 }
 
 calculate() {
-    python -c"print $*"
+    python -c"from __future__ import division; print $*"
 }
 alias e=calculate
 
