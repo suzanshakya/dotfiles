@@ -98,3 +98,8 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+
+colorscheme koehler
+if has("gui_running")
+    set guioptions=egmrt
+endif
