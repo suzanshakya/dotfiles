@@ -84,10 +84,16 @@ set foldlevelstart=99
 nnoremap <space> za
 vnoremap <space> zf
 
-" `gf` jumps to the filename under the cursor.  Point at an import statement
-" " and jump to it!
+inoremap jk <Esc>
+
+colorscheme koehler
+
 if !has('python')
     finish
+endif
+
+if has("gui_running")
+    set guioptions=egmrt
 endif
 
 python << EOF
@@ -98,8 +104,3 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
-
-colorscheme koehler
-if has("gui_running")
-    set guioptions=egmrt
-endif
