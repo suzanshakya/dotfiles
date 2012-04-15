@@ -103,7 +103,7 @@ edit() {
         echo "Usage: vi(m)py <python-module>"
         return
     fi
-    pycfile=`python -c "import $1; print $1.__file__"`
+    pycfile=`python -Sc"import $1; print $1.__file__"`
     if test "$pycfile" = "" ; then
         return
     fi
@@ -179,17 +179,17 @@ gman() {
 }
 
 calculate() {
-    python -c"from __future__ import division; print $*"
+    python -Sc"from __future__ import division; print $*"
 }
 alias e=calculate
 
 module_check() {
-    python -c "import $1; print $1.__file__"
+    python -c"import $1; print $1.__file__"
 }
 alias m=module_check
 
 module_version() {
-    python -c "import $1; print $1.__version__"
+    python -c"import $1; print $1.__version__"
 }
 alias v=module_version
 
