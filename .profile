@@ -38,6 +38,7 @@ alias pu='pip install --upgrade'
 alias bi='brew install'
 alias gs='git status -s'
 alias gd='git diff'
+alias gb='git branch'
 
 # for using git command from outside the git repo dir.
 agit() {
@@ -103,7 +104,7 @@ edit() {
         echo "Usage: vi(m)py <python-module>"
         return
     fi
-    pycfile=`python -Sc"import $1; print $1.__file__"`
+    pycfile=`python -c"import $1; print $1.__file__"`
     if test "$pycfile" = "" ; then
         return
     fi
