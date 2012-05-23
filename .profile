@@ -36,9 +36,10 @@ alias c='clear'
 alias pi='pip install'
 alias pu='pip install --upgrade'
 alias bi='brew install'
-alias gs='git status -s'
-alias gd='git diff'
 alias gb='git branch'
+alias gc='git checkout'
+alias gd='git diff'
+alias gs='git status -s'
 
 # for using git command from outside the git repo dir.
 agit() {
