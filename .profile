@@ -21,6 +21,7 @@ export PYTHONPATH="$PYTHONPATH":~/python
 export PATH="~/bin:$PYHOME/bin:${PATH}"
 export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
 export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
+export PATH="${PATH}:/usr/local/mrtg-2/bin"
 
 alias ll='ls -lAF'
 alias lh='ls -lAh'
@@ -40,6 +41,7 @@ alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
 alias gs='git status -s'
+alias gitx='open ~/Applications/gitX.app'
 
 # for using git command from outside the git repo dir.
 agit() {
