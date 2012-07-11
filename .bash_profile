@@ -1,3 +1,4 @@
+grand_start=`python -Sc'import time;print time.time()'`
 PS1='\u@\h:\w\$ '
 
 export HISTCONTROL=ignoredups:ignorespace
@@ -16,13 +17,20 @@ export PYTHONSTARTUP=~/.pystartup
 export PYHOME=/usr/local/Cellar/python2.6/2.6.5
 export PYSITE=$PYHOME/lib/python2.6/site-packages
 
-. $LI/etc/env.rc
+source $LI/etc/env.rc
 export PYTHONPATH="$PYTHONPATH":~/python
 export PATH="~/bin:$PYHOME/bin:${PATH}"
 export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
 export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
 export PATH="${PATH}:/usr/local/mrtg-2/bin"
 export PATH="${PATH}:/usr/local/share/python3"
+
+#echo 'loading virtualenvwrapper'
+#start=`python -Sc'import time;print time.time()'`
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper.sh &
+#end=`python -Sc'import time;print time.time()'`
+#echo "duration" `echo $end-$start|bc`
 
 alias ll='ls -lAF'
 alias lh='ls -lAh'
@@ -148,7 +156,7 @@ topp() {
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-. ~/bmark.sh
+source ~/bmark.sh
 #source /usr/local/etc/profile.d/bash_completion.sh
 
 cache_opera() {
@@ -226,6 +234,13 @@ function vim() {
     mvim "$*"
 }
 
+echo 'loading bash_completion'
+start=`python -Sc'import time;print time.time()'`
 if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+  source `brew --prefix`/etc/bash_completion 
 fi
+end=`python -Sc'import time;print time.time()'`
+echo "duration" `echo $end-$start|bc`
+
+grand_end=`python -Sc'import time;print time.time()'`
+echo "Total duration:" `echo $grand_end-$grand_start|bc`
