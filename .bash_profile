@@ -28,7 +28,7 @@ export PATH="${PATH}:/usr/local/share/python3"
 #echo 'loading virtualenvwrapper'
 #start=`python -Sc'import time;print time.time()'`
 export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper.sh &
+source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper.sh
 #end=`python -Sc'import time;print time.time()'`
 #echo "duration" `echo $end-$start|bc`
 
