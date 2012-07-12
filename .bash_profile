@@ -25,13 +25,6 @@ export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
 export PATH="${PATH}:/usr/local/mrtg-2/bin"
 export PATH="${PATH}:/usr/local/share/python3"
 
-#echo 'loading virtualenvwrapper'
-#start=`python -Sc'import time;print time.time()'`
-export WORKON_HOME=$HOME/.virtualenvs
-source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper.sh
-#end=`python -Sc'import time;print time.time()'`
-#echo "duration" `echo $end-$start|bc`
-
 alias ll='ls -lAF'
 alias lh='ls -lAh'
 alias lS='ls -lAhS'
@@ -234,13 +227,23 @@ function vim() {
     mvim "$*"
 }
 
-echo 'loading bash_completion'
-start=`python -Sc'import time;print time.time()'`
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  source `brew --prefix`/etc/bash_completion 
-fi
-end=`python -Sc'import time;print time.time()'`
-echo "duration" `echo $end-$start|bc`
+function load_virtualenvwrapper() {
+    start=`python -Sc'import time;print time.time()'`
+    export WORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper_lazy.sh
+    end=`python -Sc'import time;print time.time()'`
+    echo "virtualenvwrapper loading duration" `echo $end-$start|bc`
+}
+load_virtualenvwrapper
+
+function load_bash_completion() {
+    start=`python -Sc'import time;print time.time()'`
+    if [ -f `brew --prefix`/etc/bash_completion ]; then
+      source `brew --prefix`/etc/bash_completion 
+    fi
+    end=`python -Sc'import time;print time.time()'`
+    echo "bash_completion laoding duration" `echo $end-$start|bc`
+}
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo "Total duration:" `echo $grand_end-$grand_start|bc`
