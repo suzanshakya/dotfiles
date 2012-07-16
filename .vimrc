@@ -58,7 +58,7 @@ inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
 "-------------------------------------------------
 
 set pastetoggle=<F2>
-autocmd BufWritePre * :%s/\s\+$//e
+"autocmd BufWritePre * :%s/\s\+$//e
 
 nnoremap <F8> :!ctags -R --python-kinds=i --languages=+python .<CR>
 
@@ -88,13 +88,26 @@ inoremap jk <Esc>
 
 colorscheme koehler
 
-if !has('python')
-    finish
-endif
+let mapleader=","
+
+" hide matches on <leader>space
+nnoremap <leader><space> :nohlsearch<cr>
+
+" Remove trailing whitespace on <leader>S
+nnoremap <leader>S :%s/\s\+$//<cr>:let @/=''<CR>
 
 if has("gui_running")
     set guioptions=egmrt
 endif
+
+if !has('python')
+    finish
+endif
+
+""" End for CLI vi"""
+
+" change to the dir of current file
+set autochdir
 
 python << EOF
 import vim
