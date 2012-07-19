@@ -29,6 +29,7 @@ filetype plugin on
 nnoremap <F4> :TlistToggle<CR>
 let Tlist_Use_Right_Window = 1
 "let Tlist_Auto_Open = 1
+let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Exit_OnlyWindow = 1
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
@@ -60,7 +61,8 @@ inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
 set pastetoggle=<F2>
 "autocmd BufWritePre * :%s/\s\+$//e
 
-nnoremap <F8> :!ctags -R --python-kinds=i --languages=+python .<CR>
+nnoremap <F8> :!ctags -R --python-kinds=-i --languages=+python .<CR>
+set tags+=$PYTHONPATH_TAGS
 
 let NERDTreeIgnore = ['\.pyc$']
 nnoremap <F3> :NERDTreeTabsToggle<CR>
@@ -107,7 +109,8 @@ endif
 """ End for CLI vi"""
 
 " change to the dir of current file
-set autochdir
+" this didn't work properly with nerdtreeplugin
+"set autochdir
 
 python << EOF
 import vim
