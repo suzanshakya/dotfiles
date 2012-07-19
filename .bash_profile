@@ -25,6 +25,15 @@ export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
 export PATH="${PATH}:/usr/local/mrtg-2/bin"
 export PATH="${PATH}:/usr/local/share/python3"
 
+export PYTHONPATH_TAGS=${PYTHONPATH//:/\/tags,}/tags,/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags
+function ctags-pythonpath {
+    for path in ${PYTHONPATH_TAGS//,/ } ; do
+        path=`dirname $path`
+        echo "ctags in $path"
+        (cd $path && ctags -R --python-kinds=-i --languages=+python .)
+    done
+}
+
 alias ll='ls -lAF'
 alias lh='ls -lAh'
 alias lS='ls -lAhS'
