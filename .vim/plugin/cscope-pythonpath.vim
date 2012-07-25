@@ -1,0 +1,12 @@
+cs add /opt/immune/installed/pylib/cscope.out
+cs add /opt/immune/installed/col/lib/cscope.out
+cs add /opt/immune/installed/norm/lib/cscope.out
+cs add /opt/immune/installed/storage/lib/cscope.out
+cs add /opt/immune/installed/python-packages/cscope.out
+cs add /opt/immune/installed/idx/lib/libquery/cscope.out
+cs add /opt/immune/installed/system/lib/libpatch/cscope.out
+cs add /opt/immune/installed/lookup/lib/cscope.out
+cs add /opt/immune/installed/backup/lib/cscope.out
+cs add /Users/suzanshakya/python/cscope.out
+cs add /usr/local/lib/python2.6/site-packages/gtk-2.0/cscope.out
+cs add /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
