@@ -1,5 +1,5 @@
 grand_start=`python -Sc'import time;print time.time()'`
-PS1='\u@\h:\w\$ '
+PS1='\u@\h:\W\$ '
 
 export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=100000
@@ -18,19 +18,28 @@ export PYHOME=/usr/local/Cellar/python2.6/2.6.5
 export PYSITE=$PYHOME/lib/python2.6/site-packages
 
 source $LI/etc/env.rc
-export PYTHONPATH="$PYTHONPATH":~/python
+export PYTHONPATH="$PYTHONPATH":~/python:/usr/local/lib/python2.6/site-packages/gtk-2.0
 export PATH="~/bin:$PYHOME/bin:${PATH}"
 export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
 export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
 export PATH="${PATH}:/usr/local/mrtg-2/bin"
 export PATH="${PATH}:/usr/local/share/python3"
 
-export PYTHONPATH_TAGS=${PYTHONPATH//:/\/tags,}/tags,/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags
+PYTHONPATH_TAGS_CSCOPE="${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
+
+export PYTHONPATH_TAGS=${PYTHONPATH_TAGS_CSCOPE// /\/tags,}/tags
 function ctags-pythonpath {
-    for path in ${PYTHONPATH_TAGS//,/ } ; do
-        path=`dirname $path`
-        echo "ctags in $path"
+    for path in $PYTHONPATH_TAGS_CSCOPE ; do
+        echo "creating $path/tags"
         (cd $path && ctags -R --python-kinds=-i --languages=+python .)
+    done
+}
+
+function pycscope-pythonpath {
+    for path in $PYTHONPATH_TAGS_CSCOPE ; do
+        echo "creating $path/cscope.out"
+        echo "cs add $path/cscope.out" >>~/.vim/plugin/cscope-pythonpath.vim
+        (cd $path && pycscope.py -R -f $path/cscope.out $path)
     done
 }
 
