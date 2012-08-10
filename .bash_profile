@@ -265,3 +265,5 @@ function load_bash_completion() {
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo "Total duration:" `echo $grand_end-$grand_start|bc`
+
+export PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/2.7/bin"
