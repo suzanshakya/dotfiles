@@ -6989,3 +6989,33 @@ scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
 scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
 git status .
 git diff .
+git commit -am'improved xpaths'
+pserve productspidersweb/development.ini 
+scrapy server
+u
+rm product-spiders
+unzip product-spiders.zip -d .
+cp -R ~/.Trash/product-spiders/product_spiders/spiders/sujanshakya product-spiders/product_spiders/spiders/sujanshakya
+u
+cd product-spiders
+u
+cd product-spiders
+rm ~/suzan_spider/
+cd product-spiders
+cp product_spiders/spiders/sujanshakya/ ~/sujanshakya_spider
+cp -R product_spiders/spiders/sujanshakya/ ~/sujanshakya_spider
+git status | head
+qclear
+gs
+vim
+git status
+git status product_spiders/
+git status product_spiders/spiders/
+git status product_spiders/spiders/sujanshakya/
+git status product_spiders/spiders/sujanshakya/.surreypetsupplies_spider.py.swo 
+rm product_spiders/spiders/sujanshakya/.surreypetsupplies_spider.py.swo 
+git status product_spiders/spiders/sujanshakya/
+scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
+git status
+git status product_spiders/spiders/sujanshakya/
+git diff product_spiders/spiders/sujanshakya/
