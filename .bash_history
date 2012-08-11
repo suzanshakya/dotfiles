@@ -6896,3 +6896,96 @@ scrapy runspider product_spiders/spiders/suzan/surreypetsupplies_spider.py
 vi product_spiders/emailnotifier/emailnotifier.py
 gs .
 gd .
+git commit -am'fixed price'
+git status
+gs .
+git status .
+pwd
+find . -name="5536bd70e33711e1bac6d49a20f9a7b2.log"
+find . -name "5536bd70e33711e1bac6d49a20f9a7b2.log"
+rm .scrapy/.scrapy/scrapyd/logs/default/surreypetsupplies.co.uk/5536bd70e33711e1bac6d49a20f9a7b2.log 
+ll .scrapy/.scrapy/scrapyd/logs/default/surreypetsupplies.co.uk/
+pwd
+rm suzan_spiders/
+cp product_spiders/spiders/suzan ~/suzan_spider
+cp -r product_spiders/spiders/suzan ~/suzan_spider
+rm suzan_spider/.surreypetsupplies_spider.py.swp 
+rm suzan_spider/*.pyc
+ll suzan_spider/
+u
+pwd
+rm product-spiders
+git status .
+unzip product-spiders.zip -d product-spiders
+pwd
+ls product-spiders
+mv product-spiders/product-spiders/ ..
+cd product-spiders
+pwd
+u
+pwd
+rm product-spiders
+unzip product-spiders.zip -d .
+cd product-spiders
+pwd
+ack crawl_id
+pwd
+cp -R ~/suzan_spider product_spiders/spiders/suzan
+ls product_spiders/spiders/suzan/
+git status .
+pwd
+u
+pwd
+cd productspidersweb/
+pserve development.ini 
+cd ..
+rm product-spiders
+unzip product-spiders.zip -d .
+cp -R ~/suzan_spider product_spiders/spiders/suzan
+cp -R ~/suzan_spider product-spiders/product_spiders/spiders/sujanshakya
+u
+pwd
+u
+pwd
+rm product-spiders
+unzip product-spiders.zip -d .
+cp -R ~/suzan_spider product-spiders/product_spiders/spiders/sujanshakya
+cd product-spiders
+cd product-spiders
+pwd
+cd product-spiders
+git status
+git status .
+git add product_spiders/spiders/sujanshakya/__init__.py
+git add product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
+git status
+git rm product_spiders/spiders/suzan/
+git rm -r product_spiders/spiders/suzan/
+git status . | head
+git commit -m'renamed suzan to sujanshakya'
+git log
+git log -p
+u
+scrapy server
+pserve productspidersweb/development.ini 
+rm product-spiders
+unzip product-spiders.zip -d .
+cp -R ~/.Trash/product-spiders\ 05-03-49/product_spiders/spiders/sujanshakya product-spiders/product_spiders/spiders/sujanshakya
+git status .
+git diff product-spiders
+pwd
+u
+b
+pwd
+u
+b
+vim product-spiders
+cd product-spiders
+find . -name 3a3e1280e34211e1a1dbd49a20f9a7b2.log
+rm `find . -name 3a3e1280e34211e1a1dbd49a20f9a7b2.log`
+scrapy runspider product_spiders/spiders/suzan/surreypetsupplies_spider.py
+scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
+[Aasdfasfasdfasdf
+scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
+git status .
+git diff .
