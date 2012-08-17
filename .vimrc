@@ -106,8 +106,6 @@ set foldlevelstart=99
 nnoremap <space> za
 vnoremap <space> zf
 
-inoremap jk <Esc>
-
 colorscheme koehler
 
 let mapleader=","
