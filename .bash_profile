@@ -14,16 +14,13 @@ export BREW=/usr/local/Cellar
 export CELLAR=$BREW
 
 export PYTHONSTARTUP=~/.pystartup
-export PYHOME=/usr/local/Cellar/python2.6/2.6.5
-export PYSITE=$PYHOME/lib/python2.6/site-packages
+#export PYHOME=/usr/local/Cellar/python2.6/2.6.5
+#export PYSITE=$PYHOME/lib/python2.6/site-packages
 
 source $LI/etc/env.rc
-export PYTHONPATH="$PYTHONPATH":~/python:/usr/local/lib/python2.6/site-packages/gtk-2.0
-export PATH="~/bin:$PYHOME/bin:${PATH}"
-export PATH="${PATH}:~/projects/android-sdk-macosx/tools:~/projects/android-sdk-macosx/platform-tools"
-export PATH="${PATH}:/Users/suzanshakya/.gem/ruby/1.8/bin"
-export PATH="${PATH}:/usr/local/mrtg-2/bin"
-export PATH="${PATH}:/usr/local/share/python3"
+#export PYTHONPATH="$PYTHONPATH":~/python
+#export PATH="~/bin:$PYHOME/bin:${PATH}"
+#export PATH="${PATH}:/usr/local/share/python3"
 
 PYTHONPATH_TAGS_CSCOPE="${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
 
@@ -167,7 +164,7 @@ topp() {
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-source ~/bmark.sh
+source ~/bin/bmark.sh
 #source /usr/local/etc/profile.d/bash_completion.sh
 
 cache_opera() {
@@ -235,35 +232,34 @@ function rm() {
   done
 }
 
-function vim() {
+function mvim() {
     if test ! -z "$1"; then
         if test "`file -b "$1" 2>/dev/null`" = "directory"; then
-            (cd "$1" && mvim)
+            (cd "$1" && /usr/local/bin/mvim)
             return
         fi
     fi
-    mvim "$*"
+    /usr/local/bin/mvim "$*"
 }
 
 function load_virtualenvwrapper() {
     start=`python -Sc'import time;print time.time()'`
     export WORKON_HOME=$HOME/.virtualenvs
-    source /usr/local/Cellar/python2.6/2.6.5/bin/virtualenvwrapper_lazy.sh
+    source /usr/local/bin/virtualenvwrapper_lazy.sh
     end=`python -Sc'import time;print time.time()'`
-    echo "virtualenvwrapper loading duration" `echo $end-$start|bc`
+    echo "virtualenvwrapper" `echo $end-$start|bc`
 }
 load_virtualenvwrapper
 
 function load_bash_completion() {
     start=`python -Sc'import time;print time.time()'`
-    if [ -f `brew --prefix`/etc/bash_completion ]; then
-      source `brew --prefix`/etc/bash_completion 
+    if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
+      source /usr/local/etc/profile.d/bash_completion.sh
     fi
     end=`python -Sc'import time;print time.time()'`
-    echo "bash_completion laoding duration" `echo $end-$start|bc`
+    echo "bash_completion" `echo $end-$start|bc`
 }
+load_bash_completion
 
 grand_end=`python -Sc'import time;print time.time()'`
-echo "Total duration:" `echo $grand_end-$grand_start|bc`
-
-export PATH="${PATH}:/Library/Frameworks/Python.framework/Versions/2.7/bin"
+echo $grand_end-$grand_start|bc
