@@ -2,7 +2,7 @@ set nocompatible
 syntax on
 
 set background=light
-set gfn=Monaco:h12
+set gfn=Monaco:h13
 
 set autoindent
 set cindent
@@ -106,7 +106,8 @@ set foldlevelstart=99
 nnoremap <space> za
 vnoremap <space> zf
 
-colorscheme koehler
+" colorscheme koehler
+colorscheme mayansmoke
 
 let mapleader=","
 
@@ -126,15 +127,21 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T<CR>
 " not working
 "nnoremap <Leader><C-\>g <C-w>s<C-\>g<CR>
 
-if has("gui_running")
-    set guioptions=egmrt
-endif
+" nnoremap <S-Enter> O 
+nnoremap <CR> o
+
+nnoremap <C-j> mzo<Esc>`z
+nnoremap <C-k> mzO<Esc>`z
 
 if !has('python')
     finish
 endif
 
 """ End for CLI vi"""
+
+if has("gui_running")
+    set guioptions=egmrt
+endif
 
 " change to the dir of current file
 " this didn't work properly with nerdtreeplugin
