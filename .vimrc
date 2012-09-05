@@ -130,8 +130,8 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T<CR>
 " nnoremap <S-Enter> O 
 nnoremap <CR> o
 
-nnoremap <C-j> mzo<Esc>`z
-nnoremap <C-k> mzO<Esc>`z
+" nnoremap <C-j> mzo<Esc>`z
+" nnoremap <C-k> mzO<Esc>`z
 
 if !has('python')
     finish
