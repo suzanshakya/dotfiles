@@ -32,33 +32,54 @@ let Tlist_Use_Right_Window = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Exit_OnlyWindow = 1
 
-autocmd FileType python set omnifunc=pythoncomplete#Complete
-inoremap <C-space> <C-x><C-o><CR>
+"autocmd FileType python set omnifunc=pythoncomplete#Complete
+"inoremap <C-space> <C-x><C-o><CR>
+"
+""--------------------------------------------------
+"" TAB smart completion s noignorecase
+""--------------------------------------------------
+""FIXME: predpoklad, ze chci jinde pouzivat ic
+""TODO: use :normal i^P to call the default completion function
+"function! InsertTabCompl()
+"    setlocal noic
+"    let col = col('.') - 1
+"    if !col || getline('.')[col - 1] !~ '\k'
+"        return "\<tab>"
+"    else
+"        return "\<c-p>"
+"    endif
+"endfunction
+"function! SetAfterCompl()
+"    setlocal ic
+"    return ""
+"endfunction
+"inoremap <tab> <c-r>=InsertTabCompl()<cr><c-r>=SetAfterCompl()<cr>
+"
+"inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
+""-------------------------------------------------
 
-"--------------------------------------------------
-" TAB smart completion s noignorecase
-"--------------------------------------------------
-"FIXME: predpoklad, ze chci jinde pouzivat ic
-"TODO: use :normal i^P to call the default completion function
-function! InsertTabCompl()
-    setlocal noic
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
+"Use TAB to complete when typing words, else inserts TABs as usual.
+"Uses dictionary and source files to find matching words to complete.
+
+"See help completion for source,
+"Note: usual completion is on <C-n> but more trouble to press all the time.
+"Never type the same word twice and maybe learn a new spellings!
+"Use the Linux dictionary when spelling is in doubt.
+"Window users can copy the file to their machine.
+function! Tab_Or_Complete()
+  if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
+    return "\<C-N>"
+  else
+    return "\<Tab>"
+  endif
 endfunction
-function! SetAfterCompl()
-    setlocal ic
-    return ""
-endfunction
-inoremap <tab> <c-r>=InsertTabCompl()<cr><c-r>=SetAfterCompl()<cr>
+:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
-inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
-"-------------------------------------------------
 
+" pasting from clipboard in insertmode
 set pastetoggle=<F2>
+
+" trim spaces when saving
 "autocmd BufWritePre * :%s/\s\+$//e
 
 nnoremap <F8> :!ctags -R --python-kinds=-i --languages=+python .<CR>
@@ -130,11 +151,15 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T<CR>
 " not working
 "nnoremap <Leader><C-\>g <C-w>s<C-\>g<CR>
 
-" nnoremap <S-Enter> O 
+" nnoremap <S-Enter> O
 nnoremap <CR> o
 
 " nnoremap <C-j> mzo<Esc>`z
 " nnoremap <C-k> mzO<Esc>`z
+
+" bash like tab completion when opening file from vim
+set wildmode=longest,list,full
+set wildmenu
 
 if !has('python')
     finish
