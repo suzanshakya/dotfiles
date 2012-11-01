@@ -27,7 +27,6 @@ getPythonPaths() {
     echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
 }
 pythonPaths=`getPythonPaths`;
-export PYTHONPATH_TAGS=${pythonPaths// /\/tags,}/tags
 
 ctags-pythonpath() {
     pythonPaths=`getPythonPaths`;
