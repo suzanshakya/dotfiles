@@ -17,26 +17,33 @@ export PYTHONSTARTUP=~/.pystartup
 #export PYHOME=/usr/local/Cellar/python2.6/2.6.5
 #export PYSITE=$PYHOME/lib/python2.6/site-packages
 
-source $LI/etc/env.rc
+export PATH="~/bin:${PATH}:/usr/local/sbin"
+#source $LI/etc/env.rc
 #export PYTHONPATH="$PYTHONPATH":~/python
 #export PATH="~/bin:$PYHOME/bin:${PATH}"
 #export PATH="${PATH}:/usr/local/share/python3"
 
-PYTHONPATH_TAGS_CSCOPE="${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
+getPythonPaths() {
+    echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
+}
+pythonPaths=`getPythonPaths`;
+export PYTHONPATH_TAGS=${pythonPaths// /\/tags,}/tags
 
-export PYTHONPATH_TAGS=${PYTHONPATH_TAGS_CSCOPE// /\/tags,}/tags
-function ctags-pythonpath {
-    for path in $PYTHONPATH_TAGS_CSCOPE ; do
+ctags-pythonpath() {
+    pythonPaths=`getPythonPaths`;
+    export PYTHONPATH_TAGS=${pythonPaths// /\/tags,}/tags
+    for path in $pythonPaths; do
         echo "creating $path/tags"
         (cd $path && ctags -R --python-kinds=-i --languages=+python .)
     done
 }
 
-function pycscope-pythonpath {
-    for path in $PYTHONPATH_TAGS_CSCOPE ; do
+pycscope-pythonpath() {
+    pythonPaths=`getPythonPaths`;
+    for path in $pythonPaths; do
         echo "creating $path/cscope.out"
         echo "cs add $path/cscope.out" >>~/.vim/plugin/cscope-pythonpath.vim
-        (cd $path && pycscope.py -R -f $path/cscope.out $path)
+        (cd $path && pycscope -R -f $path/cscope.out $path)
     done
 }
 
@@ -146,7 +153,6 @@ vimpy() {
     return $?
 }
 
-alias killjobs='kill -9 `jobs -p`'
 killjob() {
     kill -9 `jobs -p $1`
 }
@@ -214,7 +220,7 @@ module_version() {
 }
 alias v=module_version
 
-function rm() {
+rm() {
   for path in "$@"; do
     # ignore any arguments
     if [[ "$path" = -* ]]; then :
@@ -232,7 +238,7 @@ function rm() {
   done
 }
 
-function mvim() {
+mvim() {
     if test ! -z "$1"; then
         if test "`file -b "$1" 2>/dev/null`" = "directory"; then
             (cd "$1" && /usr/local/bin/mvim)
@@ -242,7 +248,7 @@ function mvim() {
     /usr/local/bin/mvim "$*"
 }
 
-function load_virtualenvwrapper() {
+load_virtualenvwrapper() {
     start=`python -Sc'import time;print time.time()'`
     export WORKON_HOME=$HOME/.virtualenvs
     source /usr/local/bin/virtualenvwrapper_lazy.sh
@@ -251,7 +257,7 @@ function load_virtualenvwrapper() {
 }
 load_virtualenvwrapper
 
-function load_bash_completion() {
+load_bash_completion() {
     start=`python -Sc'import time;print time.time()'`
     if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
       source /usr/local/etc/profile.d/bash_completion.sh
