@@ -69,11 +69,13 @@ let Tlist_Exit_OnlyWindow = 1
 function! Tab_Or_Complete()
   if col('.')>1 && strpart( getline('.'), col('.')-2, 3 ) =~ '^\w'
     return "\<C-N>"
+  elseif strpart( getline('.'), col('.')-3, 2) == '</'
+    return "\<C-X>\<C-O>"
   else
     return "\<Tab>"
   endif
 endfunction
-:inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
+inoremap <Tab> <C-R>=Tab_Or_Complete()<CR>
 
 
 " pasting from clipboard in insertmode
