@@ -148,7 +148,7 @@ vipy() {
     return $?
 }
 vimpy() {
-    edit vim "$@"
+    edit mvim "$@"
     return $?
 }
 
