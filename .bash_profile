@@ -170,7 +170,6 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 source ~/bin/bmark.sh
-#source /usr/local/etc/profile.d/bash_completion.sh
 
 cache_opera() {
     (( count = 0 ))
