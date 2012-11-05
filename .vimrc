@@ -127,7 +127,8 @@ nnoremap <space> za
 vnoremap <space> zf
 
 " colorscheme koehler
-colorscheme mayansmoke
+" colorscheme mayansmoke
+colorscheme zenburn
 
 let mapleader=","
 
