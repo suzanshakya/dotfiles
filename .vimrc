@@ -26,37 +26,18 @@ set ruler
 filetype on
 filetype plugin on
 
-nnoremap <F4> :TlistToggle<CR>
+let mapleader=","
+
+nnoremap <leader>c :NERDTreeTabsToggle<CR>
+nnoremap <leader>v :TlistToggle<CR>
+
+let NERDTreeIgnore = ['\.pyc$']
+
 let Tlist_Use_Right_Window = 1
-"let Tlist_Auto_Open = 1
 let Tlist_File_Fold_Auto_Close = 1
 let Tlist_Exit_OnlyWindow = 1
 
 "autocmd FileType python set omnifunc=pythoncomplete#Complete
-"inoremap <C-space> <C-x><C-o><CR>
-"
-""--------------------------------------------------
-"" TAB smart completion s noignorecase
-""--------------------------------------------------
-""FIXME: predpoklad, ze chci jinde pouzivat ic
-""TODO: use :normal i^P to call the default completion function
-"function! InsertTabCompl()
-"    setlocal noic
-"    let col = col('.') - 1
-"    if !col || getline('.')[col - 1] !~ '\k'
-"        return "\<tab>"
-"    else
-"        return "\<c-p>"
-"    endif
-"endfunction
-"function! SetAfterCompl()
-"    setlocal ic
-"    return ""
-"endfunction
-"inoremap <tab> <c-r>=InsertTabCompl()<cr><c-r>=SetAfterCompl()<cr>
-"
-"inoremap <F3> <c-p><c-r>=SetAfterCompl()<cr>
-""-------------------------------------------------
 
 "Use TAB to complete when typing words, else inserts TABs as usual.
 "Uses dictionary and source files to find matching words to complete.
@@ -104,9 +85,6 @@ function! LoadCscope()
 endfunction
 au BufEnter /* call LoadCscope()
 
-let NERDTreeIgnore = ['\.pyc$']
-nnoremap <F3> :NERDTreeTabsToggle<CR>
-
 inoremap <D-r> <Esc>:w\|:!python %<CR>
 nnoremap <D-r> <Esc>:w\|:!python %<CR>
 
@@ -128,9 +106,8 @@ vnoremap <space> zf
 
 " colorscheme koehler
 " colorscheme mayansmoke
-colorscheme zenburn
-
-let mapleader=","
+" colorscheme zenburn
+colorscheme wombat
 
 nnoremap <leader>t i<Tab><esc>l
 nnoremap <leader>T i<backspace><esc>l
