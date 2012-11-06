@@ -30,7 +30,7 @@ endif
 
 " close current tab if there is only one window in it and it's NERDTree
 if !exists('g:nerdtree_tabs_autoclose')
-  let g:nerdtree_tabs_autoclose = 1
+  let g:nerdtree_tabs_autoclose = 0
 endif
 
 " synchronize view of all NERDTree windows (scroll and cursor position)
