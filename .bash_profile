@@ -62,6 +62,11 @@ alias pu='pip install --upgrade'
 alias bi='brew install'
 alias gb='git branch'
 alias gc='git checkout'
+alias ga='git add'
+alias gap='git add -p'
+alias gcm='git commit -m'
+alias gl='git log --name-only'
+alias glp='git log -p'
 alias gd='git diff'
 alias gs='git status -s'
 alias gitx='open ~/Applications/gitX.app'
@@ -263,7 +268,7 @@ load_bash_completion() {
     end=`python -Sc'import time;print time.time()'`
     echo "bash_completion" `echo $end-$start|bc`
 }
-load_bash_completion
+#load_bash_completion
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
