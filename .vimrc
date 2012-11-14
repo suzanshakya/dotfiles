@@ -127,16 +127,6 @@ nnoremap <silent><Leader><C-w>s <C-w>s<C-w>T<CR>
 " Open ctags in new tab
 nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T<CR>
 
-" Open cscope in new tab
-" not working
-"nnoremap <Leader><C-\>g <C-w>s<C-\>g<CR>
-
-" nnoremap <S-Enter> O
-nnoremap <CR> o
-
-" nnoremap <C-j> mzo<Esc>`z
-" nnoremap <C-k> mzO<Esc>`z
-
 " bash like tab completion when opening file from vim
 set wildmode=longest,list,full
 set wildmenu
