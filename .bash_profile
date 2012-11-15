@@ -68,7 +68,8 @@ alias gcm='git commit -m'
 alias gl='git log --name-only'
 alias glp='git log -p'
 alias gd='git diff'
-alias gs='git status -s'
+alias gs='git status'
+alias gss='git status -s'
 alias gitx='open ~/Applications/gitX.app'
 
 # for using git command from outside the git repo dir.
