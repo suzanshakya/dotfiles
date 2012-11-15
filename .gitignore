@@ -5,3 +5,4 @@
 .vim/.netrwhist
 .viminfo
 .*.swp
+.vim/plugin/cscope-pythonpath.vim
