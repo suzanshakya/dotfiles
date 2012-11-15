@@ -52,6 +52,7 @@ alias lS='ls -lAhS'
 alias la='ls -AF'
 alias l='ls -CF'
 alias g='grep -i'
+alias h='head'
 alias vlc=/Applications/VLC.app/Contents/MacOS/VLC
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera -nomail'
 alias u='cd ..'
