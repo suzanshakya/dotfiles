@@ -124,13 +124,6 @@ psf() {
 edit() {
     editor=$1
     shift
-    isPackage=$1
-    if test "$isPackage" = "-m" ; then
-        isPackage=true
-        shift
-    else
-        isPackage=false
-    fi
     if test ! -n "$1" ; then
         echo "Usage: vi(m)py <python-module>"
         return
@@ -141,11 +134,8 @@ edit() {
     fi
     pyfile="${pycfile/%.pyc/.py}"
     if test -f "$pyfile" ; then
-        if $isPackage ; then
-            pyfile=`dirname "$pyfile"`
-        fi
         echo $editor "$pyfile"
-        $editor "$pyfile"
+        (cd `dirname "$pyfile"` && $editor "$pyfile")
     fi
 }
 vipy() {
