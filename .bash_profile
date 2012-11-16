@@ -220,19 +220,20 @@ module_version() {
 alias v=module_version
 
 rm() {
+  trash=~/.mytrash
   for path in "$@"; do
     # ignore any arguments
     if [[ "$path" = -* ]]; then :
     else
       dst=`basename "$path"`
       # append the time if necessary
-      while [ -e ~/.Trash/"$dst" ]; do
+      while [ -e $trash/"$dst" ]; do
         dst="$dst "$(date +%H-%M-%S)
       done
-      if test ! -d ~/.Trash; then
-          mkdir ~/.Trash
+      if test ! -d $trash; then
+          mkdir $trash
       fi
-      mv "$path" ~/.Trash/"$dst"
+      mv "$path" $trash/"$dst"
     fi
   done
 }
