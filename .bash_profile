@@ -176,7 +176,12 @@ cache_opera() {
     (( count = 0 ))
     for each in `find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -t` ; do
         file_output=`file -b $each`
-        if test ! "$file_output" = "Macromedia Flash Video" ; then
+        # check if filetype contains 'edia' (Media vs media)
+        if test "${file_output/edia}" = "$file_output" ; then
+            continue
+        fi
+        # ignore size less than 1mb
+        if test `stat -f %z "$each"` -lt 1000000 ; then
             continue
         fi
         (( count += 1 ))
