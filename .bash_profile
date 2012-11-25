@@ -177,7 +177,7 @@ cache_opera() {
     for each in `find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -t` ; do
         file_output=`file -b $each`
         # check if filetype contains 'edia' (Media vs media)
-        if test "${file_output/edia}" = "$file_output" ; then
+        if [[ "$file_output" != *edia* ]] ; then
             continue
         fi
         # ignore size less than 1mb
