@@ -76,6 +76,9 @@ alias gdc='git diff --cached'
 alias gs='git status'
 alias gss='git status -s'
 alias gp='git push'
+alias gpu='git pull'
+alias gf='git fetch'
+alias gcl='git clone'
 alias gitx='open ~/Applications/gitX.app'
 
 # for using git command from outside the git repo dir.
