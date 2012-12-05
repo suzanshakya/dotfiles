@@ -1,6825 +1,3 @@
-ssh 25
-cd $norm
-vim
-gs
-git diff
-git commit -am'exposed repeat and number to search_and_profile API'
-git push
-vi .ssh/known_hosts 
-vi .ssh/config 
-cd $col
-ifconfig
-u
-cd $bld
-git pull
-cd packages/
-cd python-pkgs/
-ll predownloaded/pysnmp-4.2.3rc2.tar.gz 
-pip install predownloaded/pysnmp-4.2.3rc2.tar.gz 
-tar xzf predownloaded/pysnmp
-tar xzf predownloaded/pysnmp-4.2.3rc2.tar.gz 
-cd pysnmp-4.2.3rc2/
-vi MANIFEST.in 
-vi PKG-INFO 
-l
-vi setup.cfg 
-vi setup.py 
-python setup.py sdist
-cd dist/
-pip install pysnmp-4.2.3rc2.tar.gz 
-tar xzf pysnmp-4.2.3rc2.tar.gz 
-cd pysnmp-4.2.3rc2
-u
-rm pysnmp-4.2.3rc2/
-gs
-tar xzf predownloaded/pysnmp-4.2.3rc2.tar.gz 
-cd pysnmp-4.2.3rc2/
-python setup.py sdist
-mv dist/pysnmp-4.2.3rc2.tar.gz ../predownloaded/
-u
-gs
-rm pysnmp-4.2.3rc2/
-gs
-pip install predownloaded/pysnmp-4.2.3rc2.tar.gz 
-pip uninstall pysnmp
-pip install predownloaded/pysnmp-4.2.3rc2.tar.gz 
-git status
-git commit -am'made pysnmp pip-installable by running python setup.py sdist'
-git push
-git status
-cd $norm 
-vim
-b
-pip install lepl
-cd $norm 
-vim
-ssh 211
-ssh hari@192.168.2.32
-ssh 211
-ipython
-sudo /opt/makalu/ptf/update.sh
-cd /opt/immune
-bi cuda
-pi pycuda
-vim
-cd $pylib
-git status
-cp lru.py..
-cp lru.py ..
-cd ..
-python lru.py 
-rm lru.py 
-cd pylib/
-git status
-git diff
-git commit -am'default expiration set to infinity'
-cd /opt/immune
-vi ./etc/config/syslog_collector/config.json 
-ssh 249
-:q
-git status
-git log
-cd $col
-git status
-git push
-git diff
-gs
-git checkout apps/fileinspect_collector/
-g
-gs
-ga
-gs
-gd
-gs
-git diff apps/ftp_fetcher/
-gs
-bi dpkg
-git diff
-git status
-git commit -am'allowed to use RegexParser in applicable collector apps'
-git push
-git pull
-git checkout lib/libcol/parsers/RegexParser.py
-git status
-git diff apps/sflow_collector/sflow_collector.py 
-gs
-git status
-git diff lib/libcol/parsers/RegexParser.py
-vi lib/libcol/parsers/RegexParser.py
-git status
-git reset lib/libcol/parsers/RegexParser.py
-git status
-git checkout lib/libcol/parsers/RegexParser.py
-git status
-git diff apps/
-gs
-gitx
-git status
-git log HEAD..origin/master
-git status
-git merge origin/master
-git diff apps/sflow_collector/sflow_collector.py 
-git log apps/sflow_collector/sflow_collector.py 
-git status
-git checkout apps/sflow_collector/sflow_collector.py 
-git status
-git merge origin/master
-git status
-git diff --cached
-git status
-git branch
-git checkout -b master_merge_problem
-git status
-git checkout master
-git status
-git checkout master_merge_problem
-git status
-git reset origin/master
-git status
-git statuss
-git status
-git checkout master
-git status
-git merge origin/master
-git status
-git diff
-gs
-git diff
-git status
-git fetch 
-git diff lib/libcol/parsers/RegexParser.py
-git status
-git checkout lib/libcol/parsers/RegexParser.py
-git status
-git merge origin/master
-git status
-git commit -am'resolving commit'
-git checkout master
-git status
-git reset origin/master
-git status
-git pull
-git status
-git checkout lib/libcol/parsers/RegexParser.py
-git status
-git diff apps/sflow_collector/sflow_collector.py 
-vi apps/sflow_collector/sflow_collector.py 
-git checkout apps/sflow_collector/
-vi apps/sflow_collector/sflow_collector.py 
-git status
-cd lib/libcol/parsers/
-u
-cd .
-cd ..
-cd tests/
-nosetests unit_tests/test_regexparser.py 
-u
-gs
-git diff lib/tests/
-gs
-git diff lib/libcol/parsers/RegexParser.py
-git status
-git commit -am'allowed to use RegexParser in applicable collector apps'
-git push
-gs
-git diff
-cd lib/libcol/
-l
-u
-nosetests tests/unit_tests/test_regexparser.py
-git commit -am'used LineParser.encode'
-git push
-gitx
-git branch -d master_merge_problem
-git branch -D master_merge_problem
-gix
-gitx
-cd /opt/immune
-vim $col
-cd $col
-git status
-gs
-shasum ~/Desktop/loadshedding.pdf ~/Downloads/9500loadshedding.pdf 
-mv ~/Downloads/9500loadshedding.pdf ~/Desktop/loadshedding.pdf 
-shasum ~/Desktop/loadshedding.pdf 
-vimpy -m httplib
-u
-b
-vimpy -m httplib
-ifconfig
-u
-vim
-ftp 10.45.1.211
-ftp 10.94.0.13
-ftp 10.45.1.211
-telnet 10.45.1.211 1121
-telnet 10.45.1.211 21
-ftp 10.45.1.211
-telnet 10.45.1.211 1121
-ftp 10.45.1.211 21
-ifconfig
-ssh support@10.94.0.13
-telnet 10.45.1.211 1121
-hi
-ssh 211
-ssh 211
-man ftp
-gs
-ftp 10.94.0.13 21
-ssh 211
-sudo /opt/makalu/ptf/update.sh
-vi .profile 
-cd $col
-cd $configupdater 
-vim
-u
-vim $col
-pi encutils
-iconv -l
-vi ~/.vimrc 
-vi enc
-ssh 211
-hastebin.py < .profile 
-vi .vimrc 
-vimpy -m chardet
-ssh 211
-cd $webserver 
-vim
-git status
-git diff views/
-git commit views/ -m'moved compiling of regex to global scope'
-git push
-git pull
-cat .ssh/id_rsa.pub 
-ssh-keygen -i dsa
-ssh-keygen -i rsa
-man ssh
-ssh-keygen -r rsa
-ssh-keygen
-git status
-git push
-cat .ssh/id_rsa.pub 
-ifconfig
-ssh 249
-ifconfig
-ssh 249
-git status
-git diff models/
-git status
-git commit models/ -m'%interface allowed in validation of ipv6 host'
-git diff views/devices.py
-git commit views/devices.py -m"'shouldnot' converted to 'should not'"
-git status
-cd $pylib 
-git push
-git status
-git diff inet.py
-git pull
-git push
-cd $col
-gs
-cd $configupdater 
-git pull
-vi ./apps/config_updater/libupdater/gens/informer.py
-git log HEAD
-git log apps/config_updater/libupdater/gens/col.py
-git log -p apps/config_updater/libupdater/gens/col.py
-vi ./apps/config_updater/libupdater/gens/col.py
-git diff ./apps/config_updater/libupdater/gens/col.py
-git log -p ./apps/config_updater/libupdater/gens/col.py
-vi ./apps/config_updater/libupdater/gens/col.py
-git status
-vi abc.py
-python -mpy_compile abc.py 
-python abc.pyc
-rm abc.py*
-git status
-git diff 
-git status
-git diff apps/config_updater/libupdater/
-git commit  apps/config_updater/libupdater/ -m'prevented string multiplication by converting to int first'
-git push
-gs
-ssh hari
-ssh hari
-git diff models
-git diff views/
-git status
-git commit models/ -m'used ip_validator in ips_validator'
-git commit views/ -m'logged field name in validation error'
-git push
-git pull
-git push
-gs
-cd $pylib 
-gs
-ssh support@10.45.1.17
-cd $col
-vim
-ssh support@10.45.1.217
-cd $col
-cd apps/ftp_collector/
-scp ftp_collector.py support@10.45.1.217:.
-cd /opt/immune
-ssh support@10.45.1.218
-vi inet.py
-git status
-git diff inet.py
-git commit -am'%interface in ipv6 address not removed now because it is required for link-local connections'
-git push
-gs
-gd
-git checkout apps/ftp_collector/
-gs
-ssh hari
-ssh support@10.45.1.218
-vi .ssh/config 
-ssh support@10.45.1.218
-ifconfig
-ssh support@10.45.1.217
-ssh support@10.45.1.218
-ssh support@10.45.1.217
-vim
-ssh hari
-vi ./views/devices.py
-ipython
-vi bin/hastebin.py 
-<cat 
-<cat bin/hastebin.py 
-<bin/hastebin.py 
-<bin/hastebin.py | cat
-sudo /opt/makalu/ptf/update.sh
-cat bin/hastebin.py 
-<bin/hastebin.py asdf
-<bin/hastebin.py cat
-<bin/hastebin.py bin/hastebin.py 
-<bin/hastebin.py 
-<bin/hastebin.py cat
-bin/hastebin.py bin/hastebin.py 
-sudo /opt/makalu/ptf/update.sh
-cd $webserver 
-vim
-cd $col
-vim
-traceroute quora.com
-ssh support192.168.2.15
-ssh support@192.168.2.15
-ssh support@192.168.2.15 -i .ssh/li_support 
-vi ~/.profile 
-claer
-cd $configupdater 
-cd apps/
-vim
-git status
-git reset --hard origin/master
-c
-vimpy -m chardet
-cd /opt/immune
-bi bash-completion
-brew uninstall bash-completion
-bi bash-completion
-vi /usr/local/etc/bash_completion.d/sh
-cd $col
-brew uninstall bash-completion
-brew install bash-completion
-brew --prefix`
-brew --prefix
-vi /usr/local/etc/bash_completion
-vi ~/.profile 
-cd $col
-vi /Users/suzanshakya/.profile 
-cd $col
-vi /etc/pro
-vi /etc/profile 
-vi /etc/bashrc 
-git mv .profile .bash_profile
-gs
-cd $makalu
-cd util/
-git status | less
-git diff
-git status
-git diff .bash_profile
-git commit .bash_profile -m'renamed and added bash-completion'
-cd
-git diff .gitconfig
-git diff .gitignore
-git diff .ssh/
-git status
-git add .git*
-git add .ssh/*
-git commit -m'added changes in .gitconfig and .ssh/*'
-git status | less
-git push
-git add ~/projects/makalu/
-git status | less
-git help rm
-git rm --cached projects/makalu/
-git rm -r --cached projects/makalu/
-git status
-git status | less
-git add projects/makalu/util/
-git checkout projects/makalu/util/
-git status | less
-git reset HEAD projects/makalu/util/
-git status | less
-git checkout projects/makalu/util/
-git checkout projects/makalu/util/PyMon.sh
-git checkout ~/projects/makalu/util/PyMon.sh
-git status | less
-git push
-mv .bash_history{.bak,}
-gs
-gs | less
-git status | less
-cd /opt/immune
-vi /usr/local/etc/bash_completion
-gs | less
-vim $col
-ssh hari@192.168.2.15
-ssh hari@192.168.2.15 
-ipython
-ssh 211
-sudo /opt/makalu/ptf/update.sh
-cd /opt/immune
-cd $col
-vim
-gs
-cd storage/chroot/
-cd logs/
-cd IP/
-l
-cd 192.168.2.19/
-cd 201202/
-gzip -c
-ssh -L *:10022:localhost:22 support@10.45.1.211
-gunzip 20120210.gz -c
-gunzip 20120210.gz -C
-gunzip 20120210.gz -c >20120210
-vi 20120210
-vi ./var/log/service/liv4_collector_v4_progress1/current 
-vimpy -m chardet
-ipython
-vi ./var/log/service/liv4_collector_v4_progress2/current 
-vi 20120210clear
-vimpy -m pysnmp
-cd $webserver
-vim
-nc6
-nc -6
-nc -luk ::1 -p 1161
-nc -luk ::1  1161
-git pull
-vim
-vi a.py
-vi b.py
-python b.py 
-vi b.py
-python b.py 
-vi b.py
-python b.py 
-vi b.py
-python b.py 
-gs
-vi views/contrib/scp_certificate.py
-rm views/contrib/scp_certificate.py
-vi views/install_patch.py 
-rm views/install_patch.py 
-gs
-vi test.py 
-rm test
-rm test.py 
-vi a.py 
-vi b.py 
-python b.py 
-cat /rooot
-cat /root
-ll /private/
-pwd
-cd
-pwd
-sudo -s
-su -
-vi ./var/log/service/liv4_collector_v4_progress2/current 
-git pull
-vi views/search/network_diagnostics.py
-gs
-vi views/search/network_diagnostics.py
-git branch
-git status
-git pull
-git reset --hard origin/master
-vi views/search/network_diagnostics.py
-ssh support@10.99.0.30
-vi .ssh/known_hosts 
-git pull
-vi views/search/network_diagnostics.py
-git diff HEAD^ views/search/network_diagnostics.py
-git log -p
-vi views/search/network_diagnostics.py
-git log -p
-git log -p views/search/network_diagnostics.py
-vi views/search/network_diagnostics.py
-vi models/documents.py
-git pull
-ssh support@10.99.0.30
-vi models/documents.py
-vi views/search/network_diagnostics.py
-git pull
-vi views/search/network_diagnostics.py
-cd $col
-git status
-git diff
-git checkout lib/libcol/parsers/RegexParser.py
-git status
-git diff
-git commit -am'spelling corrected'
-git push
-git pull
-git push
-ssh -L *:10022:localhost:22 root@10.45.1.211
-ssh 249
-cd Desktop/
-cd Bikal.Art/
-ls | grep -v 'jpeg
-ls | grep -v 'jpeg'
-ls | grep -v 'jpeg|jpg'
-ls | egrep -v 'jpeg|jpg'
-for each in `ls | egrep -v 'jpeg|jpg'`; do mv "$each"{,.jpeg} ; done
-for each in `ls | egrep -v 'jpeg|jpg'`; do echo $each; done
-for each in $(ls | egrep -v 'jpeg|jpg'); do echo $each; done
-ls | egrep -v 'jpeg|jpg'
-mv `ls | egrep -v 'jpeg|jpg'`{,.jpeg}
-ls | egrep -v 'jpeg|jpg'
-echo `ls | egrep -v 'jpeg|jpg'`.jpeg
-ls | egrep -v 'jpeg|jpg' 
-ls | egrep -v 'jpeg|jpg' | awk '{print $1}'
-ipython
-ps aux 
-ps aux | grep python
-open /Applications/TextEdit.app/
-vi Desktop/abc.rtf 
-rm Desktop/abc.rtf 
-touch abc.txt
-open abc.txt 
-vi test.easy
-vi abc.txt 
-cd $norm
-vim
-cd
-vi abc.txt 
-open abc.txt 
-mv abc.txt test.easy
-ssh hari
-<.ssh/id_rsa.pub | cat
-<.ssh/id_rsa.pub cat
-<.ssh/id_rsa.pub echo 
-cat .ssh/id_rsa.pub 
-<<.ssh/id_rsa.pub echo 
-<.ssh/id_rsa.pub echo > echo
-<.ssh/id_rsa.pub echo > cat
-<.ssh/id_rsa.pub echo cat
-<.ssh/id_rsa.pub cat
-cat .ssh/id_rsa.pub 
-cat .ssh/id_rsa.pub | ssh hari "mkdir .ssh && echo >>.ssh/authorized_keys"
-cat .ssh/id_rsa.pub | ssh hari "mkdir -p .ssh && echo >>.ssh/authorized_keys"
-ssh hari
-cat .ssh/id_rsa.pub | echo >>abc
-vi abc 
-rm abc 
-cat .ssh/id_rsa.pub | ssh hari "mkdir -p .ssh && cat >>.ssh/authorized_keys"
-ssh hari
-ipython
-vimpy -m pysnmp
-telnet paperlessreceipts.co.uk 25
-nmp paperlessreceipts.co.uk
-nmap paperlessreceipts.co.uk
-nmap smtp.paperlessreceipts.co.uk
-man nslookup
-nslookup
-nmap ASPMX2.GOOGLEMAIL.COM
-telnet ASPMX2.GOOGLEMAIL.COM 25
-cd $norm
-vim
-cd
-gs
-ll ~
-ll \~
-ll ~/projects/
-cd ~
-rm /Users/suzanshakya/~/projects/makalu/util/
-cd $col
-vim
-cd /opt/immune
-sudo /opt/makalu/ptf/update.sh
-cd $col
-git status
-git diff lib/
-git status
-git commit -am'simplified implementation'
-cd $pylib
-gs
-git diff inet.py
-git checkout inet.py
-git pull && git push
-git diff msgfilling.py
-git status
-git commit -am'added msgfilling.add_values for filling field types'
-git push
-git checkout HEAD^ lib/libcol/parsers/RegexParser.py
-git branch
-git status
-git checkout HEAD lib/libcol/parsers/RegexParser.py
-git status
-cp lib/libcol/parsers/RegexParser.py{,.bak}
-gs
-git reset --hard origin/master
-git status
-cp lib/libcol/parsers/RegexParser.py{.bak,}
-git status
-git commit -am'simplified implementation'
-git push
-pyflakes lib/libcol/parsers/RegexParser.py
-gs
-git diff
-git commit -am'removed unused imports'
-git push
-ssh 211
-sudo find . -user=root
-sudo find . -usr=root
-man find
-git diff .bash_history
-ipython
-co 1
-co 
-luban
-python -m luban
-ipython
-bi ncat
-cd $webserver
-sudo /opt/makalu/ptf/update.sh
-bi python3.2
-bi python
-bi python3
-bi python3 --universal
-cd $webserver
-pyflakes .
-pyflakes --help
-pyflakes -h
-pyflakes --help
-pyflakes -v
-pyflakes --V
-pyflakes . | grep -v 'imported but unused'
-pyflakes . | egrep -v 'imported but unused|never used'
-pyflakes . | egrep -v 'imported but unused|never used|redefinition'
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-brew link python3
-python3.2
-cd $projects
-cd jobs/
-cd brundles/
-claer
-cear
-u
-vi makalu.py
-u
-cd installed/
-ack 
-ack pkg_resources
-ack pkg_resources .
-vi scheduler/scheduler.py 
-cd scheduler/
-vi scheduler.py 
-python scheduler.py example-config.json 
-vi a.py
-vi b.py
-vi c.py
-python c.py 
-u
-cd $installed
-cd alert/
-vi apps/alert_dispatcher/alert_dispatcher.py 
-u
-cd alert/
-pyflakes .
-git status
-git diff
-git commit -am'fixed "greenlet was already imported" userwarning by importing pkg_resources before monkey patching'
-sudo find . -user root
-sudo find . -user root -exec chown $USER {} \;
-find . -user root -exec chown $USER {} \;
-git status
-git commit -am'fixed "greenlet was already imported" userwarning by importing pkg_resources before monkey patching'
-git push
-git status
-telnet 211 10001
-telnet 10.45.1.211 10001
-ssh 249
-ssh 249
-cd $lookup
-u
-vi installed/pylib/pylib/date_time_format.py"
-vi installed/pylib/pylib/date_time_format.py
-vim
-scp lib/liblookup/odbc/odbcfetcher.py support@192.168.2.249:
-scp lib/liblookup/datawrite.py support@192.168.2.249:
-git status
-git diff
-scp lib/liblookup/loader.py support@192.168.2.249:
-scp lib/liblookup/datawrite.py support@192.168.2.249:
-cd $configupdater
-scp apps/config_updater/libupdater/gens/lookup.py 249:
-scp lib/liblookup/loader.py support@192.168.2.249:
-git status
-git diff
-git commit -am'fixed ldap/odbc keys/fetch_interval'
-git status
-git push
-git diff
-git commit -am'fixed error caused when data returned from external sources contain integer types'
-git push
-git pull
-touch søren
-rm søren 
-scp lib/liblookup/odbc/connection.py support@192.168.2.249:
-git status
-git diff
-git commit -m'used utf8 encoding in odbc connection string'
-git commit -am'used utf8 encoding in odbc connection string'
-git push
-cd $webserver
-scp views/lookup.py 249
-scp views/lookup.py 249:
-git pull
-sudo find . -user root -exec chown $USER {} \;
-git pull
-scp views/lookup.py 249:
-cd $col
-vim
-git status
-git diff
-vim
-git diff
-gs
-git diff lib/
-git diff apps/
-pyflakes .
-vi checksum.py
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-cd $installed
-vi benchmarker.unused/benchmarker-server/benchmarker-server.py
-pyflakes benchmarker.unused/benchmarker-server/benchmarker-server.py
-cd benchmarker.unused/
-git status
-git diff
-cd $installed
-vi col/apps/ips_sdee_fetcher/lib/ips_sdee_parser.py
-vi col/apps/sflow_collector/sflow_collector.py 
-vi col/apps/wmi_fetcher/lib/fetcherloop.py
-cd $col
-git status
-git commit -m'passed parameters required for RegexParser in batch_processor'
-git commit -am'passed parameters required for RegexParser in batch_processor'
-git push
-/system/apps/snmp_listener/snmp_listener.py
-vi ./system/apps/snmp_listener/snmp_listener.py
-pyflakes ./system/apps/snmp_listener/snmp_listener.py
-vi ./system/apps/snmp_listener/snmp_listener.py
-agit checkout ./system/apps/snmp_listener/snmp_listener.py
-vi ./col/apps/sflow_collector/sflow_collector.py
-pyflakes ./col/apps/sflow_collector/sflow_collector.py
-vi ./col/apps/sflow_collector/sflow_collector.py
-pyflakes ./col/apps/sflow_collector/sflow_collector.py
-cd col/
-git status
-git diff apps/
-git status
-git checkout apps/sflow_collector/
-pyflakes apps/sflow_collector/
-pyflakes ./system/apps/snmp_listener/snmp_listener.py
-u
-cd installed/
-u
-b
-pyflakes ./system/apps/snmp_listener/snmp_listener.py
-vi ./system/apps/snmp_listener/snmp_listener.py
-pyflakes ./system/apps/snmp_listener/snmp_listener.py
-cd system/
-git status
-git diff apps/snmp_listener/snmp_listener.py
-git status
-git commit apps/snmp_listener/ -m'global variables defined in global scope to please pyflakes'
-sudo find . -user root -exec chown $USER {} \;
-git status
-git commit apps/snmp_listener/ -m'global variables defined in global scope to please pyflakes'
-git push
-vi /logen/immune_core/ip/holder.py
-vi ./logen/immune_core/ip/holder.py
-cd $installed
-vim
-git pull
-vim ./col/apps/wmi_fetcher/lib/fetcherloop.py
-pyflakes col/apps/wmi_fetcher/lib/fetcherloop.py
-cd col/
-git status
-git diff apps/
-gs
-git commit -am'global name time_zone defined in global scope'
-git push
-git push
-git pull
-git push
-git status
-git push origin master
-u
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./logen/generator/parser/syslogparser.py
-cd logen/
-git status
-git diff
-git status
-git commit generator/ -m'fixed undefined name error'
-git push
-git pull
-git status
-git commit -p
-git log -p
-git status
-git push
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./logen/immune_core/mail/smtp.py
-vi ./logen/immune_core/ip/holder.py
-cd logen/
-pyflakes .
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./logen/immune_core/ip/holder.py
-cd $bld
-cd CIServer/
-vim
-vi ./immune_core/ip/holder.py
-vi ./immune_core/ip/block.py
-vi ./immune_core/ip/holder.py
-pyflakes .
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./immune_core/ip/holder.py
-git status
-git diff immune_core/ip/holder.py
-git status
-git diff immune_core/ma
-git diff immune_core/mail/
-git status
-git checkout immune_core/
-git status
-vi /Users/suzanshakya/.vimrc 
-vi immune_core/mail/smtp.py 
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi immune_core/ip/holder.py
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-git commit -am'fixed error detected by pyflakes'
-git push
-vi /Users/suzanshakya/.vimrc 
-git status
-u
-cd informer/col
-cd col
-git pull
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./backup/apps/dbconfiguration/tests/db_backup.py
-cd backup/
-git diff
-git status
-git checkout apps/
-git status
-vi ../backup/apps/dbconfiguration/tests/db_backup.py
-git diff
-vi /Users/suzanshakya/.vimrc 
-git checkout apps/
-vi ../backup/apps/dbconfiguration/tests/db_backup.py
-git diff
-vi ../backup/apps/dbconfiguration/tests/db_backup.py
-git diff
-vi ../backup/apps/dbconfiguration/tests/db_backup.py
-git diff
-gs
-git commit -am'fixed undefined name'
-sudo git commit -am'fixed undefined name'
-sudo git push
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-vi ./col/apps/ips_sdee_fetcher/lib/ips_sdee_parser.py
-touch ørånge
-cd col
-vim
-cd $lookup
-vim
-vi import os
-vi ./lib/liblookup/odbc/connection.py
-git status
-git diff
-git commit -am'set environment variable ODBCSYSINI for finding ini files'
-git push
-git status
-ssh 211
-cd $webserver
-vim ./views/devices.py
-vi 249 
-rm 249 
-ssh 249
-ssh 249
-ssh 211
-snmpwalk 
-nmap 192.168.2.2
-sudo /opt/makalu/ptf/update.sh
-cd $installed
-cd $webserver
-vim
-ssh 210
-locate Xcode
-open /Developer/About Xcode.app
-open /Developer/About\ Xcode.app
-open /Developer/Applications/Graphics\ Tools/Quartz\ Composer\ Visualizer.app/
-xcodeindex 
-xcode-select 
-xcode-select -print-path
-xcode-select -version
-du -sh /Developer/
-vi /opt/makalu/ptf/update.sh
-cd $storage
-u
-cd storage/;
-cd col
-cd fileinspect
-u
-cd fileinspect_applications/
-vim
-cd $col
-vim
-cd $lookup
-vim
-ssh 249
-ssh 249
-ll ~/Applications/MacVim.app
-vi a.py
-vi b.py 
-vi c.py 
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-open .
-u
-vim
-vi d.py
-python d.py 
-vi d.py
-python d.py 
-vi d.py
-ssh hari
-vi .ssh/config 
-ssh hari
-vi /Users/suzanshakya/.ssh/known_hosts 
-python d.py 
-vim config-updater/
-cd col
-ack opsec
-ack opsec .
-ack opsec
-cd apps/
-cd opsec_fetcher/
-ack col_type
-vim
-ssh hari
-ssh hari
-cd /opt/immune
-sudo /opt/makalu/ptf/update.sh
-cd etc/
-git checkout db_vers
-cd ..
-cd $bld
-vim
-sudo /opt/makalu/ptf/update.sh
-vi ./installed/col/apps/opsec_fetcher/example-config.json 
-ssh-key -t dsa
-ssh-keygen -t dsa
-ll /tmp/.ssh/
-ll /tmp
-sudo rm -rf /tmp/ssh*
-sudo git pull
-sudo -H git pull
-sudo -E git pull
-git help pull
-sudo git pull
-/opt/makalu/ptf/update.sh
-cd $webserver
-u
-cd $makalu
-sudo find . -user root -exec chown $USER {} \;
-sudo find . -user root -exec sudo chown $USER {} \;
-git pull
-cd $webserver
-vi bin/db_upgrade.py 
-ipython
-cd $bld
-cd packages/python-pkgs/
-git status
-git diff
-git status
-git commit -am'added newly added packages'
-git push
-cd $idx
-vim
-cd apps/
-ll premerger/
-ack pysqlite
-ack apsw
-vi /opt/makalu/ptf/update.sh
-cd ../lib/sqlite_extension/
-vi Makefile
-cat Makefile
-cat Makefile_MacOS 
-ll bin/libsqlitefunctions.so 
-pwd
-ll bin/libsqlitefunctions.so 
-sqlite
-pwd
-ll `pwd`
-echo /opt/immune/installed/idx/lib/sqlite_extension/bin/libsqlitefunctions.so 
-make clean
-make
-ll bin/
-sqlite3
-git status
-diff Makefile Makefile_MacOS 
-make -f Makefile_MacOS 
-ll bin/
-make clearn
-make clean
-make clean -f Makefile_MacOS 
-git rm Makefile_MacOS
-git status
-git diff
-git commit -m'deleted, because same Makefile works for linux and max osx'
-cd $bld
-git push
-git status
-ssh 211
-rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/apsw.so
-ipython
-cd $bld
-cd packages/python-pkgs/
-pip install predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-pip uninstall apsw
-python -m apsw
-pip install predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-tar xzf predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-cd apsw-3.7.12.1-r1/
-python setup.py install
-pip install apsw
-python setup.py build --enable-all-extensions install
-which python
-file `which python`
-python2.5 setup.py build --enable-all-extensions install
-rm build/
-python setup.py --all build --enable-all-extensions install
-python setup.py build --enable-all-extensions install
-cd projects/apsw/
-python setup.py build --enable-all-extensions install
-cd ..
-cd apsw/
-git pull
-hg pull
-hg log
-hg pull
-hg up
-python setup.py build --enable-all-extensions install
-rm build/
-python setup.py build --enable-all-extensions install
-cd src/
-cd ..
-mv src{,.bak}
-python setup.py build --enable-all-extensions install
-python setup.py fetch build --enable-all-extensions install
-python setup.py fetch --all build --enable-all-extensions install
-python setup.py fetch --missing-checksum-ok --all build --enable-all-extensions install
-mv src{.bak,}
-ll sqlite3/README 
-vi sqlite3/README 
-vi sqlite3/INSTALL
-vi sqlite3/sqlite3.1 
-u
-rm apsw-3.7.12.1-r1/
-pip install predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-python setup.py fetch --missing-checksum-ok --all build --enable-all-extensions install
-python -m apsw
-tar xzf predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-cd apsw-3.7.12.1-r1/
-python
-ipython
-python setup.py build --enable-all-extensions install
-python setup.py --all build --enable-all-extensions install
-python setup.py build --enable-all-extensions install
-rm build/
-python setup.py build --enable-all-extensions sdist
-python setup.py sdist
-ll dist/
-pip install dist/apsw-3.7.12.1-r1.tar.gz 
-python setup.py build --enable-all-extensions install
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-cp -R ../sqlite3 apsw-3.7.12.1-r1
-cd apsw-3.7.12.1-r1/
-ll sqlite3/
-python setup.py build --enable-all-extensions install
-python setup.py install
-vi setup.py 
-u
-rm dist/
-vi setup.py 
-python setup.py sdist
-c dist/
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-u
-rm dist/
-vi setup.py 
-python setup.py sdist
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-cd apsw-3.7.12.1-r1/
-pwd
-u
-vi setup.py 
-u
-rm apsw-3.7.12.1-r1/
-tar xzf predownloaded/apsw-3.7.12.1-r1-sqlite3.7.tar.gz 
-cd apsw-3.7.12.1-r1/
-python setup.py tests
-cd $idx
-cd lib/
-cd sqlite_extension/
-vi Makefile 
-python setup.py test
-python setup.py build --enable-all-extensions
-ll sqlite3
-du -sh sqlite3
-hg status
-mv .hgignore{,.bak}
-hg status
-mv .hgignore{.bak,}
-hg status
-vi setup.py 
-python setup.py sdist
-cd dist/
-tar xzf apsw-3.7.13-r1.tar.gz 
-cd apsw-3.7.13-r1/
-u
-rm dist/
-vi setup.
-vi setup.py 
-python setup.py sdist
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-cd apsw-3.7.12.1-r1/
-u
-cd apsw-3.7.12.1-r1/
-rm dist/
-vi setup.py 
-python setup.py sdist
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-cd apsw-3.7.12.1-r1/
-u
-rm dist/
-vi setup.py 
-python setup.py dist
-python setup.py sdist
-cd dist/
-tar xzf apsw-3.7.12.1-r1.tar.gz 
-cd apsw-3.7.12.1-r1/
-vi setup.py 
-u
-u 
-rm dist/
-hg status
-vi setup.
-vi setup.py 
-hg status
-u
-tar czf apsw.tar.gz apsw
-tar xzf apsw.tar.gz -C ..
-cd ../apsw/
-python setup.py build --enable-all-extensions install
-python setup.py build --enable-all-extensions install
-cd ..
-rm apsw/
-cd projects/apsw/
-u
-pip install apsw.tar.gz 
-python -m apsw
-pip uninstall apsw
-python -m apsw
-python
-rm '/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/apsw.so'
-python
-pip install apsw.tar.gz 
-python
-make
-ll bin/
-ipython
-cd apsw/
-u
-cd -R apsw{,.new}
-cp -R apsw{,.new}
-cd apsw
-python setup.py sdist
-rm dist/
-cd ..
-mv apsw.new apsw-3.7.13-r1
-cd apsw-3.7.13-r1/
-rm .hg*
-du -sh build/
-rm build/
-vi setup.cfg 
-ll tools/
-vi Makefile 
-python setup.py build --enable-all-extensions install
-mr build/
-rm build/
-vi MANIFEST.in 
-vi MANIFEST
-ssh 249
-cd ..
-rm apsw.tar.gz 
-ll apsw-3.7.13-r1/
-tar czf apsw-3.7.13-r1-sqlite-3.7.tar.gz apsw-3.7.13-r1
-pip uninstall apsw-3.7.13-r1-sqlite-3.7.tar.gz 
-pip uninstall apsw
-python -m apsw
-python
-rm '/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/apsw.so'
-python -m apsw
-cd projects/
-rm apsw-3.7.13-r1
-sqlite3
-cler
-mv apsw-3.7.13-r1-sqlite-3.7.tar.gz $bld
-u
-rm apsw-3.7.12.1-r1/
-gs
-mv ../../apsw-3.7.13-r1-sqlite-3.7.tar.gz .
-gs
-python -m apsw
-mv apsw-3.7.13-r1-sqlite-3.7.tar.gz predownloaded/
-gs
-git status
-cd $bld
-cd packages/python-pkgs/
-cd predownloaded/
-ll apsw-3.7.13-r1-sqlite-3.7.tar.gz 
-ll -h apsw-3.7.13-r1-sqlite-3.7.tar.gz 
-scp apsw-3.7.13-r1-sqlite-3.7.tar.gz 211:
-pip install predownloaded/apsw-3.7.13-r1-sqlite-3.7.tar.gz 
-tar xzf apsw-3.7.13-r1-sqlite-3.7.tar.gz 
-cd apsw-3.7.13-r1/
-python setup.py install
-rm build/
-python setup.py build --enable-all-extensions install
-cd $bld
-cd packages/python-pkgs/
-cd predownloaded/
-git status
-rm apsw-3.7.13-r1
-git status
-git add apsw-3.7.13-r1-sqlite-3.7.tar.gz
-git rm apsw-3.7.12.1-r1-sqlite3.7.tar.gz
-git status
-ssh 211
-git commit -am'added pip installable and latest version of apsw'
-git push
-git status
-cd Library/Cronjobs/
-mv {6,}Naughty\ America.flv 
-sudo mv {6,}Naughty\ America.flv 
-file 6Naughty\ America.flv 
-cd
-cd projects/
-dipa
-cd ..
-python3.2 get-pip.py 
-which pip
-vi `which pip`
-vi /usr/local/share/python3/pip
-echo $PATH
-ll /usr/local/share/python3/pip
-ll /usr/local/share/python3/pip*
-shasum /usr/local/share/python3/pip*
-shasum /usr/local/share/python3/
-vi /Users/suzanshakya/.bash_profile 
-. ~/.ProteMac\ Meter.
-. ~/.bash_profile 
-pip-3.2 install cherrypy=3.2
-pip-3.2 install cherrypy
-pip-3.2 install virtualenv
-cd projects/jobs/
-cd brundles/
-virtualenv --no-site-packages omime
-cd omime/
-source bin/activate
-cd $projects
-cd jobs/brundles/
-bmark
-cd omime/
-bmark
-cd $omime
-pwd
-. bin/activate
-which pip
-vi `which pip`
-/Users/suzanshakya/projects/jobs/brundles/omime/bin/python
-python
-cd $omime
-u
-sudo rm -rf omime
-which virtualenv
-vi /usr/local/share/python3/virtualenv
-/usr/local/share/python3/virtualenv omime
-cd omime/
-. bin/activate
-python
-which pip
-vi bin/pip
-pip install cherrypy
-pip-3.2 install ipython
-ipython
-which ipython
-ipython3
-ll bin/
-ll build/
-ll build
-pwd
-u
-cd omime/
-ipython3
-ll ~/build/ipython/setup.cfg 
-vi ~/build/ipython/setup.cfg 
-vi /Users/suzanshakya/build/ipython/setup.py 
-vi build/ipython/setup.py 
-vi lib/python3.2/site-packages/pip-1.1-py3.2.egg/
-python
-ipython
-ipython3
-pip install celery
-cd $makalu
-cd $installed
-pwd
-pip freeze >requirements.txt
-pip install virtualenvwrapper
-vi requirements.txt 
-cd webserver/
-pip freeze
-u
-rm requirements.txt 
-pwd
-u
-cd omime/
-mkdir modules
-cd modules/
-locate virtualenvwrapper_bashrc
-which virtualenvwrapper
-virtualenvwrapper
-help virtualenvwrapper
-man virtualenvwrapper
-which virtualenvwrapper.sh 
-vi `which virtualenvwrapper.sh `
-git status bin
-vi bin/jsc 
-jsc 
-ll ./bin/jsc 
-jsc
-git status
-ll bin/
-vi bin/httpserver.py 
-httpserver.py .
-httpserver.py 80
-httpserver.py 8000
-vi bin/httpserver.py 
-vi /tmp/nginx.conf 
-rm /tmp/nginx.conf 
-cd Movies/
-httpserver.py 8080
-vi /Users/suzanshakya/bin/httpserver.py 
-u
-git status
-git add bin/
-git status |head
-git status |head -20
-git status |head -40
-git diff .bash_profile
-git add .bash_profile
-git status |head -40
-git diff .vimrc
-git commit -m'added ~/bin'
-git log
-git status |head -40
-mkdir ~
-mkdir \~
-cd \~
-mkdir projects
-git status | head 
-u
-cd
-git status | head
-git status | head -20
-ll \~/pab
-ll \~/Movies
-svn co https://svn.process-one.net/ejabberd-modules
-ll ~/Movies
-ll \~/Movies
-ll \~/projects
-git rm \~/projects
-git rm -r \~/projects
-git status | head -20
-git commit -m'removed redundant dir'
-git status | head -20
-git push
-which virtualenvwrapper
-which virtualenvwrapper.sh 
-cd $omime
-pwd
-. bin/activate
-cd modules/
-cd ejabberd-modules/
-cd mod_admin_extra/trunk/
-./build.sh 
-erl
-virtualenv suz
-rm suz
-which python3
-which python3.2
-virtualenv -p /usr/local/bin/python3 suz
-pip install --upgrade virtualenv
-virtualenv -p /usr/local/bin/python3 suz
-suz/bin/python
-vi suz/bin/pip
-pip-3.2 uninstall virtualenv
-pip install --upgrade virtualenvwrapper
-git status bin/
-mkvirtualenv
-./build.sh 
-erl
-which virtualenvwrapper.sh 
-vi /Users/suzanshakya/.bash_profile 
-ll .virtualenvs/
-workon 
-mkvirtualenv temp
-workon 
-rmvirtualenv temp
-MvMac 
-man MvMac 
-cd $omime
-u
-mkvirtualenv temp
-exit
-workon 
-cd $omime
-u
-ln -s omime ~/.virtualenvs/omime
-workon 
-ll ~/.virtualenvs/
-ln -sf `pwd`/omime ~/.virtualenvs/omime
-ll ~/.virtualenvs/
-workon 
-rmvirtualenv temp
-workon omime
-pwd
-cd $omime
-b
-cdvirtualenv omime
-cdvirtualenv 
-cdvirtualenv omime
-workon omime
-cdvirtualenv 
-pwd
-deactivate 
-bi rabbitmq
-sudo /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-cd $scheduler
-vim
-vi e.py
-python e.py 
-vi e.py
-python e.py 
-ipython
-lsof -i8080
-lsof -i 8080
-lsof -i:8080
-vi e.py
-mkdir projects/stackoverflow
-mv e.py projects/stackoverflow/
-ipython
-cd $installed
-u
-telnet 10.45.1.211 10001
-telnet 10.45.1.211 1111
-cd $webserver
-git pull
-vim 
-git pull
-cat /opt/immune/etc/vers 
-cat /opt/immune/etc/db_vers 
-mongo test
-u
-cd $webserver
-vi $installed/etc/db_vers
-vi $installed/../etc/db_vers
-./bin/lido ./bin/db_upgrade.py 
-/opt/immune/bin/lido ./bin/db_upgrade.py 
-./bin/db_upgrade.py 
-ssh 249
-git status
-git diff
-git status
-git diff
-git status
-git pull
-git status
-git commit bin/db_upgrade.py -m'used $set to update device schema'
-git push
-vi $installed/./makalu/installed/config-updater/apps/config_updater/libupdater/gens/alert.py
-vi $installed/config-updater/apps/config_updater/libupdater/gens/alert.py
-cd $alert
-git checkout v500 
-vi $installed/config-updater/apps/config_updater/libupdater/gens/alert.py
-git status
-gitx
-vi $installed/config-updater/apps/config_updater/libupdater/gens/alert.py
-cd $webserver
-vi bin/httpserver.py 
-vi bin/db_upgrade.py 
-./etc/service/mongodb/run 
-mongo makalu
-telnet 192.168.2.5 21
-ifconfig
-telnet 192.168.2.5 21
-ifconfig
-telnet 2001:470:35:622:20c:29ff:fe89:ce4c 21
-ping 2001:470:35:622:20c:29ff:fe89:ce4c
-ping6 2001:470:35:622:20c:29ff:fe89:ce4c
-ftp 2001:470:35:622:20c:29ff:fe89:ce4c
-ftp ubuntu@2001:470:35:622:20c:29ff:fe89:ce4c
-ftp ubuntu@192.168.2.26
-telnet 2001:470:35:622:20c:29ff:fe89:ce4c 80
-telnet 192.168.2.5 80
-ssh ubuntu@192.168.2.26
-cd $bld
-cd packages/python-pkgs/
-ll predownloaded/gevent-0.13.7.tar.gz 
-ssh macbookpro@192.168.2.10
-ssh hari
-ssh hari
-ssh 211
-ssh 210
-ssh 210
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-vi /opt/immune/installed/system/mac_os_x/run_services.py 
-cd /opt/immune
-ssh 249
-sudo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
-sudo ./bin/envdo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
-bin/taillog.sh -n0
-cd installed/col/
-git pull
-vi ./etc/config/norm_front/config.json 
-vi ./etc/config/normalizer_0/config.json 
-tail -F ./var/log/service/webserver/current 
-ipython
-vi ./installed/lookup/lib/liblookup/ldap/ldap_connection.py
-cd installed/lookup/
-git pull
-cd ..
-bin/taillog.sh 0n0
-bin/taillog.sh -n0
-sudo ./installed/webserver/bin/db_upgrade.py 
-sudo ./bin/envdo ./installed/webserver/bin/db_upgrade.py 
-bin/taillog.sh -n0
-vi /Users/suzanshakya/projects/makalu/ptf/disk/installed/norm/apps/normalizer/lib/normloop.py
-bin/taillog.sh -n0
-vi /Users/suzanshakya/projects/makalu/ptf/disk/installed/norm/apps/normalizer/lib/normloop.py
-tail -F ./var/log/service/normalizer_0/current 
-sudo ./bin/envdo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
-bin/taillog.sh -n0
-vi ./etc/config/syslog_collector/config.json 
-vi ./etc/config/norm_front/config.json 
-tail -F ./var/log/service/webserver/current 
-vi ./etc/config/norm_front/config.json 
-makalu mango
-mongo makalu
-cd $configupdater
-git pull
-u
-vi ./etc/config/norm_front/config.json 
-tail -F ./var/log/service/webserver/current 
-vi ./etc/config/norm_front/config.json 
-pwd
-whoami
-who am i
-u
-bin/taillog.sh -n0
-u
-vim col
-cd col/lib/libcol/uitest/
-python scp_fetcher.py
-vi scp_fetcher.py
-python scp_fetcher.py
-u
-vim
-tail -F ./var/log/service/scp_fetcher/
-sudo sv restart ./etc/service/scp_fetcher/
-tail -F ./var/log/service/scp_fetcher/current 
-tail -F ./var/log/service/scp_fetcher/current -n20
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-python ./installed/col/lib/libcol/uitest/scp_fetcher.py
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-vi ./etc/config/norm_front/config.json 
-vi ./etc/config/scp_fetcher/config.json 
-sv hup ./etc/service/scp_fetcher/
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-vi ./etc/config/scp_fetcher/config.json 
-sv hup ./etc/service/scp_fetcher/
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-cd installed/col/lib/libcol/uitest/
-python scp_fetcher.py
-sudo sv restart /opt/immune/etc/service/scp_fetcher/
-git status
-git diff
-git status
-git reset --hard origin/master
-vi ./etc/config/scp_fetcher/config.json 
-sudo sv restart /opt/immune/etc/service/scp_fetcher/
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-vi ./etc/config/scp_fetcher/config.json 
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-vi ./etc/config/scp_fetcher/config.json 
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-git status
-u
-cd apps/scp_
-cd apps/scp_fetcher/
-git status
-git diff
-git commit -am'fixed error occurred when fetching absolute path files'
-git push
-sudo ./bin/envdo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
-git status
-u
-for each in `ls`; do (cd $each && echo $each && git status); done
-for each in `ls`; do (cd $each && echo $each && git status); done
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-for each in `ls`; do (cd $each && echo $each && git checkout master && git status); done
-sudo sv restart ./etc/service/scp_fetcher/
-tail -Fn20 ./var/log/service/scp_fetcher/current 
-ipython
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-cd /opt/immune/installed/system/mac_os_x/
-git status
-git diff
-git commit -am'slept 2 sec before stopping filesystem_collector'
-git push
-git pull
-cd scheduler/
-git status
-git diff
-git checkout scheduler.py
-git status
-nmp coffee
-npm
-npm install cofee
-cd projects/
-date
-python -c'import time;print time.time()'
-python -Sc'import time;print time.time()'
-time python -Sc'import time;print time.time()'
-npm install coffee-script
-time python -c'import time;print time.time()'
-time python -Sc'import time;print time.time()'
-vi /Users/suzanshakya/.bash_profile 
-echo 'hi ' a
-echo 'hi 'a
-echo 'hi'a
-5-2
-$((5-2))
-$(( 5-2))
-echo $((5-2))
-echo $(('5'-'2'))
-let a=5
-echo $a
-a=5
-echo $a
-b=6
-$((a-b))
-echo $((a-b))
-a="5"
-b="6"
-echo $((a-b))
-a="4"
-b="1"
-echo (b-a)
-echo ($b-$a)
-echo (($b-$a))
-echo $(($b-$a))
-echo "duration" $(($b-$a))
-a="4.1"
-b="1.2"
-echo "duration" $(($b-$a))
-expr 2.1 - 1.2
-expr (2.1 - 1.2)
-echo "duration" $((2-1))
-echo "duration" $((2-1.1))
-echo "duration" $((2-"1.1"))
-echo "duration" $(("2"-"1.1"))
-float_eval
-bc
-man bc
-echo "scale=4; $1" | bc ;exit
-echo "scale=4; $1" | bc ;
-calc
-Numer=`echo 80 \* 10.69 | bc`
-echo $Number
-Numer=`echo 80 \* 10.69 | bc`; echo $Number
-Numer=`echo 80 * 10.69 | bc`; echo $Number
-Numer=`echo 80 + 10.69 | bc`; echo $Number
-Number=`echo 80 + 10.69 | bc`; echo $Number
-echo `echo 80 + 10.69 | bc`
-echo `echo 80 + 10.69`
-echo `echo 80 + 10.69 | bc`
-bc "80 + 10.69
-bc "80 + 10.69"
-bc < echo "80 + 10.69"
-<bc  echo "80 + 10.69"
-< bc echo "80 + 10.69"
-bc < echo "80 + 10.69"
-echo "80 + 10.69" | bc
-echo 1.1 + 1.2 | bc
-bc <<EOF
-bc <<EOF 1.2 + 2.3
-bc <EOF
-bc <<EOF
-echo hi | bc
-vi /Users/suzanshakya/.bash_profile 
-vi /Users/suzanshakya/.bash_profile 
-which virtualenvwrapper.sh 
-vi .bash_profile 
-vi /Users/suzanshakya/.bash_profile 
-vi /usr/local/etc/bash_completion
-rm /var/log/asl/
-sudo chmod -R 777 /var/log/asl/
-rm /var/log/asl/
-sudo mv /var/log/asl .Trash/asl
-time . /usr/local/etc/bash_completion
-. /usr/local/etc/bash_completion &
-vi /Users/suzanshakya/.bash_profile 
-jobs
-vi /Users/suzanshakya/.bash_profile 
-jobs
-vi /Users/suzanshakya/.bash_profile 
-git status .bash_profile 
-git diff .bash_
-git diff .bash_profile 
-git commit .bash_profile -m'renamed . to source; added benchmarking for slow commands'
-git push
-npm install coffeescript
-npm install node
-npm install -g coffee-script
-npm update
-npm --help
-cd projects/
-cd spine
-mkdir spine
-cd spine
-n
-npm install n
-mv ~/Desktop/maccman-spine-* .
-vim
-n latest
-n
-npm
-npm install -g coffee-script
-vi /Users/suzanshakya/npm-debug.log
-vi /Users/suzanshakya/.bash_profile 
-gs .bash_profile 
-git diff
-git status
-gd .bash_profile 
-npm install coffee-script
-git commit .bash_profile -m'removed background running'
-git push
-npm install -g spine.app hem
-brew upgrade npm
-pwd
-git clone https://github.com/maccman/spine.todos.git
-open .
-brew upgrade node
-/opt/makalu/ptf/update.sh
-cd /opt/immune/installed/
-git status ../etc/db_vers
-git diff ../etc/db_vers
-git checkout ../etc/db_vers
-vi ../etc/db_vers 
-u
-cd /opt/immune
-/opt/makalu/ptf/update.sh
-vi /Users/suzanshakya/.bash_profile 
-vim
-cat /opt/makalu/ptf/update.sh
-"$LOGINSPECT_HOME"/installed/idx/apps/indexsearcher/util/recompile.sh
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-'
-cd $bld
-cd packages/python-pkgs/
-gs
-sqlite3
-cd $idx
-cd lib/
-cd sqlite_extension/
-rm test1 
-ls bin/
-python
-pwd
-make test
-vi Makefile 
-make test
-cd $lookup
-vim
-echo >hi <<EOF
-cat hi 
-cat >hi <<EOF
-cat hi 
-rm hi 
-gs
-vi Makefile 
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-git log lib/liblookup/datawrite.py
-git log -p lib/liblookup/datawrite.py
-git status
-git diff
-pyflakes .
-git status
-git commit -am'used empty string as value when some keys are not present in some row'
-git push
-ssh 249
-vim
-pyflakes .
-git status
-git diff
-git staasdf
-git status
-git commit -am'logged warning when keys are empty'
-git push
-git status
-cd $webserver
-vim
-gs
-git status
-python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-nosetests test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-git status
-vi Makefile 
-make test
-vi Makefile 
-vi test_sqlite_extensions.py
-nosetests test_sqlite_extensions.py
-vi test_sqlite_extensions.py
-python test_sqlite_extensions.py 
-time python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-git status
-vi test_sqlite_extensions.py
-time python test_sqlite_extensions.py 
-vi test_sqlite_extensions.py
-make test
-vi test_sqlite_extensions.py
-make test
-vi test_sqlite_extensions.py
-rm test1 
-make test
-vi test_sqlite_extensions.py
-make test
-vi test_sqlite_extensions.py
-make test
-vi test_sqlite_extensions.py
-vi Makefile 
-make test
-vi Makefile 
-git status
-git diff
-git add Makefile
-git add test_sqlite_extensions.py
-git status
-pwd
-vi .gitignore
-git status
-vi .gitignore
-git status
-mkdir bina
-git status
-touch bina/abc
-git status
-rm bina/
-git status
-git add .gitignore
-git status
-make clean
-make
-make test
-git status
-git commit -am'added test file for testing log and exp in sqlite'
-git status
-git push
-u
-vi mac_os_x/make.sh 
-c
-vi .bash_profile 
-load_bash_completion 
-vi .bash_profile 
-bash_c
-load_bash_completion 
-load_virtualenvwrapper 
-vi .bash_profile 
-load_virtualenvwrapper 
-load_bash_completion 
-vi .bash_profile 
-cd /opt/immune
-bin/taillog.sh 
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-vim
-rm -rf python-pkgs/build/
-vim /opt/makalu/ptf/update.sh
-vim /opt/immune/installed/system/mac_os_x/run_services.py 
-ssh hari
-cd $lookup 
-git status
-ping google.com
-ping6 google.com
-ping wikipedia.org
-ping google.com
-ping 192.168.2.1
-ping 192.168.2.2
-ping 192.168.2.1
-ping 192.168.2.17
-ping google.com
-dns
-ifconfig
-sudo networksetup -getdnsservers
-sudo networksetup -dnsservers
-sudo networksetup help
-sudo networksetup -showdnsservers
-sudo networksetup help | less
-sudo networksetup -listnetworkservices
-sudo networksetup help | less
-sudo networksetup -listallnetworkservices
-sudo networksetup help | grep dns
-sudo networksetup -getdnsservers Airport
-sudo networksetup -setdnsservers Airport 192.168.2.1
-sudo networksetup -getdnsservers Airport
-ping google.com
-vim
-ssh loginspect@hari
-cat .ssh/id_rsa.pub 
-ssh loginspect@hari
-ssh loginspect@249
-sftp 249
-sftp loginspect@249
-ftp 249
-ftp 192.168.2.249
-ftp loginspect@192.168.2.249
-sftp loginspect@192.168.2.249
-cd installed/system/
-git status
-git diff
-git commit -am'chowned loginspect to backup instead of just backup/repos'
-cd $ptf 
-git status
-git diff update.sh 
-git commit update.sh -m'gave backup also to $LOGRUNNER'
-git push
-git push
-git status
-cd disk/storage/
-pwd
-gs
-git pull
-git status
-git checkout reports/
-git status
-cd /opt/immune
-git status
-git log
-git push
-git status
-git status
-git log
-gs
-git pull
-git status
-git push
-git status
-u
-git diff .bash_profile 
-git commit .bash_profile -m'wrapped virtualenvwrapper and bash_completion in function and caled virtualenvwrapper function only'
-ping google.com
-git push
-u
-pwd
-file a.py 
-vim installed/storage/
-git log installed/system/mac_os_x/run_services.py 
-agit log installed/system/mac_os_x/run_services.py 
-agit log -p installed/system/mac_os_x/run_services.py 
-cd installed/system/mac_os_x/
-git status
-cd $bld
-cd packages/python-pkgs/
-u
-cd mac_os_x/
-git status
-git commit -am'testing'
-git diff HEAD^
-git diff HEAD^ make.sh
-git diff HEAD^ make.sh -s
-git diff -s HEAD^ make.sh
-git diff HEAD^ make.sh
-git status -s
-git help diff
-git help status
-git help diff
-git diff --shortstat HEAD^ make.sh
-git diff HEAD^ make.sh
-pkg-config 
-brew install pkg-config
-which pkg-config
-mkdir ab
-mkdir ac
-cd a*
-pwd
-u
-rm a*
-git status
-git reset --hard origin/head
-ll /opt/makalu/bld
-locate -type d -name blad
-locate -type d -name bld
-locate bld
-locate bld/packages
-man locate
-echo $bld
-python
-python -m py_compile ~/a.py 
-rm ~/a.pyc 
-python -m py_compile ~/a.py 
-ll ~/a.pyc 
-python -m apsw
-echo $?
-echo hi
-echo $?
-python -c'import apsw'
-time python -c'import apsw'
-time python -Sc'import apsw'
-python -Sc'import apsw'
-echo $?
-cd ..
-pip install python-pkgs/predownloaded/antlr_python_runtime-3.1.3.tar.gz 
-python
-cd python-pkgs/
-tar xzf predownloaded/antlr_python_runtime-3.1.3.tar.gz 
-cd antlr_python_runtime-3.1.3/
-python setup.py install
-pwd
-vi setup.
-vi setup.py 
-u
-rm antlr_python_runtime-3.1.3/
-gs
-pip install antlr3
-rm build/pip-delete-this-directory.txt 
-u
-git log
-git log -p mac_os_x/make.sh
-git diff HEAD^ mac_os_x/make.sh
-git diff HEAD^
-git diff HEAD^ mac_os_x/make.sh
-git diff HEAD^^ mac_os_x/make.sh
-git log mac_os_x/make.sh
-git diff 4105b12290467812417e1ff78f1ca00b2ce793ec mac_os_x/make.sh
-git status
-git diff
-git commit -am'merged all dependency of zeromq java binding'
-cd $system 
-cd mac_os_x/
-git status
-git push
-git diff
-git checkout run_services.py 
-git status
-git status
-git pull
-git push
-cat .ssh/id_rsa.pub | ssh hari "mkdir -p .ssh && cat >>.ssh/authorized_keys"
-cd $installed
-for each in `ls`; do (cd $each && echo $each && git checkout master && git status); done
-cd informer/no
-cd norm/
-git status
-git diff
-git checkout apps/normalizer/lib/normloop.py
-u
-git status | less
-cd installed/backup/
-vim
-ssh support@192.168.2.53
-ssh support@192.168.2.53
-git pull
-ssh hari
-cd /opt/immune
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-bin/taillog.sh -n0
-ipython
-sudo /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-cd $installed 
-cd backup/
-git status
-git checkout apps/
-u
-/opt/makalu/ptf/update.sh
-vim 
-cd /opt/immune
-bin/taillog.sh 
-scp 211:13*.gz .
-gunzip 1342144800.gz -C 1342144800
-gunzip 1342144800.gz
-vi 1342144800 
-scp 211:13*68*.gz .
-ll *.gz
-gunzip 1342006800.gz 
-cd $storage 
-ack unable
-cd $col
-vim
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-ssh hari
-cd $col
-vim
-cd ./storage/col/ftp_collector/
-cd 127.0.0.1/
-cd alpha/
-python
-cd /opt/immune
-tail -F ./var/log/service/ftp_fetcher/current 
-tail -F ./var/log/service/webserver/current 
-cd installed/col/
-cd lib/libcol/uitest/
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-rm सुजन 
-python
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-vi ftp_fetcher.py
-python ftp_fetcher.py
-git status
-git checkout ftp_fetcher.py
-rm ørånge 
-ssh 249
-cd /opt/makalu/ptf
-vi update.sh 
-vi "$LOGINSPECT_HOME"/installed/system/after_install/parts/allow_writes.sh
-cd /opt/immune
-cd installed/system/
-git status
-git diff
-git commit -am'chowned ./backup to loginspect'
-git push
-git status
-vi "$LOGINSPECT_HOME"/installed/system/after_install/parts/allow_writes.sh
-git status
-ssh 21
-cd $lookup 
-vim
-cd $webserver 
-git pull
-vi views/lookup.py
-git status
-git diff
-scp views/lookup.py 249:.
-u
-pyflakes . | egrep -v 'imported but unused|never used|redefinition|unable to detect'
-cd webserver/
-git status
-git diff
-git commit -am'all fetched data from obsc converted to string'
-git push
-cd $col
-gs
-gs
-git status
-cd $alert 
-cd $pylib 
-vim
-cat .ssh/id_rsa.pub 
-ssh loginspect@192.168.2.53
-sftp loginspect@192.168.2.53
-sftp loginspect@192.168.2.249
-ssh macbookpro@192.168.2.10
-cd $backup 
-vim
-git log -p apps/backup/libbackup/authorizing.py
-vi/opt/immune/installed/system/mac_os_x/run_services.py 
-git pull
-gitx 
-git status
-git diff
-git checkout f61df8d7c448d29a7a18b2756c0fa76a604215b1 apps/backup/libbackup/authorizing.py
-vim
-git status
-git diff
-git branch
-git status
-git diff
-git commit -am'authorizing reverted to open file in write mode'
-git log -p
-git push
-vi /opt/immune/installed/system/mac_os_x/run_services.py 
-IPYTHON
-ssh support@192.168.2.53
-ssh 249
-ssh 211
-ssh 211
-ssh 211
-/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java ; exit;
-/opt/makalu/ptf/update.sh
-cd $idx
-pwd
-cd $idx
-pwd
-cd $idx
-pwd
-sudo rm lib/sqlite_extension/bin/libsqlitefunctions.so 
-u
-clera
-clar
-/opt/makalu/ptf/update.sh
-cd $idx 
-ll lib/named_re2/
-ll lib/
-ll lib/named_re2/
-ll lib/named_re2/bin/
-ll lib/named_re2/bin/jar/
-u
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-cd $ $norm 
-vim
-cd $norm
-vim
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-cd $webserver 
-vim
-fgrep -rI 'import (fast|u)?json'
-fgrep -rI 'import (fast|u)?json' .
-egrep -rI '^import json' .
-egrep -rI '^import json' views/devices.py
-ack '^import json' views/devices.py
-egrep -rI '^import json' views/devices.py
-fgrep -rI '^import json' views/devices.py
-egrep -rI '^import json' views/devices.py
-egrep -rI '^import (simple|u)?json' views/devices.py
-egrep -rI '^import (simple|u)?json|^from pylib import fastjson' views/devices.py
-vimpy -m flask
-egrep -rI '^import (simple|u)?json|^from pylib import fastjson' .
-ack '^import (simple|u)?json|^from pylib import fastjson' .
-ssh 249
-act 'jsonify[^(]' .
-ack 'jsonify[^(]' .
-vi ~/.ssh/authorized_keys 
-cat .ssh/id_rsa.pub 
-sftp loginspect@192.168.2.50
-sftp loginspect@192.168.2.51
-ssh macbookpro@192.168.2.10
-ssh loginspect@192.168.2.51
-sftp loginspect@192.168.2.51 -i .ssh/id_rsa
-ssh support@192.168.2.51
-sftp support@192.168.2.51
-cd $sys
-cd $system 
-vim
-ssh support@192.168.2.51
-sftp loginspect@192.168.2.51
-ll /Users/suzanshakya/.ssh/authorized_keys 
-sftp loginspect@192.168.2.249
-cat ~/.ssh/id_rsa.pub 
-sftp loginspect@192.168.2.249
-ll ~/.ssh/known_hosts 
-ll ~/.ssh/authorized_keys 
-cat ~/.ssh/id_rsa.pub 
-vim
-ssh loginspect@192.168.2.51
-ssh -v vloginspect@192.168.2.51
-ssh -vv loginspect@192.168.2.51
-sftp loginspect@192.168.2.51
-cat ~/.ssh/id_rsa.pub 
-sftp loginspect@192.168.2.51
-sftp loginspect@192.168.2.249
-git status
-vim
-vi /opt/makalu/ptf/update.sh
-cat ~/.ssh/id_rsa.pub 
-sftp loginspect@192.168.2.249
-sftp loginspect@192.168.2.51
-git status
-git diff
-git log -p after_install/parts/enable_loginspect_sftp.sh 
-git log -p after_install/parts/allow_writes.sh 
-git status
-git diff
-git status
-git commit -am'backup dirs created; chowned them to loginspect; ownership of /opt/immune/backup unmodified'
-git status
-cd /opt/immune
-sudo /opt/immune/installed/system/mac_os_x/run_services.py 
-sudo /opt/immune/installed/system/mac_os_x/stop_services.sh 
-git push
-git status
-vim
-vi /opt/makalu/ptf/update.sh
-cd $ptf 
-git status
-git diff update.sh 
-git commit update.sh -m"echo'ed to show ownership change in backup/* instead of backup'
-git commit update.sh -m"echo'ed to show ownership change in backup/* instead of backup"
-git push
-git status
-git push origin master
-git status
-git pull
-git status
-git push
-git status
-cd $system 
-git log
-git log -p
-cd $backup 
-git pull
-vim
-ack _restart_indexsearcher .
-git status
-git diff
-git commit -am'called _restart_indexsearcher() after successful restor of repo'
-git push
-gs
-cd $webserver 
-ack isnot
-git pull
-cd $pylib 
-vim
-rm .git/index.lock 
-git pull
-ack isnot
-git pull
-ack isnot
-vi views/access/requires.py
-cd
-<while.py cat
-cat <while.py 
-cat <(cat while.py)
-cat <cat while.py
-cat <(ls projects/)
-python -m pylib.path_decoder <(ls ./storage/col/scp_fetcher)
-python -m pylib.path_decoder <(ls /opt/immune/storage/col/scp_fetcher/127.0.0.1/)
-python -m pylib.path_decoder
-python -m pylib.path_decoder <(ls /opt/immune/storage/col/scp_fetcher/127.0.0.1/)
-cd $col
-vim
-cd
-mkdir abc.def
-vi abc.def/
-cd abc.def/
-vi to_be_index
-cd ..
-ll abc.def/to_be_index 
-ssh 249
-ipython
-/opt/makalu/ptf/update.sh
-cd /opt/immune
-vi /opt/makalu/ptf/update.sh
-"$LOGINSPECT_HOME"/installed/idx/apps/indexsearcher/util/recompile.sh
-ll ./installed/idx/lib/named_re2/bin/
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-pwd
-vi /opt/makalu/ptf/update.sh
-cd $pylib 
-vim
-vi wiring.py 
-cd $col
-cd apps/scp_
-cd apps/scp_fetcher/
-ll lib/*.py
-scp lib/*.py 249:
-vi wiring.py 
-cd $col 
-cd apps/scp_fetcher/
-git status
-git diff
-scp ../../lib/libcol/uitest/ftp_fetcher.py 249:
-ll wiring.py 
-telnet 127.0.0.1 22
-gs
-scp ../../lib/libcol/uitest/ftp_fetcher.py 249:
-scp ../../lib/libcol/uitest/scp_fetcher.py 249:
-git status
-git diff
-git commit -am'supported ~ in uitest also'
-git push
-git status
-git log -1
-git log -1 | head -1
-vim
-gs
-ssh 249
-ssh 249
-scp ./lib/fetcherloop.py 249:
-cd /opt/immune
-rm ./storage/col/scp_fetcher/*
-sudo rm ./storage/col/scp_fetcher/*
-sudo rm -r ./storage/col/scp_fetcher/*
-vi example-config.json 
-ll storage/col/scp_fetcher/
-ll storage/col/scp_fetcher/ssh/id_rsa.pub 
-cat storage/col/scp_fetcher/ssh/id_rsa.pub 
-cat ~/.ssh/id_rsa.pub 
-python scp_fetcher.py example-config.json 
-cd storage/col/scp_fetcher/
-rm ssh/
-wpd
-pwd
-u
-chown root:root scp_fetcher/
-chown root.root scp_fetcher/
-sudo chown root.root scp_fetcher/
-chown root scp_fetcher/
-sudo chown root scp_fetcher/
-sudo chown root.root scp_fetcher/
-sudo chgrp root scp_fetcher/
-sudo chown root:root scp_fetcher/
-man chgrp
-man chown
-sudo chown -R root:root scp_fetcher/
-sudo chown -R "root:root" scp_fetcher/
-ll scp_fetcher/
-cd scp_fetcher/
-u
-b
-ls l
-ls -l
-ls -la
-sudo chown suzanshakya .
-u
-cd scp_fetcher/
-python scp_fetcher.py example-config.json 
-vi example-config.json 
-python scp_fetcher.py example-config.json 
-git status
-git checkout example-config.json 
-git status
-git diff
-git commit -am'local dir created only after first succesful fetching'
-git push
-git status /opt/makalu/ptf/update.sh 
-vi /opt/makalu/ptf/update.sh
-vim /opt/makalu/ptf/update.sh
-vi ~/.vimrc 
-vi /opt/makalu/ptf/update.sh
-vim /opt/makalu/ptf/update.sh
-ll /opt/makalu/ptf/
-vi /opt/makalu/ptf/update.sh
-vi ~/.vimrc 
-vi /opt/makalu/ptf/update.sh
-vi ~/.vimrc 
-pwd
-vim /opt/makalu/ptf/update.sh
-vi ~/.vimrc
-vim ~/.vimrc
-vi ~/.vimrc
-vim ~/.vimrc
-git status ~/.vimrc
-agit diff ~/.vimrc
-vi ~/.vimrc
-agit diff ~/.vimrc
-vi ~/.vimrc
-agit diff ~/.vimrc
-vi ~/.vimrc
-agit commit ~/.vimrc -m'added leader'
-git status ~/.vimrc
-agit status ~/.vimrc
-agit push ~
-pi mxdatetime
-rm .pip/pip.log 
-rm .pip/
-bi wireshark
-wireshark
-ll /usr/local/Cellar/wireshark/1.6.2/bin/tshark 
-/usr/local/Cellar/wireshark/1.6.2/bin/tshark 
-brew search wireshark
-brew options wireshark
-cd /opt/immune
-cd installed/col/
-vim
-ssh macbookpro@192.168.2.16
-vi .ssh/known_hosts 
-cd apps/scp_fetcher/
-vim
-ssh macbookpro@192.168.2.16
-pwd
-ls sujan-vpn
-cd sujan-vpn
-mkdir abc
-touch abc/def
-u
-vi example-config.json 
-python scp_fetcher.py example-config.json 
-vi example-config.json 
-cd /opt/immune/storage/col/scp_fetcher/
-cd 127.0.0.1/
-cd sid/
-rm c3VqYW4tdnBuL2FiYy9kZWY\= 
-python scp_fetcher.py example-config.json 
-u
-ls sid/
-u
-rm checksums.pdict 
-cd 127.0.0.1/
-cd sid/
-cd sujan-vpn/
-cd abc/
-u
-git diff
-python scp_fetcher.py example-config.json 
-rm sujan-vpn/
-rm .DS_Store 
-u
-cd sid/
-git status
-git diff lib/fetcherloop.py
-pwd
-u
-cd 127.0.0.1/
-cd sid/
-python scp_fetcher.py example-config.json -v
-u
-rm *
-cd 127.0.0.1/
-cd sid/
-cd sujan-vpn/
-ls abc/
-git status
-git diff lib/scp.py
-git status
-scp lib/scp.py 249:
-git status
-git checkout example-config.json 
-gs
-git diff ../../lib/libcol/uitest/scp_fetcher.py
-scp ../../lib/libcol/uitest/scp_fetcher.py 249:
-git status
-git commit lib/scp.py -m'implemented fetching of dirs'
-git commit ../../lib/libcol/uitest/scp_fetcher.py -m'it is not required to traverse all the paths'
-git status
-git push
-ssh 249
-ssh 249
-ssh 249
-git status
-pyflakes lib/
-pyflakes .
-sudo /opt/makalu/ptf/update.sh
-ipython
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-cd $col
-git log -p
-vi .ssh/config 
-pwd
-ssh 249
-cd /opt/immune
-cd $installed 
-cd $col
-cd apps/ftp_collector/
-vi example-config.json 
-vim $col
-vi ~/.vimrc 
-cd $col
-cd apps/ftp_fetcher/
-vi example-config.json 
-cd $storage 
-u
-cd storage/
-bmark store
-cd $store 
-cd col/ftp_collector/
-cd 127.0.0.1/
-cd beta/
-pwd
-touch abc
-ll ../../../ftp_fetcher/127.0.0.1/beta
-rm ../../../ftp_fetcher/checksums.pdict 
-ll ../../../ftp_fetcher/127.0.0.1/beta
-python ftp_fetcher.py example-config.json 
-vi example-config.json 
-python ftp_fetcher.py example-config.json 
-vi example-config.json 
-python ftp_collector.py example-config.json 
-vi example-config.json 
-python ftp_fetcher.py example-config.json 
-vi example-config.json 
-ll ../../../ftp_fetcher/127.0.0.1/
-ls ../../../ftp_fetcher/127.0.0.1/ | python -mpylib.path_decoder
-ls ../../../ftp_fetcher/127.0.0.1/ZnRwZnwxMjcuMC4wLjEtYmV0YToyMDIxOmFiYw== | python -mpylib.path_decoder
-cat abc 
-ls ../../../ftp_fetcher/127.0.0.1/ZnRwZnwxMjcuMC4wLjEtYmV0YToyMDIxOmFiYw== | python -mpylib.path_decoder
-python ftp_fetcher.py example-config.json 
-rm ../../../ftp_fetcher/checksums.pdict 
-ll ../../../ftp_fetcher/127.0.0.1/ZnRwZnwxMjcuMC4wLjEtY*
-rm ../../../ftp_fetcher/127.0.0.1/ZnRwZnwxMjcuMC4wLjEtY*
-vi example-config.json 
-python ftp_fetcher.py example-config.json 
-vi example-config.json 
-python ftp_fetcher.py example-config.json 
-pwd
-ll ..
-ll ../alpha/
-ll ../alpha/wiring.py 
-vi example-config.json 
-python ftp_fetcher.py example-config.json 
-cd $webserver 
-vi views/devices.py
-ll ..
-ll ../..
-ssh 249
-python ftp_collector.py example-config.json 
-cd
-ll bin/
-ll suz/
-rm suz
-cd /opt/immune
-vim
-ssh macbookpro@192.168.2.10
-ssh 249
-ssh 249
-u
-vi opera/reader/reader.js 
-vi opera/userjs/blurgoogle.js 
-vi opera/reader/reader.js 
-mkdir opera/youtube
-vi opera/youtube/video.js
-rm opera/youtube/
-vim installed/col/
-ssh 249
-cd $pylib 
-vi wiring/wiring.conf 
-ipython
-ipython
-ipython
-vi /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-ssh 10.99.0.23
-cd $configupdater 
-git branch
-git checkout v500
-vim
-git checkout master
-gs
-u
-pwd
-cd col/
-cd $installed 
-git pull
-cd config-updater/
-cd $installed 
-git pull
-cd informer/
-cd $installed 
-cd lookup/
-cd $installed 
-git pull
-cd norm/
-cd $pylib 
-cd $installed 
-git pull
-git pull
-cd col/
-git status
-git checkout apps/
-git status
-git checkout -b v510
-git status
-u
-for each in `ls`; do (cd $each && echo $each && git checkout -b v510); done
-cd $ptf 
-git status
-git diff update.sh 
-git checkout update.sh 
-b
-git status
-for each in `ls`; do (cd $each && echo $each && git checkout v510 && git status); done
-ls | egrep -v 'benchmarker|python-packages'
-for each in `ls|egrep -v 'benchmarker|python-packages'`; do (cd $each && echo $each && git checkout v510 && git status); done
-ls | egrep -v 'benchmarker|python-packages'
-ls | egrep -v 'benchmarker|python-packages|logen'
-for each in `ls|egrep -v 'logen|benchmarker|python-packages'`; do (cd $each && echo $each && git checkout v510 && git status); done
-cd col
-git status
-git push origin v510
-u
-for each in `ls|egrep -v 'logen|benchmarker|python-packages'`; do (cd $each && echo $each && git push origin v510); done
-vi pylib/pylib/inet.py
-cd $ptf 
-git status
-u
-cd /opt/immune
-cd installed/
-cd col
-cd $webserver 
-git status
-git pull
-git pull
-git pull origin v510
-git status
-git pull
-git pull origin v510
-git pull
-git pull origin maste
-git pull origin master
-git pull origin master
-cd $sys
-cd $system 
-vim
-bi solfege
-dkpt
-dkpg
-bi dpkg
-dpkg
-cd ~/projects/
-mv ~/Desktop/solfege-3.20.6.tar.gz .
-tar xzf solfege-3.20.6.tar.gz 
-cd so
-cd solfege-3.20.6
-./configure 
-bi gettext
-./configure 
-bi xgettext
-vi ./configure
-vi config
-vi ./configure.ac 
-./configure 
-ll /usr/local/Cellar/gettext/0.18.1.1/bin/
-export PATH="$PATH":/usr/local/Cellar/gettext/0.18.1.1/bin/
-./configure 
-bi gtk
-brew unlink gtk+
-pi pygtk
-vi ~/build/pygtk/INSTALL
-cd ~/build/pygtk/
-pwd
-./configure
-ll configure
-chmod +x configure
-./configure 
-bi glib
-bi glob
-bi gobject
-export PATH="$PATH:/usr/local/Cellar/glib/2.30.3/bin/"
-./configure 
-bi pkg_config
-locate pkg_config
-bi gtk
-bi pkg-config
-which pkg-config 
-ll /usr/local/Cellar/pkg-config/0.25/bin/
-export PATH="$PATH:/usr/local/Cellar/pkg-config/0.25/bin/"
-./configure 
-./configure 
-python
-pi pygobject
-cd ~/build/PyGObject/
-chmod +x configure
-./configure 
-bi gobject-introspection
-./configure 
-pi pycairo
-mv build/pycairo ~/build/
-ll build/
-rm build/
-cd ~/build/pyc
-cd ~/build/pycairo/
-vi INSTALL 
-chmod +x 
-chmod +x waf 
-./waf configure
-ssh 249
-bi cairo
-pi pycairo
-u
-pi pycairo
-pip install git+git://git.cairographics.org/git/pycairo
-cd /var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-uFqhB0-build
-python setup.py install
-vi setup.py 
-python setup.py install
-vi setup.py 
-python setup.py install
-ll /usr/local/Cellar/cairo/1.10.2/AUTHORS 
-vi /usr/local/Cellar/cairo/1.10.2/AUTHORS 
-vi setup.py 
-cd
-pi py2cairo
-pi git+git://git.cairographics.org/git/py2cairo
-cd /var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-Krjp3O-build
-vi INSTALL 
-chmod +x waf 
-./waf configure
-ll /usr/local/Cellar/cairo/1.10.2/bin
-export PATH=$PATH:/usr/local/Cellar/cairo/1.10.2/bin
-./waf configure
-vi waf
-echo $PATH
-vi /private/var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-Krjp3O-build/build_directory/config.log
-/usr/local/bin/pkg-config --atleast-version=1.10.2 cairo'
-/usr/local/bin/pkg-config --atleast-version=1.10.2 cairo
-/usr/local/bin/pkg-config cairo
-/usr/local/bin/pkg-config gtk
-/usr/local/bin/pkg-config python
-/usr/local/bin/pkg-config
-/usr/local/bin/pkg-config glib
-/usr/local/bin/pkg-config cairo
-vi /private/var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-Krjp3O-build/build_directory/config.log
-ll /usr/local/bin/pkg-config 
-./waf configure.ac 
-./waf configure
-bi libcairo2
-bi libcairo
-bi python-dev
-bi cairo
-bi cairo2
-vi configure.ac 
-b
-./configure 
-export $PKG_CONFIG_PATH
-echo $PKG_CONFIG_PATH
-export PKG_CONFIG_PATH=/usr/local/Cellar/
-./configure 
-f
-cd ~/build/pyca
-cd ~/build/pycairo/
-./waf configure
-u
-rm pycairo/
-pi git+git://git.cairographics.org/git/py2cairo
-cd var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-UuaatE-build
-cd /var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-UuaatE-build
-./waf configure
-bi cairo
-export PATH=$PATH:/usr/local/Cellar/cairo/1.10.2/
-./waf configure
-cd
-pi py-cairo
-bi solfege
-brew search pygtk
-cd projects/solfege-3.20.6
-./configure 
-export PATH="$PATH":/usr/local/Cellar/gettext/0.18.1.1/bin/
-./configure 
-bi pygtk
-vi INSTALL
-make
-sudo make install
-solfege 
-which solfege
-vi /usr/local/bin/solfege 
-vi /usr/local/share/solfege/solfege/mpd/rhythmwidget.py
-sudo vi /usr/local/share/solfege/solfege/mpd/rhythmwidget.py
-solfege 
-cd /usr/local/share/solfege/
-fgrep -rI gtk
-fgrep -rI gtk .
-fgrep -rI import gtk .
-fgrep -rI "import gtk" .
-fgrep -rI "import pygtk" .
-sed ':%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py
-sed ':%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head
-sed ':%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -10
-sed ':%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -20
-sed ':%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -30
-sed '%s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -30
-sed ':s/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -30
-sed 's/import gtk/import pygtk as gtk/g' solfege/trainingsetdlg.py | head -30
-vi abc
-sudo vi abc
-sed 's/gtk/pygtk' abc 
-sed 's/gtk/pygtk/' abc 
-sed 's/gtk/pygtk/g' abc 
-sed '/gtk/pygtk/g' abc 
-sed 'gtk/pygtk/g' abc 
-sed 'sgtk/pygtk/g' abc 
-sed 'gtk/pygtk/g' abc 
-sed 'sgtk/pygtk/g' abc 
-sed 's/gtk/pygtk/g' abc 
-sed -e 's/gtk/pygtk/g' abc 
-sed -i 's/gtk/pygtk/g' abc 
-sed -ie 's/gtk/pygtk/g' abc 
-sudo sed -ie 's/gtk/pygtk/g' abc 
-vi abc
-sudo rm abc
-fgrep -rI "import pygtk" .
-sudo vi /usr/local/share/solfege/solfege/mpd/rhythmwidget.py
-fgrep -rI "import pygtk" .
-sudo sed -ie "s/import gtk/import pygtk as gtk/g" .
-fgrep -rI "import pygtk" .
-fgrep -rI "import gtk" .
-man sed
-sudo sed -ie "s/import gtk/import pygtk as gtk/g" -ipy
-sudo sed -ie "s/import gtk/import pygtk as gtk/g" -i"py"
-sudo sed -ie "s/import gtk/import pygtk as gtk/g" -i".py"
-man sed
-sudo sed -e "s/import gtk/import pygtk as gtk/g" -i".py"
-sudo sed -e "s/import gtk/import pygtk as gtk/g" -i".py" .
-sudo sed -i .py -e "s/import gtk/import pygtk as gtk/g" .
-find . -type py
-find . -name '.py'
-find . -name '*.py'
-find . -name '*.py' -exec sed -i 's/import gtk/import pygtk as gtk/g' {} \;
-find . -name '*.py' -exec sed -ie 's/import gtk/import pygtk as gtk/g' {} \;
-sudo find . -name '*.py' -exec sed -ie 's/import gtk/import pygtk as gtk/g' {} \;
-fgrep -rI "import gtk" .
-find . -name '*.pye'
-find . -name '*.pye' -exec sudo rm {} \'
-find . -name '*.pye' -exec sudo rm {} \;
-fgrep -rI "import gtk" .
-find . -type f
-b
-rm /usr/local/share/solfege/
-sudo rm /usr/local/share/solfege/
-sudo rm -r /usr/local/share/solfege/
-cd projects/solfege-3.20.6
-./configure 
-export PATH="$PATH":/usr/local/Cellar/gettext/0.18.1.1/bin/
-./configure 
-make
-sudo make install
-cd /usr/local/share/solfege/
-fgrep -rI "import gtk" .
-cd $col
-vim
-cd $configupdater 
-gitx
-gitx apps/config_updater/libupdater/gens/col.py
-git log apps/config_updater/libupdater/gens/col.py
-git log -p apps/config_updater/libupdater/gens/col.py
-c
-vim
-git log -p apps/config_updater/libupdater/gens/liv4_collector.py
-cd $configupdater 
-git checkout 189669a780fc6c1d53d3700bcb77b6079fe0e161 apps/config_updater/libupdater/gens/norm.py
-git log -p apps/config_updater/libupdater/gens/norm.py
-git status
-git checkout apps/
-git status
-git staus
-git status
-git branch
-git checkout apps/
-gs
-git checkout apps/config_updater/libupdater/gens/norm.py
-git status
-git reset apps/
-git checkout apps/
-git status
-git log -p apps/liv4_collector/lib/transformer.py
-git log -p apps/liv4_collector/lib/device_router.py
-ssh support@192.168.2.51
-git diff apps/config_updater/libupdater/gens/storage.py
-git commit apps/config_updater/libupdater/gens/storage.py -m'removed double iteration'
-git diff apps/config_updater/libupdater/gens/storage.py
-git commit apps/config_updater/libupdater/gens/storage.py -m'removed 1 indentation'
-git status
-git diff
-git status
-git commit -am'added generated filesystem collector paths'
-cd apps/liv4_collector/
-git status
-git diff
-git status
-git diff
-git commit -am'generated sid for nom_front and store_handler config.json'
-git status
-git status
-git diff
-git status
-git diff
-git status
-git commit -am'slept 1 hour before removing sid from norm_front and store_handler, because may logs may still exist in zmq queues'
-ssh 249
-ssh 249
-ssh support@10.99.0.23
-ssh support@10.99.0.23
-git log
-git status
-git push --dry-run
-git help push
-git push -n
-git status
-git status
-git log
-git diff origin/v510
-git diff origin/master
-scp lib/transformer.py support@192.168.2.51:
-git status
-scp apps/config_updater/libupdater/gens/norm.py support@192.168.2.51:
-scp apps/config_updater/libupdater/gens/storage.py support@192.168.2.51:
-git status
-git diff
-git commit -am'deleted uploaded compressed file also'
-scp lib/transformer.py support@192.168.2.51:
-ll storage*
-ll storage.tgz 
-lh storage.tgz 
-ftp 192.168.2.51 2021
-scp apps/config_updater/libupdater/gens/norm.py support@192.168.2.51:
-ftp 192.168.2.51 121
-git status
-git log
-git status
-pyflakes ../ips_sdee_fetcher/lib/fetcherloop.py
-pyflakes ../wmi_fetcher/lib/fetcherloop.py
-git status
-git diff
-git status
-git commit -am'fixed indentation problem'
-git status
-git diff
-git push
-git commit -am'fixed generated filesystemcollector paths'
-git status
-git push
-cd $pylib 
-vim
-git status
-git pull origin v510
-gs
-git checkout msgfilling.py
-git status
-git diff
-git status
-git diff
-git commit -am'safely converted address to utf'
-git branch
-git status
-git push origin master
-cd $webserver 
-git status
-git diff
-pyflakes models/documents.py
-git status
-git diff
-git commit -am'used ip validation from pylib.msgfilling instead of netaddr which thinks integer also as an IP'
-git status
-git push
-ssh support@192.168.2.51
-git status
-git pull
-git push origin master
-git push origin v510
-git push origin v510
-git push origin v510
-git pull origin v510
-git push origin v510
-git checkout master
-git merge v510
-git checkout 
-git push origin master
-git merge v510
-git branch
-git checkout master
-git merge v510
-git checkout master
-git merge v510
-git push origin master
-git push origin master
-git status
-git pull
-git status
-git diff origin/master
-git pull origin master
-git push origin master
-git status
-git pull origin master
-git status
-git checkout v510
-git merge master
-git status
-git merge master
-git branch
-git push origin v510
-vi msgfilling.py
-git branch
-git checkout v510
-git status
-git reset msgfilling.py
-git status
-git checkout msgfilling.py
-git checkout master
-git status
-vi msgfilling.py
-git checkout master
-vi msgfilling.py
-git status
-git checkout v510
-git merge master
-git status
-git push origin master
-git status
-git pull origin master
-git status
-git reset --hard origin/master
-git pull origin master
-vi msgfilling.py
-git merge v510
-git branch
-git merge master
-vi msgfilling.py
-git checkout v510
-git status
-git reset msgfilling.py
-git checkout msgfilling.py
-git status
-git checkout master
-vi msgfilling.py
-cp msgfilling.py{,.bak}
-git checkout master
-vi msgfilling.py
-git status
-git checkout master
-git checkout v510
-git status
-vi msgfilling.py
-rm msgfilling.py.bak 
-git merge master
-git status
-git reset msgfilling.py
-git checkout msgfilling.py
-vi msgfilling.py
-git merge master
-vi msgfilling.py
-git status
-vi msgfilling.py
-git checkout mast
-git checkout master
-cp msgfilling.py{,.bak}
-git checkout v510
-mv msgfilling.py{.bak,}
-git status
-git add msgfilling.py
-git status
-vi msgfilling.py
-git commit -am'resolved conflicts'
-git status
-git push
-git status
-git push origin master
-git pull origin master
-git branch
-git pull origin v510
-git push origin v510
-git checkout master
-git push origin master
-git pull origin master
-vi msgfilling.py
-git checkout v510
-git reset msgfilling.py
-git checkout msgfilling.py
-git checkout v510
-cp msgfilling.py{,.bak}
-git checkout master
-mv msgfilling.py{.bak,}
-git status
-git log
-git merge v510
-git status
-git checkout v510
-cp msgfilling.py{,.bak}
-git checkout master
-git pull origin master
-git push origin master
-git merge v510
-gc master
-git merge master
-u
-git status
-ssh support@192.168.2.51
-ssh 249
-cd /usr/local/share/solfege/
-fgrep -rI 'import gtk' .
-mkdir solfege
-cp solfege/tra*.py ~/solfege/
-cd solfege/
-afind -name "*.py" -exec se
-fgrep -rI 'import gtk' .
-find -name "*.py" -exec sed 's/import gtk/import pygtk as gtk/g' {} \;
-find . -name "*.py" -exec sed 's/import gtk/import pygtk as gtk/g' {} \;
-find . -name "*.py" -exec sed -i's/import gtk/import pygtk as gtk/g' {} \;
-find . -name "*.py" -exec sed -i 's/import gtk/import pygtk as gtk/g' {} \;
-find . -name "*.py" -exec sed -ie 's/import gtk/import pygtk as gtk/g' {} \;
-fgrep -rI 'import gtk' .
-rm *.pye
-sed -ie 's/import gtk/import pygtk as gtk/g' trainingsetdlg.py 
-rm trainingsetdlg.py
-fgrep -rI 'import gtk' .
-fgrep -rI 'import pygtk as gtk' .
-sed -i 's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-sed -i -e's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-sed -i'' 's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-sed -i'' -e's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-mv trainingsetdlg.py{e,}
-fgrep -rI 'import pygtk as gtk' .
-sed -i'' 's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-sed -i '' 's/import pygtk as gtk/import gtk/g' trainingsetdlg.py 
-fgrep -rI 'import pygtk as gtk' .
-sed -i '' 's/import pygtk as gtk/import gtk/g' t*
-fgrep -rI 'import pygtk as gtk' .
-fgrep -rI 'import gtk' .
-find . -name "*.py" -exec sed -i '' 's/import gtk/import pygtk as gtk/g' {} \;
-fgrep -rI 'import gtk' .
-fgrep -rI 'import pygtk' .
-asudo find . -name "*.py" -exec sed -i '' 's/import gtk/import pygtk as gtk/g' {} \;
-fgrep -rI 'import gtk' .
-fgrep -rI 'import pygtk' .
-sudo find . -name "*.py" -exec sed -i '' 's/import gtk/import pygtk as gtk/g' {} \;
-fgrep -rI 'import gtk' .
-solfege
-pi pango
-u
-rm solfege
-solfege 
-pi pango
-bi pango
-python
-pi git+git://git.gnome.org/pango
-ftp 192.168.2.249 101
-ll storage_log.tgz 
-ll storage.tgz 
-ftp 192.168.2.249 121
-cd $webserver 
-vim views/dashboard.py
-vim views/transport.py
-pi pymongo
-python
-solfege 
-python
-pi pango
-pi pypango
-bi pango
-solfege 
-python
-bi pygtk
-bi python-gtk2
-bi gtk
-pi gtk
-python
-locate pygtk
-bi python-gtk
-bi python-gtk2
-bi search gtk
-pi python-gtk
-bi search pygtk
-brew search gtk
-pip search gtk
-brew install gtk+
-cd $col
-vim apps/liv4_collector/
-git status
-git checkout mastetr
-git checkout mastet
-git checkout master
-ssh 249
-cd projects/
-cd jobs/
-mkdir vijaykanth
-cd vijaykanth/
-touch server.py
-touch client.py
-vim
-cd $pylib 
-vim
-ipython
-sudo /opt/makalu/ptf/update.sh
-/opt/makalu/ptf/update.sh
-vi /opt/makalu/ptf/update.sh
-BRANCH=v510 /opt/makalu/ptf/update.sh
-cd $webserver 
-vim
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-cd /opt/immune
-ssh 249
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-fgrep -rI pymongo .
-ack pymongo
-pip install --upgrade pymongo
-pip uninstall pymongo
-pip install pymongo
-pip uninstall pymongo
-rm build/pymongo/
-pip install pymongo
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-vi .vimrc
-agit status $webserver
-python gevent_pymongo.py 
-vi gevent_pymongo.py
-python gevent_pymongo.py 
-bi  ctags
-which ctags 
-vim $webserver 
-cd $webserver 
-ctags *.py
-vi tags 
-brew search ctags
-pi python-ctags
-vi .vim/plugin/taglist.vim 
-vi ~/.vimrc 
-rm tags 
-cd $col
-vi .vimrc 
-vim
-ll tags 
-vi checksum.py
-vi tags 
-vim
-ctags -R
-rm tags 
-vim
-rm tags 
-which ctags
-vi .vimrc 
-vim
-sudo ./etc/service/mongodb/run 
-cd $pylib 
-u
-pwd
-ctags -R --python-kinds=i --languages=+python .
-pwd
-clera
-echo $PATH
-echo $PYTHONPATH
-for each in $PYTHONPATH; do echo $each; done
-for each in $PYTHONPATH; do echo $each; echo; done
-echo ${PYTHONPATH//./ }
-echo ${PYTHONPATH//:/ }
-echo ${PYTHONPATH//:/}
-echo ${PYTHONPATH//:/ }
-echo ${PYTHONPATH/:/ }
-echo ${PYTHONPATH//:/ }
-for each in ${PYTHONPATH//:/ }; do echo $each; echo; done
-for each in ${PYTHONPATH//:/ }; do echo $each; done
-vi .vimrc 
-actags -R --python-kinds=i --languages=+python /opt/immune/installed/pylib/tags 
-rm /opt/immune/installed/pylib/tags 
-ctags -R --python-kinds=i --languages=+python /opt/immune/installed/pylib/tags 
-ctags -R --python-kinds=i --languages=+python /opt/immune/installed/pylib
-ctags -R --python-kinds=i --languages=+python /opt/immune/installed/pylib /opt/immune/installed/pylib/tags
-rm tags 
-. .bash_profile
-ctags-pythonpath 
-vi .bash_profile 
-vi .vimrc 
-git log
-gitx
-git log apps/snmp_fetcher/lib/fetcherloop.py
-cd $col
-git checkout 8d184b00269ebd81e0354f6832436dba639e99b9
-git log -p apps/snmp_fetcher/lib/fetcherloop.py
-vim
-echo $PYTHONPATH
-export PYTHONPATH="/opt/immune/installed/col/lib /opt/immune/installed/pylib"
-python
-export PYTHONPATH="/opt/immune/installed/col/lib;/opt/immune/installed/pylib"
-python
-export PYTHONPATH="/opt/immune/installed/col/lib:/opt/immune/installed/pylib"
-python
-vim
-vi .bash_profile 
-export $PYTHONPATH_TAGS 
-echot $PYTHONPATH_TAGS 
-echo $PYTHONPATH_TAGS 
-vi .vimrc 
-vi .bash_profile 
-vim $col
-echo $PYTHONPATH_TAGS 
-vi .vimrc 
-vi .bash_profile 
-vi .vimrc 
-vim $col
-ctags-pythonpath 
-echo PYTHONPATH
-echo $PYTHONPATH
-echo ${PYTHONPATH//:/tags,}
-echo ${PYTHONPATH//:/\/tags,}
-vi .bash_profile 
-vi .vimrc 
-vim $col
-ctags --list-kinds
-ctags --list-kinds=python
-ctags --languages
-vi .bash_profile 
-ctags-pythonpath 
-vim $col 
-locate site-packages
-ll /usr/local/lib/python2.6/site-packages/
-vi .bash_profile 
-vi .vimrc 
-vi .bash_profile 
-vi .vimrc 
-ll python/tags 
-vi python/tags 
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/
-echo $PYTHONPATH
-echo $PYTHONPATH_TAGS 
-ctags-pythonpath 
-echo $PYTHONPATH_TAGS 
-vi .vimrc 
-vim $col
-cd $col
-git log apps/snmp_fetcher/lib/fetcherloop.py
-git log -p apps/snmp_fetcher/lib/fetcherloop.py
-vim
-ll apps/opsec_fetcher/
-ll apps/opsec_fetcher/lib/
-git status
-git checkout master
-rm lib/tags 
-rm tags 
-echo $PYTHONPATH_TAGS 
-ctags-pythonpath 
-ctags-pythonpath 
-echo $PYTHONPATH_TAGS 
-vim $col
-ll $col
-vim $col
-dirname 
-echo $PYTHONPATH_TAGS 
-ctags-pythonpath 
-cd $col
-gs
-rm tags 
-rm lib/tags 
-git diff
-git checkout apps/
-gs
-vi .bash_profile 
-vim
-gs
-echo $PYTHONPATH
-echo $PYTHONPATH_TAGS
-echo $PYTHONPATH_TAGS 
-rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/tags 
-vi .bash_profile 
-ctags-pythonpath 
-lh /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags 
-vim $col
-git status .vimrc 
-git diff .vimrc 
-git commit .vimrc -m'added Tlist_File_Fold_Auto_Close to show only on active buffers'
-git commit --amend -m'added ctags'
-git log
-git commit .vimrc -m'added Tlist_File_Fold_Auto_Close to show only on active buffers; added ctags'
-git commit --amend -m'added Tlist_File_Fold_Auto_Close to show only on active buffers; added ctags'
-git log
-git diff .bash_profile 
-git commit .bash_profile 'added function for generating ctags on PYTHONPATHs'
-git commit .bash_profile -m'added function for generating ctags on PYTHONPATHs'
-git push
-cd projects/jobs/
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-vi ab.py
-python ab.py 
-cd /Users/suzanshakya/projects/jobs/
-bmark
-python ab.py 
-vi ab.py
-ps aux | grep python
-ipython
-locate pygtk
-echo $PYTHONPATH_TAGS 
-ipython
-vi /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/os.py
-echo $PYTHONPATH_TAGS 
-vim $col
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags
-bi cscope
-bi python-cscope
-brew search cscope
-pi pycscope
-vi /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags 
-python
-which pycscope.py 
-vi `which pycscope.py `
-cd $pylib 
-pwd
-u
-pwd
-pycscope.py -R .
-vi cscope.out 
-bi idutils
-cd
-ll cscope_maps.vim .vim/plugin/cscope_maps.vim 
-ll cscope_maps.vim 
-rm cscope_maps.vim 
-ll .vim/plugin/cscope_maps.vim 
-ll .vim/plugin/
-cd $col
-vim
-rm tags 
-cd $pylib 
-u
-rm tags 
-pwd
-cd pylib/
-rm tags 
-pycscope.py -R .
-vim
-ll cscope.out 
-vi ~/.vim/plugin/cscope_maps.vim 
-vim
-vi ~/.vim/plugin/cscope_maps.vim 
-mv ~/.Trash/cscope_maps.vim ~/.vim/plugin/cscope_maps.vim 
-vi ~/.vim/plugin/cscope_maps.vim 
-vim
-vi ~/.vim/plugin/cscope_maps.vim 
-bi macvim +cscope
-bi macvim
-mvim -v
-brew unlink macvim
-brew options macvim
-brew install macvim --with-cscope --with-python
-vim
-vi .vimrc 
-cd $col 
-vim checksum.py
-vi checksum.py
-cd
-find .vim/ -name 'pyflakes'
-fgrep -rI pyflakes .vim
-vi .vim/ftplugin/python/pyflakes.vim
-vi abc.apsw 
-rm abc.apsw 
-rm abc.def/
-rm 1342*
-vi a.py
-vi b.py 
-vi contestapplet.conf
-vi c
-vi current 
-rm current 
-vi echo 
-rm echo 
-vi enc
-rm enc
-vi encoded.txt 
-rm encoded.txt 
-vi ftp_client.py 
-vi ftp_server.py 
-rm ftp_*
-rm indexsearcher.jar 
-vi json 
-rm json 
-vi cat 
-rm cat 
-rm mrtg.*
-vi netflowdata 
-rm npm-debug.log 
-vi odesk_test.py 
-vi regex_speed.py 
-vi test.fi 
-rm test.fi 
-vi test_ssh.txt 
-rm test_ssh.txt 
-vi tutu.py 
-rm tutu.py 
-rm ørånge 
-vi wiring.py 
-rm wiring.py 
-vi while.py 
-rm while.py 
-pwd
-locate tags
-vi .vimrc 
-echo $PYTHONPATH_TAGS 
-ctags-pythonpath 
-cd $col
-ctags -R --python-kinds=-i --languages=python /opt/immune/installed/pylib /opt/immune/installed/pylib/tags
-ctags -R --python-kinds=-i --languages=+python /opt/immune/installed/pylib /opt/immune/installed/pylib/tags
-ctags -R --python-kinds=-i --languages=python /opt/immune/installed/pylib /opt/immune/installed/pylib/tags
-pycscope.py -h
-pycscope.py -R .
-vim
-cd $pylib 
-rm cscope.out 
-which mvim
-du -sh /usr/local/Cellar/macvim/7.3-61/
-du -sh /usr/local/Cellar/macvim/*
-ll cscope.out 
-u
-rm cscope.out 
-pycscope.py -R .
-vim
-pycscope.py
-pycscope.py -h
-pycscope.py -R -f /opt/immune/installed/pylib/cscope.out /opt/immune/installed/pylib
-ll cscope.out 
-echo $PYTHONPATH_TAGS 
-pycscope.py -R -f /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out /usr/local/Cellar/python2.6/2.6.5/lib/python2.6
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-lh /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-lp
-vim
-vim apps/syslog_collector/syslog_collector.py
-cd
-vi ~/.vimrc 
-vi .bash_profile 
-pwd
-cd projects/
-pwd
-cd nepalbid/
-pwd
-pwd
-cd $pylib 
-cd $col
-cd $pylib 
-vi .vimrc 
-vi apps/syslog_collector/syslog_collector.py
-vim apps/syslog_collector/syslog_collector.py
-cd apps/syslog_collector/
-vim syslog_collector.py
-u
-vim apps/syslog_collector/syslog_collector.py
-vi apps/syslog_collector/syslog_collector.py
-vim apps/syslog_collector/syslog_collector.py
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-fgrep monkey /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-fgrep select /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-fgrep select.py /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-vim apps/syslog_collector/syslog_collector.py
-vi .vimrc 
-vi /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out
-cd $col
-lh /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/tags 
-lh /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out 
-vim apps/syslog_collector/syslog_collector.py
-vi .bash_profile 
-pwd
-python
-python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'
-dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`
-echo $((dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`))
-echo $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)
-echo dirname $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)
-dirname $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)
-echo $(dirname $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`))
-dirname $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)
-echo $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)
-echo $PYTHONPATH_TAGS 
-vi ~/.bash_profile 
-ctags-pythonpath 
-vi ~/.bash_profile 
-vi .vimrc
-vi ~/.vimrc
-vi ~/.bash_profile 
-vi ~/.vimrc
-vi ~/.bash_profile 
-brew install excuberant-ctags
-brew search ctags
-ll .vim/plugin/taglist.vim 
-vi .vim/plugin/taglist.vim 
-vim
-pwd
-cd $lookup 
-ll lib/
-ll lib/liblookup/
-ll lib/liblookup/scripted/
-vi lib/liblookup/scripted/__init__.py
-vi lib/liblookup/scripted/dns.py
-cd ~/projects/solfege-3.20.6
-u
-solfege 
-bi solfege
-ipython
-pi gtk
-pi python-gtk
-brew search gtk
-pip search gtk
-pip install gnome-python
-pip install pygtk
-gnome-pytho
-ipython
-vimpy -m pygtk
-open .wine/drive_c/Program\ Files/GNU\ Solfege/bin/solfege
-.wine/drive_c/Program\ Files/GNU\ Solfege/bin/solfege
-chmod +x .wine/drive_c/Program\ Files/GNU\ Solfege/bin/solfege
-.wine/drive_c/Program\ Files/GNU\ Solfege/bin/solfege
-.wine/drive_c/Program\ Files/GNU\ Solfege/bin/python.exe -c 'print "hi"'
-wine .wine/drive_c/Program\ Files/GNU\ Solfege/bin/python.exe -c 'print "hi"'
-wine .wine/drive_c/Program\ Files/GNU\ Solfege/bin/solfege
-cd .wine/
-cd drive_c/
-ll Program\ Files/GNU\ Solfege/readme.
-ll Program\ Files/GNU\ Solfege/readme.txt 
-less Program\ Files/GNU\ Solfege/readme.txt 
-wine Program\ Files/GNU\ Solfege/bin/solfegedebug.bat 
-solfege 
-ll .wine/drive_c/Program\ Files/GNU\ Solfege/etc/pango/pango.modules 
-cd projects/solfege-3.20.6
-sudo make install
-u
-solfege 
-ll /usr/local/lib/python/2.6
-ll /usr/local/lib/python2.6
-ll /usr/local/lib/python2.6/site-packages/
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0/
-PYTHONPATH=${PYTHONPATH}:/usr/local/lib/python2.6/site-packages/gtk-2.0/ solfege
-echo $PYTHONPATH
-export PYTHONPATH=${PYTHONPATH}:/usr/local/lib/python2.6/site-packages/gtk-2.0/
-echo $PYTHONPATH
-ipython
-python
-python -c'import gtk'
-vi `which solfege`
-solfege 
-vi `which solfege`
-solfege 
-vi `which solfege`
-python -c'import solfege.startup'
-vi `which solfege`
-python
-cd projects/
-python
-/usr/bin/python -c'import gtk'
-/usr/bin/python -c'import cairo'
-/usr/local/bin/python -c'import gtk'
-python
-cd projects/
-brew uninstall cairo
-brew search cairo
-bi py2cairo
-brew uninstall py2cairo
-brew install py2cairo
-python
-pip install py2cairo
-brew install py2cairo
-python -c 'import cairo'
-cd `brew --prefix`
-pwd
-git checkout -b pygtk
-pwd
-git status
-git branch
-git pull 7655
-brew pull 7655
-git am --skip
-git diff 
-git status
-git branch
-git checkout master
-git branch -d pygtk
-git status
-bi py2cairo
-/usr/bin/python -c 'import cairo'
-/usr/bin/python
-export PYTHONPATH=/opt/gtk/lib/python2.6/site-packages
-python
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0/
-python 
-ll /usr/local/Cellar/pygtk/2.24.0/lib/python2.6/site-packages/gtk-2.0/
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0/
-vi ~/.bash_profile 
-python
-vi ~/.bash_profile 
-python
-python
-solfege 
-echo $PYTHONPATH
-ll :/usr/local/lib/python2.6/site-packages/gtk-2.0
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0
-brew unlink gtk+
-brew unlink pygtk
-youtube-dl http://www.youtube.com/watch?v=Iw9-GckD-gQ
-sudo rm -rf /opt/gtk/
-chown root:root /opt/
-chown root /opt/
-sudo chown root /opt/
-touch /opt/ab
-sudo rm -rf /usr/local/Cellar/gtk+/2.24.*
-sudo rm -rf /usr/local/Cellar/gtk+
-sudo rm -rf /usr/local/Cellar/pygobject
-sudo rm -rf /usr/local/Cellar/pygtk/
-bi pygtk
-python
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0
-sudo rm -rf /usr/local/lib/python2.6/site-packages/gtk-2.0/
-locate gtk
-sud rm -rf /usr/local/Cellar/pango/
-sudo rm -rf /usr/local/Cellar/pango/
-sudo rm -rf /usr/local/Cellar/cairo/
-sudo rm -rf /usr/local/Cellar/gobject-introspection/
-sudo rm -rf /usr/local/Cellar/glib/
-rm -rf .wine/drive_c/Program\ Files/GNU\ Solfege/
-mv Iw9-GckD-gQ.flv python-high-performance.py
-mv python-high-performance.{py,flv}
-vi .bash_profile 
-ll /opt/
-bi pygtk
-python
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0/
-python
-vi .bash_profile 
-/usr/bin/python
-cd /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/
-python
-cd /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/
-ll cairo/
-u
-b
-/usr/bin/python
-vi cairo/__init__.py
-brew unlink cairo
-brew unlink py2cairo
-sudo rm -rf /usr/local/Cellar/py2cairo/
-sudo rm -rf /usr/local/Cellar/cairo/
-cd /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/
-/usr/bin/python
-bi py2cairo
-ll /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/
-python
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0/
-python
-ipython
-ll /usr/local/lib/python2.6/site-packages/cairo
-ll  '/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages',
-python
-pi py2cairo
-pi cairo
-rm .pip/pip.log 
-python
-brew uninstall py2cairo
-python
-brew install py2cairo
-tar xzf /Users/suzanshakya/Library/Caches/Homebrew/py2cairo-1.10.0.tar.bz2
-python
-brew unlink py2cairo
-cd py2cairo-1.10.0/
-vi INSTALL 
-./waf configure
-locate Formula
-vi /usr/local/Library/Formula/cairo.rb 
-vi /usr/local/Library/Formula/py2cairo.rb 
-cat /usr/local/Library/Formula/py2cairo.rb 
-./waf configure --prefix=/usr/local/Cellar/
-./waf configure --prefix=/usr/local/
-vi /usr/local/Library/Formula/py2cairo.rb 
-brew install py2cairo
-brew uninstall py2cairo
-brew install py2cairo
-irb
-brew uninstall py2cairo
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0/
-pwd
-vi /usr/local/Library/Formula/py2cairo.rb 
-a./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --no-pyc --no
-cat /usr/local/Library/Formula/py2cairo.rb 
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-./waf configure --prefix=/usr/local/Cellar/cairo/1.10.0 --nopyc --nopyo
-vi /usr/local/Library/Formula/py2cairo.rb 
-bi py2cairo
-brew uninstall py2cairo
-vi /usr/local/Library/Formula/py2cairo.rb 
-pwd
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-vi /usr/local/Library/Formula/py2cairo.rb 
-which brew
-vi `which brew`
-pwd
-ls build_directory/
-rm build_directory/
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-vi build_directory/config.log 
-'/usr/local/bin/pkg-config' '--atleast-version=1.10.0' 'cairo'
-sudo chown suzanshakya /opt/
-u
-rm py2cairo-1.10.0/
-brew unlink py2cairo
-bi py2cairo
-brew unlink cairo
-rm /usr/local/Cellar/py2cairo/
-rm /usr/local/Cellar/cairo/
-ll /opt/ll
-ll /opt/
-ll -d /opt/
-ll /opt/
-bi py2cairo
-loop ll /opt/
-python
-/usr/bin/python
-echo $PYTHONPATH
-ll /opt/
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0
-/usr/bin/python
-python
-ll /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo
-python
-ipython
-ll /usr/local/lib/python2.6/site-packages
-cat /usr/local/lib/python2.6/site-packages/homebrew.pth 
-python
-ipython
-python
-locate cairo
-/usr/bin/python
-python
-python -v
-ll /usr/local/lib/python2.6/site-packages/cairo/
-rm /usr/local/lib/python2.6/site-packages/cairo/
-rm /usr/local/Cellar/cairo/
-rm /usr/local/Cellar/py2cairo/
-python
-ll /opt/
-bi cairo
-LDFLAGS  -L/usr/local/Cellar/cairo/1.10.2/lib
-tar xzf /Users/suzanshakya/Library/Caches/Homebrew/py2cairo-1.10.0.tar.bz2
-cd py2cairo-1.10.0/
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-./waf configure --help
-./waf --help
-./waf configure --help
-bi cairo
-brew uninstall cairo
-bi cairo
-vi ./waf 
-/usr/bin/env python
-/usr/bin/python
-./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-LDFLAGS="-L/usr/local/Cellar/cairo/1.10.2/lib" CPPFLAGS="-I/usr/local/Cellar/cairo/1.10.2/include" ./waf
-cd py2cairo-1.10.0/
-rm build_directory/
-LDFLAGS="-L/usr/local/Cellar/cairo/1.10.2/lib" CPPFLAGS="-I/usr/local/Cellar/cairo/1.10.2/include" ./waf --configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-LDFLAGS="-L/usr/local/Cellar/cairo/1.10.2/lib" CPPFLAGS="-I/usr/local/Cellar/cairo/1.10.2/include" ./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo
-vi config
-vi configure
-./configure 
-sh ./configure 
-sh INSTALL 
-vi INSTALL 
-LDFLAGS="-L/usr/local/Cellar/cairo/1.10.2/lib" CPPFLAGS="-I/usr/local/Cellar/cairo/1.10.2/include" ./waf configure --prefix=/usr/local/Cellar/py2cairo/1.10.0 --nopyc --nopyo --libdir=/usr/local/Cellar/cairo/1.10.2/lib
-vi INSTALL 
-vi NEWS 
-u
-rm py2cairo-1.10.0/
-sudo chown suzanshakya /opt/
-python
-u
-cd
-pwd
-rm /usr/local/Cellar/cairo
-bi pygtk
-brew uninstall pygtk
-loop ll /opt/
-python
-bi pygtk
-pkg-config -exists cairo
-pkg-config --exists cairo
-pkg-config --exists cairo; echo $?
-brew --config
-brew doctor
-python
-ll /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-ll /usr/local/lib/python2.6/site-packages/cairo/
-ll /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-ll /usr/local/lib/python2.6/site-packages/cairo/
-otool -L /usr/local/lib/python2.6/site-packages/cairo/_cairo.so 
-man otool
-otool -L /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-clang -t -lpython2.6
-ld -t -lpython2.6
-man ld
-man clang
-python-config --ldflags
-brew uninstall py2cairo
-brew rm -rf py2cairo
-brew rm -rf cairo
-brew unlink cairo
-claer
-brew install py2cairo
-otool -L /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-python
-cp /usr/local/Library/Formula/py2cairo.rb{,.bak}
-vi /usr/local/Library/Formula/py2cairo.rb
-bi py2cairo
-brew unlink py2cairo
-bi py2cairo
-brew unlink py2cairo
-bi py2cairo
-brew uninstall py2cairo
-bi py2cairo
-python
-rm /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-python
-rm /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/
-python -m cairo
-python -c'import cairo'
-python -v
-python -vc'import cairo'
-rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/cairo/
-python -vc'import cairo'
-python
-bi py2cairo
-brew uninstall py2cairo
-python -c'import cairo'
-bi py2cairo
-otool -L /usr/local/Cellar/py2cairo/1.10.0/lib/python2.6/site-packages/cairo/_cairo.so 
-python
-vi /usr/local/Library/Formula/py2cairo.rb 
-vi .bash_profile 
-ll /opt/
-ll /usr/local/lib/python2.6/site-packages/gtk-2.0
-solfege
-vi .bash_profile 
-ll /usr/local/share/solfege/graphics/solfege.svg
-open /usr/local/share/solfege/graphics/solfege.svg
-solfege
-brew upgrade
-bi libsvg
-solfege 
-cd projects/jobs/
-cd vijaykanth/
-vim
-git status
-git init
-git add client.py 
-git add server.py 
-git status
-git commit -m'added initial files'
-vim
-ipython
-vim $pylib 
-python server.py 
-ipython
-git status
-git diff
-git status
-git commit -am'completed first version'
-python server.py 
-pyflakes server.py 
-python server.py 
-git status
-git diff
-git status
-python server.py 
-git diff
-git commit -am'upon json error and key error, error str replied'
-gs
-python server.py 
-git status
-git diff
-git status
-git commit -am'added documentation'
-gs
-vim $pylib 
-python server.py 
-pyflakes server.py 
-git diff
-git commit -am'used expiry'
-gs
-gd
-git commit -am'removed return'
-pyflakes server.py 
-gs
-ipython
-ll server.py 
-gs
-pyflakes server.py 
-gs
-lh server.py 
-solfege 
-bi libsvg
-python
-brew uninstall cairo
-brew uninstall py2cairo
-python
-brew intall py2cairo
-ll /Users/suzanshakya/Library/Caches/Homebrew/py2cairo-1.10.0.tar.bz2
-brew install py2cairo
-lh /Users/suzanshakya/Library/Caches/Homebrew/py2cairo-1.10.0.tar.bz2
-ll /Users/suzanshakya/Library/Caches/Homebrew/cairo-1.10.2.tar.gz
-lh /Users/suzanshakya/Library/Caches/Homebrew/cairo-1.10.2.tar.gz
-solfege 
-python
-bi librsvg
-solfege 
-bi glib
-bi uninstaglib
-bi uninstall glib
-brew uninstall glib
-python
-brew install glib
-solfege 
-vi /usr/local/share/solfege/solfege/stock.py
-sudo vi /usr/local/share/solfege/solfege/stock.py
-solfege 
-sudo vi /usr/local/share/solfege/solfege/stock.py
-solfege 
-vimpy -m solfege
-m gtk
-vi /usr/local/lib/python2.6/site-packages/gtk-2.0/gtk/__init__.py
-brew search rsvg
-bi librsvg
-bi libsvg
-brew search svg
-pi rsvg
-bi libsvg-cairo
-solfege 
-cd $pyjamas 
-git status
-git reset --hard master/origin
-git status
-git branch
-git branch -r
-git reset --hard origin/master
-git status
-git status -s
-git status -s | cut -d' ' -f 2
-git status -s | cut -d' ' -f 2 -exec rm {} \;
-git status -s | cut -d' ' -f 2 list
-git status -s | cut -d' ' -f 2
-rm `git status -s | cut -d' ' -f 2`
-git status
-gs -s
-python bootstrap.py 
-gs
-make
-make local-build
-cd examples/
-cd minesweeper/
-ls output/
-gs
-rm output/
-ls public/
-open public/minesweeper.png 
-vi public/minesweeper.css 
-vi public/minesweeper.html 
-vi build.sh 
-vi __main__.py 
-./build.sh 
-s
-vi __main__.py 
-./build.sh 
-vi build.sh 
-./build.sh 
-python __main__.py 
-ls output/
-ll output/
-vi output/minesweeper.opera.cache.html 
-ll output/minesweeper.opera.cache.html 
-lh output/minesweeper.opera.cache.html 
-open output/minesweeper.html 
-vi minesweeper.py 
-cd ..
-vim
-A E A C# E
-1 5 1 3 5 
-A E A C E
-cd projects/
-cd jobs/
-cd vijaykanth/
-vim
-cd $jobs 
-cd vijaykanth/
-python client.py 
-cd $bld
-locate Cache
-bi cairo
-bi py2cairo
-brew uninstall py2cairo
-bi py2cairo
-cd $jobs 
-cd vijaykanth/
-python client.py 
-gs
-python server.py 
-python client.py 
-launchctl limit
-limit maxfiles  400000           unlimited
-launchctl limit maxfiles  400000           unlimited
-launchctl limit maxfiles  400000 unlimited
-launchctl limit maxfiles  400000 400000
-launchctl limit
-launchctl limit maxfiles
-launchctl limit maxfiles 1000 1000
-launchctl limit maxfiles
-launchctl limit maxfiles 1000 10000
-launchctl limit maxfiles
-launchctl limit maxfiles 10000 10000
-launchctl limit maxfiles
-launchctl limit maxfiles 5000 5000
-launchctl limit maxfiles
-sudo launchctl limit maxfiles 2000 2000
-launchctl limit maxfiles
-launchctl limit maxfiles 1001 1001
-launchctl limit maxfiles
-launchctl limit maxfiles 500 500
-launchctl limit maxfiles
-launchctl limit maxfiles 1001 500
-launchctl limit maxfiles
-launchctl limit maxfiles 1000 1000
-launchctl limit maxfiles
-launchctl limit maxfiles 10000 10000
-launchctl limit maxfiles
-launchctl limit maxfiles 1000 1000
-launchctl limit maxfiles
-ulimit 10000
-ulimit
-ulimit 10000 10000
-ulimit
-cd $jobs 
-cd vijaykanth/
-python client.py 
-ulimit -a
-ulimit -n 10000
-ulimit -n 1000
-ulimit
-python client.py 
-ulimit -n unlimited
-ulimit -n 10000
-ulimit -n 1000
-ulimit -n
-ulimit
-ulimit -n
-ulimit -n 1001
-ulimit -n 100
-ulimit -n 101
-sudo ulimit -n 101
-sudo ulimit -n 10000
-sudo ulimit -n 1000
-sudo ulimit -n 2000
-sudo ulimit -n 8000
-sudo ulimit -n 10000
-sudo ulimit -n 5000
-sudo ulimit -n 4000
-sudo ulimit -n 3000
-sudo ulimit -n 2000
-sudo ulimit
-sudo ulimit -n
-launchctl kerm.maxfiles
-sysctl -a | grep files
-sudo launchctl limit maxfiles 16384 32768
-sysctl -a | grep files
-sudo launchctl limit maxfiles 16384 32769
-sysctl -a | grep files
-sudo launchctl limit maxfiles 163840 327690
-sysctl -a | grep files
-sudo launchctl limit maxfiles 100000 100000
-sysctl -a | grep files
-sudo ulimit -n 32768
-sysctl -a | grep files
-sudo sysctl -w kern.maxfilesperproc=16384
-sysctl -a | grep files
-sudo sysctl -w kern.maxfiles=32768
-sysctl -a | grep files
-sudo sysctl -w kern.maxfilesperproc=16384
-sudo sysctl -w kern.maxfilesperproc=100000
-sysctl -a | grep files
-sudo sysctl -w kern.maxfiles=100000
-sudo sysctl -w kern.num_files=100000
-sudo sysctl -w kern.maxfiles
-sudo sysctl kern.maxfiles
-sudo sysctl kern.num_files
-sysctl-a | grep files
-sysctl -a | grep files
-python client.py 
-python server.py 
-bi libevent==2.0.14
-bi libevent
-brew uninstall libevent
-vi /usr/local/Library/Formula/libevent.rb 
-brew install libevent
-brew uninstall libevent
-brew unlink libevent
-brew install libevent
-vi /usr/local/Library/Formula/libevent.rb 
-brew install libevent
-vi /usr/local/Library/Formula/libevent.rb 
-brew install libevent
-python client.py 
-sudo sysctl -w kern.num_files=100000
-sudo sysctl -w kern.maxfilesperproc=1000000
-sudo sysctl -w kern.maxfiles=10000000
-sudo sysctl -w kern.maxfilesperproc=10000000
-sysctl -a | grep files
-python client.py 
-sysctl -a | grep files
-gd
-gs
-python server.py 
-sysctl -a | grep files
-ulimit -n 2560
-sudo ulimit -n 2560
-sudo ulimit
-sudo ulimit -n
-sysctl -a | grep files
-python client.py 
-clea
-sudo vi /etc/security/limits.conf
-python server.py 
-while true; do python client.py ; sleep 1; done
-python client.py 
-gs
-git diff
-git checkout server.py 
-python client.py 
-git status
-git add client.py 
-git commit -m'added client.py'
-python client.py 
-gs
-git checkout client.py 
-python client.py 
-git status
-git commit -am'make basic example
-'
-git commit -am'make basic example'
-gs
-vim
-gs
-sed -i '' 's/    /\t/g' *.py
-gs
-git diff
-git status
-git checkout client.py 
-git checkout server.py 
-sed -i '.tab' -e 's/    /\t/g' *.py
-git status
-sed -i '' -e 's/    /\t/g' *.py
-git diff
-sed -i '' -e's/    /\t/g' *.py
-git status
-git checkout *.py
-gs
-sed -i '' -e's/    /\t/g' *.py
-gd
-git checkout *.py
-sed -i '' -e"s/    //g" *.py
-git checkout *.py
-sed -i '' -e"s/    //g" *.py
-gd
-git checkout *.py
-gs
-rm *.tab
-gs
-awk '{gsub(/    /, "\t")}1' client.py
-awk '{gsub(/    /, "\t")}1' client.py >client.py 
-git status
-git diff
-vim
-gs
-git checkout client.py 
-awk '{gsub("    ", "\t")}1' client.py >client.py 
-gs
-gc *
-gs
-gc *.py
-gs
-python
-gc *.py
-python -c'for line in open("client.py"): print line.repace("    ", "\t")'
-python -c'for line in open("client.py"): print line.replace("    ", "\t")'
-vim
-python -c'for line in open("client.py"): print line.replace("    ", "\t"),'
-python -c'print line.replace("    ", "\t"), for line in open("client.py")'
-python -c'print(line.replace("    ", "\t")) for line in open("client.py")'
-python -c'[print(line.replace("    ", "\t")) for line in open("client.py")]'
-ll *.py
-cat client.py|python -c'import sys;for line in sys.stdin:print line.replace(" "*4,"\t")'
-cat client.py|python -c'import sys; for line in sys.stdin: print line.replace(" "*4,"\t")'
-cat client.py|python -c'import sys; for line in sys.stdin: print line.replace("    ","\t")'
-cat client.py|python -c'import sys; for line in open("client.py"): print line.replace("    ","\t")'
-cat client.py|python -c'for line in open("client.py"): print line.replace("    ","\t")'
-cat client.py|python -c'for line in open("client.py"):print line.replace("    ","\t")'
-cat client.py|python -c'for line in open("client.py"):print line.replace("    ","\t"),'
-cat client.py|python -c'import sys;for line in open("client.py"):print line.replace("    ","\t"),'
-cat client.py|python -c'import sys:for line in open("client.py"):print line.replace("    ","\t"),'
-cat client.py|python -c'import sys;for line in open("client.py"):print line.replace("    ","\t"),'
-python -c'for line in open("client.py"):print line.replace("    ","\t"),'
-python -c'for line in open("client.py"):print line.replace(" "*4,"\t"),'
-python -c'for line in open("client.py"):print line.replace(" "*4,"\t"),' >client.py 
-gc *.py
-awk '{gsub("    ", "\t")}1' client.py >client_tab.py
-awk '{gsub("    ", "\t")}1' server.py >server_tab.py
-diff client.py client_tab.py 
-diff server{,_tab}.py
-git add client_tab.py 
-git add server_tab.py 
-git commit -m'space converted to tab'
-git status
-ipython
-cd $jobs 
-cd vijaykanth/
-git log server.py 
-git status
-/opt/makalu/ptf/update.sh
-vi /opt/makalu/ptf/update.sh
-ll /opt/immune/
-vi test1 
-sudo chown root:root test1 
-sudo chown root:staff test1 
-vi /opt/makalu/ptf/update.sh
-vi installed/system/after_install/parts/allow_writes.sh
-cd /opt/immune
-BRANCH=v510 /opt/makalu/ptf/update.sh
-man chmod
-vi installed/system/after_install/parts/allow_writes.sh
-cd /opt/immune
-cd $col
-vim 
-vimpy -m fabric
-m fabric
-fgrep -rI "a float is required" /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/fabric/
-fgrep -rI "a float is required" /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/ssh
-fgrep -rI "get() encountered an exception while downloading" /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/fabric/
-cd $webserver 
-git log
-/usr/bin/python
-mkdir abc
-ll abc
-ll -d abc
-git status
-git diff apps/syslog_collector/syslog_collector.py
-git checkout apps/syslog_collector/syslog_collector.py
-g
-gd
-git status
-git branch
-git checkout master
-git status
-git diff
-gs
-git status
-git commit -am'fixed bug in string formatting of ip when ipv6 contains %e'
-git push origin master
-mkdir abc
-mkdir abc/def
-rm abc/
-gd
-git status
-git diff
-git commit -am'used shutil.rmtree instead of os.rmdir because latter deletes only empty dir'
-git push
-git status
-git checkout v510
-git status
-git checkout master
-a=test
-echo ${a:1}
-echo ${a:1,1}
-echo ${a:1,2}
-echo ${a:1,2,3}
-echo ${a:3}
-index
-echo `expr length $a`
-echo ${#a}
-echo ${a}
-echo ${#a}
-expr 
-length
-echo ${a:0:1}
-echo $a
-echo ${a:1:2}
-echo ${"sujan":1:2}
-echo ${a=sujan:1:2}
-git status
-git diff
-git checkout apps/
-gs
-vim
-git branch
-git checkout -b 'ipv6_link-local_fix
-git checkout -b 'ipv6_link-local_fix'
-echo $(0+1)
-echo $((0+1))
-echo "1 + 2"
-echo "1 + 2" | br
-echo "1 + 2" | bc
-echo "1 * 2" | br
-echo '1 * 21 | br
-echo '1 * 2' | br
-echo '1 ^ 2' | br
-echo '1 / 2' | br
-echo '1 / 2' | bc
-echo '1 * 2' | bc
-echo '2 * 3' | bc
-echo $((2 * 3))
-time echo $((2 * 3))
-time echo '2 * 3' | bc
-man bc
-fgrep -rI 'mid_template' .
-ack 'mid_template' .
-git branch
-git status
-git diff
-git status
-git diff apps/syslog_collector/
-git commit -am'mid safely constructed to prevent error when ipv6 contains %'
-git status
-vi ~/.bash_profile 
-load_bash_completion 
-git push origin ipv6_link-local_fix 
-git status
-expr
-let a = 0
-let a=0
-echo $a
-echo $a+1
-$a+1
-expr $a+1
-expr "$a+1"
-help let
-let 1
-let 1+2
-`let 1+2`
-echo `let 1+2`
-a=0
-let a=a+5
-echo $a
-let a=a + 5
-ll /opt/immune/installed/system/root_actions/
-solfege 
-bi gdk-pixbuf2
-bi gdk
-bi librsvg2-common
-bi librsvg2-
-bi librsvg2
-bi librsvg
-brew upgrade
-brew selfupdate
-brew update
-cd /usr/local/
-cp Library/Formula/libevent.rb{,.bak}
-cp Library/Formula/py2cairo.rb{,.bak{
-cp Library/Formula/py2cairo.rb{,.bak}
-cp Library/Formula/zeromq.rb{,.bak}
-git checkout Library/Formula/libevent.rb
-git checkout Library/Formula/py2cairo.rb
-git checkout Library/Formula/zeromq.rb
-brew update
-cp Library/Formula/cocot.rb{,.bak}
-cp Library/Formula/voldemort.rb{,.bak}
-git checkout Library/Formula/cocot.rb
-git checkout Library/Formula/voldemort.rb
-rm Library/Formula/cocot.rb
-rm Library/Formula/voldemort.rb
-brew update
-git status
-brew update
-brew uninstall gtk
-brew install gkt
-brew install gtk
-brew link glib
-rm /usr/local/lib/libgthread-2.0.dylib 
-brew link glib
-rm /usr/local/lib/libgobject-2.0.dylib 
-brew link glib
-rm /usr/local/lib/libgmodule-2.0.dylib 
-brew link glib
-rm /usr/local/lib/libglib-2.0.dylib 
-brew link glib
-rm /usr/local/lib/libgio-2.0.dylib 
-brew link glib
-brew install gkt
-brew install gtk
-brew link libtiff
-rm /usr/local/lib/libtiffxx.dylib 
-brew link libtiff
-rm /usr/local/lib/libtiff.dylib 
-brew link libtiff
-brew install gtk
-brew doctor
-brew missing
-brew install mtr
-bi pygobject
-bi pygtk
-bi gtk+
-brew link gdk-pixbuf
-rm /usr/local/lib/libgdk_pixbuf-2.0.dylib 
-brew link gdk-pixbuf
-bi gtk+
-brew link pagno
-brew link pango
-rm /usr/local/lib/libpangoxft-1.0.dylib 
-brew link pango
-rm /usr/local/lib/libpangox-1.0.dylib 
-brew link pango
-rm /usr/local/lib/libpangoft2-1.0.dylib 
-brew link pango
-rm /usr/local/lib/libpangocairo-1.0.dylib 
-brew link pango
-rm /usr/local/lib/libpango-1.0.dylib 
-brew link pango
-bi gtk+
-brew link atk
-rm /usr/local/lib/libatk-1.0.dylib 
-brew link atk
-bi gtk+
-vi /Users/suzanshakya/Library/Logs/Homebrew/config.log 
-ssh 211
-ssh 211
-brew update
-brew doctor
-ll /usr/local/lib/libjzmq.a
-brew missing
-pwd
-cd
-co 
-bi gtk+
-ipython
-youtube-dl http://www.youtube.com/watch?v=0T4_9Bj6sYE
-cd $jobs 
-cd vijaykanth/
-bmark
-gs
-vim
-cd $makalu 
-cd util/
-vim
-cd $col
-vim
-bi xmonad
-cp server_tab.py tcp_server.py
-vi ~/.vimrc 
-git status
-git rm server.py 
-git rm client.py 
-git status
-git add tcp_server.py 
-git commit -m'added tcp_server.py'
-gs
-git mv client_tab.py client.py
-git mv server_tab.py server.py
-gs
-git commit -m'removed _tab from filename'
-gs
-git status
-git diff tcp_server.py 
-git commit -am'implemented blocking'
-cd $vijaykanth 
-python server.py 
-python tcp_server.py 
-cd $vijaykanth 
-python tcp_client.py 
-git status
-git diff tcp_
-git diff tcp_server.py 
-git commit -am'fixed terminate_connection flag'
-gs
-python tcp_server.py 
-gs
-git add tcp_client.py 
-gs
-git commit -am'added tcp_client.py'
-git status
-gs
-vi tcp_client.py 
-ipython
-gs
-expr -7 % 2
-vi bash.sh
-sh bash.sh 
-vi bash.sh 
-sh bash.sh 
-a
-echo $?
-sh bash.sh 
-b=
-echo $?
-num=20
-str1=Fair
-[ $num -gt $str1 ]
-expr [ $num -gt $str1 ]
-echo [ $num -gt $str1 ]
-echo `[ $num -gt $str1 ]`
-if [ $num -gt $str1 ]; then echo hi; fi;
-if [[ $num -gt $str1 ]]; then echo hi; fi;
-echo $NUM
-which ls
-set -3 + 1
-b=4
-c=5
-a=`expr $b * $c`
-expr $b * $c
-a=`expr $b * ( $c + $d )`
-a=`expr $b \* \( $c + $d \ )`
-d=6
-a=`expr $b \* \( $c + $d \ )`
-a=`expr $b * ( $c + $d )`
-a=expr $c * $d
-echo $b $c $d
-a=`expr $b \* \( $c + $d \ )`
-a=`expr$b\*\($c+$d\)`
-a=`expr $b\*\($c+$d\)`
-echo $a
-expr 1 + 2
-a=expr 1 + 2
-a=`expr 1 * 2`
-a=`expr 1 \* 2`
-a=`expr $b \* 2`
-a=`expr $b \* $c`
-a=`expr $b \* $c + $d`
-a=`expr $b \* ($c + $d)`
-a=`expr $b \* \($c + $d\)`
-a=`expr $b \* \($c + $d \)`
-a=`expr $b \* \( $c + $d \)`
-sh
-i=4 z=12
-[ $i = 5 -a $z -gt 5 ]
-echo $?
-[ 1 -gt 2 ]
-echo $?
-[ 2 -gt 1 ]
-echo $?
-[ 2 -gt 2 ]
-echo $?
-[ 2 -gt 1 ]
-echo $?
-[ $i = 5 -a $z -gt 5 ]
-echo $?
-j=10 k=12
-if test [ $k -ge $j ]; then k=$j; j=$k; fi
-x=11
-y=6
-[ $x -eq 11 -a $y -ne 89 ]
-echo $?
-while $; do echo hi; done
-[ -n $name ]
-echo $?
-[ -z $name ]
-echo $?
-vi a.sh
-sh a.sh 
-sh
-[ $name ]
-echo $?
-[ 1 ]
-echo $?
-[ 0 ]
-echo $?
-[ -n 1 ]
-echo $?
-[ 1 ]
-echo $?
-[ -z $name]
-name="sujan"
-[ -n $name ]
-name="sujan"
-[ -n $name ]
-echo $?
-[ -z $name ]
-echo $?
-vi a.py
-vi a.sh 
-sh a.sh 
-vi a.sh 
-#a=1
-echo $#a
-echo ${#a}
-_a=1
-echo ${_a}
-until=1
-echo a a
-while [ a = a ]; do echo hi; done
-while [ $1 -gt 10 -a \($2 -o -w $3 \) ]
-while [ $1 -gt 10 -a \($2 -o -w $3 \) ]; do echo hi; done
-while [ $1 -gt 10 -a \($2 -gt $3 \) ]; do echo hi; done
-while [ $a -gt 10 -a \($2 -gt $3 \) ]; do echo hi; done
-while [ $a -gt 10 -a \($2 -gt $c \) ]; do echo hi; done
-while [ $a -gt 10 -a \($b -gt $c \) ]; do echo hi; done
-while [ \($a -gt 10\) -a \($b -gt $c \) ]; do echo hi; done
-while [ \($a -gt 10 \) -a \($b -gt $c \) ]; do echo hi; done
-while [ \( $a -gt 10 \) -a \($b -gt $c \) ]; do echo hi; done
-while [ $a -gt 10 ]; do echo hi; done
-echo $a
-a=1
-while [ $a -gt 10 ]; do echo hi; done
-b=1
-c=1
-while [ $a -gt 10 -a \($b -gt $c \) ]; do echo hi; done
-while [ $a -gt 10 -a ($b -gt $c) ]; do echo hi; done
-while [ $a -gt 10 -a \($b -gt $c) ]; do echo hi; done
-while [ $a -gt 10 -a \($b -gt $c\) ]; do echo hi; done
-while [ $a -gt $a -a \($b -gt $c\) ]; do echo hi; done
-while [ \($a -gt $a\) -a \($b -gt $c\) ]; do echo hi; done
-while [ \($a -gt $a\) -a 5 -gt 7) ]; do echo hi; done
-while [ \($a -gt $a\) -a 5 -gt 7 ]; do echo hi; done
-while [ 2 -gt 5-a 5 -gt 7 ]; do echo hi; done
-while [ 2 -gt 5 -a 5 -gt 7 ]; do echo hi; done
-while [ 2 -gt 5 -a 5 -o -w 7 ]; do echo hi; done
-while [ \(2 -gt 5\) -a 5 -o -w 7 ]; do echo hi; done
-while [ 2 -gt 5 -a 5 -o -w 7 ]; do echo hi; done
-while [ 2 -gt 1 -a 5 -o -w 7 ]; do echo hi; done
-while [ 2 -gt 1 -a \(5 -o -w 7\) ]; do echo hi; done
-read name <'tty'
-for i in 'a b'; do echo $i;done
-/opt/makalu/ptf/update.sh
-cd $col
-git status
-git branch
-git status
-pwd
-u
-pwd
-ls 
-cd $col
-git branch v511
-git branch
-git branch -r
-git branch -d v511
-vi apps/syslog_collector/syslog_collector.py
-g
-sgs
-gs
-git branch -d v511
-git branch v511
-gs
-gc v511
-gs
-gc apps/
-gb
-gc master
-git branch -d v511
-gs
-gb
-for each in `ls|egrep -v 'logen|benchmarker'`; do (cd $each && echo $each && git branch v511 && git push); done
-for each in `ls|egrep -v 'logen|benchmarker'`; do (cd $each && echo $each && git branch v511 && git push); done
-for each in `ls|egrep -v 'logen|benchmarker'`; do (cd $each && echo $each && git branch v511 && git push origin v511); done
-for each in `ls|egrep -v 'logen|benchmarker'`; do (cd $each && echo $each && git branch v511 && git push origin v511); done
-cd alert/
-git branch -d v511
-cd ../backup/
-git branch -d v511
-cd ../cep/
-git branch -d v511
-u
-pwd
-git branch
-git branch -d v511
-git branch v511
-git push origin v511
-for each in `ls|egrep -v 'logen|benchmarker'`; do (cd $each && echo $each && git branch v511 && git push origin v511); done
-git branch -r
-gc v511
-git merge ipv6_link-local_fix --noff
-gs
-git branch
-git merge ipv6_link-local_fix --no-ff
-gc master
-git merge v511
-git status
-git push
-gc v510
-git log
-git log -p
-git branch
-gb
-gc master
-git diff v510
-gitx
-cd col/
-git diff master apps/filesystem_collector/
-gb
-git diff v510 apps/filesystem_collector/
-git diff v510
-git diff v510 | grep mid_prefix
-git diff v510
-git diff v510 apps/filesystem_collector/
-vi apps/filesystem_collector/lib/watcher.py
-git status
-git diff v511
-git commit -am'fixed wording'
-git checkout v511
-git merge master
-git push
-sh a.
-sh a.sh 
-echo hi
-echo $?
-echo $#
-echo $$
-sh a.sh 
-vi a.sh
-cd $col
-sh a.sh 
-bash a.sh 
-sh a.sh 
-mv a.sh ~/a1.sh
-cd
-vi a.
-vi a.sh 
-rm a.sh 
-mv a1.sh a.sh
-cd
-cd Downloads/
-unzip Player-No-1-SEED.zip 
-cp -r Player\ No\ 1\ SEED/ /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/save/
-ll /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/save/
-open /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/
-cp -r Player\ No\ 1\ SEED/ /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/save/
-mv Player\ No\ 1\ SEED/ /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/save/
-cp -r Player\ No\ 1\ SEED /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/save/
-ssh 211
-ipython
-ll *.flv
-ls -a
-ls -A
-ls -l
-vlc 0T4_9Bj6sYE.flv.part 
-/opt/makalu/ptf/update.sh
-cd $col
-vim apps/snmp_fetcher/
-which ctags
-ctags -V
-ctags -v
-ctags --version
-hastebin.py >EOF<<
-hastebin.py >EOF<
-hastebin.py >EOF
-hastebin.py <EOF>
-hastebin.py <EOF>>
-hastebin.py < EOF>>
-hastebin.py < EOF >>
-hastebin.py <.bash_profile 
-hastebin.py < EOF>>
-hastebin.py < EOF <<
-echo < cat >>
-vi .bash_profile 
-vi .vimrc 
-vi ~/.bash_profile 
-vim
-rm tags 
-youtube-dl http://www.youtube.com/watch?v=0T4_9Bj6sYE
-cd $col
-cd apps/
-ssh 211
-ssh support@192.168.2.249
-ssh loginspect@192.168.2.249
-git status
-git checkout v500
-cat .ssh/id_rsa.pub 
-ssh loginspect@192.168.2.249
-sftp loginspect@192.168.2.249
-ssh loginspect@192.168.2.249
-sftp loginspect@192.168.2.249
-ssh support@192.168.2.249
-cd $immune 
-vim
-cd $vijaykanth 
-vim
-vi ~/.bash_profile
-vim ~/.bash_profile
-vim ~/.vimrc 
-vimpy -m gevent
-fgrep -R getdefaulttimeout /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/gevent
-vimpy -m gevent
-ssh 249
-cd projects/web2py/trunk/
-find . -name ldap_auth.py
-vim gluon/contrib/login_methods/ldap_auth.py 
-vim
-ipython
-cd VirtualBox\ VMs/
-cd $vijaykanth 
-vim
-vi ~/.vimrc 
-vi ~/.bash_profile
-rm ~/.bash_profile.swp 
-echo $PYTHONPATH_TAGS_CSCOPE 
-vi ~/.bash_profile
-cd $vijaykanth 
-echo $PYTHONPATH_TAGS_CSCOPE 
-echo $PYTHONPATH_TAGS
-apycscope.py -R /usr/local/Cellar/python2.6/2.6.5/lib/python2.6
-pycscope.py -R /usr/local/Cellar/python2.6/2.6.5/lib/python2.6
-pycscope.py -R -f /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out /usr/local/Cellar/python2.6/2.6.5/lib/python2.6
-cd $col
-ls 
-rm cscope.out 
-pycscope.py -R ./apps/syslog_collector/
-vi cscope.out 
-rm cscope.out 
-ll cscope.out 
-pycscope-pythonpath 
-ctags-pythonpath 
-for path in $PYTHONPATH_TAGS_CSCOPE ; do echo $path; done
-pycscope-pythonpath 
-vi ~/.vim/plugin/cscope_maps.vim 
-vim $col 
-vi .vim/plugin/taglist.vim 
-vi .vim/plugin/cscope_maps.vim 
-echo $PYTHONPATH_TAGS_CSCOPE 
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out 
-ll -h/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out 
-ll -h /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/cscope.out 
-vi .vim/plugin/cscope_maps.vim 
-pycscope-pythonpath 
-vi .vim/plugin/cscope-pythonpath.vim 
-vi ~/.vimrc 
-vim $col
-vi .vim/plugin/cscope-pythonpath.vim 
-vi .vim/plugin/cscope_maps.vim 
-vi ~/.bash_profile
-vi ~/.vimrc 
-vim $col
-vi ~/.bash_profile
-vim $col
-vi ~/.vimrc 
-git diff ~/.vimrc 
-git status .vim
-git add .vim/plugin/cscope-pythonpath.vim 
-vi ~/.vimrc 
-vim $col
-cd $col
-cd apps/
-vim syslog_collector/
-git status ~/.vimrc 
-agit diffs ~/.vimrc 
-agit diff ~/.vimrc 
-cd
-git add .vimrc 
-git commit -m'added pycscope in pythonpath and recusive searching'
-git diff .bash_profile 
-git commit .bash_profile -m'added function for pyscope-pythonpath'
-git push
-cd $vijaykanth 
-clea
-vim
-vi ~/.vimrc 
-pyflakes server.py 
-git status
-fgrep ' ' tcp_server.py 
-vim
-fgrep ' ' tcp_server.py 
-fgrep '\ \ ' tcp_server.py 
-grep "  " tcp_server.py 
-git status
-pyflakes tcp_
-pyflakes tcp_server.py 
-git diff
-git commit -am'implmented max_connections and max_dump_connections'
-ipython
-cd $jobs 
-vim vijaykanth/
-git status
-git diff
-pwd
-git status
-cd vijaykanth/
-git status
-git diff
-git commit -am'fixed wording'
-git status
-vim
-pyflakes tcp_server.py 
-/opt/makalu/ptf/update.sh
-cd /opt/immune
-vim
-vimpy -m pyExpenses
-python -m pyExpenses
-ll /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/pyExpenses/Expense.py
-/usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/pyExpenses/Expense.py
-python /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/pyExpenses/Expense.py
-pip install pyexpenses
-pip install svn+http://pyexpenses.googlecode.com/svn/trunk/
-ping6 2001:470:35:622:6aa8:6dff:fe48:5b64
-ipython
-/opt/makalu/ptf/update.sh
-vi .git/config 
-vim $col
-cd /opt/immune
-vim
-cd $installed 
-cd $makalu 
-cd bld/
-vim
-cd $installed 
-vim
-diff /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg{_modified}
-diff /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg{,_modified}
-vi /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg
-kkkkkkkkkkkkkkk
-vi /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg_modified 
-vi /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg
-rm /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/.motogp.cfg.swp 
-vi /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg
-ll /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg_modified 
-vi /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg_modified 
-diff /Applications/MotoGP\ 3.app/Contents/Resources/transgaming/c_drive/Program\ Files/MotoGP\ URT\ 3/motogp.cfg{,_modified}
-bi gtk
-bi pygtk
-python
-brew uninstall gkt
-brew uninstall gtk
-bre unlink gtk
-brew unlink gtk
-brew install pygtk
-brew uninstall pygtk
-brew install pygtk
-scrappy
-pi scrappy
-pi scrapy
-scrapy
-cd $projects 
-cd jobs/
-ls odesk/
-rm odesk
-vi ab.py 
-rm ab.py 
-ls brundles/
-pwd
-mkdir abc
-mv ~/Desktop/Testwork.pdf abc/
-ll ~/Downloads/*.pdf
-open ~/Downloads/CV.pdf 
-rm ~/Downloads/CV.pdf 
-rm ~/Downloads/IS_Windows\ Administrator\ Report_1331613607.pdf 
-mv ~/.Trash/IS_Windows\ Administrator\ Report_1331613607.pdf ~/Downloads/IS_Windows\ Administrator\ Report_1331613607.pdf 
-open ~/Downloads/IS_Windows\ Administrator\ Report_1331613607.pdf 
-rm ~/Downloads/IS_Windows\ Administrator\ Report_1331613607.pdf 
-mv ~/Downloads/Creatingscrapyspiders.pdf abc/
-ls abc/
-open .
-pwd
-ls ~/.virtualenvs/
-workon ab
-mkvirtualenv pythoncrawlers
-pwd
-mv abc competitormonitor
-cd competitormonitor/
-pwd
-l
-open Testwork.pdf 
-exit
-cd $jobs 
-git status
-youtube-dl http://www.youtube.com/watch?v=4As0e4de-rI olympic.flv
-youtube-dl http://www.youtube.com/watch?v=4As0e4de-rI
-/opt/makalu/ptf/update.sh
-co
-ls *.py
-vi a.py 
-vi b.py 
-vi c.py 
-vi d.py 
-vimpy -m mongokit
-cd $webserver 
-vim
-vimpy -m pymongo
-cd /opt/immune
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-mongo makalu
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-mongo makalu
-./etc/service/mongodb/run 
-ipython -V
-ipython -v
-ipython --version
-ipython qtconsole
-pi pyside
-brew install pyreadlin
-brew install pyreadline
-pip install pyreadlin
-pip install pyreadline
-brew install qt
-brew unlink qt
-pip install http://ipython.scipy.org/dist/readline-2.5.1-py2.5-macosx-10.5-i386.egg
-pip install readline
-pip uninstall readline
-pip install readline
-ipython
-pip install ipython
-pip install ipython --upgrade
-ipython --version
-pip uninstall iptyhon
-pip uninstall ipython
-pip install ipython
-rm build/ipython/
-pip install ipython
-ipython
-bi qt
-pi pygtk
-brew install pygtk
-ssh support@10.45.1.17
-vi ~/.bash_profile 
-load_bash_completion 
-vi /usr/local/etc/bash_completion
-ssh support@10.45.1.217
-ifconfig
-/opt/makalu/ptf/update.sh
-cd $installed 
-vim
-vi ~/.vimrc 
-vim
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-python gevent_pymongo.py 
-vi gevent_pymongo.py 
-youtube-dl http://www.youtube.com/watch?v=UWXdb93d_vQ
-ll UWXdb93d_vQ.flv 
-ll -h UWXdb93d_vQ.flv 
-pwd
-mkdir a
-cd a
-mkdir b
-cd b/
-vi c.py
-u
-ll a
-ll a/b/c.py 
-cp -r a ..
-vi a/b/d.py
-cp -r a ..
-vi a/b/e.py
-mv a ..
-mv a ../
-mv a/* ../a
-mv a/b/ ../a/b/
-rm a
-rm ../a
-mkdir a
-mkdir b
-mv a b
-rm b
-mkdir b
-rm b
-gs
-cd col
-gs
-gd
-git checkout apps/syslog_collector/
-gs
-mkdir a
-vi a/b.py
-mv a b
-gs
-mv b/ c
-gs
-mkdir d
-mv c e/
-gs
-mv e f/
-gs
-ll f/
-mv f/ g/
-gs
-mkdir h
-mv g h
-gs
-mkdir i
-mv h/ i
-mkdir j
-mv i j/
-mkdir k
-mv j/ k/
-gs
-rm k
-ssh bibek@192.168.2.33
-nc -luk 0.0.0.0 1514
-ssh 249
-vim
-rm d
-ipython
-cd projects/codility/
-vi toptal.py
-vim toptal.py
-vim toptal2.py
-vim toptal3.py
-/opt/makalu/ptf/update.sh
-cd projects/codility/
-bmark
-vim
-c
-cd
-snmptrap -v 1 -c public host TRAP-TEST-MIB::demotraps localhost 6 17 '' \
-snmptrap -v 1 -c public host TRAP-TEST-MIB::demotraps localhost 6 17 '' SNMPv2-MIB::sysLocation.0 s "Just here"
-snmptrap -v 1 -c public 0.0.0.0 TRAP-TEST-MIB::demotraps localhost 6 17 '' SNMPv2-MIB::sysLocation.0 s "Just here"
-man snmptrap
-snmptrap -v 2c -c public localhost '' NOTIFICATION-TEST-MIB::demo-notif SNMPv2-MIB::sysLocation.0 s "just here"
-snmptrap -v 2c -c public localhost '' SNMPv2-MIB::sysLocation.0 s "just here"
-snmptrap -v 2c -c public localhost '' SNMPv2-MIB::sysLocation.0 "just here"
-snmptrap -v 1 -c public host TRAP-TEST-MIB::demotraps localhost 6 17 '' SNMPv2-MIB::sysLocation.0 s "Just here"
-snmptrap -v 1 -c public localhost TRAP-TEST-MIB::demotraps localhost 6 17 '' SNMPv2-MIB::sysLocation.0 s "Just here"
-snmptrap -v 1 -c public localhost TRAP-TEST-MIB::demotraps "Just here"
-snmptrap -v 2c -c public uptime trap-oid 1.2 INTEGER 1
-snmptrap -v 2c -c public uptime trap-oid 1.3 INTEGER 1
-snmptrap -v 2c -c public uptime host localhost trap-oid 1.3 INTEGER 1
-snmptrap -v 2c -c public localhost uptime trap-oid 1.3 INTEGER 1
-snmptrap -v 2c -c public localhost uptime 1.3 INTEGER 1
-snmptrap -v 2c -c public localhost uptime
-snmptrap -v 2c -c public localhost uptime 1.3 INTEGER 1
-snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6.1.4.1.5089.2.0.999 s "123456"
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6.1.4.1.5089.2.0.999 s "123456"
-man snmptrap
-nc -luk localhost 162
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6.1.4.1.5089.2.0.999 STRING "123456"
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6.1.4.1.5089.2.0.999 s "123456"
-man snmpt
-man snmptrap
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6.1.4.1.5089.2.0 s "123456"
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 .1.3.6 s "123456"
-sudo snmptrap -v 2c -c public localhost '' .1.3.6.1.4.1.5089.1.0.1 1.3.6 s "123456"
-sudo snmptrap -v 2c -c public localhost '' 1 1 s "123456"
-sudo snmptrap -v 2c -c public '' 1 1 s "123456"
-sudo snmptrap -v 2c -c public localhost '' 1 1 s "123456"
-sudo nc -luk localhost 162
-snmptrap -v 2c -c public localhost '' 1 1 s "123456"
-sudo snmptrap -v 2c -c public localhost '' 1 1 s "123456"
-man snmptrap
-sudo snmptrap -v 2c -c public localhost '' 1
-sudo snmptrap -v 2c -c public localhost '' 
-sudo snmptrap -v 2c -c public localhost '' 1
-sudo nc -luk localhost 162
-sudo snmptrap -v 2c -c public ::1 '' 1
-sudo nc -luk ::1 162
-man nc
-nc6
-ncat
-man ncat
-ifconfig
-cd projects/pyftpdlib
-python setup.py sdist
-cd Downloads/
-pip install PyCAPTCHA-0.4.zip 
-cd /var/folders/R9/R9OF15I8GQiXzp3wgxNfb++++TM/-Tmp-/pip-X4ZsHd-build/
-python setup.py install
-pip install pycaptcha
-b
-unzip PyCAPTCHA-0.4.zip 
-cd PyCAPTCHA-0.4
-ls Captcha/
-u
-rm PyCAPTCHA-0.4
-unzip svn\ waala.zip 
-open .
-vi README 
-unzip svn\ waala.zip 
-ls svn\ waala
-rm svn\ waala
-unzip svn\ waala.zip svn
-ls svn\ waala
-for each in `ls svn\ waala`; do rm $each; done
-vi README 
-cd svn\ waala
-python setup.py install
-vi setup.py 
-python setup.py sdist
-pip install dist/PyCAPTCHA-0.4.tar.gz 
-vi setup.py 
-pwd
-vi setup.py 
-vi setup
-vi setup.py 
-u
-rm svn\ waala
-man unzip
-unzip svn\ waala.zip -d svn
-cd svn
-vi setup
-vi setup.py 
-ls Captcha/
-vi setup/my_install_data.py
-vi setup.py 
-pwd
-cd projects/
-cd ../Downloads/
-rm svn
-mv svn\ waala.zip pycaptcha.zip
-vimpy -m Captcha
-pi Image
-pi pil
-ipython
-vim toptal3.py
-vi captcha.py
-python captcha.py 
-vi captcha.py
-python captcha.py 
-brew install libfreetype
-brew install freetype
-bi python-pil
-ll /usr/lib/i686-apple-darwin10/4.2.1/
-ll /usr/lib/i686-apple-darwin10/4.0.1/
-export PIL_SETUP_ZLIB_ROOT=/usr/X11/lib/
-export PIL_SETUP_FREETYPE_ROOT=/usr/X11/lib/
-pip install -U pil
-python captcha.py 
-vi captcha.py
-pip uninstall PIL
-ln -s /usr/X11/include/freetype2 /usr/local/include/
-ln -s /usr/X11/include/ft2build.h /usr/local/include/
-ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/
-ln -s /usr/X11/lib/libfreetype.6.dylib /usr/local/lib/libfreetype.dylib
-pi PIL
-python captcha.py 
-open cap.png 
-python captcha.py && open cap.png 
-cd /opt/immune
-sudo ./etc/service/webserver/
-sudo ./etc/service/webserver/run 
-pi -U pymongo
-python
-pi -U bson
-cd $webserver 
-ack 'from pymongo.objectid import ObjectId'
-ack 'from pymongo.objectid import ObjectId' .
-ack -R 'from pymongo.objectid import ObjectId' .
-pi -U pymongo=2.0.1
-pip install pymongo
-cd $bld 
-cd packages/
-cd python-pkgs/
-pip install predownloaded/pymongo-1.11.tar.gz 
-b
-cd $installed 
-cd $webserver 
-vim
-ack 'json.dumps'
-ack 'jsonify'
-ack 'jsonify' | wc -l
-ack 'json.dumps' | wc -l
-ack 'json.dumps'
-gs
-cd $pylib 
-gs
-ssh -L *:10022:localhost:22 root@10.45.1.211
-vimpy -m flask
-sudo ./etc/service/webserver/run 
-vi /opt/immune/etc/config/syslog_collector/config.json 
-vi /opt/immune/etc/config/norm_front/config.json 
-vim col/apps/fileinspect_collector/fileinspect_ftp_server.py 
-cd $bld
-cd packages/python-pkgs/
-vi Makefile 
-vi ../Makefile 
-vi ../deb-pkgs/Makefile 
-cd $col
-vim apps/ftp_collector/
-ipython
-sudo ./etc/service/mongodb/run 
-cd $codility 
-vim
-python
-pip install minpower
-bi minpower
-python
-ipython
-minpower uc
-vi /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/minpower/commonscripts.py
-vim /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/minpower/commonscripts.py
-ipython
-minpower uc
-python2.7
-bi python-2.7
-bi python27
-brew search python
-vim /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/minpower/results.py
-minpower uc
-brew search python
-brew install python2.7
-which python2.7
-python2.7
-pi minpower
-python
-minpower uc
-which minpower
-vi `which minpower`
-which python2.7
-vi `which minpower`
-minpower uc
-vim /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/minpower/results.py
-rm /usr/local/Cellar/python2.6/2.6.5/lib/python2.6/site-packages/minpower
-python2.7
-minpower
-vi `which minpower`
-`which minpower`
-which minpower
-pi remove minpower
-pip remove minpower
-pip uninstall minpower
-python2.7 get-pip.py 
-vi get-pip.py 
-python2.7 get-pip.py 
-python2.7 distribute_setup.py 
-python2.7 get-pip.py 
-pip-2.7 install minpower
-pip-2.7 install numpy
-pip-2.7 install minpower
-minpower uc
-pip-2.7 install minpower
-python2.7
-which minpower
-minpower 
-. .bash_profile
-minpower 
-minpower uc
-cd /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/minpower
-cd tests/
-u
-cd addons/
-u
-nosetests tests/
-pi attest
-nosetests tests/
-which pip
-pi matplotlib
-pi matpliblib
-bi glpk
-cd /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/minpower
-pwd
-nosetests tests/
-pwd
-cd
-cd Desktop/
-unzip uc.zip -d uc
-minpower uc
-mv uc/uc ..
-rm uc/__MACOSX/
-ll uc/
-rm uc
-unzip uc.zip
-ls uc
-minpower uc
-pi matplotlib
-[Aasdfasdf
-python2.7
-pip uninstall dateutil
-which pip
-python
-rm /Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/dateutil/
-pip install dateutil
-pip install -U 'http://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.1.0/matplotlib-1.1.0.tar.gz/download'
-pip install http://labix.org/download/python-dateutil/python-dateutil-1.5.tar.gz
-minpower uc
-man minpower 
-minpower -h
-minpower -s
-minpower -s glpk
-minpower -s glpk uc
-minpower -h
-minpower -s gurobi uc
-minpower -s cplex uc
-mv /usr/local/Cellar/glpk{,.bak}
-minpower -s glpk uc
-minpower uc
-mv /usr/local/Cellar/glpk{.bak,}
-minpower uc
-minpower -s glpk uc
-/opt/makalu/ptf/update.sh
-cd $webserver 
-git status
-git diff 
-git checkout views/
-u
-b
-/opt/makalu/ptf/update.sh
-clar
-cd $col
-vim
-git log
-git pull
-cd
-bi zeromq
-cd $bld
-locate Formula
-vi /usr/local/Library/Formula/zeromq.rb
-pwd
-cd packages/python-pkgs/
-u
-cd mac_os_x/
-vi Formula/zeromq.rb 
-vi /usr/local/Library/Formula/zeromq.rb
-cd $webserver 
-vim
-git status
-git diff
-git commit -am'updated changed url of ZeroMQ'
-git push
-git pull
-git push
-cd ..
-cd python-pkgs/predownloaded/
-pip install pyzmq-2.1.4.tar.gz 
-u
-cd mac_os_x/
-vi make.sh 
-gs
-b
-cd python-pkgs/predownloaded/
-tar -xzf pyzmq-2.1.4.tar.gz
-gs
-tar -xzf pyzmq-2.1.4.tar.gz
-cd pyzmq-2.1.4
-python setup.py install
-cd ..
-cd
-git pull
-ssh AJRedDevil@192.168.2.235
-gs
-ack 'json.dumps'
-git pull
-git status
-git checkout -b htmlsafe_json
-ack 'import json'
-ack 'json.loads'
-ack 'import json' ./views/devices.py
-sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" views/devices.py
-ack 'import json' ./views/devices.py
-sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" *
-find . -name "*.py" | xargs sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" {}
-find . -name "*.py" | xargs ls
-man xargs
-find . -name "*.py" | xargs -J % sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" %
-ack 'import json' ./views/devices.py
-ack 'import json'
-git status
-git checkout v511
-git reset --hard origin/v511
-git checkout v511
-git pull
-git branch
-git pull origin v511
-git branch -d htmlsafe_json
-git checkout -b htmlsafe_json
-ack 'jsonify'
-ll MotoGP\ 3.zip 
-lh MotoGP\ 3.zip 
-rm /Applications/MotoGP\ 3.app/
-lh MotoGP\ 3.zip 
-loop lh MotoGP\ 3.zip 
-vi ~/.bash_profile
-loop lh "MotoGP\ 3.zip"
-loop lh MotoGP\ 3.zip
-git status .bash_profile
-git diff .bash_profile
-vi ~/.bash_profile
-git status .bash_profile
-git diff .bash_profile
-loop lh "MotoGP\ 3.zip"
-unzip MotoGP\ 3.zip -d MotoGP\ 3
-mv MotoGP\ 3/MotoGP\ 3.app /Applications/
-open /Applications/MotoGP\ 3.app/
-cd $codility 
-mkdir 
-mkdir toptal
-mv toptal* toptal
-cd toptal/
-mkdir improved
-cp toptal2.py improved/
-cp toptal3.py improved/
-vim
-cd $pylib 
-b
-vim $pylib 
-python toptal3.py 
-vimpy -m ipython
-which ipython
-vi `which ipython`
-vi timit_print.py
-python toptal3.py 
-pwd
-vi timit_print.py
-mv timit_print.py timeit_print.py
-python toptal3.py 
-python improved/toptal3.py 
-python ./improved/toptal3.py 
-cp timeit_print.py improved/
-python ./improved/toptal3.py 
-python ./toptal3.py 
-diff {,improved}/toptal3.py
-diff {.,improved}/toptal3.py
-python improved/toptal3.py 
-python toptal3.py 
-diff toptal3.py improved/toptal3.py 
-cd improved/
-python toptal3.py 
-python ../toptal3.py 
-python toptal3.py 
-cd $codility 
-cd toptal/
-python toptal3.py 
-cd ..
-cd improved/
-cd improved/
-python ../toptal3.py 
-python toptal3.py 
-vim ..
-python toptal2.py 
-python toptal2.py 
-python ../toptal2.py 
-python ../toptal3.py 
-python toptal3.py 
-ipython
-cd $codility 
-cd toptal/improved/
-vim
-cd toptal
-pwd
-python toptal3.py 
-cd ..
-cd improved/
-python ../toptal3.py 
-python toptal3.py 
-ipython
-cd projects/pyjamas/
-vim
-ipython
-python
-jsc 
-pid
-man uniq
-cat hi hi
-echo hi hi
-echo "hi\nhi"
-echo -e "hi\nhi"
-echo -e "hi\nhi" | uniq
-echo -e "hi\nhi" | uniq -u
-echo -e "hi\nhi\nhello" | uniq -u
-sort
-man sort
-pwd
-cur
-talk
-talk suzanshakya
-write
-chat
-man chat
-man talk
-man write
-talkto
-transmit
-man chat
-echo $PS!
-echo $PS1
-echo $PATH
-echo $LOGNAME
-echo $IFS
-id
-who am i
-show group
-group
-id
-who am i
-id
-echo hi
-echo $?
-asfd
-echo $?
-echo $PROMPT
-vs = 'hello'
-vs='hello'
-vs=a
-msg
-call
-man send
-man talk
-man send
-man talk
-man tput
-ls -l
-ls -F
-ls -o
-ls -r
-lr -h
-ls -h
-ls -o
-man ls
-ls -l
-ls -F
-man ls
-du -sh
-du -sh * test_windows_policy.py 
-man sort
-ls | grep [test]
-cd sujan-vpn
-ls | grep abc
-ls | grep [abc]
-ls | grep [bc]
-ls | grep [b]
-ls | grep [a]
-u
-cat >hi<<EOF
-vi hi 
-cat >hi<<EOF
-vi hi 
-cat >hi<<EOF
-vi hi 
-rm hi 
-man transmit
-transmit
-man write
-man talk
-man chat
-man write
-man talk
-man write
-man tput
-echo "hi hello ok done" | cut -f2
-echo "hi hello ok done" | cut -d' ' -f2
-echo "hi hello ok done" | cut -d' ' -f2,3,4
-echo "hi hello ok done" | cut -d' ' -f2-4
-jsconsole
-jsc 
-shasum Downloads/Creatingscrapyspiders.pdf 
-shasum projects/jobs/competitormonitor/Creatingscrapyspiders.pdf 
-mv Downloads/Creatingscrapyspiders2.pdf projects/jobs/competitormonitor/
-bi diffpdf
-bi poppler
-bi xpdf
-pi pdfminer
-load_bash_completion 
-load_virtualenvwrapper 
-workon pythoncrawlers
-rmvirtualenv pythoncrawlers
-bi virtualenvwrapper
-pi virtualenvwrapper
-workon pythoncrawlers
-mkvirtualenv pythoncrawlers
-exit
-workon pythoncrawlers
-pwd
-cd projects/jobs/
-cd 
-cd .virtualenvs/
-pwd
-cd pythoncrawlers/
-pwd
-hg clone https://hg.assembla.com/competitormonitor.2 product-spiders
-which pdf2txt.py 
-pdf2txt.py projects/jobs/competitormonitor/Creatingscrapyspiders1.pdf 
-cd projects/jobs/competitormonitor/
-man pdf2txt.py
-pdf2txt.py -h
-pdf2txt.py Creatingscrapyspiders1.pdf > Creatingscrapyspiders1.txt
-pdf2txt.py Creatingscrapyspiders2.pdf > Creatingscrapyspiders2.txt
-diff Creatingscrapyspiders{1,2}.txt
-shasum Creatingscrapyspiders*
-diff Creatingscrapyspiders{1,2}.txt
-rm Creatingscrapyspiders1.pdf 
-rm Creatingscrapyspiders1.txt 
-mv Creatingscrapyspiders{2,}.pdf
-mv Creatingscrapyspiders{2,}.txt
-open Creatingscrapyspiders.txt 
-ll product-spiders.zip 
-cd projects/
-cd pyjamas/
-git status
-git pull
-jsc
-bi poppler --with-qt4
-pip install django
-django-admin.py -h
-cd projects/jobs/competitormonitor/
-open Creatingscrapyspiders.pdf 
-workon pythoncrawlers
-mkdir manuals
-mv Creatingscrapyspiders.* manuals/
-mv Testwork.pdf manuals/
-mkdir client
-cd client/
-pwd
-mv ~/product-spiders.zip .
-unzip product-spiders.zip -d.
-cd product-spiders
-cd productspidersweb/
-pwd
-which python
-cd /Users/suzanshakya/projects/jobs/competitormonitor/client/product-spiders/productspidersweb
-pwd
-u
-pwd
-u
-pwd
-u
-pwd
-bmark
-pwd
-cd client/product-spiders
-vi productspidersweb/setup.py 
-python setup.py develop
-f
-open Creatingscrapyspiders.pdf 
-pwd
-open ../../../manuals/Creatingscrapyspiders.pdf 
-mv ~/.Trash/Creatingscrapyspiders.pdf .
-mv Creatingscrapyspiders.pdf ../../../manuals/
-open ../../../manuals/Creatingscrapyspiders.pdf 
-pwd
-workon pythoncrawlers
-pwd
-cd $competitormonitor 
-pwd
-cd client/product-spiders
-bmark
-bmark product_spiders
-bmark -d product_spiders
-bmark product_spiders
-u
-b
-vi ~/.config/bmark/
-bmark product_spiders
-pwd
-[wd
-pwd
-cd product_spiders/
-cd spiders/
-mkdir suzan
-vi suzan/__init__.py
-~/.virtualenvs/pythoncrawlers/bin/pserve development.ini 
-/opt/makalu/ptf/update.sh
-cd /opt/immune
-cd projects/
-vim spine/
-vim batman_app/
-pwd
-vi a.py 
-ll *.py
-vi b.py
-python b.py 
-rm b.py 
-cd $webserver 
-git status
-git branch
-pwd
-git branch
-cd $pylib 
-git status
-git diff
-vim
-git checkout htmlsafe_json
-vim models/documents.py
-git branch
-cd /opt/immune
-git status
-git checkout models/documents.py
-ack 'import json'
-ack 'htmlsafe_json'
-vim $webserver 
-ack '^import json'
-sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" views/search/main.py
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" views/search/main.py
-gs
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" *
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" *.py
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" .
-gs
-git diff makalu.py
-find . -name "*.py" | xargs sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json"
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" .
-git status
-diff
-git diff
-git diff views/search/main.py
-find . -name "*.py"
-find . -name "*.py" | xargs -J % sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json" %
-man sed
-for each in `find . -name "*.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json" $each; done
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" ./bin/db_upgrade.py
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" "./bin/db_upgrade.py"
-gs
-sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" views/search/main.py
-sed -i '' -e"s/^import\ json/from\ pylib.htmlsafe_json\ import\ json/g" views/search/main.py
-find . -name "*.py" | xargs -J % sed -i '' -e"s/^import\ json/from\ pylib.htmlsafe_json\ import json" %
-find . -name "*.py" | xargs -J % sed -i '' -e"s/^import\ json/from\ pylib.htmlsafe_json\ import\ json" %
-find . -name "*.py" | xargs sed -i '' -e"s/\^import json/from pylib.htmlsafe_json import json" %
-for each in `find . -name "*.py"` ; do echo $each; sed -i '' -e"s/\^import json/from pylib.htmlsafe_json import json" $each; done
-find . -name main.py
-find . -name main.py | xargs sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json"
-find . -name main.py | xargs sed -i '' -e's/^import json/from pylib.htmlsafe_json import json'
-find . -name main.py | xargs sed -i '' -e's/import json/from pylib.htmlsafe_json import json'
-find . -name main.py | xargs sed -i '' -e's/import\ json/from\ pylib.htmlsafe_json\ import\ json'
-find . -name main.py | xargs sed -i '' -e's/import\ json/from\ pylib\.htmlsafe_json\'
-sed -i '' -e"s/^import json/from pylib\.htmlsafe_json import json/g" views/search/main.py
-sed -i '' -e"s/^import json/from pylib\.htmlsafe_json import json/g" *.py
-gs
-find . -name "*.py" | xargs sed -i '' -e"s/^import json/from pylib\.htmlsafe_json import json"
-for each in `find . -name "*.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib\.htmlsafe_json import json" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib\.htmlsafe_json import json" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/\^import json/from pylib\.htmlsafe_json import json" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/\^import\ json/from\ pylib\.htmlsafe_json\ import\ json" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/json/from pylib/g" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^json/from pylib/g" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib/g" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json/g" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" $each; done
-for each in `find . -name "*.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json" $each; done
-for each in `find . -name "main.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" $each; done
-for each in `find . -name "*.py"` ; do echo $each; sed -i '' -e"s/^import json/from pylib.htmlsafe_json import json/g" $each; done
-gs
-git diff
-ack '^import json'
-ack 'import jsonify'
-ack 'import(\ )*jsonify'
-git status
-git commit -am'used pylib.htmlsafe_json.json instead of json'
-ack 'import(\ )*jsonify'
-ack 'import +jsonify'
-ack '^from flask import jsonify$'
-vim $col
-gs
-ack 'import jsonify$'
-ack ',.*jsonify'
-vi views/userdefinedlist.py
-sed -i '' -e"s/(,.*)jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/(,.*)jsonify/\1/p" views/userdefinedlist.py
-man sed
-sed -i '' -e"s/\(from flask import.*)jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\)jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\,.*)jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*,.*\)jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*), *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*,\) *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\),\ *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1/g" views/userdefinedlist.py
-find . -name "*.py" | xargs sed -i '' -e"s/\(from flask import.*\), *jsonify/\1/g"
-gs
-git diff
-ack 'jsonify'
-git status
-git checkout views/
-git status
-ack 'import jsonify'
-git checkout master
-git status
-git branch -d htmlsafe_json
-git branch -D htmlsafe_json
-git status
-git pull
-ssh 211
-git status
-sudo ./etc/service/webserver/run 
-sudo ./etc/service/mongodb/run 
-git checkout views/
-git branch
-git checkout -b htmlsafe_json
-ack '^import json'
-sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g" views/search/main.py
-find . -name "*.py" | sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g"
-gs
-find . -name "*.py" | xargs sed -i '' -e"s/import json/from pylib.htmlsafe_json import json/g"
-gs
-git status
-git diff
-git diff | grep [+-]
-git help diff
-git diff --minimal
-git diff
-git diff --minimal
-git help diff
-git diff --shortstat
-git status
-git commit -am'used pylib.htmlsafe_json.json instead of json'
-ack "^from flask import jsonify"
-ack "from flask import jsonify"
-ack "jsonify"
-ack "^from flask import jsonify"
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\nfrom pylib.htmlsafe_json import jsonify" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\nfrom pylib.htmlsafe_json import jsonify/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\\nfrom pylib.htmlsafe_json import jsonify/g" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\\\\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\\\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1`echo -e '\n'`from pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-echo -e '\n'
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1$\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1\"$"\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e"s/\(from flask import.*\), *jsonify/\1"$"\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' "s/\(from flask import.*\), *jsonify/\1"$"\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-echo 'foo bar baz quux' | sed -e 's/ /\'$'\n/g'
-echo 'foo bar baz quux' | sed -e 's/ /'$'\n/g'
-echo 'foo bar baz quux' | sed -e s/ /\'$'\n/g'
-echo 'foo bar baz quux' | sed -e "s/ /\'$'\n/g"
-echo 'foo bar baz quux' | sed -e "s/ /\"$"\n/g"
-echo 'foo bar baz quux' | sed -e 's/ /'$'\n/g'
-echo 'foo bar baz quux' | sed -e 's/ /\'$'\n/g'
-sed -i '' -e's/\(from flask import.*\), *jsonify/\1"$"\nfrom pylib.htmlsafe_json import jsonify/" views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.pya
-sed -i '' -e's/\(from flask import.*\), *jsonify/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify(.*)/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify.*/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify(.*)/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify\(.*\)/\1\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify\(.*\)/\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import.*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(^from flask import.*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(^from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/^from flask import jsonify/from pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/^from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-ack 'from flask import jsonify *,"' views/userdefinedlist.py
-ack 'from flask import jsonify*,"' views/userdefinedlist.py
-ack "from flask import jsonify*,"' views/userdefinedlist.py
-ack "from flask import jsonify*," views/userdefinedlist.py
-ack "from flask import jsonify *," views/userdefinedlist.py
-ack " *import json"
-ack "^ *import json"
-ack "from flask import jsonify" views/userdefinedlist.py
-sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g'
-sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-ack "from flask import jsonify *,"
-ack "from flask import jsonify *," views/userdefinedlist.py
-sed -i '' -e's/\(from flask import ) *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \) *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \) *jsonify *,\(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \) *jsonify*,\(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \) *jsonify *,\(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-ack "from flask import jsonify *," views/userdefinedlist.py
-ack "from flask import jsonify *,.+" views/userdefinedlist.py
-ack "from flask import jsonify *," views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify *,\(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, (.+)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(g\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(.+\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \)jsonify, \(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import \) *jsonify *, *\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import .*), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g' views/userdefinedlist.py
-ack "from flask import .*, jsonify" views/userdefinedlist.py
-git status
-git checkout views/userdefinedlist.py
-ack "from flask import jsonify"
-sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g'
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g'
-gs
-ack "from flask import jsonify *,"
-ack "from flask import jsonify,"
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import \) *jsonify *, *\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-gs
-ack "from flask import .*, jsonify"
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-gs
-git diff
-pyflakes 
-pyflakes .
-pyflakes . | grep -v 'imported but unused'
-git checkout views/contrib/validations.py
-git status views/contrib/validations.py
-git status
-git status views/contrib/validations.py
-git diff views/contrib/validations.py
-pyflakes . | grep -v 'imported but unused'
-pyflakes . | grep -v 'imported but unused|never used'
-pyflakes . | grep -v 'imported but unused|never used|but unused'
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-git checkout master
-git status
-git reset --hard origin
-git checkout master
-git branch -D htmlsafe_json
-git pull
-git checkout v511
-git status
-git checkout -b htmlsafe_json
-ack "^ *import json"
-vi views/search/main.py
-ack "^ *import ujson"
-vi views/search/main.py
-ack "^ *import ujson"
-find . -name "*.py" | xargs sed -i '' -e"s/^\( *\)import json/\1from pylib.htmlsafe_json import json/g"
-gs
-vi views/contrib/validations.py
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-vi views/search/main.py
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-git commit -am'used pylib.htmlsafe_json.json instead of json'
-ack "from flask import jsonify"
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g'
-ack "from flask import jsonify"
-ack "^ *import ujson"
-ack "^ *import json"
-ack "from flask import jsonify"
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g'
-ack "from flask import jsonify"
-find . -name "*.py" | xargs sed -i '' -e"s/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g"
-ack "from flask import jsonify"
-sed -i '' -e"s/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g" views/contrib/validations.py
-ack "from flask import jsonify"
-sed -i '' -e's/from flask import jsonify\$/from pylib.htmlsafe_json import jsonify/g' views/contrib/validations.py
-ack "from flask import jsonify"
-sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g' views/contrib/validations.py
-ack "from flask import jsonify"
-sed -i '' -e's/from flask import jsonify/from pylib.htmlsafe_json import jsonify/g' views/contrib/validations.py
-gs
-git diff
-git checkout views/contrib/validations.py
-sed -i '' -e's/from flask import jsonify$/from pylib.htmlsafe_json import jsonify/g' views/contrib/validations.py
-ack "from flask import jsonify"
-ack "from flask import jsonify" views/contrib/validations.py
-sed -i '' -e's/from flask import jsonify\$/from pylib.htmlsafe_json import jsonify/g' views/contrib/validations.py
-ack "from flask import jsonify" views/contrib/validations.py
-ack "from flask import jsonify"
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify/from pylib.htmlsafe_json import jsonify/g'
-git diff views/contrib/validations.py
-git diff views/search/main.py
-vi views/search/main.py
-git diff views/search/main.py
-git status
-vi views/contrib/validations.py
-ack "from flask import jsonify"
-git status
-git checkout views/
-ack "from flask import jsonify *,"
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import \) *jsonify *, *\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-git status
-git diff
-ack "from flask import jsonify"
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify/from pylib.htmlsafe_json import jsonify/g'
-gs
-git diff
-ack "from flask import .*, jsonify"
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-gs
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-git status
-git checkout views/
-git status
-vi views/search/main.py
-git log
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import \) *jsonify *, *\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-find . -name "*.py" | xargs sed -i '' -e's/from flask import jsonify/from pylib.htmlsafe_json import jsonify/g'
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-vim $webserver 
-git checkout views/report.py
-gs
-git checkout views/report.py
-git checkout views/configuration.py
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-find . -name "*.py" | xargs sed -i '' -e's/\(from flask import .*\), *jsonify\(.*\)/\1\2\'$'\nfrom pylib.htmlsafe_json import jsonify/g'
-git status
-git diff
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-git commit -am'used pylib.htmlsafe_json.jsonify instead of flask.jsonify'
-gs
-pwd
-sudo ./etc/service/mongodb/run 
-cd /opt/immune
-cd $immune 
-sudo ./etc/service/webserver/run 
-vim 
-git status
-git checkout master
-git checkout htmlsafe_json
-git checkout master
-git checkout htmlsafe_json
-git checkout master
-git diff views/frontend.py
-git commit views/frontend.py -m'appli json not escaped'
-git checkout master
-gs
-gs
-git log
-git status
-git diff timing.py
-git commit -am'allowed repeat and number to be float'
-git status
-git add htmlsafe_json.py
-git commit -m'added htmlsafe_json'
-ipython
-sudo ./etc/service/mongodb/run 
-ssh support@10.45.1.211
-cd projects/codility/
-cd toptal/
-vim
-vim t1.py
-pwd
-mv t1.py toptal4.py
-pwd
-ipython
-/opt/makalu/ptf/update.sh
-cd $immune 
-vim
-cd /opt/immune
-cd $immune 
-./etc/service/webserver/run 
-man ncat
-man nc
-man ncat
-cd $webserver 
-gb
-git checkout htmlsafe_json
-vim $pylib 
-ncat -lk -p 8080 -c 'nc localhost 18000'
-vim $storage 
-vi models/documents.py
-pwd
-git branch
-git status
-vim 
-./etc/service/webserver/run 
-git log
-git log -p
-git reset --hard 9721b116763afc70eca3b3a7e029dcd112bd521f
-gs
-vim $col
-./etc/service/mongodb/run 
-/opt/makalu/ptf/update.sh
-cd /opt/immune
-ssh support@10.99.0.42
-vi .ssh/known_hosts 
-vim
-cd $pylib 
-pwd
-rm .htmlsafe_json.py.swp 
-vim 
-git status
-git diff htmlsafe_json.py
-git log
-git status
-git commit htmlsafe_json.py -m'allowed to escape some keys only'
-vim
-cd $norm 
-vim
-git status
-git diff
-git status
-git branch
-git commit -m'added repo_name and loginspect as reserved field names'
-git commit -am'added repo_name and loginspect as reserved field names'
-git checkout v511
-git diff master
-git merge master
-git push
-vim $norm 
-git status
-git diff
-git status
-git commit -am'removed duplicity of repo_name'
-git checkout master
-git merge v511
-git push
-ssh support@10.99.0.35
-scp Downloads/filterengine.jar support@10.99.0.35:.
-ssh support@10.99.0.35
-ssh support@10.99.0.35
-git log textual.py
-git log textual.py -p
-pi ujson
-pi simplejson
-git log -p textual.py
-pwd
-python
-ipython
-which python
-echo $PATH
-vi ~/.bash_profile
-which python2.7
-vi ~/.bash_profile
-rm ~/.bash_profile.pysave 
-clera
-vim
-which python
-cd $pylib 
-vim
-gs
-git diff
-git status
-git commit -am'implemented htmlsafe_json'
-vim $webserver 
-cd $webserver 
-vim
-git status
-git branch
-git checkout htmlsafe_json
-gs
-cd /opt/immune
-./etc/service/webserver/run 
-./etc/service/mongodb/run 
-pwd
-which python
-which python
-python
-ack ' *jsonify'
-ack '^ *jsonify'
-ack ', *jsonify'
-ack 'jsonify, *'
-ack 'jsonify'
-ack '[^n] jsonify'
-ack '^ *\w'
-ack '^ *\w,'
-ack '^ *, *jsonify'
-ack '^ *\w,' views/
-ack '^ *\w' views/
-ack '^ *\w,' views/
-ack '^ *\w,' views/*.py
-ack '^ *render' views/
-ack '^ *render *,' views/
-ack '^ *render *\,' views/
-ack '^ *render.*\,' views/
-ack '^ *.*\,' views/
-ack '^ *.*,' views/
-ack '^ *.*,jsonify' views/
-ack '^ *.*jsonify' views/
-ack '^ *.*,jsonify' views/
-ack '^ *.*, *jsonify' views/
-ack '^.*, *jsonify' views/
-ack '^ *.*, *jsonify' views/
-git status
-git diff
-git status
-git diff
-git commit -am'used pylib.htmlsafe_json.jsonify instead of flask.jsonify for escaping html attributes'
-git status
-git diff
-git status
-git commit -am'encoded to utf8'
-git status
-git branch
-git diff v511
-git status
-git merge v511
-git checkout v511
-git merge master
-git status
-git checkout v511
-git push
-git merge htmlsafe_json
-git status
-git checkout master
-git merge v511
-git status
-git checkout v511
-git checkout v510
-git status
-git branch
-git pull
-git reset --hard origin/master
-git checkout v511
-git status
-git pull origin v51
-git branch
-git push origin v511
-git pull origin v510
-git reset --hard origin/v511
-git status
-git log
-git status
-git push
-git log
-git status
-git checkout v511
-gs
-git reset --hard origin/v511
-git checkout master
-git reset --hard origin/v511
-git reset --hard origin/master
-git diff
-gb
-git diff v511
-git merge htmlsafe_json
-vi tests/test_frontend.py
-git status
-git diff tests/test_frontend.py
-git diff views/devices.py
-git diff views/label.py
-git status
-git add tests/test_frontend.py
-git add views/devices.py
-git add views/label.py
-git status
-git commit -am'merged htmlsafe_json'
-git status
-git checkout v511
-git merge master
-git status
-git branch
-git push
-git checkout master
-git status
-git pull origin/master
-git pull origin master
-vi views/configuration.py
-git status
-git add views/configuration.py
-git commit -am'merged with latest pull'
-git status
-git checkout master
-git merge v511
-git status
-git push
-git checkout v511
-git pull
-git pull origin v511
-git status
-git log
-git status
-git checkout v510
-git log
-git status
-git diff origin/v510
-git status
-git reset --hard origin/v510
-git log
-git status
-git push
-git status
-gitx
-ssh support@10.99.0.42
-ssh support@10.99.0.42
-./etc/service/webserver/run 
-./etc/service/mongodb/run 
-vim
-pyflakes . | egrep -v 'but unused|never used|redefinition|unable to detect'
-git status
-git checkout v511
-gs
-git log
-vim
-vi views/search/main.py
-ll views/search/.main.py.swp 
-rm views/search/.main.py.swp 
-vi ./views/search/main.py
-git checkout views/search/main.py
-gs
-git status
-git diff
-git commit -am'used escape=False for search results, because they also contain html tags'
-git branch
-git checkout master
-git merge v511
-git push
-ssh 211
-ssh 211
-workon pythoncrawlers
-pwd
-cd .virtualenvs/pythoncrawlers/
-pwd
-which python
-pwd
-cdpwd
-u
-pwd
-cd pythoncrawlers/
-cd ~/projects/jobs/competitormonitor/
-cd client/
-cd product-spiders
-cd productspidersweb/
-python setup.py develop
-which pserve
-cd $product_spiders 
-pwd
-workon pythoncrawlers
-cd sp
-pwd
-cd product_spiders/spiders/
-cd suzan/
-l
-pserve development.ini 
-vi __init__.py
-vim
-mkdir surreypetsupplies.co.uk
-rm surreypetsupplies.co.uk/
-touch surreypetsupplies.co.uk.py
-scrapy shell http://www.surreypetsupplies.co.uk
-cd $product_spiders 
-workon pythoncrawlers
-scrapy shell http://www.surreypetsupplies.co.uk
-scrapy shell http://www.surreypetsupplies.co.uk/sitemap.html
-hxs
-which scrapy
-scrapy shell http://www.surreypetsupplies.co.uk/sitemap.html
-pwd
-exit
-pwd
-cd ..
-pwd
-mv product_spiders/spiders/suzan/surreypetsupplies{.co.uk,_spider}.py 
-ls product_spiders/spiders/suzan/
-pwd
-pserve productspidersweb/development.ini 
-scrapy shell http://www.surreypetsupplies.co.uk/sitemap.html
-pwd
-cd $product_spiders 
-pwd
-which scrapy
-workon pythoncrawlers
-vi ps.py
-which scrapy
-which python
-python
-pwd
-cd product_spiders/
-u
-pwd
-scrapy product_spiders/spiders/
-pwd
-netstat -i
-netstat
-man netstat
-ifconfig
-netstat -i en1
-scrapy server
-cd product_spiders/
-scrapy spiders/
-scrapy server
-pwd
-u
-scrapy server
-pwd
-which pserve
-pserve productspidersweb/development.ini 
-pwd
-pserve productspidersweb/development.ini 
-vi product_spiders/scheduler.py
-vi product_spiders/scripts/crawl.py
-scrapy server
-rmvirtualenv 
-pwd
-. ~/.bash_profile 
-pwd
-python
-which scrapy
-scrapy server
-vi scrapyd.conf 
-vi scrapy.cfg 
-pwd
-vi scrapyd.conf 
-vi scrapy.cfg 
-cd product_spiders/
-ps aux | grep scrapy
-lsof -p2707
-lsof -p2707 -i
-lsof -a -p2707 -i
-man lsof
-lsof -a -p2707 -i
-loop lsof -a -p2707 -i
-scrapy server
-nc localhost 6800
-nc -lk localhost 6800
-pwd
-cp -R spiders/suzan ~/suzan_spiders
-pwd
-deactivate 
-pwd
-which python
-which pserve
-pserve productspidersweb/development.ini 
-workon pythoncrawlers
-pwd
-pwd
-u
-pwd
-ll *.py
-rm ps.py 
-workon pythoncrawlers
-cd $product_spiders 
-vi product_spiders/settings.py
-vi scrapy.cfg 
-vi product_spiders/__init__.py
-scrapy runspider product_spiders/spiders/suzan/surreypetsupplies_spider.py
-workon pythoncrawlers
-scrapy runspider product_spiders/spiders/suzan/surreypetsupplies_spider.py
-scrapy server
-deactivate 
-which python
-pserve productspidersweb/development.ini 
-workon pythoncrawlers
-deactivate 
-workon pythoncrawlers
-which python
-echo $PATH
 /Users/suzanshakya/.virtualenvs/pythoncrawlers/bin/python
 ll /Users/suzanshakya/.virtualenvs/pythoncrawlers/bin/python
 ll /Users/suzanshakya/.virtualenvs/pythoncrawlers/bin/python*
@@ -7019,3 +197,5290 @@ scrapy runspider product_spiders/spiders/sujanshakya/surreypetsupplies_spider.py
 git status
 git status product_spiders/spiders/sujanshakya/
 git diff product_spiders/spiders/sujanshakya/
+git reset --hard origin/master
+git status
+rm Library/Opera
+mv Library/Opera{.bak,}
+/Applications/Opera.app/ -debugns
+open /Applications/Opera.app/ -debugns
+ll /Users/suzansmate/Desktop/
+sudo ls -l /Users/suzansmate/Desktop/
+mv /Users/suzansmate/Desktop/A\ Separation\ \(2011\)\ 720p\ BRrip_sujaidr/ ~/Desktop/
+cd /Users/suzansmate/
+ls
+ls Documents/
+ls Movies/
+ls Public/
+ls Downloads/
+ls Music/
+ls Desktop/
+ls Library/
+ls Pictures/
+sudo -s
+opera
+opera -debugns
+cd projects/jobs/piero/mylocaltime/
+bmark 
+cd
+bmark mylocaltime
+cd $mylocaltime
+dev_appserver.py .
+mv mylocaltime/ ../m
+u
+mv m mylocaltime
+ll mylocaltime/m/
+mv mylocaltime/{m/*,}
+ll mylocaltime/
+gs
+cd mylocaltime/
+gs
+mv m/.git* .
+ll m
+rm m
+gs
+git status
+mvim
+dev_appserver.py .
+which python
+vi /Users/sujanshakya/.bash_profile 
+vi /opt/immune/etc/env.rc 
+vi /Users/sujanshakya/.bash_profile 
+which python
+python
+ll `which python`
+ll /usr/local/bin/python
+ll /usr/local/bin/python2.7
+/usr/local/bin/python2.7
+gs
+cd ..
+cd web2py/trunk/
+hg pull
+hg up
+hg status
+cp gluon/dal.py ~/projects/jobs/piero/mylocaltime/
+dev_appserver.py .
+git diff
+git status
+git add dal.py
+git diff
+git status
+git add city.html 
+git add datetime.html 
+git add mylocaltime.py
+git commit -m'testing with using db for aliases'
+ipython
+git push
+cd
+cd /opt/immune/installed/col/apps/syslog_collector/
+mvim
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+mvim
+vi /Users/sujanshakya/.vimrc 
+cd installed/pylib/
+git status
+git diff
+git status
+git commit -am'added filter and cep socket ports in wiring.conf. they are used only for informative purpose, filter and cep services read those port info from config.json files'
+git branch
+git push
+git pull
+git checkout v511
+git pull
+git pull origin v511
+git status
+git merge master
+git push
+git diff master
+git checkout v510
+git merge origin/v510
+git checkout v510
+git log
+git status
+gitk --all
+git status
+git checkout master
+git push
+nc -l 2000 > seed.zip
+cd ..
+cd logen/
+git remote show origin
+vi README 
+ssh support@192.168.2.207
+ssh support@192.168.2.207 -i .ssh/li_support 
+ssh support@192.168.2.207
+mvim
+git status
+git status ll pylib
+git status
+cd
+git clone git@immunesecurity.unfuddle.com:immunesecurity/logen.git
+cd logen/
+ll pylib 
+cd pyli
+cd pylib
+u
+rm logen/
+gs
+echo $LOGINSPECT_HOME
+unset LOGINSPECT_HOME
+echo $LOGINSPECT_HOME
+vi README 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.205:514:tcp
+gs
+d
+gd
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.205:514:tcp
+echo $LOGINSPECT_HOME
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.205:514:tcp
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.205:514:udp
+git status
+git diff
+git commit -am'workaround for unsed import gevent'
+git push
+cd /opt/immune
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+./installed/system/apps/mongodb/run_mongodb.sh 
+rm ./storage/mongodb/mongod.lock 
+./installed/system/apps/mongodb/run_mongodb.sh 
+rm ./storage/mongodb/mongod.lock 
+cd /opt/immune
+./bin/envdo python
+python ./installed/system/scripts/insert_mongo_users.py 
+./bin/envdo python ./installed/system/scripts/insert_mongo_users.py 
+python
+./bin/envdo python
+mongo
+sudo ./installed/system/apps/mongodb/run_mongodb.sh 
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+cd /opt/immune/installed/system/
+cd scripts/
+python insert_mongo_users.py 
+/opt/immune/bin/envdo python insert_mongo_users.py 
+sudo ./installed/system/apps/mongodb/run_mongodb.sh 
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+sudo ./installed/system/apps/mongodb/run_mongodb.sh 
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+sudo ./installed/system/apps/mongodb/run_mongodb.sh 
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+mongo
+sudo ./installed/system/apps/mongodb/run_mongodb.sh 
+./bin/envdo python
+vi example-config.json 
+avi ../../../pylib/pylib/
+gs
+python -m cProfile -osyslog.prof syslog_collector.py example-config.json 
+workon makalu
+cd ../../../logen/
+workon makalu
+vi README 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@127.0.0.1:514:udp -r 5000
+python -m cProfile -osyslog.prof syslog_collector.py example-config.json 
+ipython
+which ipython
+pip install readline
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@127.0.0.1:1514:udp -r 5000
+pip install readlines
+pip install readline
+sudo pip install readline
+ipython
+easy_install readline
+ipython
+tail -F /opt/immune/var/log/benchmarker/syslog_collector.log 
+tail -F /opt/immune/var/log/benchmarker/noname.log 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@127.0.0.1:1514:udp -r 5000
+./bin/envdo syslog_collector.py example-config.json 
+/opt/immune/bin/envdo ./syslog_collector.py example-config.json 
+/opt/immune/bin/envdo python -m cProfile -o syslog.prof syslog_collector.py example-config.json 
+tail -F /opt/immune/var/log/benchmarker/syslog_collector.log 
+tail -F /opt/immune/var/log/benchmarker/noname.log 
+ps aux | grep syslog_c
+ps aux | grep logge
+tail -F /opt/immune/var/log/benchmarker/noname.log 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@127.0.0.1:1514:tcp -r 5000
+jobs -p
+kill `jobs -p`
+jobs
+ipython
+python
+which python
+mongo alex.mongohq.com:10091/asdfg -u admin -p admin
+mongo alex.mongohq.com:10091/asdfg
+mongo alex.mongohq.com:10091/asdfg -u admin -p admin
+mongo alex.mongohq.com:10091/asdfg
+open Library/
+clera
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+mvim
+ipython
+which python
+python
+python2.6
+cd /opt/immune
+mvim
+cd installed/col/apps/ftp_fetcher/
+python ftp_fetcher.py example-config.json 
+workon makalu
+python
+python ftp_fetcher.py example-config.json 
+python
+python ftp_fetcher.py example-config.json 
+vimpy -m logging
+gs
+git diff
+git reset --hard origin master
+git reset --hard origin/master
+gs
+cd $pylib
+gs
+git diff
+cd
+locate buttonData
+cd /opt/immune
+cd installed/pylib/pylib/
+vi wiring/wiring.conf 
+cd ~/projects/jobs/piero/mylocaltime/
+mvim
+dev_appserver.py .
+gs
+git diff
+gs
+git diff
+gs
+git diff
+git status
+git commit -am'alias added to country, adding to db implemented'
+git status
+git push
+appcfg.py update .
+gs
+git status
+ipython
+cd projects/jobs/
+du -sh .
+du -sch *
+u
+du -sh
+rsync -aE --delete jobs /Volumes/SUZAN/
+locate button
+locate buttonD
+locate buttonData
+locate buttonDataK
+acp Desktop/SUZAN/imac/buttonDataKeyBoardMouse.ini /Applications/FIFA\ 11.app/Contents/Resources/drive_c/Program\ Files/EA\ Sports/FIFA\ 11/Game/buttonDataKeyBoardMouse.ini 
+cp/Applications/FIFA\ 11.app/Contents/Resources/drive_c/Program\ Files/EA\ Sports/FIFA\ 11/Game/buttonDataKeyBoardMouse.ini{,.bak}
+cp /Applications/FIFA\ 11.app/Contents/Resources/drive_c/Program\ Files/EA\ Sports/FIFA\ 11/Game/buttonDataKeyBoardMouse.ini{,.bak}
+ll /Applications/FIFA\ 11.app/Contents/Resources/drive_c/Program\ Files/EA\ Sports/FIFA\ 11/Game/buttonDataKeyBoardMouse.ini
+cp Desktop/SUZAN/imac/buttonDataKeyBoardMouse.ini /Applications/FIFA\ 11.app/Contents/Resources/drive_c/Program\ Files/EA\ Sports/FIFA\ 11/Game/buttonDataKeyBoardMouse.ini 
+vi bin/httpserver.py 
+nginx
+bi nginx
+nginx
+locate nginx
+echo $PATH
+vi /Users/sujanshakya/.bash_profile 
+/usr/bin/vi ~/.bash_profile 
+ll bi
+ll bin
+vi /Users/sujanshakya/.bash_profile 
+cd Documents/
+cd python-2.7.3-docs-html/
+httpserver.py .
+sudo httpserver.py .
+httpserver.py . 7000
+ll /usr/local/Cellar/nginx/1.2.3/
+chown -R sujanshakya:wheel /usr/local/
+sudo chown -R sujanshakya:wheel /usr/local/
+httpserver.py . 7000
+httpserver.py 7000
+u
+httpserver.py 7000
+passwd
+sudo -s
+su -
+sudo -s
+locate shiftit
+locate python
+locate shiftit
+vi abc
+locate shiftit
+locate ShiftIt
+locate -i ShiftIt
+man locate
+locate -i ShiftIt
+/Users/sujanshakya/Softwares/ShiftIt.app/Contents/MacOS/ShiftIt ; exit;
+pwd
+vi Downloads/python-intro-101912.rtf 
+vi Downloads/change_case_notifications-test.py 
+mvim Downloads/change_case_notifications-test.py 
+cd Documents/
+httpserver.py 7000
+ll Downloads/change_case_notifications-test.py 
+ll Downloads/python-intro-101912.rtf 
+ll Downloads/python-intro-101912.*
+vi Downloads/python-intro-101912.rtf 
+open Downloads/python-intro-101912.rtf 
+octave
+ipython
+pi gaeutilities
+sudo pi gaeutilities
+sudo pip install gaeutilities
+cd projects/jobs/piero/mylocaltime/
+gs
+mvim .
+dev_appserver.py .
+gs
+gd
+gs
+git diff
+gd
+git commit -am'fixed US issue, fixed alias lower casing; refacs'
+git push
+mvim
+gs
+gd
+git status
+git diff mylocaltime.py
+gs
+git status
+git add alias.html 
+git diff city.html 
+gs
+git diff
+gs
+git status
+git commit -am'moved alias rendering to inclusion tags to make DRY'
+gs
+git status
+gs
+egrep '\t' .
+egrep '\n' .
+egrep -r '\n' .
+egrep -r '\t' .
+egrep -r '\t' *.py
+egrep -re '\t' *.py
+egrep -re 'a' *.py
+egrep -re 'b' *.py
+egrep -re 't' *.py
+egrep -re '\t' *.py
+gs
+rm ~/Library/Preferences/com.apple.iChat.plist
+rm ~/Library/Preferences/com.apple.iChat.Jabber.plist
+rm ~/Library/Preferences/com.apple.iChat.plist
+gs
+git diff
+git commit -am'added backend logic for removing alias'
+git status
+git push
+gs
+git diff
+gd
+gs
+git commit -am'implemented removing alias from UI'
+git push
+gs
+gd
+git commit -am'added css'
+git push
+gs
+git diff
+gs
+gd
+git commit -am'clear old globals'
+git push
+gs
+appcfg.py .
+appcfg.py update .
+ipython
+open Library/
+cd $mylocaltime
+mvim
+cd ~/Downloads/dound-gae-sessions-69ae012/
+mvim
+cd ~/Documents/
+ipython
+cd demo-with-google-logins/
+dev_appserver.py .
+dev_appserver.py . 5000
+pyhon
+python
+cp -r ~/Downloads/dound-gae-sessions-69ae012/gaesessions .
+cp -R ~/Downloads/dound-gae-sessions-69ae012/gaesessions .
+ll gaesessions/
+rm gaesessions/__init__.pyc 
+cd
+dev_appserver.py .
+mkdir templates
+cp datetime.html templates/
+cp city.html templates/
+cp alias.html templates/
+git mv *.html templates/
+gs
+git status
+ll *.html
+git status
+mv *.html templates/
+gs
+git status
+git mv alias.html templates/
+git mv -f alias.html templates/
+git mv --cached alias.html templates/
+git mv -f alias.html templates/
+git mv -k alias.html templates/
+git mv -k *.htmltemplates/
+git mv -k *.html templates/
+gs
+git status
+git add templates/
+gs
+git status
+git mv customtags/{city_render,tags}.py
+git status
+gs
+git status
+git checkout alias.html
+git checkout city.html
+git checkout datetime.html
+gs
+git status
+git mv -k *.html templates/
+gs
+git status
+git log templates/alias.html 
+git reset HEAD templates/*
+git status
+ls templates/
+git status
+git log
+git status
+ll *.html
+rm templates/*
+git mv *.html templates/
+gs
+git status
+git log templates/alias.html 
+git log alias.html
+git log templates/alias.html 
+ll *.html
+git diff
+gs
+git status
+git diff mylocaltime.py
+git commit -am'moved html files to templates dir; added admin user'
+gs
+git add appengine_config.py
+git add gaesessions/__init__.py
+gs
+diff customtags/city_render.py customtags/tags.py
+git log customtags/tags.py
+git log templates/alias.html 
+git log alias.html
+git status customtags/city_render.py
+git status customtags/tags.py
+git status
+git log
+git log -p
+rm customtags/city_render.py*
+git status
+rm customtags/*
+git checkout customtags/
+ls customtags/
+git status
+git commit -m'added gaesessions'
+git status
+gs
+vi .gitignore 
+gs
+git add .gitignore 
+git status
+git commit -m'added swap files in .gitigore'
+git status
+git push
+gs
+git diff
+mv datetime.html templates/
+git status
+git diff templates/
+git status
+git add templates/datetime.html 
+git add static/script.js 
+git status
+git commit -m'moved JS to script.js'
+gs
+git status
+dev_appserver.py . -p5000
+httpserver.py 7000
+git diff
+git status
+git add templates/login.html 
+git add mylocaltime.py
+git add templates/datetime.html 
+git status
+gs
+git diff mylocaltime.py
+git status
+git add mylocaltime.py
+git commit -m'authentication finalized'
+gs
+vi app.yaml 
+git status
+git checkout app.yaml 
+gs
+du -sh .
+du -sh .git
+clera
+mvim
+gs
+gd
+git commit -am'allowed to show aliases in timezone view also'
+gs
+gd
+gs
+gd
+git commit -am'prevented adding alias in timezones'
+gs
+mvim
+gs
+git diff
+gs
+git commit -am'- added in front of alias'
+gs
+git status
+git push
+gs
+appcfg.py .
+gs
+ipython
+appcfg.py update .
+gs
+mvim
+gs
+git checkout -b 'display_alias_on_page'
+git branch
+gs
+git diff
+gs
+gd
+git status
+git commit -am'showd alias in normal page also'
+git status
+dev_appserver.py .
+gs
+gb
+git push
+git branch -r
+git branch
+gs
+git push origin display_alias_on_page
+appcfg.py .
+gs
+git branch -r
+appcfg.py update .
+gs
+ll *.py
+rm distribute_setup\ 2.py 
+mkdir py
+mv *.py py
+ll *.py
+ll py
+ed
+man ed
+man sed
+man gnuserv 
+cd '/Users/sujanshakya/projects/jobs/competitormonitor/client/product-spiders/product_spiders/spiders/tigerchef/' && '/usr/local/bin/pythonw'  '/Users/sujanshakya/projects/jobs/competitormonitor/client/product-spiders/product_spiders/spiders/tigerchef/acitydiscount.pyc'  && echo Exit status: $? && exit 1
+octave
+bi octave
+cd projects/
+rsync -aE --delete jobs /Volumes/SUZAN/
+cd ..
+cd Sites/
+chmod 755 python-3.1.5-docs-html/
+ipython
+cd ~/projects/jobs/piero/
+mvim
+cd mylocaltime/
+gs
+git log
+git log -p
+dev_appserver.py .
+git status
+git diff
+gd
+git status
+git add static/style.css 
+git commit -am'used minimum tag in html by not using form for aliases when not required'
+git status
+gs
+git status
+git log
+git diff 3caf337d49bbd5e454ac3de4dc6baa90a82f55c3 master
+mvim
+git diff master 3caf337d49bbd5e454ac3de4dc6baa90a82f55c3
+git log
+git status
+git checkout -b testing
+git status
+git diff
+git branch
+git reset --hard 3caf337d49bbd5e454ac3de4dc6baa90a82f55c3
+git status
+git diff
+git commit -am'commented out master version'
+git diff master
+git merge 4eb5ee417a438ce9f6f06c9948a2ec85ad02f181
+git log
+git branch
+git diff display_alias_on_page
+git log
+git branch
+git checkout display_alias_on_page
+git merge testing
+git diff testing
+git branch -d testing
+git branch
+git status
+git log
+git diff master 88acb36140e4d9a79cae7c1956e997b11c6179b3
+gitk --all
+git checkout master
+git branch
+git merge display_alias_on_page
+git diff display_alias_on_page
+git checkout display_alias_on_page
+git diff master
+git checkout master
+git log
+git branch -d display_alias_on_page
+git status
+git branch
+git status
+git push
+dev_appserver.py .
+git branch -r
+git branch -r
+gitk --all
+git branch
+appcfg.py update .
+gs
+git push origin :display_alias_on_page
+git branch -r
+ipython
+git push origin :display_alias_on_page
+git status
+pytho
+python
+cd
+locate xpath
+locate site-packages/xpath
+cd .virtualenvs/
+virtualenv list
+rm list/
+u
+v
+v python
+v os
+v gevent
+cd .virtualenvs/
+cd ~/projects/jobs/
+cd competitormonitor/
+workon pythoncrawlers
+u
+cd
+man virtualenv
+virtualenv --help
+which python2.6
+python2.6
+which pip
+vi `which pip`
+pip --help
+python
+python2.6
+python2.6 py/distribute_setup.py 
+sudo python2.6 py/distribute_setup.py 
+sudo python2.6 py/get-pip.py 
+pip-2.6 install lxml
+sudo pip-2.6 install lxml
+python import lxml
+python2.6
+mkvirtualenv mosaic
+which python
+python
+deactivate 
+rmvirtualenv mosiac
+rmvirtualenv mosaic
+mkvirtualenv --python=/usr/bin/python2.6 mosaic
+python
+deactivate 
+python
+python2.6
+cp /Library/Python/2.6/site-packages/lxml* .virtualenvs/mosaic/lib/python2.6/site-packages/
+cp -r /Library/Python/2.6/site-packages/lxml* .virtualenvs/mosaic/lib/python2.6/site-packages/
+workon mosaic
+python
+rm .virtualenvs/mosaic/lib/python2.6/site-packages/lxml-3.0.1-py2.6.egg-info/
+python
+cd projects/jobs/
+vi ~/.virtualenvs/mosaic/.Python 
+~/.virtualenvs/mosaic/.Python 
+mkdir mosaic
+pwd
+cd mosaic/
+mvim occ.py
+u
+cd competitormonitor/
+mvim
+ipython
+workon mosaic
+vi index.html
+python
+cd
+python occ.py 
+mvim
+python2.6
+mv index.html ~/projects/jobs/mosaic/
+python
+cd $jobs
+cd mosaic/
+bmark
+vi th.py
+python th.py 
+jobs 
+killjob 
+killjob 2
+jobs
+vi th.py
+python occ.py 
+vi /Users/sujanshakya/Desktop/interpretations-and-actions-1998-1996.html
+ipython
+python
+python occ.py 
+vimpy -m lxml
+vimpy -m lxml
+python occ.py 
+python th.py 
+killjob
+jobs 
+python th.py 
+killjob
+python th.py 
+python th.py k
+python th.py
+vi th.py
+time python occ.py 
+jobs
+kill `jobs -p`
+jobs
+time python occ.py 
+jobs
+killjobs 
+jobs 
+python
+rm index.html 
+gs
+git status
+mvim
+python occ.py 
+killjobs 
+jobs "%python" "%python" "%python" 
+jobs 
+python occ.py 
+killjobs 
+time python occ.py 
+vi nep.py
+python nep.py 
+vi nep.py 
+vi name.txt 
+vi nep.py 
+vi name.txt 
+python nep.py 
+vi name.txt 
+python nep.py 
+vi nep.py 
+python nep.py 
+vi nep.py 
+python nep.py 
+cat name.txt 
+vi occ_letters_info.txt 
+mkdir util
+mv nep.py util/
+mv th.py util/
+mv name.txt util/
+mv occ.py occ_crawler.py
+vi occ_letters_info.txt 
+rm occ_letters_info.txt 
+time python occ.py 
+time python occ_crawler.py 
+git status
+s
+git init .
+git status
+git add occ_crawler.py 
+git add occ_letters_info.txt 
+git commit -m'added initial files
+'
+vi occ_letters_info.txt 
+time python occ_crawler.py 
+vi occ_letters_info.txt 
+rm occ_letters_info.txt 
+time python occ_crawler.py 
+vi occ_letters_info.txt 
+git diff
+git status
+git commit -am'category rendered only when required'
+git status
+vi occ_letters_info.txt 
+git diff
+time python occ_crawler.py 
+vi occ_letters_info.txt 
+git diff
+git commit -am'fixed line spacings'
+vi occ_crawler.py 
+open .
+gs
+cd $mylocaltime
+gs
+git branch
+git remote show origin
+su -s
+su -
+cd $mosaic
+mvim
+git diff
+time python occ_crawler.py 
+workon mosaic
+ps aux | grep python
+trace 580
+strace 580
+strace -p580
+trace -p580
+trace -cp580
+trace -c1 p580
+time python occ_crawler.py 
+git status
+git diff
+time python occ_crawler.py 
+killjob
+jobs "%python" "%python" "%python" 
+jobs 
+killjobs 
+killjobs 1
+killjob
+ps aux | grep occ
+time python occ_crawler.py 
+killjob
+jobs 
+python
+python
+time python occ_crawler.py 
+claer
+python
+time python occ_crawler.py 
+gs
+git diff
+git diff occ_crawler.py 
+git commit occ_crawler.py -m'removed mulit whitespace; other refacs'
+time python occ_crawler.py 
+gs
+rm occ_letters_info.txt
+gs
+vi .gitignore
+gs
+vi .gitignore
+gs
+git add .gitignore 
+gs
+git status
+git commit -m'added ignore file
+'
+gs
+s
+gs
+time python occ_crawler.py 
+killjob
+jobs "%python" 
+jobs 
+vi occ_crawler.py 
+time python occ_crawler.py 
+mvim
+gs
+git diff
+git diff *.py
+git commit occ_crawler.py -m'fixed year month order'
+gs
+time python occ_crawler.py 
+git diff 
+git status
+git commit -am'fixed missing category'
+gs
+//table[tbody/tr[1]/th[text()[contains(., 'Letter')]]]
+workon mosaic
+vi /Users/sujanshakya/Documents/occ_zero_tables.txt 
+git status
+git diff
+ll /Applications/FIFA\ 11.app/
+ll /Applications/FIFA\ 11.app/*/
+ll /Applications/FIFA\ 11.app/*/*/
+ll /Applications/FIFA\ 11.app/*/*/*/
+ll /Applications/FIFA\ 11.app/*/*/*/*/
+ll /Applications/FIFA\ 11.app/*/*/*/*/*/
+sudo chown -R suzanshakya.admin /Applications/FIFA\ 11.app/
+sudo chown -R suzanshakya:admin /Applications/FIFA\ 11.app/
+sudo chown -R sujanshakya:admin /Applications/FIFA\ 11.app/
+git status
+git diff 
+vi a.py
+python a.py 
+vi a.py
+python a.py 
+vi a.py
+rm a.py 
+git log
+git diff
+time python occ_crawler.py 
+time python occ_crawler.py 
+cd
+cd projects/
+mkdir pybrowser
+cd pybrowser/
+mvim
+vi /Users/sujanshakya/.vimrc 
+vi abc
+vi pybrowser.py 
+python -m webbrowser -t "http://google.com"
+sudo pip install html2text
+python pybrowser.py 
+vi abc
+vi ab
+vi abd
+iadfasf
+vi adf
+vi abd
+vi asdfa
+python
+sudo pip install html2text
+python
+htmltree Sites/aindex.html 
+html2text Sites/aindex.html 
+html2text google.com
+html2text http://google.com
+vi h.html
+htmltree h.html 
+html2text h.html 
+htmltree h.html 
+vi h.html 
+vi /Users/sujanshakya/.vimrc 
+mv h.html util/
+gs
+git diff occ_crawler.py 
+git commit occ_crawler.py -m'improved for finding tables: assumed tbody may/may-not-be present.'
+gd
+gs
+git diff occ_crawler.py 
+agit commit -m'used normalized letter searched'
+git diff occ_crawler.py 
+git commit occ_crawler.py -m'used normalized letter searched'
+gs
+time python occ_crawler.py 
+killjobs
+jobs "%python" "%python" "%python" 
+jobs 
+time python occ_crawler.py 
+killjobs 
+jobs "%python" "%python" 
+jobs 
+gs
+git diff occ_crawler.py 
+time python occ_crawler.py 
+killjob
+jobs 
+gs
+gd
+git diff *.py
+time python occ_crawler.py 
+killjob
+jobs 
+gs
+gd
+git diff occ_crawler.py 
+gd occ_crawler.py 
+git commit -m'improved warning message'
+git commit occ_crawler.py -m'improved warning message'
+gs
+time python occ_crawler.py 
+killjob
+jobs
+time python occ_crawler.py 
+killjob
+jobs 
+git diff
+time python occ_crawler.py 
+killjob
+jobs "%python" 
+jobs
+gd occ_crawler.py 
+time python occ_crawler.py 
+killjob
+time python occ_crawler.py 
+killjob
+jobs 
+time python occ_crawler.py 
+git diff occ_crawler.py 
+git commit occ_crawler.py -m'used 15 threads; used info as logging level; some logs were reduced to debug'
+git commit occ_letters_info.txt -m'all fixed with some some categories problem'
+gs
+gd
+git commit -am'some categories are directly on strong tag'
+gd
+killjob
+mvim
+git diff occ_crawler.py 
+git commit -am'warned when thread takes too long'
+gs
+time python occ_crawler.py 
+git diff occ_crawler.py 
+git commit -am'warned when thread takes too long'
+killjob
+gs
+git log --stat-only
+git log --file-only
+git log -p
+jobs
+time python occ_crawler.py 
+git status
+git diff
+git status
+mvim
+gs
+git diff
+git status
+gd
+git commit -am'fixed wording; corrected using wrong categories sometimes'
+gs
+gs
+time python occ_crawler.py 
+git diff
+gs
+git commit -am'synced code and output generated'
+gs
+mvim occ_crawler.py 
+mvim
+git diff
+git commit -am'grouped lxml imports'
+gs
+ipython
+gs
+mvim occ_letters_info.txt
+cd /Applications/FIFA\ 11.app/
+cd drive_c
+sl
+cd Program\ Files/
+cd EA\ Sports/
+cd FIFA\ 11/
+cd Game/
+cd
+find fifa
+locate fifa
+vi buttonData.ini 
+vi fifasetup/fifasetup_default.ini 
+wine
+vi fifasetup/fifasetup_default.ini 
+mkdir ~/fifa12
+cp fifasetup/fifasetup_default.ini ~/fifa12/
+git diff buttonDataKeyBoardMouse.ini{.bak,}
+cp buttonDataKeyBoardMouse.ini ~/fifa12/
+ipython
+bi solfege
+cd projects/solfege-3.20.6/
+vi README 
+./configure
+bi gettext
+./install-sh 
+vi INSTALL
+cd 
+cd projects/pyjamas/
+git status
+git pull
+cd
+pi wheezy
+sudo pip install wheezy
+sudo brew install xulrunner
+brew install xulrunner
+brew update
+brew upgrade
+sudo pip install wheezy.web
+brew update .
+du -sh /Library/Python/2.6/site-packages/wheezy
+cd /Library/Python/2.6/site-packages/wheezy
+ll web/templates.py
+vi web/templates.py
+vi /Volumes/SUZAN/economics/nn
+ls /Volumes/SUZAN/economics/
+cd /Volumes/SUZAN/economics/
+du -sh .
+u
+du -sh economics/
+cd projects/jobs/piero/mylocaltime/
+ll static/
+vi static/jquery.min.js 
+cd ..
+u
+cd pyjamas/
+git pull
+u
+git clone git://github.com/pyjs/pyjs.git
+vi /Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+pbcopy< /Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+pbcopy</Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+vi /Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+pbcopy</Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+vi /Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+pbcopy</Users/sujanshakya/Desktop/Text\ to\ HTML\ conversion\ by\ WebToolHub.com.html 
+cd jobs/
+cd
+cd projects/jobs/
+mkdir larry
+cd larry/
+python
+locate flask
+vi urls.txt
+git clone https://github.com/LarryEitel/gsapi.git
+cd gsapi/
+virtualenv venv
+pwd
+cd gsapi/
+cp settings.py local_settings.py
+gs
+u
+source venv/bin/activate
+which python
+python
+bi elasticsearch
+vi /Users/sujanshakya/brewlogs/elasticsearch.log
+touch /Users/sujanshakya/brewlogs/elasticsearch.log
+touch -p /Users/sujanshakya/brewlogs/elasticsearch.log
+mkdir /Users/sujanshakya/brewlogs
+vi /Users/sujanshakya/brewlogs/elasticsearch.log
+ipython
+cd gsapi/
+pip install -r requirements
+find . -name '*requirements*'
+pip install -r requirements.txt 
+nosetests -v
+which nosetests
+which pip
+pip install nose
+which nosetests
+nosetests -v
+python
+pip install nose==1.1.2
+nosetests -v
+which nosetests
+python
+deactivate 
+pwd
+u
+source venv/bin/activate
+cd gsapi/
+pip install -r requirements.txt 
+python
+vi requirements.txt 
+which pip
+vi `which pip`
+u
+source venv/bin/activate
+python
+cd gsapi/
+ll buu
+u
+locate Flask-Testing
+u
+find . -name Flask-Testing
+cd gsapi/venv/build/
+cd Flask
+python setup.py install
+pip install -r requirements.txt 
+python
+u
+ll venv/lib/python2.7/site-packages/easy-install.pth 
+vi venv/lib/python2.7/site-packages/easy-install.pth 
+vi venv/lib/python2.7/site-packages/setuptools.pth 
+ll venv/lib/python2.7/site-packages/*.pth
+cat venv/lib/python2.7/site-packages/*.pth
+u
+b
+cd gsapi/
+nosetests 
+vi requirements.txt 
+u
+cd pyes/
+u
+cd mimerender/
+python setup.py install
+python setup.py install
+source ./../../../venv/bin/activate
+nosetests 
+python setup.py install
+u
+cat requirements.txt 
+pip help install
+nosetests 
+u
+nosetests tests/views/
+nosetests tests/data/
+nosetests tests/esbase.py
+cd schematics/
+python setup.py install
+u
+python -c'import simplejson'
+pip install -e git+git://github.com/mongodb/mongo-python-driver.git#egg=pymongo
+(cd simplejson && python setup.py install)
+u
+pwd
+nosetests
+pwd
+pwd
+u
+cd ~/projects/jobs/larry/gsapi/venv/
+u
+cd gsapi/venv/
+ll bin/
+find . -name build
+pwd
+cd $jobs
+cd larry/
+bmark
+source gsapi/venv/
+source gsapi/venv/bin/activate
+cd gsapi/
+ll venv/
+nosetests
+pwd
+source gsapi/venv/bin/activate
+pwd
+source venv/bin/activate
+pwd
+vi gsapi/models/generic.py
+nosetests
+python
+vi gsapi/models/generic.py
+gs
+git checkout gsapi
+vi gsapi/models/generic.py
+nosetests
+ipython
+mvim
+pwd
+cd gsapi/
+nosetests
+git status
+git log
+git log -p
+git status
+git checkout models/
+gs
+mvim
+ipython
+cd ~/projects/jobs/piero/mylocaltime/
+gs
+mvim
+gs
+git diff
+git status
+git diff
+git commit -am'added remove icon with css; added some info in title attr'
+gs
+git push
+dev_appserver.py .
+appcfg.py update .
+gs
+mvim
+dev_appserver.py .
+gd
+gs
+gd
+git commit -am'not allowed to add ALL_TIMEZONES data as alias'
+git push
+appcfg.py update .
+mvim
+find . -type f 
+find . -type f | grep -v '*.py'
+find . -type f | grep -v '*.py$'
+find . -type f | egrep '*.py$'
+find . -type f | grep '*.py$'
+find . -type f | egrep '*.py$'
+find . -type f | egrep '*.py$*.js$|*.css'
+find . -type f | egrep '*.py$|*.js$|*.css'
+find . -type f | egrep '*.py$|*.js$|*.css$'
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$'
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz'
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery'
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions' -exec wc -l {} \;
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f1
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f2
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f3
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f4
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f5
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | cut -d' ' -f6
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{print $1}'
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{print $1}' | sum
+sum 
+echo 1 + 1 | sum
+sum
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{print $1}' 
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{sum+=$1} print $sum' 
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{sum+=$1} print{$0,sum}' 
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{sum+=$1}; print{$0,sum}' 
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{sum+=$1}; {print $0,sum}' 
+find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'` | awk '{sum+=$1}END {print sum}'
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+wc `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+wc | head
+wc | head -1
+ll appengine_config.py
+vi appengine_config.py
+man wc
+wc `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+wc -l `find . -type f | egrep '*.py$|*.js$|*.css$' | egrep -v 'dal.py$|pytz|jquery|gaesessions'`
+gs
+dev_appserver.py .
+gs
+git diff
+gd
+git commit -am'fixed checking of alias'
+git push
+appcfg.py update .
+cd /opt/immune
+vi ./installed/col/apps/scp_fetcher/lib/fetcherloop.py
+cd
+cd /opt/immune/installed/col/apps/syslog_collector/
+u
+u2
+u
+vi /Users/sujanshakya/.bash_profile 
+sudo pip install cython
+cd
+vi for.html
+open for.html 
+cd projects/
+mkdir advance-table
+mv ~/for.html .
+vi add-sortable.js
+cd jobs/
+cd mosaic/
+mvim
+cd projects/
+cd advance-table/
+locate for.html
+u
+mv for.html advance-table/
+mv add-sortable.js advance-table/for.html 
+cd advance-table/
+vi for.html for.html 
+mv for.html add-sortable.html
+mv ~/Desktop/forex.php.html .
+mv forex.php.html forex.html
+vi forex.html 
+mvi m
+mvim
+open forex.html 
+mv add-sortable.html add-sortable.js
+open forex.html
+python -c'print open("forex.html").read().replace("\n", "")'
+python -c'print open("add-sortable.js").read().replace("\n", "")'
+python -c'import sys; print sys.stdin.read().replace("\n", "")'
+python -c'import sys; print sys.stdin.read().replace("\n", "")' < add-sortable.js 
+python -c'import re,sys;print re.sub("\s\s+", " ", sys.stdin.read())' < add-sortable.js 
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js 
+python -c'import re,sys;re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js 
+python -c'import re,sys;re.sub("\s\s+|\n", " ", "sujan")'
+python -c'import re,sys;re.sub("s", " ", "sujan")'
+python -c'import re,sys;re.sub("s", " ", "sujan\n")'
+python -c'import re,sys;re.sub("s", "", "sujan\n")'
+python -c'import re,sys;print re.sub("s", "", "sujan\n")'
+python -c'import re,sys;print re.sub("s", "", "sujan")'
+python -c'import re,sys;print re.sub("s", " ", "sujan")'
+python -c'import re,sys;print sys.stdin.read()' < add-sortable.js 
+python -c'import re,sys;re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js 
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js 
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js > add-sortable-min.js
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", sys.stdin.read())' < add-sortable.js | tee add-sortable-min.js
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", open(sys.argv[1], 'rU').read())' add-sortable.js
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", open(sys.argv[1], rU').read())' add-sortable.js
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", open(sys.argv[1], rU).read())' add-sortable.js
+python -c'import re,sys;print re.sub("\s\s+|\n", " ", open(sys.argv[1], "rU").read())' add-sortable.js
+python minifier.py 
+python minifier.py add-sortable.js 
+rm add-sortable-min.js 
+python minifier.py add-sortable.js 
+cat add-sortable.min.js 
+pbcopy add-sortable.min.js 
+pbcopy <add-sortable.min.js 
+mvim
+python minifier.py add-sortable.js 
+open bookmarklet.html 
+python minifier.py add-sortable.js 
+open forex.html 
+python minifier.py add-sortable.js 
+ipython
+gs
+cd
+python
+sudo pip install pyximport
+bi panda3d
+bi panda
+/opt/makalu/ptf/update.sh 
+sar
+man sar
+sar -rpB 5 100
+cd /opt/immune
+mvim
+bi qt
+bi sip
+bi pyqt
+vi /usr/local/Library/Formula/pyqt.rb 
+bi pyqt
+vi /usr/local/Library/Formula/pyqt.rb 
+bi pyqt
+vi /usr/local/Library/Formula/pyqt.rb 
+bi pyqt
+brew uninstall sip
+bi pyqt
+vi /usr/local/Library/Formula/sip.rb 
+sudo pip install sip
+vi /usr/local/Library/Formula/sip.rb 
+bi sip
+brew unlink sip
+bi sip
+vi /usr/local/Library/Formula/sip.rb 
+bi sip
+vi /usr/local/Library/Formula/sip.rb 
+bi sip
+pi sip
+sudo pi sip
+sudo pip install sip
+cd build/sip/
+python configure.py 
+sudo python configure.py 
+make
+sudo make
+sudo make install
+u
+bi pyqt
+vi /usr/local/Library/Formula/sip.rb 
+bi pyqt
+brew link sip
+bi pyqt
+cd /usr/local/
+locate sip
+find . -name "*sip*
+find . -name "*sip*"
+bi pyqt
+brew unlink sip
+bi pyqt
+brew uninstall sip
+bi pyqt
+cd Cellar/
+cd ~/build/sip/
+sudo make install
+python
+ll pyqt
+locate pyqt
+python
+locate pyqt
+vi /usr/local/Library/Formula/pyqt.rb 
+locate PyQt-mac-gpl-snapshot-4.9.6-1b4b26628739.ta    r.gz
+ll /Library/Caches/Homebrew/pyqt-26628739.tar.gz 
+bi pyqt
+cp /Library/Caches/Homebrew/pyqt-26628739.tar.gz ..
+cp /Library/Caches/Homebrew/pyqt-26628739.tar.gz .
+pwd
+sudo chown sujanshakya ..
+cp /Library/Caches/Homebrew/pyqt-26628739.tar.gz ..
+u
+tar -xzf pyqt-26628739.tar.gz 
+cd PyQt-mac-gpl-snapshot-4.9.6-1b4b26628739/
+l
+bi qmake
+python configure.py -h
+which qmake
+man qmake
+which python
+file `which python`
+python configure.py -d /Library/Python/2.7/site-packages/
+cd
+python
+make
+b
+make
+sudo make install
+bi pyximport
+sudo pip install pyximport
+cd
+python
+bi pyside
+vi /usr/local/Library/Formula/shiboken.rb 
+bi pyside
+mkdir qt
+pwd
+cd qt/
+vi first.py
+python first.py first.py 
+python first.py
+vi second.py
+python second.py 
+bi glade
+cd
+ipython
+cd /Applications/FIFA\ 11.app/
+find . -name fifasetup_default.ini
+vi /Contents/Resources/drive_c/Program Files/EA Sports/FIFA 11/Game/fifasetup/fifasetup_default.ini
+vi "/Contents/Resources/drive_c/Program Files/EA Sports/FIFA 11/Game/fifasetup/fifasetup_default.ini"
+vi "Contents/Resources/drive_c/Program Files/EA Sports/FIFA 11/Game/fifasetup/fifasetup_default.ini"
+cd ~/fifa12/
+vi /Users/sujanshakya/Library/Saved\ Application\ State/FIFA\ 11.Wineskin.prefs.savedState/data.data 
+vi /Users/sujanshakya/Library/Saved\ Application\ State/FIFA\ 11.Wineskin.prefs.savedState/windows.plist 
+pwd
+cd /opt/immune
+cd /Applications/FIFA\ 11.app/
+open .
+sudo pip install pyuic4
+bi pyuic4
+cd
+cd qt/
+qmake 
+locate qmake
+which qmake
+ln -s /usr ~/usr
+ll ~/usr/
+uic dialog.ui 
+locate pyuic4
+/Library/Frameworks/ASGVIS.framework/Versions/A/Frameworks/Qt-4.5.1/bin/qmake -v
+qmake -v
+find /Library/Frameworks/ASGVIS.framework/ -type f -name 'site-packages'
+find /Library/Frameworks/ASGVIS.framework/ -type f -name 'bin'
+ll /Library/Frameworks/ASGVIS.framework/
+find /Library/Frameworks/ASGVIS.framework/ -name bin
+find /Library/Frameworks/ASGVIS.framework/ -name site
+find /Library/Frameworks/ASGVIS.framework/ -name "site-packages"
+ll /Library/Frameworks/ASGVIS.framework/Frameworks/Python.framework/Python 
+/Library/Frameworks/ASGVIS.framework/Frameworks/Python.framework/Python 
+find /Library/Frameworks/ASGVIS.framework/ -name "bin"
+/Library/Frameworks/ASGVIS.framework//Versions/A/Frameworks/Python.framework/Versions/2.6/bin/python
+/Library/Frameworks/ASGVIS.framework//Versions/A/Frameworks/Python.framework/Versions/2.6/bin/pyuic4 dialog.ui 
+locate pyqt
+vi /Library/Python/2.7/site-packages/PyQt4/uic/pyuic.py 
+ln -s /Library/Python/2.7/site-packages/PyQt4/uic/pyuic.py /usr/local/bin/
+ll /usr/local/bin/pyuic.py 
+pyuic.py
+which pyuic.py
+ll /Library/Python/2.7/site-packages/PyQt4/uic/pyuic.py 
+chmod +x /usr/local/bin/pyuic.py 
+sudo chmod +x /usr/local/bin/pyuic.py 
+pyuic.py dialog.ui 
+vi /usr/local/bin/pyuic.py 
+sudo vi /usr/local/bin/pyuic.py 
+pyuic.py dialog.ui 
+pyuic.py dialog.ui -o dialog.py
+python dialog.py 
+mvim
+python dialog.py 
+killjob
+jobs 
+locate qmlviewer
+gs
+rm untitled
+rm untitled1/
+rm html/
+vi second.py 
+mkdir codes
+mv first.py codes/
+mv second.py codes/
+rm asdf.qml 
+mkdir designer
+ll designer/
+mv dialog.* designer/
+l
+cd designer/
+cd guiapp/
+l
+pyuic.py mainwindow.ui 
+pyuic.py mainwindow.ui -o mainwindow.py
+python mainwindow.py 
+vi mainwindow.
+vi mainwindow.py 
+pyuic.py -h
+pyuic.py -xo mainwindow.py mainwindow.ui 
+mvim
+python mainwindow.py 
+u
+vi dialog.py 
+pyuic.py -xo dialog.py dialog.ui 
+python dialog.py 
+cd guiapp/
+pyuic.py -xo mainwindow.py mainwindow.ui 
+python mainwindow.py 
+pyuic.py -xo mainwindow.py mainwindow.ui && python mainwindow.py 
+cd projects/pyjs/
+git status
+git pul
+git pull
+git log
+git branch
+mvim
+cd
+mv Library/Opera{,.bak}
+locate opera.plist
+locate Opera.plist
+locate Opera*plist
+locate *pera*plist
+locate *pera*.plist
+sudo rm -rf Library/Opera
+mv Library/Opera{.bak,}
+vi projects/pyjs/
+mvim projects/pyjs/
+cd projects/pyj
+cd projects/pyjs/
+vi /Users/sujanshakya/.vimrc 
+vi /Users/sujanshakya/projects/advance-table/add-sortable.js 
+mvim http://www.gordoni.com/economics/portfolio_size_matters/opal.py-0.7-source
+mv opal.cpy opal.py
+python opal.py -h
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+mvim
+bi ctags
+man ctags 
+which ctags
+ctags -h
+ll /usr/local/bin/ctags 
+cp /usr/bin/ctags{,.bak}
+sudo cp /usr/bin/ctags{,.bak}
+mv /usr/bin/ctags{,.bak}
+sudo mv /usr/bin/ctags{,.bak}
+ctags
+cd /opt/immune
+ctags
+bi excuberant-ctags
+brew search ctags
+pycscope
+pycscope.py
+bi pycscope
+sudo pip install pycscope
+mv build/mongokit ~/build/
+mv build/pycscope/ ~/build/
+sudo mv build/pycscope/ ~/build/
+ll build/
+sudo rm -rf build/
+sudo chown -R sujanshakya ~/build/
+cd ~/build/
+cd pycscope/
+python setup.py install
+sudo python setup.py install
+which pycscope
+pycscope
+vi `which pycscope`
+cd
+pycscope.py
+pycscope -h
+vi /Users/sujanshakya/.vimrc
+vi /Users/sujanshakya/.vimrc 
+pwd
+cd 
+cd /opt/immune
+mvim 
+pycscope-pythonpath 
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+ll /Library/Python/2.7/site-packages/
+sudo chown -R sujanshakya /Library/Python/2.7
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+pwd
+pwd
+cd /opt/immune
+pycscope-pythonpath 
+jobs -p 1
+jobs -p
+python
+jobs 
+while true; do sleep 1; done
+jobs 
+jobs -p
+jobs -p 1
+jobs -p 2
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+pycscope-pythonpath 
+pycscope -h
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+pycscope-pythonpath 
+echo $PYTHONPATH
+vi /Users/sujanshakya/.bash_profile 
+workon makalu
+echo $PYTHONPATH
+cd /opt/immune
+pycscope-pythonpath 
+workon makalu
+pycscope-pythonpath 
+vi /Users/sujanshakya/.vimrc 
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+vi /Users/sujanshakya/.bash_profile 
+cd /opt/immune
+workon makalu
+pycscope-pythonpath 
+echo $PYTHONPATH
+vi /Users/sujanshakya/.vimrc 
+workon makalu
+pycscope-pythonpath 
+workon makalu
+vi /Users/sujanshakya/.bash_profile 
+cd
+git status
+git diff .bash_profile 
+workon makalu
+ctags-pythonpath 
+git status | head
+git rm qt
+git rm -r qt
+git status | head
+pycscope-pythonpath 
+git diff .vimrc 
+git add .bash_profile 
+git add .vimrc 
+git commit -m'fixed pycscope and ctags'
+cd /opt/immunem
+cd /opt/immune
+mvim
+git push
+pwd
+ipython
+cd
+vi /Users/sujanshakya/.vimrc 
+ctags-pythonpath 
+mvim
+vi /Users/sujanshakya/.vimrc 
+rm installed/col/tags 
+vi /Users/sujanshakya/.bash_profile 
+pwd
+cd installed/
+find . -name tags
+find . -name tags | grep -v .git
+rm `find . -name tags | grep -v .git`
+find . -name tags | grep -v .git
+mvim
+find . -name tags | grep -v .git
+vi col/apps/syslog_collector/tags 
+vi /Users/sujanshakya/.vimrc 
+mvim
+workon makalu
+cd /opt/immune
+mvim installed/
+vi /Users/sujanshakya/.vim/plugin/cscope_maps.vim 
+vi /Users/sujanshakya/.vimrc 
+mvim
+vi /Users/sujanshakya/.vim/plugin/cscope_maps.vim 
+git diff .vimrc 
+git commit .vimrc -m'removed cscopetag, as it is reset by cscope_maps.vim'
+git diff .vim/plugin/
+git diff .vim/plugin/cscope_maps.vim 
+git commit .vim/plugin/cscope_maps.vim -m'commented out cscopetag'
+rm installed/col/apps/syslog_collector/tags 
+mvim
+bi global
+rm installed/col/cscope.out 
+find . -name cscope
+sudo find . -name cscope
+mvim
+vi /Users/sujanshakya/.vimrc 
+git diff .vimrc 
+rm installed/col/apps/syslog_collector/cscope.out 
+mvim
+cd installed/col/
+cd apps/
+vi cscope.out 
+vi /Users/sujanshakya/.vimrc 
+vi /Users/sujanshakya/.vim/plugin/cscope_maps.vim 
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+vi /Users/sujanshakya/.bash_profile 
+git diff .bash_profile 
+git diff .vimrc 
+git diff .vim
+git rm --cached .vim/plugin/cscope-pythonpath.vim 
+pycscope-pythonpath 
+git status | head
+git commit -m'removed generated file'
+git status | head
+git push
+pwd
+find . -name cscope.out
+vi cscope.out 
+mvim
+cd /opt/immune
+mvim 
+pycscope -h
+vi /Users/sujanshakya/.vim/plugin/cscope-pythonpath.vim 
+vi /Users/sujanshakya/.vimrc 
+rm installed/col/apps/cscope.out 
+pycscope -R installed/col/apps/
+vi cscope.out 
+abspath
+abs
+rm cscope.out 
+pycscope -R /opt/immune/installed/col/apps/
+vi cscope.out 
+find . -name cscope.out
+rm cscope.out 
+cd installed/col/apps/
+pycscope -R `pwd`
+vi cscope.out 
+rm cscope.out 
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+git diff
+git status | head
+mvim
+cd /opt/immune
+mvim
+git diff .vimrc 
+git commit .vimrc -m'fixed prefix path for pycscope'
+pwd
+cd /opt/immune
+workon makalu
+mvim
+ctags-pythonpath 
+mvim
+vi /Users/sujanshakya/.bash_profile 
+git diff .bash_profile 
+git commit .bash_profile -m'removed exporting of PYTHONPATH_TAGS'
+vi .vimrc 
+gtags
+vi GPATH 
+rm G*
+vi tags 
+ll tags 
+lh tags 
+rm tags 
+cd installed/col/apps/syslog_collector/
+vi tags 
+rm tags 
+mv ~/Downloads/gtags.vim .vim/plugin/
+mvim
+cd /opt/immune
+mvim
+rm tags 
+rm installed/col/apps/syslog_collector/tags 
+cd installed/col/apps/syslog_collector/
+gtags
+mvim
+vi GPATH 
+vi GRTAGS 
+vi GTAGS 
+pwd
+gtags
+gtags -h
+man gtags
+gtags -f
+cd ~/projects/
+git clone https://code.google.com/p/python-global-tags/
+cd python-
+cd python-global-tags/
+vi README 
+vi scripts/python_global_tags.py 
+vi README 
+vi globalrc.example 
+u
+rm G*
+workon makalu
+cd /opt/immune
+mvim
+find . -name cscope.out
+vi .vimrc 
+git diff .vimrc 
+cd installed/col/apps/syslog_collector/
+gs
+b
+pwd
+cd /opt/immune
+mvim
+find .vim/ -name 'diction'
+find .vim/ -name 'diction*'
+find .vim/ -name '*diction*'
+vi .vimrc 
+git diff .vimrc 
+git commit .vimrc -m'used simple tab completion; add bash like file completion'
+git log
+git diff .vim*
+git diff .bash_profile*
+ipython
+git diff .vimrc 
+vi .bash_profile 
+vi .vimrc 
+bi numpy
+sudo pip install numpy
+python
+du -sh /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy
+sudo pip install scipy
+hg
+bi gettext
+cd projects/jobs/
+which python2.5
+mkvirtualenv -p /usr/bin/python2.5 peoplefinder
+python
+hg clone https://googlepersonfinder.googlecode.com/hg pf
+netstat 
+hg clone https://googlepersonfinder.googlecode.com/hg pf
+du -sh pf/.hg/
+du -s pf/.hg/
+man du 
+du -s pf/.hg/
+du -sh pf/.hg/
+du -sh brundles/
+du -s brundles/
+du -h brundles/
+du -s brundles/
+du -h pf/
+du - pf/
+du -h pf/
+du -sh pf
+du -s pf
+man du
+du -h pf
+du -ch pf
+du -sch pf
+du -sc pf
+du -c pf
+du pf
+du -c pf
+du -ch pf
+du -sh pf
+tim
+ll pf/
+hg clone https://code.google.com/p/googlepersonfinder/
+cd pf/
+hg status
+du -sh .
+cd pf/
+workon pf
+workon peoplefinder
+vi ~/.hgrc
+tools/gae run app
+ll /usr/local/google_appengine/
+export APPENGINE_DIR=/usr/local/google_appengine/
+python
+workon mylocaltime
+mkvirtualenv testing
+python
+tools/console :8000
+tools/all_test
+tools/all_tests 
+pip install pytest
+tools/all_tests 
+workon peoplefinder
+pip install xgettext
+vi tools/setup_pf.py
+mvim
+tools/gae run app
+tools/console :8000
+sudo pip install requests
+ipython
+cd build/requests/
+sudo python setup.py install
+curl http://t.co/cBLKqdxg
+man curl
+curl http://t.co/cBLKqdxg >g
+vi g 
+rm g 
+man curl
+pwd
+u
+open t.co.html 
+ssh support@192.168.2.207
+ssh 207
+ssh 210
+ssh support@192.168.2.207
+ssh sujan@192.168.2.207
+bi lz4
+sudo pip install lz4
+python
+locate lz4
+sudo pip install lz4
+python
+which python
+python
+sudo python
+sudo which pip
+which pip
+vi /usr/local/bin/pip
+pip
+which pip
+`which pip`
+vi `which pip`
+python
+vi `which pip`
+sudo pip install lz4
+cd projects/
+hg clone https://skulpt.googlecode.com/hg/ skulpt
+mvim skulpt/
+ssh support@192.168.2.210
+ssh support@192.168.2.210
+ssh support@192.168.2.207
+ssh support@192.168.2.207
+cd /opt/immune/installed/col/apps/snmp
+cd /opt/immune/installed/col/apps/snmp_fetcher/
+git pull
+gitk --all
+git status
+gitk --all
+ping google.com
+host 74.125.235.35
+python
+cd /opt/immune
+workon makalu
+mvim
+octave
+bi ocatve
+bi octave
+bi R
+workon peoplefinder
+cd projects/jobs/pf/
+gs
+deactivate 
+u
+mkdir genhtml
+cd genhtml/
+open index.html 
+vi index.html
+mvim
+cd ~/projects/jobs/
+git clone https://github.com/coxmediagroup/Tic-Tac-Toe.git
+cd Tic-Tac-Toe/
+cd ..
+u
+cd pymines/
+mvim
+u
+mvim pyjs/
+cp ~/Pictures/Photo\ Booth\ Library/Pictures/Photo\ on\ 11-4-12\ at\ 8.19\ PM\ #2.jpg ~
+rm ~/Photo\ on\ 11-4-12\ at\ 8.19\ PM\ #2.jpg 
+cp ~/Pictures/Photo\ Booth\ Library/Pictures/Photo\ on\ 11-4-12\ at\ 8.19\ PM\ #2.jpg ~
+rm ~/Photo\ on\ 11-4-12\ at\ 8.19\ PM\ #2.jpg 
+locate dojo
+ping google.com
+cd 
+cd
+rm .vim/plugin/gtags.vim 
+cd projects/
+mkdir dojo-tut
+cd dojo-tut/
+mvim
+vi /Users/sujanshakya/.vimrc 
+grep -R 'filetype' ~/.vim/
+grep -R 'filetype plugin' ~/.vim/
+grep -R 'filetype plugin' ~/.vim*
+grep 'filetype plugin' ~/.vim*
+grep -r 'filetype plugin' ~/.vim*
+mvim
+vi index.html 
+mv ~/Downloads/dojo-release-1.8.1 ~/projects/
+vi index.html 
+vi /Users/sujanshakya/.vimrc 
+git diff ~/.vimrc 
+git commit ~/.vimrc -m'tab completion for html tags'
+mv ~/Downloads/xml.vim ~/.vim/ftplugin/python/
+mvim
+mv ~/.vim/ftplugin/{python/,}xml.vim 
+cp ~/.vim/ftplugin/{xml,html}.vim 
+mv ~/Downloads/zencoding-vim/ ~/.vim/bundle/
+mvim
+vi ~/.vim/bundle/zencoding-vim/plugin/zencoding.vim 
+bi pathogen
+vi /Users/sujanshakya/.vim/bundle/zencoding-vim/doc/zencoding.txt 
+find /Users/sujanshakya/.vim/ -name pathogen
+grep -R 'vim-nerdtree-tabs' ~/.vim*
+ack 'vim-nerdtree-tabs' ~/.vim*
+ack -R 'vim-nerdtree-tabs' ~/.vim*
+man ack 
+ack -r 'vim-nerdtree-tabs' ~/.vim*
+ack -r 'vim-nerd' ~/.vim*
+ack -r 'nerd' ~/.vim*
+ack -r 'nerdt' ~/.vim*
+ack -r 'vim-nerdt' ~/.vim*
+mkdir ~/.vim/autoload
+mv ~/Downloads/pathogen.vim ~/.vim/autoload/
+vi index.html 
+vi /Users/sujanshakya/.vim/autoload/pathogen.vim 
+ll ~/.vim/bundle/zencoding-vim/autoload/zencoding.vim 
+ll ~/.vim/bundle/zencoding-vim/autoload/zencoding/lang/css.vim 
+vi ~/.vim/bundle/zencoding-vim/autoload/zencoding/lang/css.vim 
+vi /Users/sujanshakya/.vim/bundle/zencoding-vim/autoload/zencoding/lang.vim 
+vi /Users/sujanshakya/.vim/bundle/zencoding-vim/autoload/zencoding/util.vim 
+vi /Users/sujanshakya/.vim/bundle/zencoding-vim/autoload/zencoding.vim 
+ll /Users/sujanshakya/.vim/bundle/zencoding-vim/autoload/zencoding.vim 
+ll /Users/sujanshakya/.vim/bundle/zencoding-vim/plugin/zencoding.vim 
+cd ~/.vim/
+vi index.html index.html 
+mv bundle/zencoding-vim/autoload/* autoload/
+amv bundle/zencoding-vim/plugin plugin
+ll plugin/
+mv bundle/zencoding-vim/plugin plugin
+ll plugin/
+mv plugin/plugin/zencoding.vim plugin/
+ll plugin/
+rm plugin/plugin/
+ll plugin/
+ll bundle/zencoding-vim/
+mv bundle/zencoding-vim/doc/zencoding.txt doc/
+ll bundle/
+ll bundle/zencoding-vim/
+ll bundle/zencoding-vim/doc/
+ll bundle/zencoding-vim/autoload/
+rm bundle/zencoding-vim/
+vi index.html 
+mvim
+cd ../projects/dojo-
+cd ../projects/dojo-tut/
+mvim
+u
+sudo rm -rf dojo-release-1.7.1*
+mv dojo-release-1.8.1 dojo-1.8.1
+cd dojo-tut/
+open index.html 
+ll ../dojo-1.8.1/dojo/dojo.js
+lh ../dojo-1.8.1/dojo/dojo.js
+vi ../dojo-1.8.1/dojo/dojo.js
+mkdir demo
+touch demo/myModule.js
+mv index.html demo/
+rm index.html 
+mv demo/index.html .
+mv index.html demo/
+gs
+cd demo/
+git init
+gs
+git add index.html 
+git add myModule.js 
+git commit -m'first example
+'
+cd
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+mvim
+ll ~/Downloads/*.vim
+mv ~/Downloads/*.vim ~/.vim/colors/
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+mvim
+c
+cd
+git status .vimrc 
+git diff .vimrc 
+git add .vimrc 
+git status .vim
+git add .vim/autoload/
+git add .vim/colors/
+vi .gitignore 
+gs
+git status .
+cd .vim/
+git status
+git status .
+git add .
+git status
+git status .
+git commit -m'added zencoding, xmledit, wombat, zenburn'
+git status
+git status .
+git push
+bi scss
+npm
+bi npm
+cd ~/projects/
+bi nodejs
+npm
+/usr/local/bin/node
+jsc 
+which jsc
+jsc
+alias jsc
+git clone https://github.com/zurb/foundation.git
+vi /Users/sujanshakya/.bash_profile 
+jsc 
+locate jsc
+env jsc
+env python
+help jsc 
+man jsc
+alias loop
+loop 
+cd
+bi npm
+bi nodejs
+curl https://npmjs.org/install.sh | sh
+npm
+npm install scss
+scselect 
+man scselect 
+npm install scss
+nod -m scss
+node -m scss
+pi pandas
+sudo pip install pandas
+cd
+cd build/pandas/
+sudo python setup.py install
+python
+sudo pip install numpy
+sudo pip install numpy==1.6
+sudo python setup.py install
+python
+which python
+python
+rm /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy
+sudo rm /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy
+sudo rm -rf /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy
+python
+sudo python setup.py install
+sudo pip uninstall numpy
+sudo pip install numpy==1.6
+python
+sudo python setup.py install
+u
+sudo python
+sudo pip install panda
+sudo pip install pandas
+python
+ipython
+sudo pip install pypy
+cd /usr/local/Cellar/python/2.7.3/
+sudo pip install pandas
+bi pypy
+sudo python
+pypy 
+sudo pip install panda3d
+sudo pip install dateutil
+pip search dateutil
+sudo pip install dateutils
+sudo pip install pandas
+locate numpy
+sudo rm -rf /System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/numpy*
+python
+cd build/pandas/
+sudo python setup.py install
+python2.6
+sudo rm -rf /System/Library/Frameworks/Python.framework/Versions/2.6/Extras/lib/python/numpy/
+sudo python setup.py install
+find / -name numpy -type f
+slocate
+mlocate
+bi mlocate
+bi slocate
+sudo find / -name numpy -type f
+sudo find /System/ /Library/ /usr/ -name numpy -type f
+python
+python setup.py install
+sudo find /System/ /Library/ /usr/ -name numpy -type d
+sudo rm -rm /Library/Python/2.7/site-packages/numpy
+sudo rm -rf /Library/Python/2.7/site-packages/numpy
+python
+python setup.py install
+sudo pip install numpy==1.6
+python
+sudo pip uninstall numpy
+python setup.py install
+python
+sudo pip install numpy==1.6
+cd
+vi hello.java
+javac hello.java 
+vi hello.java
+javac hello.java 
+java -cp hello.class hello
+java hello
+vi hello.java 
+javac hello.java 
+vi hello.java
+javac hello.java 
+vi hello.java
+javac hello.java 
+vi hello.java
+javac hello.java 
+java hello
+java helloworld 
+vi hello.java 
+opera -debugdns
+which opera
+vi /Users/sujanshakya/.bash_profile 
+/Applications/Opera.app/Contents/MacOS/Opera -debugdns
+mv Library/Opera{,.bak}
+rm -rf Library/Caches/Opera/
+vi /etc/hosts
+rm Library/Opera
+rm Library/Caches/Opera/
+du -sh ~/Library/Opera.bak/
+rm Library/Opera
+mv Library/Opera{.bak,}
+sudo rm -rf ~/.Trash/Opera_12.10_Setup_x86_64.dmg 
+sudo rm -rf /Applications/Opera.app/
+mv opera{,.bak}
+networksetup -listallnetworkservices
+networksetup -setv6off Ethernet
+networksetup -listallnetworkservices
+ifconfig
+pwd
+cd
+sudo pip install chardet
+vimpy -m chardet
+vipy -m chardet
+vimpy -m chardet
+vi /Users/sujanshakya/.bash_profile 
+vimpy -m chardet
+git diff .bash_profile 
+git commit .bash_profile -m'updated vimpy
+'
+vimpy -m chardet
+cd /opt/immune
+mvim
+cd /opt/immune
+mvim
+mvim installed/col/apps/syslog_collector/
+vi /Users/sujanshakya/.vimrc 
+ipython
+workon makalu
+cd installed/col/apps/syslog_collector/
+git status
+git diff
+git status
+git checkout -b netaddr_error
+python syslog_collector.py example-config.json -vv
+workon makalu
+echo hi | nc 127.0.0.1 1514
+python syslog_collector.py example-config.json -vv
+mvim
+python syslog_collector.py example-config.json -vv
+git log
+git status
+mvim
+git diff
+vi syslog_collector.py
+mvim
+vi syslog
+vi syslog_collector.py
+python syslog_collector.py example-config.json -vv
+git diff
+mvim
+git status
+git branch
+git status
+git commit syslog_collector.py -m'fixed netaddr caused when link local address dont specify interface in devices page'
+git branch
+cd $pylib
+git status
+git push origin netaddr_error
+git diff cidr.py
+git checkout -b netaddr_error
+git commit cidr.py -m'small optimization'
+git push origin netaddr_error
+mvim
+ssh support@10.45.1.211
+git diff master
+git status
+git diff master netaddr_error
+git checkout v511
+git merge netaddr_error
+git checkout v511
+git diff netaddr_error
+git diff v511 netaddr_error
+git log
+git checkout master
+git diff master netaddr_addr
+git diff master netaddr_error
+git merge netaddr_error
+git branch
+git push
+git checkout v511
+git diff netaddr_error
+git checkout master
+git status
+git diff v511
+gitk --all
+git branch
+git reset --hard origin/master
+git checkout v511
+git reset --hard origin/v511
+git checkout master
+git diff v511
+git diff --stat-only v511
+git diff v511
+git branch
+git diff netaddr_error
+git merge netaddr_error
+git checkout v511
+git diff netaddr_error
+gitk --all
+git log
+git checkout master
+git log
+git checkout v511
+git cherry-pick 32fce705b19408944f2d638f88cd1fda3d012983
+git branch
+git log
+cd $pylib
+git push
+gitk --all
+gitk --all
+ipython
+mvim
+vi /Users/sujanshakya/.vimrc 
+cd projects/
+cd dojo-tut/
+mvim
+vi /Users/sujanshakya/.vimrc 
+git status ~/.vimrc 
+git diff ~/.vimrc 
+cd
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+open demo/index.html 
+asdf
+man gnu
+man screen
+screen
+bi screen
+cd 
+cd Downloads/
+open wrp_vertical_split_0.3_4.0.2.diff.bz2 
+bi screenwm
+bi screen
+patch <wrp_vertical_split_0.3_4.0.2.diff
+bi tmux
+:q
+screen
+man screen
+screen -v
+pwd
+lafdadfhhhhjjjs
+cd /opt/immune
+cd /opt/immune/installed/col/apps/syslog_collector/
+screen
+tmux
+cd
+vi .bash_profile
+which tmux
+tmux
+tmux
+python
+vi .bash_profile
+rm .bash_profile.swp 
+vi .bash_profile
+cd /opt/immune
+pwd
+cd installed/col/apps/syslog_collector/
+tmux attach-session 
+tmux attach
+vi .bash_profile 
+vi /Users/sujanshakya/.bash_profile 
+ll /usr/local/etc/profile.d/bash_completion.sh
+git diff .bash_profile 
+git commit .bash_profile -m'removed commented line'
+vi .bash_profile 
+git diff .bash_profile --colors
+git diff --colors .bash_profile
+git diff --color-words .bash_profile
+vi .bash_profile 
+git diff --color-words .bash_profile
+git help diff
+git diff --color-words .bash_profile
+git diff --color .bash_profile 
+git diff --color .bash_profile
+git config --global --add color.ui true
+git diff .bash_profile 
+git status
+git status .bash_profile 
+vi /Users/sujanshakya/.bash_profile 
+git diff .bash_profile 
+git checkout .bash_profile 
+load_bash_completion 
+bi git-completion
+brew search completion
+brew uninstall bash_completion
+brew uninstall bash-completion
+bi bash-completion
+brew --prefix
+source /usr/local/etc/bash_completion
+git diff .bash_profile
+vi /Users/sujanshakya/.gitconfig 
+vi .bash_profile 
+git status .bash_profile 
+git push
+cd /opt/immune
+workon makalu
+mvim
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vimrc 
+mvim
+vi /Users/sujanshakya/.vim/plugin/NERD_tree.vim 
+git status .vim/plugin/vim-nerdtree-tabs.vim 
+git diff .vim/plugin/vim-nerdtree-tabs.vim 
+git log -p .vim/plugin/vim-nerdtree-tabs.vim 
+mvim
+mvim .
+mvim
+mvim .
+vi /Users/sujanshakya/.vim/plugin/vim-nerdtree-tabs.vim 
+mvim /opt/immune
+git log ~/.vimrc
+git diff .vimrc
+cd /opt/immune
+mvim
+mvim /opt/immune
+man mvim
+mvim -h
+/usr/local/bin/mvim -h
+vi /Users/sujanshakya/.vimrc 
+cd /opt/immune
+mvim ./installed/col/apps/
+agit diff ./installed/col/
+git status .vimrc 
+git diff .vimrc 
+git commit .vimrc -m'used leader to nerdtree and taglist'
+git diff .vim
+vi /Users/sujanshakya/.vim/plugin/vim-nerdtree-tabs.vim 
+vi /Users/sujanshakya/.bash_profile 
+vi /Users/sujanshakya/.vim/plugin/vim-nerdtree-tabs.vim 
+git diff ~/.vim/
+agit diff ~/.vim
+agit diff ~/.vim/plugin/
+cd ~/.vim/
+git diff .
+git status
+git status | head
+git status | head -20
+git commit plugin/ -m'nerdtree not closed when only it remains'
+git log -p
+git push
+mvim
+ipython
+cd installed/storage/
+ack 'device_ip' .
+ack 'device_ip' . | less
+ack 'device_ip' .
+cd /opt/immune/installed/storage/apps/file_keeper/
+ack 'device_ip' .
+cd $start
+cd $immune
+cd /opt/immune
+bmark
+cd installed/
+bmark
+cd storage/apps/file_keeper/
+ack 'device_ip' .
+cd installed/col/apps/syslog_collector/
+git status
+git diff
+git branch
+git add -p
+git status
+git diff
+git diff --cached
+git add -p
+git status
+git reset HEAD ../batch_processor/
+git reset HEAD ../../lib/
+git stats
+git status
+git add -p
+git status
+git status | head
+git status | head -20
+git commit -m'batch processor made to reload config on sighup'
+git status
+git status | head -20
+git add -p
+git commit -m'removed unrequired logging'
+git add -p
+git status
+git diff --cached
+git commit -m'warning in decoding logged only once'
+git status
+git log
+gitk --all
+git checkout master
+git merge v511
+git log -p
+git status
+git push
+sudo rm -rf ~/Library/Caches/Opera/
+mv Library/Opera{,.bak}
+cd Library/Ope
+git status .
+git status
+git status | head
+git checkout Library/Opera/keyboard/basic_vim_in_standard_keyboard.ini
+git status | head
+git diff Library/Opera
+git status
+git status | head
+ssh sujan@192.168.2.207
+vi .bash_profile 
+cd /opt/immune
+cd /opt/immune
+screen -r
+cd installed/col/
+gs .
+cd
+ipython
+workon makalu
+ifconfig | grep 192
+cd
+vi hello.java 
+cd /opt/immune/installed/col/
+git checkout master
+git log
+git status
+git branch
+git status
+git status .
+git diff
+git log
+gitk --all
+git branch
+gitk --all
+git log
+git checkout v511
+git status
+git diff
+git status
+git commit apps/ -m'loginspect_name always read from config'
+git checkout master
+git merge v511
+git push
+git checkout v511
+git log -p
+gs
+git branch
+git diff
+git commit -am'loginspect_name always read from config in event["mid"] and event["collected_at"]'
+git push
+mvim
+cd apps/syslog_collector/
+cp syslog_collector.py test_sighup.py
+vi test_sighup.py 
+python test_sighup.py 
+workon makalu
+python test_sighup.py 
+vi example-config.json 
+ps aux | grep python
+kill -1 12447
+python test_sighup.py example-config.json 
+git log -p ../batch_processor/batch_processor.py
+git status
+git diff ../batch_processor/
+git branch
+git commit ../batch_processor/ -m'config is auto reloadable when gevent send is used in a loop'
+git diff example-config.json 
+git checkout example-config.json 
+python syslog_collector.py example-config.json 
+echo hi | nc 127.0.0.1 1514
+python syslog_collector.py example-config.json -vv
+git diff
+vi example-config.json 
+ps aux | grep syslog
+kill -1 13228
+echo hi | nc 127.0.0.1 1514
+python syslog_collector.py example-config.json -vv
+git status
+git checkout example-config.json 
+git diff
+git status
+git branch
+git commit syslog_collector.py -m'profile info and loginspect_name always read from config in case of tcp listener'
+git status
+git log
+git push
+git diff
+git status
+git commit -am'loginspect_name always read directly from config'
+git push
+pylint
+sudo pip install pylint
+pylint
+u
+cd netflow_collector/
+pylint netflow_collector.py 
+git status
+git branch
+git diff
+git commit -am'loginspect_name always read from config in event["mid"] and event["collected_at"]'
+git push
+git diff
+git commit -am'if ip not found in profile, return immediately'
+u
+ack cidr
+git log
+git diff HEAD 63eee6134b093c6718ce783eda840cd3e40832dd
+git diff --stat-only HEAD 63eee6134b093c6718ce783eda840cd3e40832dd
+git diff --stats-only HEAD 63eee6134b093c6718ce783eda840cd3e40832dd
+git help diff
+git diff --name-only HEAD 63eee6134b093c6718ce783eda840cd3e40832dd
+ack cidr
+git status
+git diff
+git status
+git commit -am'all collector apps use libcol.config_reader.get_config_ip to handle error caused when link local address contains %eth0 in ubuntu OS'
+git checkout master
+git merge v511
+git pushf
+git push
+git log
+git branch -r
+cat ../../.git/HEAD 
+git checkout v511
+cat ../../.git/HEAD 
+git branch
+git branch -r
+git status
+git add ../lib/libcol/config_reader.py 
+git status
+git branch
+git commit -m'added config_reader.get_config_ip'
+git push
+git checkout master
+git merge v511
+git checkout v511
+git push
+cd /opt/immune/installed/logen/
+vi README 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.205:514:tcp -l 10000 -r500
+ssh sujan@192.168.2.205
+ssh sujan@192.168.2.205
+ssh sujan@192.168.2.205
+git status
+ipython
+bash
+vi .bash_profile 
+cd /opt/immune
+mvim
+cd 
+cd projects/pyjs/
+ack sujan .
+ack suzan .
+ack 'su(j|z)an' .
+ack -R 'su(j|z)an' .
+ack -r 'su(j|z)an' .
+ack suzan .
+ls CREDITS 
+vi CREDITS 
+ack -ir 'su(j|z)an' .
+man ack
+ack -i 'su(j|z)an' .
+ack -i 'su(j|z)an' *
+cd
+cd projects/jobs/piero/mylocaltime/
+mvim
+cd
+cd projects/
+cd dojo-tut/
+mvim
+open demo
+open demo/index.html 
+cd
+locate shiftit
+locate Shiftit
+shasum Documents/Sujan\ Shakya\ Resume.pdf 
+shasum {Documents,Downloads}/Sujan\ Shakya\ Resume.pdf 
+vi Softwares/ShiftIt.app/Contents/Info.plist 
+cd Softwares/ShiftIt.app/
+cd Contents/
+open .
+pwd
+/Users/sujanshakya/Softwares/ShiftIt.app/Contents/Frameworks/ShortcutRecorder.framework/Versions/A/ShortcutRecorder ; exit;
+pwd
+vi ../dojo-1.8.1/build-report.txt 
+du -sh ../dojo-1.8.1/*
+vi ../dojo-1.8.1/dojox/io/scriptFrame.js
+vi ../dojo-1.8.1/dojo/dom-attr.js
+vi ../dojo-1.8.1/dojo/dom-attr.js.uncompressed.js 
+/Users/sujanshakya/projects/batman_app/README ; exit;
+which mvim
+mv /usr/local/Cellar/macvim/7.3-64/MacVim.app/ /Applications/
+mvim
+mv /Applications/MacVim.app /usr/local/Cellar/macvim/7.3-64/
+mvim
+ln -s /usr/local/Cellar/macvim/7.3-64/MacVim.app /Applications/MacVim.app
+cp -r /usr/local/Cellar/macvim/7.3-64/MacVim.app/ /Applications/
+ll /Applications/MacVim.app
+sudo rm -rf /Applications/Contents/
+rm /Applications/MacVim.app
+cp -r /usr/local/Cellar/macvim/7.3-64/MacVim.app/ /Applications/
+sudo rm -rf /Applications/Contents/
+cp -r /usr/local/Cellar/macvim/7.3-64/MacVim.app /Applications/
+cd ~/projects/solfege-3.20.6
+./configure
+workon makalu
+echo $PATH
+u
+cd
+load_virtualenvwrapper 
+workon makalu
+cd projects/solfege-3.20.6
+./configure
+cd projects/dojo-tut/
+cd demo/
+u
+mkdir -p lib/js/
+ln -s ../dojo-1.8.1 lib/js/dojo
+mvim
+ll lib/js/dojo 
+ll lib/js/dojo
+ll lib/js/
+cd lib/js/
+rm dojo 
+ln -s ../../../dojo-1.8.1 dojo
+u
+mkdir css
+u
+l
+cd demo/
+open index.html 
+git diff
+gs
+git commit -am'used spaces for tab'
+gs
+git diff
+gc
+g
+gc
+alias gc
+git status
+gd
+git commit -m'trimmed spaces'
+git commit -m'trimmed spaces' myModule.js 
+git log -p
+gs
+git commit .myModule.js.swp 
+vi ~/.bash_profile 
+cd projects/dojo-tut/
+gs
+gs .
+gl
+glp
+glp .
+git log .
+cd demo/
+gs
+glp
+git log 
+git log --name-only
+git log 
+git log --name-only
+git log
+git log --name-only
+git log --stats-only
+git log --stat-only
+git log --name-only
+git log
+vi ~/.bash_profile 
+gl
+gs
+which jsc 
+alias jsc
+jsc
+env jsc
+help jsc
+function jsc
+functiona jsc
+function jsc
+vi ~/.bash_profile 
+cd ~/Desktop/
+shasum *.pdf
+shasum ~/Documents/Sujan\ Shakya\ Resume.pdf 
+mv Shakya_Sujan_cover.pdf ~/Documents/
+open ~/Documents/Shakya_Sujan_cover.pdf 
+cd ~/build/ipython/
+vi README.rst 
+cd docs/source/
+make
+make html
+ipython notebook
+load_virtualenvwrapper 
+workon makalu
+ipython notebook
+vi interactive/htmlnotebook.txt 
+jsc
+ipython
+c
+vi ~/.vimrc 
+mvim
+vi ~/.vimrc 
+cd
+gs .bash_profile 
+gd .bash_profile 
+vi .bash_profile 
+gd .bash_profile 
+gcm 'added git aliases' .bash_profile 
+gd .vimrc 
+gcm 'removed unused maps' .vimrc 
+ipython notebook
+sudo pip instal pyzmq
+sudo pip install pyzmq
+ipython notebook
+export LANG=en_US.UTF-8
+ipython notebook
+export LC_ALL=en_US.UTF-8
+python
+ipython notebook
+locate re2
+cd projects/re2/
+mvim
+python
+workon makalu
+python 
+vi .virtualenvs/makalu/lib/python2.6/site-packages/re2.py
+workon makalu
+python
+deactivate 
+cd projects/re2/
+cd facebook/
+python
+ipython
+l
+rm *re2.so
+cd pyre2/
+rm build/
+python setup.py build
+locate re2.h
+locate re2.cc
+locate re2.c
+locate re2.cpp
+vi `locate re2.cpp`
+locate re2.c
+locate re2
+locate re2\.
+vi /usr/local/lib/libre2.a 
+locate map.h
+locate /map.h
+locate /map.h$
+locate "/map.h$"
+man locate
+locate "/map.h"
+vi /usr/include/c++/4.2.1/backward/map.h 
+vi /usr/include/c++/4.2.1/debug/map.h 
+map
+locate std.h
+locate std.h | grep -v unistd
+vi /usr/local/include/re2/re2.h
+locate variadic_function.h
+vi `locate variadic_function.h`
+vi /usr/local/include/re2/re2.h
+locate re2
+ll /usr/local/include/re2/set.h 
+vi /usr/local/include/re2/set.h 
+locate src
+python
+u
+python
+cd pyre2/
+sudo python setup.py install
+python
+cd
+locate re2
+cd /opt/makalu/ptf
+u
+cd bld/
+cd packages/
+cd source-pkgs/
+cd re2/
+tar -xzf re2-d9f8806c004d.tar.gz 
+mvim re2-d9f8806c004d
+cython
+cd ~/build/cython/
+cd doc
+u
+cd docs/
+make html
+export LC_ALL=en_US.UTF-8
+make html
+open build/html/index.html 
+cd ..
+u
+which easy_install
+vi `which easy_install`
+sudo easy_install pyximport
+ipython
+vi r.cc
+gcc r.cc 
+vi r.cc
+gcc r.cc 
+cd
+gcc r.cc 
+vi r.cc
+sudo pip install http://www.prescod.net/pyximport/pyximport-1.0.tar.gz
+wget http://www.prescod.net/pyximport/pyximport-1.0.tar.gz
+bi wget
+wget http://www.prescod.net/pyximport/pyximport-1.0.tar.gz
+gcc r.cc 
+vi r.cc 
+open Library/
+vimpy -m difflib
+mvim mvim /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/difflib.py
+mvim /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/difflib.py
+(cd /System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/ && mvim difflib.py)
+vimpy .vimrc 
+vimpy os
+vimpy -m os
+vimpy difflib
+vimpy os
+vipy -m
+vipy gevent
+vipy greenlet
+vipy tornado
+vimpy tornado
+vi ~/.bash_profile 
+git diff .vimrc 
+gd .bash_profile 
+gcm 'vimpy always opens file in parent dir pwd'
+gcm 'vimpy always opens file in parent dir pwd' .bash_profile 
+git status | head
+gd .gitconfig 
+gcm 'added color' .gitconfig 
+gd .gitignore 
+gcm 'added generated cscope*.vim' .gitignore 
+gs | head
+gs
+vi ~/.bash_profile 
+gs
+gs|head
+gss|head
+gs|head
+gd .bash_profile 
+gcm 'added gss for git status -s' .bash_profile 
+gs|h
+h
+alias h=head
+gs|h
+vi .bash_history 
+vi ~/.bash_profile 
+gcm 'added alias h for head' .bash_profile 
+gs|h
+gd .gitk 
+gitk --all
+gcm 'updated font scale' .gitk 
+gs|h
+git push
+vimpy difflib
+vi /usr/share/dict/README 
+vi /usr/share/dict/connectives 
+vi /usr/share/dict/propernames 
+vi /usr/share/dict/web2
+vi /usr/share/dict/web2a 
+vi /usr/share/dict/words 
+cd projects/jobs/
+mkdir emmanuel
+cd emmanuel/
+mvim problem1.py
+ipython -i problem1.py 
+workon makalu
+mvim
+mvim /opt/immune/installed/pylib/pylib/timing.py
+vimpy difflib
+fabric
+fabr
+sudo pip install fabric
+python
+fab
+ls build/pip-delete-this-directory.txt 
+rm build/
+sudo rm -rf build/
+ipython
+sudo pip install aws
+cd projects/
+svn checkout http://boto.googlecode.com/svn/trunk/ boto
+cd boto/
+sudo python setup.py install
+sudo python setup.py 
+python setup.py 
+vi setup.py 
+ll setup.py 
+cd boto 
+ll 
+u
+rm boto/
+git clone https://github.com/boto/boto.git
+sudo pip install boto
+cd
+vi .ssh/id_rsa-gsg-keypair
+vi .ssh/id_dsa
+vi .ssh/id_rsa-gsg-keypair
+chmod 600 .ssh/id_rsa-gsg-keypair 
+pypy -m timeit -n 1000000 -r 5 -v "dict(a='A', b='B', c='C')"
+python2.5 -m timeit -n 1000000 -r 5 -v "dict(a='A', b='B', c='C')"
+python2.6 -m timeit -n 1000000 -r 5 -v "dict(a='A', b='B', c='C')"
+python2.5 -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+python2.6 -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+python2.7 -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+python3
+python3.2
+python2
+which python2
+python2
+python2.7
+python
+ll /usr/local/bin/python
+ll /usr/local/bin/python2
+which python2.7
+which python2.7-32
+ll `which python2.7-32`
+python2.7
+python2.7-32 -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+python3 -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+pypy -m timeit -n 1000000 -r 5 "dict(a='A', b='B', c='C')"
+python2.5 -m timeit -n 1000000 -r 5 -v "{a:'A', b:'B', c:'C'}"
+python2.5 -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+python2.6 -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+python2.7 -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+python2.7-32 -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+python3 -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+pypy -m timeit -n 1000000 -r 5 -v "{'a':'A', 'b':'B', 'c':'C'}"
+python2.7-32
+pypy
+jobs 
+killjob 
+jobs 
+man kill_instance 
+which kill_instance
+ll /usr/local/bin/kill_instance 
+vi /usr/local/bin/kill_instance 
+cd /opt/immune/installed/norm/
+mvim
+workon makalu
+cd util/
+u
+pwd
+u
+cd norm/
+find /opt/immune/ -type d -exec sudo chmod 755 {} \;
+ll ..
+cd apps/
+cd norm
+cd normalizer/
+cd util/
+python benchmark_signatures.py 
+u
+pwd
+find . -name tests
+nosetests lib/tests apps/norm_front/tests/ apps/normalizer/tests/
+nosetests lib/tests apps/norm_front/ apps/normalizer/tests/
+nosetests lib/tests apps/norm_front/ apps/normalizer/
+nosetests lib apps/norm_front apps/normalizer
+nosetests lib
+nosetests lib/tests/test_escaping.py
+nosetests lib apps/norm_front apps/normalizer
+cd lib/libnorm/signatures.py
+cd lib/libnorm/
+python signatures.py
+u
+nosetests lib
+workon makalu
+nosetests lib/tests/test_escaping.py
+ipython
+cd $norm
+cd /opt/immune/installed/norm/
+bmark
+gs
+git diff
+gap
+git status
+git diff
+gap
+git diff
+gap
+git diff
+gs
+gap lib
+gs
+git diff lib/
+vi ~/.bash_profile 
+. ~/.bash_profile 
+gdc lib/
+gs
+cp lib/libnorm/signatures.py{,.bak}
+agit reset lib/libnorm/signatures.py
+vi lib/libnorm/signatures.py
+git status
+git reset lib/libnorm/signatures.py
+vi lib/libnorm/signatures.py
+gap lib/
+gs
+gdc
+gs
+git reset HEAD lib/
+vi lib/libnorm/signatures.py
+gs
+git help checkout
+git help reset
+git reset -p
+git status
+git reset -p
+git checkout -p lib/
+gd lib/
+grp
+vi ~/.bash_profile 
+git diff ~/.bash_profile 
+agit diff ~/.bash_profile 
+git diff ~/.bash_profile 
+agit diff ~/.bash_profile 
+agit commit ~/.bash_profile -m'added git checkout -p, git reset -p and git diff --cached aliases'
+agit status ~/.bash_profile 
+/opt/makalu/ptf/update.sh 
+vi ~/.vimrc 
+vi ~/.bash_profile 
+cd /opt/immune/installed/alert/
+git branch
+gl
+gc v511
+gl
+glp
+ssh 207
+ssh sujan@192.168.2.207
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+ssh support@192.168.2.207
+cd ..
+cd high-availability/
+mvim
+cd $webserver 
+ack timeout views/
+ack with_timeout views/
+vimpy gevent
+workon makalu
+vimpy gevent
+ack with_timeout views/
+hbh
+b
+cd apps/ha_forwarder/
+cd lib/
+scp forwarder.py support@192.168.2.10:.
+scp forwarder.py support@192.168.2.210:.
+u
+cd ha_collector/
+cd lib/
+gs
+gd collector.py 
+scp collector.py support@192.168.2.207:.
+git branch
+u
+cd config-updater/
+mvim
+git status
+git branch
+git diff v511
+git checkout v511
+git stash
+git checkout v511
+git status
+git reset --hard origin/master
+git reset --hard origin/v511
+git diff master
+git checkout master
+git reset --hard origin/master
+git diff v511
+git stash pop
+git diff
+gcm 'identity set on ha_forwarder/collector' apps/
+git checkout v511
+git merge master
+git status
+git push
+git diff
+git status
+git add -p
+git status
+git commit -m'added identity in ha_forwarder/collector'
+git diff
+git commit -am'forwarder retries every 2 second if collector is not connected'
+git status
+git diff v511
+git branch
+git checkout v511
+git diff v511
+git diff master
+git checkout master
+git branch
+git diff v511
+git branch
+git checkout v511
+git merge master
+git push
+gs
+gs
+ssh support@192.168.2.210
+ssh support@192.168.2.210
+vi ~/.ssh/config 
+cat .ssh/id_dsa.pub | ssh 192.207 "mkdir -p .ssh && cat >>.ssh/authorized_keys"
+cat .ssh/id_dsa.pub | ssh 192.210 "mkdir -p .ssh && cat >>.ssh/authorized_keys"
+ssh 192.210
+ssh 192.207
+git ls-files
+git status
+git ls
+git files
+git ls-files
+git ls-files --deleted
+ssh sujan@192.168.2.205
+ssh support@192.168.2.205
+vi .ssh/config 
+cat .ssh/id_dsa.pub | ssh 192.205 "mkdir -p .ssh && cat >>.ssh/authorized_keys"
+ifconfig|grep 192
+ssh 192.207
+cd
+vi forwarder.py
+rm forwarder.py*
+cd /opt/immune/installed/high-availability/
+cd apps/ha_collector/
+gl
+ssh 192.210
+cd /opt/makalu/bld/packages/source-pkgs/re2/
+mvim
+ack '->'
+ack '->' .
+ack -e '->' .
+ack '->' .
+ack -- '->'
+mvim
+gcc a.cc 
+c++ a.cc 
+c++ a.out 
+chmod +x a.cc 
+c a.cc 
+c++ a.cc 
+chmod +x ./a.out 
+./a.out 
+c++ a.cc && ./a.out
+which nc
+man nc
+nc 127.0.0.1 2000 < a.cc 
+echo hi | nc 127.0.0.1 3000
+nc 127.0.0.1 2000 < re2-d9f8806c004d.tar.gz 
+locate fifa
+cd
+nc 127.0.0.1 2000 < FIFA-11.dmg 
+nc -l 2000 >abc
+c++ a.cc && ./a.out
+cd ~/projects/re2/
+cd facebook/
+mvim
+vi a.cc
+ssh 192.205
+ssh 192.207
+ping google.com
+ping 8.8.8.8
+ping 192.168.2.2
+ifconfig|grep 192
+ping 192.168.2.5
+ping 8.8.8.8
+cd /opt/makalu/bld/packages/source-pkgs/re2/
+cd re2-d9f8806c004d
+mvim
+cd build/cython/
+open docs/index.rst 
+open docs/build/html/index.html 
+cd ~/projects/
+mkdir cython-tut
+cd cython-tut/
+mvim first.pyx
+vi ~/.vimrc 
+mvim
+python first.pyx 
+time python first.pyx 
+python setup.py build_ext --inplace
+python
+which cython 
+vi `which cython `
+python2.6 setup.py build_ext --inplace
+time python first.pyx 
+./first.so 
+cp first.py{x,}
+ipython
+mv first{_python}.py
+mv first{,_python}.py
+mv first{,_cython}.pyx
+rm first.
+rm first.c 
+rm first.so 
+python2.6 setup.py build_ext --inplace
+ipython
+workon makalu
+touch first_cython_static.pyx
+cp first_cython.pyx first_cython_static.pyx 
+mv setup{,_cython}.py 
+python2.6 setup_cython.py build_ext --inplace
+cp setup_cython.py setup_cython_staic.py 
+cp setup_cython_sta{,t}ic.py 
+rm setup_cython_staic.py 
+python2.6 setup_cython.py build_ext --inplace
+rm first_cython.c 
+rm first_cython.so 
+python2.6 setup.py build_ext --inplace
+ll *.so
+rm setup_cython*
+cp first_cython_static{,_fun}.py
+cp first_cython_static{,_fun}.pyx
+mv first_cython_static_{fun,def}.pyx
+python2.6 setup.py build_ext --inplace
+cython -a first_cython_static_def.pyx 
+cython first_cython_static_def.pyx 
+rm first_cython_static_def.pyx 
+cython first_cython_static_def.pyx 
+mv ~/.Trash/first_cython_static_def.pyx .
+rm first_cython_static_def.c 
+cython first_cython_static_def.pyx 
+rm first_cython_static_def.c 
+rm first_cython_static_def.so 
+rm first_cython_static_def.html 
+cython first_cython_static_def.pyx 
+python2.6 setup.py build_ext --inplace
+cython first_cython_static_def.pyx 
+ll *.html
+rm first_cython_static_def.c
+cython first_cython_static_def.pyx 
+open docs/build/html/index.html 
+ll *.hml
+cython -a first_cython_static_def.pyx 
+open docs/build/html/index.html 
+rm first_cython_static_def.c
+cython -a first_cython_static_def.pyx 
+open docs/build/html/index.html 
+ll *.html
+open *.hml
+open *.html
+cython -a first_cython_static.pyx 
+open first_cython_static.html 
+python2.6 setup.py build_ext --inplace
+ipython
+cython -a first_cython_static_def..pyx 
+cython -a first_cython_static_def.pyx 
+open first_cython_static_def..html 
+open first_cython_static_def.html 
+open first_cython_static.html 
+c++ cython pypy
+vi ~/.bash_profile 
+touch abc
+rm abc 
+touch def
+rm def 
+ll ~/bin/
+vi ~/.bash_profile 
+touch abz
+rm abz 
+rm adafasdf
+a="~zzz"
+mkdir $a
+ls | grep zzz
+rm `ls | grep zzz`
+sudo rm -rf `ls | grep zzz`
+a="sujan"
+l="shakya"
+echo "$a/$l"
+adfasdf
+touch aza
+rm aza
+vi ~/.bash_profile 
+rm abz 
+rm def 
+ll ~/.mytrash/
+rm ~/.mytrash/*
+ll ~/.mytrash/
+sudo rm -rf ~/.mytrash/*
+git diff ~/.bash_profile 
+gcm 'used ~/.mytrash instead of ~/.Trash' ~/.bash_profile 
+cython -a *.pyx
+open *.html
+pypy
+open Library/
+ping google.com
+dns
+traceroute google.com
+ping google.com
+traceroute google.com
+ping google.com
+cd projects/cython-tut/
+mvim
+python
+pypy
+jobs -p
+kill `jobs -p`
+jobs
+pypy
+kill `jobs -p`
+jobs
+cd
+workon makalu
+import scipy
+python
+deactivate 
+python26
+python2.6
+locate scipy
+python
+ipython
+locate scipyu
+locate scipy
+cd build/
+sudo pip install Scipy
+sudo pip install matplotlib
+ipython
+telnet 192.168.1.3 8000
+telnet 192.168.1.3 8080
+telnet 192.168.1.3 8000
+telnet 192.168.1.3 8080
+[Aasdfasfasdfasdf
+telnet 192.168.1.3 8080
+ifconfig
+telnet 192.168.1.3 8080
+telnet 192.168.1.3 808
+telnet 192.168.1.3 8000
+telnet 192.168.1.3 808
+telnet 192.168.1.2 808
+ifconfig | grep 192
+cd Downloads/
+httpserver.py .
+python -mSimpleHTTPServer 8080
+cd
+sudo pip install ffind
+vi opera.bak/reader/reader.js 
+mkdir opera
+cp -r opera.bak/reader opera
+ls opera
+ls opera/reader/
+/opt/makalu/ptf/update.sh 
+bi ffind
+sudo pip install ffind
+mkdir projects/stackoverflow
+mkdir projects/stackoverflow/
+cd projects/stackoverflow/
+vi e.py 
+mkdir 13458940
+cd 13458940/
+vi index.html
+mvim
+open index.html 
+find ~/.vim/ -name '*zen*'
+vi ~/.vim/plugin/zencoding.vim 
+cd
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+mvim
+python
+workon makalu
+which python
+python
+deactivate 
+which python
+sudo pip install mocker
+sudo pip install mock
+ssh ubuntu@ec2-184-72-180-225.compute-1.amazonaws.com
+cd
+rm .ssh/id_rsa-gsg-keypair 
+ll .ssh/
+vi .ssh/ec2-keypair-suzan.pem 
+chmod 600 ~/.ssh/ec2-keypair-suzan.pem 
+ssh -i ~/.ssh/ec2-keypair-suzan.pem ubuntu@ec2-54-242-83-7.compute-1.amazonaws.com
+mv ec2-keypair-suzan.pem .ssh/ec2-keypair-suzan.pem 
+ll .ssh/ec2-keypair-suzan.pem 
+bi ec2
+brew search ec2
+ssh -i ~/.ssh/ec2-keypair-suzan.pem ubuntu@ec2-54-242-192-132.compute-1.amazonaws.com
+bi ec2-get-console-output
+brew search ec2
+bi ec2-ami-tools
+ssh -i ~/.ssh/ec2-keypair-suzan.pem ubuntu@ec2-54-245-137-110.us-west-2.compute.amazonaws.com
+chmod 600 ~/.ssh/ec2-keypair-suzan.pem 
+ssh -i ~/.ssh/ec2-keypair-suzan.pem ubuntu@ec2-54-245-137-110.us-west-2.compute.amazonaws.com
+bi ec2-api-tools
+mv ec2-suzan.pem .ssh/
+chmod 600 .ssh/ec2-suzan.pem 
+rm .ssh/ec2-keypair-suzan.pem 
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-54-245-137-110.us-west-2.compute.amazonaws.com
+rm .ssh/ec2-suzan.pem 
+mv ~/.mytrash/ec2-suzan.pem ~/.ssh/
+ll .ssh/ec2-suzan.pem 
+telnet 10.249.36.115 8080
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-54-245-137-110.us-west-2.compute.amazonaws.com
+telnet 50.112.82.239 8000
+telnet 50.112.82.239 8080
+ping 50.112.82.239
+ssh -i .ssh/ec2-suzan.pem ubuntu@ec2-50-112-82-239.us-west-2.compute.amazonaws.com
+telnet 50.112.82.239 22
+telnet 50.112.82.239 1022
+sudo pip install fabric
+sudo pip install cuisine
+workon makalu
+python
+telnet 50.112.82.239 8080
+pip install cuisine
+cd /opt/immune
+cd ~/projects/
+cd jobs/
+mkdir roger
+cd roger/
+mkdir deploy
+cd deploy/
+touch install.py
+mvim install.py 
+cd /opt/immune
+cd installed/alert/
+mvim
+workon makalu
+vimpy cuisine
+vimpy fabric
+cp install.py fabfile.py
+fab install
+cp install.py fabfile.py
+fab install
+cp install.py fabfile.py
+fab install
+ssh -i .ssh/ec2-suzan.pem ubuntu@ec2-50-112-82-239.us-west-2.compute.amazonaws.com
+ipython
+ipython
+workon makalu
+deactivate 
+mkvirtualenv makalu-testing
+deactivate 
+workon makalu-testing
+lsvirtualenv 
+rmvirtualenv makalu-testing
+workon testing
+ll ~/.virtualenvs/testing/
+rmvirtualenv testing
+deactivate 
+rmvirtualenv testing
+vi ~/.bash_profile 
+vi ~/.slate
+bi xmodmap
+vi ~/.bash_profile 
+mvim
+workon makalu
+cd /opt/immune
+pycscope-pythonpath 
+pycscope-pythonpath 
+vi ~/.vimrc 
+fg 1
+jobs
+fg 1
+jobs
+vi .bash_
+vi .bash_profile 
+deactivate 
+cd /opt/immune
+cd /opt/immune/installed/webserver/
+mvim /makalu/installed/webserver/views/configuration.py
+git pull
+mvim views/configuration.py
+git log -p
+git log -p views/configuration.py
+cat /dev/random 
+cat /dev/urandom 
+1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c
+cd projects/jobs/roger/
+mvim
+/opt/makalu/ptf/update.sh 
+workon makalu
+cat /opt/immune/etc/env.rc 
+cd /opt/immune
+cd installed/config-updater/
+git status
+u
+sudo ./bin/envdo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
+git status
+sudo 
+cd /opt/immune
+sudo ./bin/envdo ./installed/config-updater/apps/config_updater/regenerate_all.sh 
+cd installed/config-updater/
+git status
+git diff
+chpst
+sudo /opt/immune/installed/system/mac_os_x/run_services.py 
+ssh -i .ssh/ec2-suzan.pem ubuntu@ec2-23-20-13-158.compute-1.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-23-20-13-158.compute-1.amazonaws.com
+vi ~/.ssh/ec2-suzan.pem 
+chmod 600 ~/.ssh/ec2-suzan.pem 
+ipython
+workon makalu
+python
+cd /opt/makalu/bld
+cd packages/python-pkgs/
+git log predownloaded/
+glpredownloaded/
+gl predownloaded/
+git status .
+git pull
+ssh support@192.168.2.207
+ssh support@192.168.2.210
+ssh support@192.168.2.205
+ssh support@192.168.2.205 -i .ssh/li_support 
+ssh support@192.168.2.205
+cd /opt/immune/installed/high-availability/
+mvim
+ssh support@192.168.2.205 -i .ssh/li_support 
+cd /opt/immune
+import cPickle; cPickle.load(open("./storage/ha/cursors.db", "wb"))
+python -c'import cPickle; cPickle.load(open("./storage/ha/cursors.db", "wb"))'
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-50-16-51-216.compute-1.amazonaws.com
+vimpy boto
+fab create_ec2_instance
+python
+python
+cd
+cd projects/jobs/roger/
+cd deploy/
+python
+pip install boto
+fab create_ec2_instance
+python
+fab create_ec2_instance
+python
+fab create_ec2_instance
+python fabfile.py
+ssh support@192.168.2.210
+ssh -i .ssh/ec2-suzan.pem ubuntu@ec2-50-112-82-239.us-west-2.compute.amazonaws.com
+ssh support@192.168.2.207 -i ~/.ssh/li_support 
+cd projects/jobs/
+cd roger/
+workon makalu
+cd deploy/
+mvim
+fab create_ec2_instance
+python create_ec2_instance
+python fabfile.py
+ipython
+workon makalu
+sudo pip install cffi
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-54-245-137-110.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-50-16-51-216.compute-1.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-50-112-82-239.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pemubuntu@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ubuntu@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ll ~/.ssh/ec2-suzan.pem 
+ssh -i ~/.ssh/ec2-suzan.pem root@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem bitnami@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem ec2-user@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+workon makalu
+fab
+fab fabfile.py --help
+vimpy boto
+sudo python
+pwd
+fab create_ec2_instance
+fab create_ec2_instance sujan
+fab create_ec2_instance --sujan
+fab create_ec2_instance:adf
+vi config.py
+mkdir .ssh
+mv .ssh ssh
+rm ssh/
+mkdir private_keys
+fab create_ec2_instance:new_key
+fab create_ec2_instance:new-key,new-instance
+python fabfile.py
+fab create_ec2_instance:new_key,new_instance
+python fabfile.py
+ssh -i ~/.ssh/ec2-suzan.pem bitnami@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ls private_keys/
+fab create_ec2_instance:new_key,new_instance2
+rm private_keys/new_key.pem 
+mkdir server_infos
+rm server_infos/
+mkdir instance_infos
+cd /opt/immune/installed/alert/
+mvim
+rm instance_infos/
+rm private_keys/
+claer
+ls ..
+git init
+git status
+git add config.py
+git add fabfile.py
+rm install.py 
+gs
+git .gitignore
+vi .gitignore
+git status
+git add .gitignore 
+git status
+git commit -m'initial files added'
+fab create_ec2_instance:flock-instance,flock-key ensure_users install
+ll instance_infos/
+git status
+git diff fabfile.py
+git commit -am'added terminate function'
+ls instance_infos/
+fab create_ec2_instance:flock-instance,flock-key ensure_users install
+gd
+gcm '_ensure_dir added'
+gcm '_ensure_dir added' -a
+fab create_ec2_instance:flock-instance,flock-key ensure_users install
+ls private_keys/
+ls instance_infos/
+fab create_ec2_instance:flock-instance2,flock-key ensure_users install
+gd
+gcm 'bug fixes' -a
+fab create_ec2_instance:flock-instance3,flock-key ensure_users install
+afab ensure_users:flock-instance3 install
+ll instance_infos/
+vi instance_infos/flock-instance2.info 
+rm instance_infos/flock-instance2.info 
+vi instance_infos/flock-instance3.info 
+fab ensure_users:flock-instance3 install
+git ls-files
+vi config.py
+ipython
+open Library/
+cd /opt/immune
+workon makalu
+ssh-add .ssh/li_support 
+/opt/makalu/ptf/update.sh 
+cd ~/projects/jobs/roger/
+bmark
+cd deploy/
+mvim
+cat instance_infos/flock-instance3.info 
+ssh -i ~/.ssh/ec2-suzan.pem bitnami@ec2-54-245-140-16.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem bitnami@ec2-54-245-76-194.us-west-2.compute.amazonaws.com
+ssh bitnami@ec2-54-245-76-194.us-west-2.compute.amazonaws.com
+ssh -i ~/.ssh/ec2-suzan.pem bitnami@ec2-54-245-76-194.us-west-2.compute.amazonaws.com
+ssh support@10.45.1.218 -i ~/.ssh/li_support 
+cd /opt/immune/installed/
+cd idx/
+mvim
+cd
+cd /Volumes/ASHOK/
+find . -name '*god*'
+find . -name '*God*'
+find . -name 'my *God*'
+find . -name 'My *God*'
+find . -name '*My *God*'
+cp -r ./Hindi/OMG\ Oh\ My\ God\!\ \(2012\)\ DVDSCREENER\ XviD\ 1CDRip\ \[DDR\]/ ~/Desktop/
+attr
+xattr
+xattr *
+xattr -c *
+xattr -c Hindi/
+xattr Hindi/
+ll Hindi/
+cp -ar ./Hindi/OMG\ Oh\ My\ God\!\ \(2012\)\ DVDSCREENER\ XviD\ 1CDRip\ \[DDR\]/ ~/Desktop/
+cp -aR ./Hindi/OMG\ Oh\ My\ God\!\ \(2012\)\ DVDSCREENER\ XviD\ 1CDRip\ \[DDR\]/ ~/Desktop/
+du -sh Hindi/OMG\ Oh\ My\ God\!\ \(2012\)\ DVDSCREENER\ XviD\ 1CDRip\ \[DDR\]/
+attr Hindi/
+xattr Hindi/
+ll -d Hindi/
+xattr -d Hindi/
+for i in $(ls -Rl@ | grep '^      ' | awk '{print $1}' | sort -u);    do echo Removing $i ... >&2;     find . | xargs xattr -d $i 2>/dev/null ; done
+ls -Rl@
+ls -Rl
+ls -l
+man ls
+for i in $(ls -l@ | grep '^      ' | awk '{print $1}' | sort -u);    do echo Removing $i ... >&2;     find . | xargs xattr -d $i 2>/dev/null ; done
+find . -type d -exec chmod 755 {} \;
+chmod 755 Hindi/
+pwd
+mkdir a
+rm a
+ll -d Hindi/
+sudo chmod 755 Hindi/
+ll -d Hindi/
+xattr Hindi/
+rm \$RECYCLE.BIN/
+rm .Spotlight-V100/
+ll .Trashes/501/
+rm .Trashes/
+rm .com.apple.timemachine.donotpresent 
+rm .fseventsd/
+rm -rf ~/.mytrash/*
+sudo rm -rf ~/.mytrash/*
+sudo rm -rf ~/.mytrash/.*
+u
+cd ASHOK/
+chmod 000 series/
+defaults write com.apple.finder AppleShowAllFiles -bool true
+killall Finder
+chflags nohidden Hindi/
+chflags nohidden ML
+chflags hidden ML
+chflags hiddena ML
+chflags hidden ML
+chflags nohidden ML
+chmod 755 Hindi/
+ll 
+defaults write com.apple.finder AppleShowAllFiles -bool false
+killall Finder
+chflags nohidden *
+ll ._holi\ 2012\ wd\ mom\ nd\ roshan 
+rm ._*
+chflags nohidden *
+sudo rm -rf ~/.mytrash/._*
+sudo rm -rf ~/.mytrash/.*
+cd /opt/immune/installed/high-availability/
+mvim
+chflags nohidden ~/Desktop/Hindi/
+ll ~/Desktop/Hindi/
+vi a.txt 
+rm a.txt 
+rm ~/.mytrash/a.txt 
+sudo rm ~/.mytrash/*
+du -sh ~/Desktop/Hindi/
+ll -d ~/Desktop/Hindi/
+sudo chflags
+sudo chflags nohidden ~/Desktop/Hindi/
+killall Finder
+sudo chflags nohidden ~/Desktop/BBC\ Planet\ Earth/
+sudo chflags hidden ~/Desktop/BBC\ Planet\ Earth/
+cd Desktop/
+ll BBC\ Planet\ Earth/
+du -sh BBC\ Planet\ Earth/
+xattr Hindi/
+xattr -cd Hindi/
+xattr -c Hindi/
+xattr -d Hindi/
+chflags nohidden *
+mkdir _Hindi
+mv {,_}Hindi/* 
+mv Hindi/* _Hindi/
+du -sh Hindi/
+mkdir BBC\ Planet\ Earth/_
+mkdir BBC\ Planet\ Earth_
+mv BBC\ Planet\ Earth/ BBC\ Planet\ Earth_
+mv BBC\ Planet\ Earth/BBC\ Planet\ Earth/* BBC\ Planet\ Earth/
+ssh 192.210
+ssh support@10.45.1.218 -i ~/.ssh/li_support 
+ssh support@10.45.1.219
+ssh support@10.45.1.219 -i ~/.ssh/li_support 
+telnet 10.45.1.119
+ssh support@10.45.1.119 -i ~/.ssh/li_support 
+ssh -i private_keys/flock-key.pem bitnami@ec2-54-245-76-194.us-west-2.compute.amazonaws.com
+cd /opt/immune
+cd ~/projects/
+cd makalu/
+cd community/
+git remote show origin
+nc -v -v -l -n -p 2222 >/dev/null
+which nc
+nc -n -p 2222 >/dev/null
+ncat -v -v -l -n -p 2222 >/dev/null
+bi ncat
+netcat
+bi netcat
+time yes|netcat -v -v -n 192.168.0.8 2222 >/dev/null
+netcat -v -v -l -n -p 2222 >/dev/null
+time yes|netcat -v -v -n 127.0.0.1 2222 >/dev/null
+yes
+ssh support@10.45.1.118 -i ~/.ssh/li_support 
+apt-get install netcat-traditional
+man netcat
+ssh support@10.45.1.119
+ssh support@10.45.1.218 -i ~/.ssh/li_support 
+ssh support@10.45.1.120 -i ~/.ssh/li_support 
+cd
+co 
+co 1
+co 2
+co 3
+pwd
+mvim .bash_profile 
+for each in `find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -t` ; do echo $each ; done
+for each in `find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -t` ; do echo $each; file -b $each; done
+co
+ma nls
+man ls
+find ~/Library/Caches/Opera/cache -type f | ls -S
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -S
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ll -S
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -l -S
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -l -S | head 10
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -l -S | head -10
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -lh -S | head -10
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+vlc /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+file /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+a=`file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp`
+echo $a
+echo ${b}
+echo ${a}
+echo ${a/edia//}
+echo ${a/edia/}
+echo ${a/edia/g}
+echo ${a/edia/}
+echo ${a/edia}
+echo ${a/edia/}
+echo ${a/edia/g}
+echo ${a/edia//g}
+echo ${a/edia}
+echo ${a/Media}
+echo ${a/MEDIA}
+echo $a
+echo ${a/media}
+echo ${a/edia}
+echo ${a/Media}
+echo ${a/edia}
+if test "${a/edia}" = "$a" ; then echo hi ; done
+if test "${a/edia}" = "$a" ; then echo hi ; fi
+if test "${a/Media}" = "$a" ; then echo hi ; fi
+if test "${a}" = "$a" ; then echo hi ; fi
+if test "${a/Media}" = "$a" ; then echo hi ; fi
+echo ${a/edia}
+echo ${a/Media}
+echo ${a/media}
+echo ${a/edia}
+if test "${a/Media}" = "$a" ; then echo hi ; fi
+if test "${a/media}" = "$a" ; then echo hi ; fi
+co
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0006/opr00D92.tmp
+co
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/turbo/g_004A/opr007CF.tmp
+a=`file -b /Users/sujanshakya/Library/Caches/Opera/cache/turbo/g_004A/opr007CF.tmp`
+if test "${file_output/edia}" = "$file_output" ; then
+if test "${a/edia}" = "$a" ; then echo "not a media" ; fi
+co
+. .bash_profile
+co
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6U.tmp
+vlc /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6U.tmp
+co
+file -b /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+vlc /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+vlc 3
+co 3
+co
+. .bash_profile
+co
+vlc 9
+vlc 8
+co 9
+co
+co 2
+ls /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+ll /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+man stat
+stat -f stat /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -f size /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -f $size /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+echo $size
+man stat
+stat -f %size /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+man stat
+stat -s /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+echo $st_size
+man stat
+stat -z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -f -z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -fz /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+ll /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+if test `stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp` -lt 1000000 ; then echo hi; fi
+if test `stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp` -lt 1000 ; then echo hi; fi
+if test a -lt 1 ; then echo hi ; fi
+co
+stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp 2>/dev/null 
+stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp 1>/dev/null 
+stat -f %z /Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp
+a="/Users/sujanshakya/Library/Caches/Opera/cache/g_0005/opr00D6Q.tmp"
+if test `stat -f %z "$file_output"` -lt 1000000 ; then echo hi; fi
+echo $file_output 
+echo $file_output
+if test `stat -f %z "$a"` -lt 1000000 ; then echo hi; fi
+co
+. .bash_profile
+co
+find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -lh -S | head -10
+co
+git diff .bash_profile 
+git commit .bash_profile -m'improved co'
+git push
+co
+if test "Media output" = *edia" ; then echo hi ; done
+if test "Media output" = *edia* ; then echo hi ; done
+if test "Media output" = *edia* ; then echo hi ; fi
+if test "Media output" == *edia* ; then echo hi ; fi
+if test "Media output" =~ .*edia.* ; then echo hi ; fi
+if [[ "Media output" =~ .*edia.* ]] ; then echo hi ; fi
+if [[ "Media output" = .*edia.* ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" == *edia* ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if test "Media output" = *edia* ; then echo hi ; fi
+if test "Media output" -eq *edia* ; then echo hi ; fi
+if test "Media output" == *edia* ; then echo hi ; fi
+if test "Media output" == "*edia*" ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" = "*edia*" ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" = "Media output"]] ; then echo hi ; fi
+if [[ "Media output" = "Media output" ]] ; then echo hi ; fi
+if test "Media output" = "Media output"  ; then echo hi ; fi
+if test "Media output" = *Media output*  ; then echo hi ; fi
+if test "Media output" = \*Media output\*  ; then echo hi ; fi
+if test "Media output" = "\*Media output\*"  ; then echo hi ; fi
+if test "Media output" = "*Media output*"  ; then echo hi ; fi
+if test "Media output" = '*Media output*'  ; then echo hi ; fi
+if [[ "Media output" = "Media output" ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ Media output = *edia* ]] ; then echo hi ; fi
+co
+gd .bash_profile
+if [[ Media output = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" =~ *edia* ]] ; then echo hi ; fi
+if [[ "Media output" =~ .*edia.* ]] ; then echo hi ; fi
+if test "Media output" =~ .*edia.* ; then echo hi ; fi
+if test "Media output" =~ ".*edia.*" ; then echo hi ; fi
+if [[ "Media output" =~ .*edia.* ]] ; then echo hi ; fi
+if [[ "Media output" = .*edia.* ]] ; then echo hi ; fi
+if [[ "Media output" = "*edia*" ]] ; then echo hi ; fi
+if [[ "Media output" = *edia* ]] ; then echo hi ; fi
+if [[ "Media output" =~ *edia* ]] ; then echo hi ; fi
+if [[ "Media output" =~ .*edia.* ]] ; then echo hi ; fi
+if [[ "Media output" =~ ".*edia.*" ]] ; then echo hi ; fi
+if [[ "Media output" =~ .*edia.* ]] ; then echo hi ; fi
+vi .bash_profile 
+gd .bash_profile
+gcm 'used simple substring checking' .bash_profile 
+gp
+vi .bash_profile 
+git push origin
+gd .bash_profile 
+gcm 'added alias for git push' .bash_profile 
+gp
+. .bash_profile 
+gp
+co
+a="Macromedia Flash"
+if grep -q edia $a ; then echo 'its there' ; fi
+if grep -q edia -- $a ; then echo 'its there' ; fi
+if grep -q edia <($a) ; then echo 'its there' ; fi
+if grep -q edia <(echo $a) ; then echo 'its there' ; fi
+if grep -q edia <<$a ; then echo 'its there' ; fi
+if grep -q edia <<<$a ; then echo 'its there' ; fi
+if grep -q edia <<<"Macromedia flash" ; then echo 'its there' ; fi
+if grep -q edia <"Macromedia flash" ; then echo 'its there' ; fi
+if grep -q edia <<<"Macromedia flash" ; then echo 'its there' ; fi
+if grep -q edia <<"Macromedia flash" ; then echo 'its there' ; fi
+gd .bash_profile 
+clera
+cd /opt/immune
+workon makalu
+mvim
+ssh support@10.45.1.218
+ssh support@192.168.2.205
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+ncat -v -v -l -n -p 2222 >/dev/null
+nc -v -v -l -n -p 2222 >/dev/null
+ncat
+netcat -v -v -l -n -p 2222 >/dev/null
+time yes|netcat -v -v -n 127.0.0.1 2222 >/dev/null
+netcat -l -n -p 2222 >/dev/null
+workon makalu
+ssh support@192.168.2.205
+ssh sujan@192.168.2.205
+cd installed/high-availability/
+u
+tar -czf high-availability.tgz high-availability
+scp high-availability.tgz support@192.168.2.210:
+scp high-availability.tgz support@192.168.2.207:
+ifconfig | grep 192
+cd logen/
+vi README 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100 -v
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000 -v
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000 -q
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 300
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 200
+ipython
+vi a.py 
+vi b.py 
+vi c.py
+python c.py 
+vi c.py
+python c.py 
+vi c.py
+python c.py 
+vi c.py
+python c.py 
+cd ..
+cd high-availability
+git status
+git diff
+cd /opt/immune
+vi c.py 
+python c.py 
+workon makalu
+python c.py 
+vi c.py 
+python c.py 
+gd
+gcm 'disk syncing done once per second'
+gcm 'disk syncing done once per second' .
+git status
+git log
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 500
+gd
+git commit -am'enabled benchmarker logs in ha_forwarder as well'
+gs
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 700
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 50
+git diff
+git commit -am'ha_cleaning run once 30 sec instead of 60 sec'
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 500
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1500
+vimpy gevent
+ssh support@10.45.1.120
+ssh support@10.45.1.218
+git diff
+git status
+ssh support@192.168.2.205
+cd /opt/immune
+python c.py 
+workon makalu
+python c.py 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1500
+git diff apps/ha_collector/
+git diff
+git diff apps/ha_forwarder/lib/reader.py 
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 2000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 3000
+git status
+git diff
+git status
+git commit -am'sent logs collected in last second in bulk'
+ssh support@192.168.2.210
+ssh support@192.168.2.210
+ssh support@192.168.2.207
+ssh support@192.168.2.207
+u
+pwd
+ll high-availability.tgz 
+rm high-availability.tgz 
+tar -czf high-availability.tgz high-availability
+scp high-availability.tgz support@10.45.1.218:
+lh high-availability.tgz 
+scp high-availability.tgz support@10.45.1.119:
+scp high-availability.tgz support@10.45.1.120:
+cd high-availability
+git status
+git push
+git branch
+git checkout v511
+git merge master
+git push
+ssh support@10.45.1.120
+ssh support@10.45.1.119
+ipython
+cd projects/
+mkdir odesk_tests
+cd odesk_tests/
+vi 1.py
+python 1.py 
+vi 2.py
+python 2.py 
+vi 2.py
+python 2.py 
+vi 2.py
+python 2.py 
+vi 2.py
+python 2.py 
+vi 2.py
+python 2.py 
+vi 2.py
+vi 3.py
+python 3.py 
+vi 3.py
+python 3.py 
+cat 3.py 
+vi 4.py
+python 4.py 
+vi 4.py
+python 4.py 
+vi 4.py
+python 4.py 
+vi 4.py
+python 4.py 
+cat 4.py 
+vi 5.py
+python 5.py 
+cat 5.py 
+vi 6.py
+python 6.py 
+vi 6.py
+python 6.py 
+cat 6.py 
+vi 7.py
+vi 6.py
+cat 6.py 
+python 7.py 
+vi 7.py
+cat 7.py 
+print 8.py 
+python 8.py 
+cat 8.py 
+pbcopy <8.py 
+vi 8.py
+python 9.py 
+input_list = inputs.split(",")
+print ", ".join(filter(is_divisible_by_3, input_list))
+python 9.py 
+pbcopy <9.py 
+vi 9.py
+python 10.py 
+pbcopy 10.py 
+pbcopy <10.py 
+vi 10.py
+vi 5.py 
+vi 8.py 
+vi 5.py 
+python 5.py 
+vi 5.py 
+python 5.py 
+vi 5.py 
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+workon makalu
+cd /opt/immune/installed/
+scp high-availability.tgz support@192.207
+scp high-availability.tgz support@192.207:
+scp high-availability.tgz support@192.210:
+scp high-availability.tgz support@192.207:
+mvim high-availability
+echo -n -e "\033]0;Sujan\007"
+echo -n -e "\033]0;Sujan Shakya\007"
+echo -n -e "\033]0;Sujan Shakya"
+echo -n -e "\033]0;Sujan Shakya\007"
+vi ~/.bash_profile 
+scp ~/.inputrc support@192.205:
+scp ~/.inputrc sujan@192.205:
+scp ~/.inputrc support@192.207:
+scp ~/.inputrc support@192.210:
+cat ~/.ssh/id_dsa.pub | ssh sujan@192.205 "mkdir -p .ssh && cat >>.ssh/authorized_keys"
+scp ~/.inputrc sujan@192.205:
+ssh sujan@192.205
+cd logen/
+ssh support@192.168.2.207
+cd high-availability
+git diff
+git checkout apps/
+workon makalu
+ipython
+ssh support@192.207
+git status
+git diff
+ssh support@192.168.2.210
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100
+git status
+git diff
+git commit -am'used timeout in acknowledge_socket'
+workon makalu
+git status
+git reset --hard apps/
+git reset --hard HEAD
+gs
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 2000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 3000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:udp -r 3000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 3000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 4000
+sudo -s
+cd ..
+cd config-updater/
+cd apps/
+cd config_updater/
+cd libupdater/gens/
+scp ha.py support@192.210:
+scp ha.py support@192.207:
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 500
+ssh support@192.207
+ipython
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 5000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 1000
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 500
+python loggenerator.py -f log_templates/syslog_templates --handler=socket@192.168.2.210:514:tcp -r 100
+workon makalu
+ssh support@192.210
+scp support@192.210:./forwarder.py apps/ha_forwarder/lib/
+git status
+git diff
+git diff apps/ha_forwarder/
+ascp support@192.207:./coll*.py apps/col
+gs
+git diff apps/ha_collector/
+scp support@192.207:./coll*.py apps/ha_collector/lib/
+git diff
+git status
+git diff apps/ha_collector/
+git status
+git diff
+git status
+git diff
+git status
+git commit -am'used req/rep and proper handling of zmq states to prevent disconnect problems'
+git status
+git checkout v511
+git merge master
+git push
+git status
+git diff
+git status
+git diff v511 master
+git branch
+git diff
+git commit -am'used REQ/REP for HA'
+git checkout v511
+git merge master
+git push
+ipython
+u
+rm high-availability.tgz 
+tar -czf high-availability.tgz high-availability
+scp high-availability.tgz support@10.45.1.218:
+scp high-availability.tgz support@10.45.1.119:
+scp high-availability.tgz support@10.45.1.120:
+scp ha.py support@10.45.1.218:
+scp ha.py support@10.45.1.119:
+scp ha.py support@10.45.1.120:
+vi high-availability
+git diff
+cd high-availability
+git diff
+git commit -am'fixed wording'
+git checkout master
+git merge v511
+git push
+ssh support@10.45.1.120
+ssh support@10.45.1.218
+ssh support@10.45.1.119
+ipython
+cd projects/
+git clone https://github.com/addyosmani/todomvc.git
+cd todomvc/
+mvim
+pwd
+cd architecture-examples/
+du -sh angularjs
+du -sh emberjs/
+du -sh angularjs
+du -sh angularjs/js/libs
+du -sh emberjs/
+du -sh emberjs/js/libs
+du -sh angularjs/js/libs/
+mvim
+open angularjs/index.html 
+open emberjs/index.html 
+open gwt/index.html 
+open closure/index.html 
+open angularjs/index.html 
+du -sh ~/projects/pyaggr3g470r/
+cat .inputrc 
+ssh support@10.45.1.218
+ssh support@10.45.1.119
+ssh support@10.45.1.120
+ssh support@10.45.1.216
+ssh support@10.45.1.211
+ssh support@192.207
+cd /opt/immune/installed/config-updater/
+gl
+u
+mvim
+cd col/
+ack 'import zmq'
+ack 'inet.create'
+git status
+git branch
+git diff v511
+git checkout v511
+git diff
+git commit -am'used gevent_zeromq.zmq instead of zmq'
+git push
+git pull
+git branch
+git pull origin v511
+git checkout master
+git reset orgin/master
+git branch
+git reset origin
+git status
+git branch
+git reset --hard origin/master
+git status
+git merge v511
+git diff v511
+git push
+ssh support@192.210
+ssh support@192.210
+ssh support@192.207
+bi gnugrep
+bi grep
+bi greplaw
+brew search grep
+man grep
+brew install grep
+bi pdfgrep
+brew tap homebrew/dupes
+which grep
+bi grep
+pdfgrep gevent ~/Documents/
+pdfgrep -r gevent ~/Documents/
+man pdfgrep
+which grep
+man grep
+/usr/local/bin/gresource 
+man gresource
+/usr/local/bin/grep python ~/Documents/
+/usr/local/bin/grep -r python ~/Documents/
+time /usr/local/bin/grep -r python ~/Documents/
+grep -r python ~/Documents/
+time grep -r python ~/Documents/
+bi netcat
+bi nc.traditional
+bi awk
+awk
+lsof
+bi netstat
+bi lsof
+which lsof
+gnugrep
+alias gnugrep=/usr/local/bin/grep
+lsof
+which lsof
+ll /usr/local/bin/lsof 
+time gnugrep -r python ~/projects/ >/dev/null 
+time gnugrep -r python ~/projects/pyjs  >/dev/null 
+time grep -r python ~/projects/pyjs  >/dev/null 
+du -sh projects/
+ll -S projects/
+ll -S projects/ | head
+lh -S projects/ | head
+ll -S projects/ | head
+du -sch -S projects/ | head
+du -sc -S projects/ | head
+du -chc -S projects/ | head
+du -shcprojects/ | head
+du -shc projects/ | head
+du -shc projects/* | head
+du -shc projects/* | less
+du -sc projects/* | 
+du -sc projects/* 
+du -sc projects/* | sort
+du -sc projects/* | sort -n
+du -sc projects/* | sort -nr
+du -s projects/* | sort -nr | head
+time gnugrep -r python ~/projects/jobs/ >/dev/null 
+time grep -r python ~/projects/jobs/ >/dev/null 
+time grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+grep -r python ~/projects/jobs/ 2>/dev/null 
+grep -r python ~/projects/jobs/ >/dev/null 
+grep -r python ~/projects/jobs/ /dev/null 
+grep -r python ~/projects/jobs/
+grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+time grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+time gnugrep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+time grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+time gnugrep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+purge 
+time gnugrep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+purge
+time grep -r python ~/projects/jobs/ 2>&1 >/dev/null 
+purge
+time ack python ~/projects/jobs/ 2>&1 >/dev/null 
+purge
+bi cpulimit
+bi inc
+bi lnc
+bi jail
+brew search jail
+brew search vserver
+bi openvz
+chroot
+ipython
+open Library/
+ping pymines.appspot.com
+ping appspot.com
+sudo vi /etc/hosts
+vi ~/.ssh/config 
+ssh 10.218
+vi ~/.ssh/config 
+ssh 10.218
+ssh 10.119
+ssh 10.120
+cd /opt/immune/installed/webserver/
+mvim
+cd /opt/immune
+cd installed/idx/
+cd apps/search_merger/
+git branch
+cd /opt/immune
+sudo sv restart ./etc/service/indexsearcher_TestRepo/
+sudo sv stop ./etc/service/indexsearcher_TestRepo/
+git pull
+bin/taillog.sh -n0
+sudo sv stop ./etc/service/*TestRepo*
+tail -F /opt/immune/var/log/service/premerger/current 
+vi ./etc/config/premerger/config.json 
+tail -F ./var/log/service/nginx/current 
+lsof -i:80
+sud olsof -i:80
+sudo lsof -i:80
+sudo lsof -ni:80
+man lsof
+sudo lsof -Pi:80
+tail -F ./var/log/service/nginx/current 
+git diff v511
+git checkout v511
+u
+sudo /opt/immune/installed/system/mac_os_x/run_services.py 
+for each in `ls`; do (cd $each && git checkout v511); done
+gb
+tail -F /opt/immune/var/log/service/premerger/current 
+cd installed/backup/
+cd lib/
+cd libbackupapi/
+git status
+git reset orgin/v511
+git reset -- orgin/v511
+git log
+git status
+pwd
+git log
+glp
+gl
+git log .
+git log . -p
+git log -p .
+u
+cd /opt/immune/installed/system/mac_os_x/
+gl
+gl .
+glp
+vi /opt/immune/installed/system/mac_os_x/run_services.py 
+pwd
+git status
+u
+find . -name authorizing.py
+find . -name authorizing.pyc
+find . -name authorizing.py
+git status
+git checkout master
+find . -name authorizing.py
+glp .
+cd libbackupapi/
+glp
+git status
+pwd
+git reset -- origin/master
+git diff origin/v511 origin/master
+ll authorizing.py
+git checkout v511
+git reset -- origin/v511
+gb
+gd master
+git status
+git diff v511 master
+git diff origin/v511 origin/master
+git status
+git checkout master
+git status
+git diff v511
+glp .
+vi run_services.py 
+cd /opt/immune
+sudo sv stop ./etc/service/*TestRepo*
+bin/taillog.sh -n0
+tail -F ./var/log/service/nginx/current 
+tail -F ./var/log/service/webserver/current 
+vi ./var/log/service/webserver/current 
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+sudo sv restart ./etc/service/webserver/
+vi ./installed/system/apps/mongodb/run_mongodb.sh 
+sudo sv restart ./etc/service/mongodb/
+sudo sv restart ./etc/service/webserver/
+ll ./etc/service/*loginspect*
+ll -d ./etc/service/*loginspect*
+sudo sv stop ./etc/service/*loginspect*
+sudo sv stop ./etc/service/labeling/
+sudo sv stop ./etc/service/correlation*
+ls ./etc/service/ | egrep -v 'mongo|webserver'
+ls ./etc/service/ | egrep -v 'mongo|webserver' | xargs sv stop ./etc/service/
+ls ./etc/service/ | egrep -v 'mongo|webserver'
+sudo sv stop ./etc/service/`ls ./etc/service/ | egrep -v 'mongo|webserver'`
+cd ./etc/service/
+sudo sv stop `ls ./etc/service/ | egrep -v 'mongo|webserver'`
+ls ./etc/service/ | egrep -v 'mongo|webserver'
+sudo sv stop `ls|egrep -v 'mongo|webserver'`
+u
+sudo sv stop ./etc/service/`ls ./etc/service/ | egrep -v 'mongo|webserver'`
+cd ./etc/service/
+sudo sv stop ./`ls|egrep -v 'mongo|webserver'`
+sudo sv stop ./wmi_fetcher/
+sudo sv stop ./`ls|egrep -v 'mongo|webserver'`
+for each in `ls|egrep -v 'mongodb|webserver'`; do sv stop ./$each; done
+for each in `ls|egrep -v 'mongodb|webserver'`; do sudo sv stop ./$each; done
+tail -F ./var/log/service/webserver/current 
+sudo sv start /opt/immune/installed/webserver/deploy/nginx_service/
+sv status ./*/
+sudo sv status ./*/
+cd /opt/immune/installed/webserver/
+git branch
+git pull
+git pull origin master
+git pull origin oull
+git pull origin v511
+sudo sv status ./*/ | grep run
+sudo sv status ./*/ | grep '^run'
+bin/taillog.sh 
+branch=v511 /opt/makalu/ptf/update.sh 
+cd ..
+cd system/
+git status
+git stash
+git pull
+git pull origin v511
+vi /opt/makalu/ptf/update.sh 
+branch=v511 /opt/makalu/ptf/update.sh 
+vi /opt/makalu/ptf/update.sh 
+cd /opt/immune
+sudo sv restart ./installed/webserver/deploy/nginx_service/
+sudo /opt/immune/installed/system/mac_os_x/run_services.py 
+cd installed/webserver/
+git status
+gs
+vimpy fabric
+cd $col
+cd ..
+cd backup/
+git branch
+git diff v511
+git branch
+git checkout v511
+find . -name authorizing.py
+vi ~/.bash_profile 
+cd $col
+mvim
+cd ..
+cd backup/
+git branch
+git reset --hard origin/v511
+gc master
+git reset --hard origin/master
+git diff v511
+git status
+git branch
+git diff v511
+git diff origin/master origin/v511
+cd $col
+mvim
+cd apps/ftp_collector/
+workon makalu
+nosetests tests/acceptance_tests/test_ftp_collector.py
+sudo nosetests tests/acceptance_tests/test_ftp_collector.py
+sudo /opt/immune/bin/envdo nosetests tests/acceptance_tests/test_ftp_collector.py
+nosetests tests/acceptance_tests/test_ftp_collector.py
+git status
+git checkout tests/data/1308216000
+gs
+nosetests tests/acceptance_tests/test_ftp_collector.py
+find . -name test_logfile
+nosetests tests/acceptance_tests/test_ftp_collector.py
+rm tests/data/1354261099.76 
+nosetests tests/acceptance_tests/test_ftp_collector.py
+git status
+git checkout tests/
+nosetests tests/acceptance_tests/test_ftp_collector.py
+git status
+git diff
+git branch
+gs
+gcm 'changed filename everytime when test is run'
+gcm 'changed filename everytime when test is run' -a
+gc v511
+git merge master
+cat ../../.git/HEAD 
+cat ../../.git/refs/heads/v511 
+git log
+cat ../../.git/refs/heads/v511 
+git log
+cat ../../.git/refs/heads/v511 
+git log
+gb
+git reset --hard origin/v511
+gb v511
+git status
+git log
+gs
+git checkout master
+git merge v511
+git reset origin/master
+git diff
+gc v511
+gcm 'changed filename everytime when test is run' -a
+gc master
+git merge v511
+gb
+git pull
+git log
+git status
+git push
+gitk --all
+gb
+git diff v511
+nosetests tests/acceptance_tests/test_ftp_collector.py
+gs
+ipython
+cd $jo
+cd $job
+cd projects/jobs/
+bmark
+cd $jobs 
+cd roger/
+mvim
+cd deploy/
+python fabfile.pyls
+ls private_keys/
+ls instance_infos/
+fab create_ec2_instance:flock-instance3,flock-key ensure_users install
+workon makalu
+fab create_ec2_instance:flock-instance3,flock-key ensure_users install
+ssh -i private_keys/flock-key.pem ubuntu@ec2-54-245-33-189.us-west-2.compute.amazonaws.com
+workon makalu
+fab ensure_users install
+fab ensure_users:flock-instance3 install
+sudo apt-get -y install postgreql
+fab terminate:flock-instance3
+fab create_ec2_instance:flock-instance4,flock-key ensure_users install
+fab ensure_users:flock-instance4 install
+afab ensure_users:flock-instance4 install --timeout:
+fab 
+fab ensure_users:flock-instance4 install --timeout:20 --kepalive:1
+fab ensure_users:flock-instance4 install --timeout 20 --kepalive 1
+pip install fabric --upgrade
+ssh -i private_keys/flock-key.pem ubuntu@ec2-50-112-217-86.us-west-2.compute.amazonaws.com
+pip install --upgrade fabric
+fab ensure_users:flock-instance4 install --timeout 20 --kepalive 1
+fab ensure_users:flock-instance4 install --timeout 20 --keepalive 1
+cat ~/.inputrc 
+vimpy cuisine
+python
+pip install cuisine-postgresql
+vimpy cuisine-postgresql
+vimpy cuisine_postgresql
+ps aux | grep quick
+ps aux | grep quicktime
+lsof | grep "quicktime"
+lsof | grep -i "quicktime"
+workon makalu
+vimpy fabric
+fab --timeout 20 --keepalive 1 configure_db:flock-instance4
+python
+fab --timeout 20 --keepalive 1 install:flock-instance4
+fab --timeout 20 --keepalive 1 instance:flock-instance4 deploy
+python
+git status
+fab --timeout 20 --keepalive 1 terminate
+fab --timeout 20 --keepalive 1 instance:flock-instance5 terminate
+fab --timeout 20 --keepalive 1 instance:flock-instance4 terminate
+python
+fab --timeout 20 --keepalive 1 deploy
+fab --timeout 20 --keepalive 1 terminate
+python
+fab --timeout 20 --keepalive 1 terminate
+git status
+git diff 
+git status
+git commit -am'made lots of changes'
+ssh -i private_keys/flock-key.pem mapdash@ec2-54-245-33-189.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key.pem ubuntu@ec2-54-245-33-189.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key.pem ubuntu@ec2-50-112-217-86.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key.pem mapdash@ec2-50-112-217-86.us-west-2.compute.amazonaws.com
+git diff
+gcm 'user/group combination fixed'
+gcm 'user/group combination fixed' -a
+gd
+vimpy cuisine_postgresql
+gd
+gcm 'values moved to config' -a
+gd
+git log -p fabfile.py
+gd
+gcm 'fixes' -a
+gcm 'wording' -a
+glp
+gs
+gd
+gcm 'made roger superuser' -a
+fab create_ec2_instance:flock-instance5,flock-key5 deploy
+gd
+gcm 'normalized path' -a
+rm instance_infos/flock-instance3.info 
+fab --timeout 20 --keepalive 1 create_ec2_instance:flock-instance6,flock-key6 deploy
+gd
+gcm 'improving ux' -a
+gs
+fab --timeout 20 --keepalive 1 instance:flock-instance6 ensure_users
+fab --timeout 20 --keepalive 1 create_ec2_instance:flock-instance7,flock-key7 deploy
+fab --timeout 20 --keepalive 1 create_ec2_instance:flock-instance8,flock-key7 deploy
+git checkout fabfile.py
+gd
+gcm 'formatting' -a
+gd
+fab --help
+gd
+gcm 'ssh tested after creating ec2 instance' -a
+fab create_ec2_instance:flock-instance9,flock-key7 deploy
+fab create_ec2_instance:flock-instance10,flock-key7 deploy
+ssh -i private_keys/flock-key7.pem
+ssh -i private_keys/flock-key7.pem 
+ssh -i private_keys/flock-key7.pem ubuntu@
+fab create_ec2_instance:flock-instance11,flock-key7 deploy
+gd
+gcm 'retrying fixed'
+gcm 'retrying fixed' -a
+gd
+gcm 'install and deploy merged'
+gcm 'install and deploy merged' -a
+fab instance:flock-instance11,flock-key7 deploy
+fab instance:flock-instance11 deploy
+gd
+gcm 'fixed svn url' -a
+fab instance:flock-instance11 deploy
+ssh -i private_keys/flock-key7.pem ubuntu@ec2-50-112-87-187.us-west-2.compute.amazonaws.com
+gs
+gd
+git checkout fabfile.py
+gd
+gcm 'fixed web2py virtualhost' -a
+fab instance:flock-instance11 deploy
+gd
+gcm 'wording' -a
+python
+cd ~/projects/
+cd web2py
+cd trunk/
+vi parameters_8000.py 
+gd
+cat >sujan <<EOF
+cat sujan 
+cat >sujan <<EOF
+cat sujan 
+cat >sujan <<EOF
+cat sujan 
+gs
+gd
+python
+cat >sujan <<EOF
+cat sujan 
+cat >sujan <<"EOF"
+cat sujan 
+cat >sujan <<'EOF'
+cat sujan 
+gd
+gcm -'prevent parameter expansion'
+gcm -'prevent parameter expansion' -a
+ssh -i private_keys/flock-key.pem ubuntu@ec2-50-112-217-86.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key7.pem ubuntu@ec2-50-112-87-187.us-west-2.compute.amazonaws.com
+workon makalu
+fab instance:flock-instance11 _prepare_fresh_install
+fab instance:flock-instance11 prepare_fresh_install
+gd
+gcm 'prevented perl warnings about locale' -a
+rm private_keys/flock-key*
+rm instance_infos/flock-instance*
+ls */
+gs
+ll private_keys/
+workon makalu
+fab create_ec2_instance:flock-instance,flock-key deploy
+ssh -i private_keys/flock-key.pem ubuntu@ec2-50-112-217-86.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key.pem ubuntu@ec2-54-245-135-117.us-west-2.compute.amazonaws.com
+cd $jobs 
+cd roger/
+cd deploy/
+ls instance_infos/
+ls private_keys/
+vi fabfile.py
+vi instance_infos/flock-instance.info 
+vi fabfile.py
+zsh
+bi zsh
+zsh
+man zsh
+which zsh
+<README
+<config.py
+cat config.py
+<config.py
+bi zsh
+sudo mv /etc/zshenv /etc/zprofile
+which zsh
+ll /usr/local/bin/zsh
+zsh
+vi ~/.bash_profile 
+/usr/local/bin/zsh
+cd ~/projects/
+cd web2py
+cd trunk/
+hg pull
+hg update
+cat VERSION 
+hg status
+hg diff
+hg reset applications/welcome/
+hg status
+hg revert -a
+hg status
+vi sujan 
+rm sujan 
+hg status
+python web2py.py -a shakya
+a dsdfa sfaf\\\
+ˆø\†œ∑´®`†\¨ˆøπ“‘«åß∂ƒ©˙∆˚¬…æ
+[Aasdfafdasdfasfasdfasdf
+r
+abc def ghi jkl
+su
+bash
+bash --nologin
+suj
+sha
+bash --noprofile
+cd $jobs 
+cd roger/
+cd deploy/
+mvim
+vimpy wsgi
+vimpy wsgimodule
+ipython
+workon makalu
+ipytho
+ipython
+vimpy werkzeug
+ipython
+vimpy cuisine
+workon makalu
+vimpy cuisine
+mvim
+fab create_ec2_instance:flock-instance-test,flock-key
+ssh -i private_keys/flock-key.pem ubuntu@ec2-50-112-77-38.us-west-2.compute.amazonaws.com
+ssh -i private_keys/flock-key.pem ubuntu@ec2-54-245-135-117.us-west-2.compute.amazonaws.com
+workon makalu
+git diff
+gd
+fab create_ec2_instance:flock-instance-test,flock-key deploy deploy
+ssh -i private_keys/flock-key.pem ubuntu@ec2-54-245-14-15.us-west-2.compute.amazonaws.com
+gcm 'used whole web2py from custom svn url'
+gcm 'used whole web2py from custom svn url' -a
+ls instance_infos/flock-instance-test.info 
+vi instance_infos/flock-instance-test.info 
+workon makalu
+gd
+git log
+git shortlogs
+git shortlog
+git shortlog -s
+git shortlog -s -n
+cd $col
+git shortlog
+git shortlog -s
+git shortlog -sn
+u
+for each in `ls`; do echo $each; done
+ls support\@192.207 
+fab instance:flock-instance-test terminate
+ll support\@192.207 
+rm support\@192.207 
+rm high-availability.tgz 
+cd high-availability/
+gs
+for each in `ls`; do echo $each; done
+u
+for each in `ls`; do echo $each; done
+git shortlog -sn
+for each in `ls`; do (cd $each && echo $each && git shortlog -sn); done
+for each in `ls`; do (cd $each && git shortlog -sn); done
+for each in `ls`; do (cd $each && git shortlog -sn); done | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | sort -f2
+for each in `ls`; do (cd $each && git shortlog -sn); done | sort -k2
+sum
+man sort
+man sum
+man sort
+ps aux | grep python
+ps aux | grep a
+ps aux | grep a | awk '{print $2}'
+ps aux | grep a | awk '{printf $2}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) print("%s %s", key, arr[key])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s", key, arr[key])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", key, arr[key])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s\t\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s\t\t\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s\\tt\t\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s\t\t\t\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s=\t\t\t\t%s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %20 %s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", k, arr[k])}'
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", k, arr[k])}' | sort -2
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", k, arr[k])}' | sort -k2
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%4s %s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %20s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%s %-20s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -n
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -nk2
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -nrk2
+for each in `ls`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2 -nr
+for each in `ls /opt/immune/installed`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2 -nr
+cd
+for each in `ls /opt/immune/installed`; do (cd $each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2 -nr
+for each in `ls /opt/immune/installed`; do (cd /opt/immune/installed/$each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2 -nr
+cd
+for each in `ls /opt/immune/installed`; do (cd /opt/immune/installed/$each && git shortlog -sn); done | awk '{arr[$2]+=$1} END {for (k in arr) printf("%-20s %s\n", k, arr[k])}' | sort -k2 -nr
+/opt/makalu/ptf/update.sh 
+cd /opt/immune
+workon makalu
+mvim
+ssh 10.99.0.15
+ssh 10.99.0.15 -i ~/.ssh/li_support 
+ssh support@10.99.0.15 -i ~/.ssh/li_support 
+gti
+gdc
+cd installed/
+cd col
+gdc
+alias gdc
+gp
+zsh
+gc
+alias gc
+vi ~/.bash_profile 
+gd ~/.bash_profile 
+agd ~/.bash_profile 
+agit diff ~/.bash_profile 
+agit commit ~/.bash_profile -m'added more aliases'
+agit push ~/
+cd installed/col
+git instaweb
+bi lighttpd
+git instaweb --httpd
+git instaweb --httpd --start
+git instaweb --httpd -p 80
+git instaweb --httpd -lp80
+git instaweb --httpd nginx
+bi lighttpd
+git instaweb
+git help
+git help -a
+git web--browse
+git web--browse .
+git web--browse --browser=Opera .
+git web--browse --browser=opera .
+git web--browse --browser=/Applications/Opera.app/ -a
+git web--browse --browser='/Applications/Opera.app' -a
+git web--browse --browser='/Applications/Opera.app' .
+git help web--browse
+git web--browse --browser=opera .
+git instaweb
+gs
+git rebase
+git rebase -i
+git status
+git log
+gb
+git reset --hard origin/master
+vi .gitignore 
+vi .gitignore j
+vi j
+gs
+vi dns.py
+rm dns.py
+vi dns.py
+vi .gitignore j
+vi .gitignore
+gs checksum.py
+vi checksum.py
+gs
+cd apps/filesystem_collector/
+gs
+gs .
+vi filesystem_collector.py example-config.json 
+gs
+vi filesystem_collector.py example-config.json 
+cd ..
+cd /opt/immune
+ipython
+cd /opt/immune/installed/norm/
+u
+cd logen/
+>README 
+>README |less
+<README 
+cat README 
+gs
+git diff README 
+gc README 
+<README 
+less README 
+gs
+vi log_templates/
+u
+vi abcd.py
+ipython
+workon makalu
+pypy
+ipython
+cd
+git branch
+git branch 0r
+git branch -r
+git checkout dotfiles
+git checkout -b dotfiles
+git status .
+git status . | head
+git diff .vimrc 
+gcm 'smartindent set' .vimrc 
+gs checksum.py
+gs .  | head
+git diff .ssh/config 
+gcm 'updated ssh/config' .ssh/config 
+git branch
+git branch -d 0r
+git branch
+git ls-files
+git ls-files | head
+git rm .bash_history --cached
+ll .bash_history 
+git status .
+git status .bash_profile 
+git status .bash_profile | less
+git status .
+git status . | less
