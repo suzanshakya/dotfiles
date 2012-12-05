@@ -5484,3 +5484,15 @@ git status .bash_profile
 git status .bash_profile | less
 git status .
 git status . | less
+git commit -m'deleted .bash_history' .bash_history 
+gl
+glp
+gl .bash_history 
+git status .bash_history 
+gl
+git status | less
+git status | grep history
+git rm .bash_history 
+git rm .bash_history  --cached
+git status
+git status | less
