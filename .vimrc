@@ -13,7 +13,10 @@ set expandtab
 set softtabstop=4
 set smartindent
 
+" highlight all matches"
 set hlsearch
+
+" search as you type
 set incsearch
 
 set showmatch
@@ -131,6 +134,7 @@ nnoremap <silent><Leader><C-]> <C-w><C-]><C-w>T<CR>
 set wildmode=longest,list,full
 set wildmenu
 
+set statusline=%{fugitive#statusline()}
 if !has('python')
     finish
 endif
