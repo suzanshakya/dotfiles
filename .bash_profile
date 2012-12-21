@@ -276,5 +276,20 @@ load_bash_completion() {
 }
 #load_bash_completion
 
+parse_git_branch() {
+  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+  branch=${ref#refs/heads/}
+  if test $branch = "dotfiles"; then
+    return
+  fi
+  echo "($branch)"
+}
+
+RED="\[\033[0;31m\]"
+YELLOW="\[\033[0;33m\]"
+GREEN="\[\033[0;32m\]"
+
+PS1="$RED\$(date +%H:%M) $YELLOW\w$GREEN \$(parse_git_branch)\$ "
+
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
