@@ -279,9 +279,6 @@ load_bash_completion() {
 parse_git_branch() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
   branch=${ref#refs/heads/}
-  if test $branch = "dotfiles"; then
-    return
-  fi
   echo "($branch)"
 }
 
