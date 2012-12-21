@@ -1,8 +1,3 @@
 .DS_Store
 *.pyc
-.komodotools
-*.komodoproject
-.vim/.netrwhist
-.viminfo
-.*.swp
-.vim/plugin/cscope-pythonpath.vim
+*.swp
