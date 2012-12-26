@@ -14,14 +14,8 @@ export BREW=/usr/local/Cellar
 export CELLAR=$BREW
 
 export PYTHONSTARTUP=~/.pystartup
-#export PYHOME=/usr/local/Cellar/python2.6/2.6.5
-#export PYSITE=$PYHOME/lib/python2.6/site-packages
 
 export PATH="~/bin:${PATH}:/usr/local/sbin"
-#source $LI/etc/env.rc
-#export PYTHONPATH="$PYTHONPATH":~/python
-#export PATH="~/bin:$PYHOME/bin:${PATH}"
-#export PATH="${PATH}:/usr/local/share/python3"
 
 getPythonPaths() {
     echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
