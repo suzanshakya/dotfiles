@@ -172,7 +172,7 @@ topp() {
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-source ~/bin/bmark.sh
+source ~/dotfiles/bmark.sh
 
 cache_opera() {
     (( count = 0 ))
