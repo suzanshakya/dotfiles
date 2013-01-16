@@ -192,7 +192,10 @@ hi TabLine term=underline ctermfg=16 ctermbg=145
 hi TabWinNum term=bold cterm=bold ctermfg=90 ctermbg=145
 hi TabNum term=bold cterm=bold ctermfg=16 ctermbg=145
 
-set statusline=%{fugitive#statusline()}
+" show fugitive git status, cons: filname and cursor position information
+" disappears
+" set statusline+=%{fugitive#statusline()}
+
 if !has('python')
     finish
 endif
