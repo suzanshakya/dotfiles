@@ -7,7 +7,7 @@ endif
 
 " open NERDTree on console vim startup
 if !exists('g:nerdtree_tabs_open_on_console_startup')
-  let g:nerdtree_tabs_open_on_console_startup = 1
+  let g:nerdtree_tabs_open_on_console_startup = 0
 endif
 
 " On startup - focus NERDTree when opening a directory, focus the file if
