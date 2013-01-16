@@ -7,7 +7,7 @@ endif
 
 " open NERDTree on console vim startup
 if !exists('g:nerdtree_tabs_open_on_console_startup')
-  let g:nerdtree_tabs_open_on_console_startup = 0
+  let g:nerdtree_tabs_open_on_console_startup = 1
 endif
 
 " On startup - focus NERDTree when opening a directory, focus the file if
@@ -30,7 +30,7 @@ endif
 
 " close current tab if there is only one window in it and it's NERDTree
 if !exists('g:nerdtree_tabs_autoclose')
-  let g:nerdtree_tabs_autoclose = 0
+  let g:nerdtree_tabs_autoclose = 1
 endif
 
 " synchronize view of all NERDTree windows (scroll and cursor position)
@@ -41,7 +41,7 @@ endif
 " when switching into a tab, make sure that focus will always be in file
 " editing window, not in NERDTree window
 if !exists('g:nerdtree_tabs_focus_on_files')
-  let g:nerdtree_tabs_focus_on_files = 0
+  let g:nerdtree_tabs_focus_on_files = 1
 endif
 
 " === plugin mappings ===
