@@ -197,7 +197,7 @@ set statusline=
 set statusline+=%{fugitive#statusline()}    "git branch
 set statusline+=\ %m                        "modified flag
 set statusline+=\ %F                        "full path
-set statusline+=%=%l,%v                     "(current line/total line), column number
+set statusline+=%=%l,%v                     "current line,column number
 set statusline+=\ %P\ of\ %L                "percent through file of total lines"
 
 
