@@ -115,6 +115,9 @@ colorscheme wombat
 nnoremap <leader>t i<Tab><esc>l
 nnoremap <leader>T i<backspace><esc>l
 
+nnoremap <leader>s :w<cr>
+inoremap <leader>s <c-o>:w<cr>
+
 nnoremap <leader>e i<enter><esc>k<CR>
 nnoremap <leader>E i<backspace><esc>l
 
