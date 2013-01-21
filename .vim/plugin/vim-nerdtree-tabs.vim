@@ -1,3 +1,4 @@
+" as
 " === plugin configuration variables ===
 
 " open NERDTree on gvim/macvim startup
