@@ -115,14 +115,22 @@ colorscheme wombat
 nnoremap <leader>t i<Tab><esc>l
 nnoremap <leader>T i<backspace><esc>l
 
-nnoremap <leader>w :w<cr>
-inoremap <leader>w <c-o>:w<cr>
 
-nnoremap <leader>q :q<cr>
-inoremap <leader>q <c-o>:q<cr>
+nnoremap <leader>w       :w<cr>
+nnoremap <leader>w!      :w!<cr>
+inoremap <leader>w  <c-o>:w<cr>
+inoremap <leader>w! <c-o>:w!<cr>
 
-nnoremap <leader>wq :wq<cr>
-inoremap <leader>wq <c-o>:wq<cr>
+nnoremap <leader>q       :q<cr>
+nnoremap <leader>q!      :q!<cr>
+inoremap <leader>q  <c-o>:q<cr>
+inoremap <leader>q! <c-o>:q!<cr>
+
+nnoremap <leader>wq       :wq<cr>
+nnoremap <leader>wq!      :wq!<cr>
+inoremap <leader>wq  <c-o>:wq<cr>
+inoremap <leader>wq! <c-o>:wq!<cr>
+
 
 nnoremap <leader>e i<enter><esc>k<CR>
 nnoremap <leader>E i<backspace><esc>l
