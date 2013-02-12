@@ -26,6 +26,9 @@ set smartcase
 set number
 set ruler
 
+" Store swap files in fixed location, not current directory.
+set dir=~/.vim/swap//
+
 filetype on
 filetype plugin on
 
