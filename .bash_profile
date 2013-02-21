@@ -7,9 +7,6 @@ export HISTIGNORE="history:&:ls:ll:[bf]g:history:ps:clear"
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
-export LOGINSPECT_HOME=/opt/immune
-export LI=$LOGINSPECT_HOME
-
 export BREW=/usr/local/Cellar
 export CELLAR=$BREW
 
