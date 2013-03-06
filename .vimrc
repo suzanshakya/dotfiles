@@ -13,6 +13,9 @@ set expandtab
 set softtabstop=4
 set smartindent
 
+" tab rule for html files
+autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+
 " highlight all matches"
 set hlsearch
 
