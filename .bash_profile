@@ -249,7 +249,7 @@ mvim() {
             return
         fi
     fi
-    /usr/local/bin/mvim "$*"
+    /usr/local/bin/mvim -- "$@"
 }
 
 load_virtualenvwrapper() {
