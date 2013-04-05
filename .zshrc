@@ -221,24 +221,24 @@ module_version() {
 }
 alias v=module_version
 
-rm() {
-  trash=~/.mytrash
-  for path in "$@"; do
-    # ignore any arguments
-    if [[ "$path" = -* ]]; then :
-    else
-      dst=`basename "$path"`
-      # append the time if necessary
-      while [ -e $trash/"$dst" ]; do
-        dst="$dst "$(date +%H-%M-%S)
-      done
-      if test ! -d $trash; then
-          mkdir $trash
-      fi
-      mv "$path" $trash/"$dst"
-    fi
-  done
-}
+#rm() {
+#  trash=~/.mytrash
+#  for path in "$@"; do
+#    # ignore any arguments
+#    if [[ "$path" = -* ]]; then :
+#    else
+#      dst=`/usr/bin/basename "$path"`
+#      # append the time if necessary
+#      while [ -e $trash/"$dst" ]; do
+#        dst="$dst "$(/bin/date +%H-%M-%S)
+#      done
+#      if test ! -d $trash; then
+#          /bin/mkdir $trash
+#      fi
+#      /bin/mv "$path" $trash/"$dst"
+#    fi
+#  done
+#}
 
 mvim() {
     if test ! -z "$1"; then
@@ -247,7 +247,7 @@ mvim() {
             return
         fi
     fi
-    /usr/local/bin/mvim "$*"
+    /usr/local/bin/mvim -- "$@"
 }
 
 load_virtualenvwrapper() {
