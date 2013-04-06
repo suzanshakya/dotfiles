@@ -12,7 +12,7 @@ export CELLAR=$BREW
 
 export PYTHONSTARTUP=~/.pystartup
 
-export PATH="~/bin:${PATH}:/usr/local/sbin"
+export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
 
 getPythonPaths() {
     echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
