@@ -5,16 +5,18 @@ set background=light
 set gfn=Monaco:h12
 
 set autoindent
-set cindent
+set nocindent
 
 set tabstop=4
 set shiftwidth=4
+
 set expandtab
 set softtabstop=4
+
 set smartindent
 
-" tab rule for html files
-autocmd FileType html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+" tab rule for html/css/js files
+autocmd FileType html,css,js setlocal tabstop=2 shiftwidth=2 softtabstop=2
 
 " highlight all matches"
 set hlsearch
