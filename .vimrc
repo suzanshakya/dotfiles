@@ -111,8 +111,16 @@ nnoremap <C-l> <Esc><C-w>l<CR>
 
 set foldmethod=indent
 set foldlevelstart=99
-nnoremap <space> za
-vnoremap <space> za
+noremap <space> za
+
+noremap <leader>f :call ToggleFoldmethod()<cr>
+fun! ToggleFoldmethod()
+  if &foldmethod == 'indent'
+    exe 'set foldmethod=marker'
+  else
+    exe 'set foldmethod=indent'
+  endif
+endfun
 
 " colorscheme koehler
 " colorscheme mayansmoke
