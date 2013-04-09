@@ -14,6 +14,8 @@ export PYTHONSTARTUP=~/.pystartup
 
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
 
+export entranceprep="/Users/sujanshakya/projects/entranceprep"
+
 getPythonPaths() {
     echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
 }
@@ -46,8 +48,6 @@ alias g='grep -i'
 alias h='head'
 alias vlc=/Applications/VLC.app/Contents/MacOS/VLC
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera -nomail'
-alias u='cd ..'
-alias b='cd -'
 alias c='clear'
 alias pi='pip install'
 alias pu='pip install --upgrade'
@@ -97,7 +97,7 @@ agit() {
 
 # cd with automatic pushd
 # from Ivo Danihelka's blog
-cd() {
+function cd() {
   if  [ "x$1" == "x-" ]; then
     popd > /dev/null
   else
@@ -105,6 +105,10 @@ cd() {
     builtin cd "$@"
   fi
 }
+
+alias u='cd ..'
+alias b='pushd +1'
+alias f='pushd -0'
 
 # loop the command every 1 second
 loop() {
