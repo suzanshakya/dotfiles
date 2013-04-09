@@ -110,10 +110,9 @@ nnoremap <C-k> <Esc><C-w>k<CR>
 nnoremap <C-l> <Esc><C-w>l<CR>
 
 set foldmethod=indent
-set foldnestmax=2
 set foldlevelstart=99
 nnoremap <space> za
-vnoremap <space> zf
+vnoremap <space> za
 
 " colorscheme koehler
 " colorscheme mayansmoke
@@ -228,7 +227,7 @@ set statusline+=\ %P\ of\ %L                "percent through file of total lines
 
 " based on:
 "    http://vim.1045645.n5.nabble.com/editing-Python-files-how-to-keep-track-of-class-membership-td1189290.html
- 
+
 function! s:get_last_python_class()
     let l:retval = ""
     let l:last_line_declaring_a_class = search('^\s*class', 'bnW')
@@ -241,7 +240,7 @@ function! s:get_last_python_class()
     endif
     return l:retval
 endfunction
- 
+
 function! s:get_last_python_def()
     let l:retval = ""
     let l:last_line_declaring_a_def = search('^\s*def', 'bnW')
@@ -254,7 +253,7 @@ function! s:get_last_python_def()
     endif
     return l:retval
 endfunction
- 
+
 function! s:compose_python_location()
     let l:pyloc = s:get_last_python_class()
     if !empty(pyloc)
@@ -263,11 +262,11 @@ function! s:compose_python_location()
     let pyloc = pyloc . s:get_last_python_def()
     return pyloc
 endfunction
- 
+
 function! <SID>EchoPythonLocation()
     echo s:compose_python_location()
 endfunction
- 
+
 command! PythonLocation :call <SID>EchoPythonLocation()
 nnoremap <Leader>/ :PythonLocation<CR>
 
