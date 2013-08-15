@@ -276,9 +276,17 @@ load_bash_completion() {
 #load_bash_completion
 
 parse_git_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  branch=${ref#refs/heads/}
-  echo "($branch)"
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    branch=${ref#refs/heads/}
+    echo "($branch)"
+}
+
+ram_usage() {
+    for app in $*; do
+        kb=$(ps aux | grep -i "$app" | awk '{sum+=$6} END {print sum}')
+        mb=$(echo $kb / 1024 | bc)
+        echo $app: $mb MB RAM
+    done
 }
 
 RED="\[\033[0;31m\]"
