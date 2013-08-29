@@ -100,7 +100,7 @@ inoremap <D-r> <Esc>:w\|:!python %<CR>
 nnoremap <D-r> <Esc>:w\|:!python %<CR>
 
 " easy escaping
-imap jk <Esc>
+inoremap jk <Esc>l
 
 nmap <D-1> <Esc>:tabp<CR>
 imap <D-1> <Esc>:tabp<CR>
