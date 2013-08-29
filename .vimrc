@@ -99,6 +99,9 @@ au BufEnter /* call LoadCscope()
 inoremap <D-r> <Esc>:w\|:!python %<CR>
 nnoremap <D-r> <Esc>:w\|:!python %<CR>
 
+" easy escaping
+imap jk <Esc>
+
 nmap <D-1> <Esc>:tabp<CR>
 imap <D-1> <Esc>:tabp<CR>
 nmap <D-2> <Esc>:tabn<CR>
