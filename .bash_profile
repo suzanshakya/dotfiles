@@ -1,5 +1,4 @@
 grand_start=`python -Sc'import time;print time.time()'`
-PS1='\u@\h:\W\$ '
 
 export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=100000
@@ -52,6 +51,9 @@ alias c='clear'
 alias pi='pip install'
 alias pu='pip install --upgrade'
 alias bi='brew install'
+alias p='pwd'
+
+# git aliases
 alias gb='git branch'
 alias gc='git checkout'
 alias gcp='git checkout -p'
@@ -293,7 +295,7 @@ RED="\[\033[0;31m\]"
 YELLOW="\[\033[0;33m\]"
 GREEN="\[\033[0;32m\]"
 
-PS1="$RED\$(date +%H:%M) $YELLOW\w$GREEN \$(parse_git_branch)\$ "
+PS1="$RED\$(date +%H:%M) $YELLOW\W $GREEN\$(parse_git_branch)\$ "
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
