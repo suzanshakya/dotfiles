@@ -42,7 +42,7 @@ let mapleader=","
 nnoremap <leader>c :NERDTreeTabsToggle<CR>
 nnoremap <leader>v :TlistToggle<CR>
 
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 let Tlist_Use_Right_Window = 1
 let Tlist_File_Fold_Auto_Close = 1
