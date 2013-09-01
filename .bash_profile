@@ -297,5 +297,7 @@ GREEN="\[\033[0;32m\]"
 
 PS1="$RED\$(date +%H:%M) $YELLOW\W $GREEN\$(parse_git_branch)\$ "
 
+source ~/dotfiles/android-env.rc
+
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
