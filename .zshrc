@@ -1,10 +1,7 @@
 grand_start=`python -Sc'import time;print time.time()'`
-#PS1='\u@\h:\W\$ '
 
 export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=100000
-HISTFILE=~/.histfile
-SAVEHIST=100000
 export HISTIGNORE="history:&:ls:ll:[bf]g:history:ps:clear"
 
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
@@ -15,6 +12,8 @@ export CELLAR=$BREW
 export PYTHONSTARTUP=~/.pystartup
 
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+
+export entranceprep="/Users/sujanshakya/projects/entranceprep"
 
 getPythonPaths() {
     echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
@@ -52,6 +51,9 @@ alias c='clear'
 alias pi='pip install'
 alias pu='pip install --upgrade'
 alias bi='brew install'
+alias p='pwd'
+
+# git aliases
 alias gb='git branch'
 alias gc='git checkout'
 alias gcp='git checkout -p'
@@ -274,9 +276,17 @@ load_bash_completion() {
 #load_bash_completion
 
 parse_git_branch() {
-  ref=$(git symbolic-ref HEAD 2> /dev/null) || return
-  branch=${ref#refs/heads/}
-  echo "($branch)"
+    ref=$(git symbolic-ref HEAD 2> /dev/null) || return
+    branch=${ref#refs/heads/}
+    echo "($branch)"
+}
+
+ram_usage() {
+    for app in $*; do
+        kb=$(ps aux | grep -i "$app" | awk '{sum+=$6} END {print sum}')
+        mb=$(echo $kb / 1024 | bc)
+        echo $app: $mb MB RAM
+    done
 }
 
 setopt PROMPT_SUBST
