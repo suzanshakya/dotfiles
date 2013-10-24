@@ -6,6 +6,9 @@ export HISTIGNORE="history:&:ls:ll:[bf]g:history:ps:clear"
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 export BREW=/usr/local/Cellar
 export CELLAR=$BREW
 
@@ -159,7 +162,7 @@ vimpy() {
 }
 
 killjob() {
-    kill -9 `jobs -p $1`
+    sudo kill -9 `jobs -p $1`
 }
 killapp() {
     ps aux | grep -i $1 | grep -v grep | awk '{print $2}' | xargs kill
