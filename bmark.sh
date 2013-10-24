@@ -23,7 +23,7 @@ bmark () {
       bmarkname=$1
     fi
     # check if bookmark name is already used
-    if grep -m1 -E "$bmarkname=" $bmarkdb; then
+    if grep -m1 -E "^$bmarkname=" $bmarkdb; then
       echo 'Bookmark name already used! Choose a different one.'
     else # add bookmark 
       echo "$bmarkname=\"$PWD\"" >> $bmarkdb
