@@ -165,7 +165,7 @@ killjob() {
     sudo kill -9 `jobs -p $1`
 }
 killapp() {
-    ps aux | grep -i $1 | grep -v grep | awk '{print $2}' | xargs kill
+    ps aux | grep -i $1 | grep -v grep | awk '{print $2}' | xargs kill -9
 }
 killsock() {
     lsof -n -P -i:$1 | awk '{print $2}' | tail -1 | xargs kill
@@ -263,7 +263,8 @@ mvim() {
 
 load_virtualenvwrapper() {
     start=`python -Sc'import time;print time.time()'`
-    export WORKON_HOME=$HOME/.virtualenvs
+    export WORKON_HOME=~/.virtualenvs
+    export PROJECT_HOME=~/projects
     source /usr/local/bin/virtualenvwrapper_lazy.sh
     end=`python -Sc'import time;print time.time()'`
     echo "virtualenvwrapper" `echo $end-$start|bc`
