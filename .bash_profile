@@ -166,7 +166,7 @@ killjob() {
     sudo kill -9 `jobs -p $1`
 }
 killapp() {
-    ps aux | grep -i $1 | grep -v grep | awk '{print $2}' | xargs kill -9
+    ps aux | grep -i $1 | grep -v grep | awk '{print $2}' | xargs sudo kill -9
 }
 killsock() {
     lsof -n -P -i:$1 | awk '{print $2}' | tail -1 | xargs kill
