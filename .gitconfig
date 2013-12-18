@@ -8,3 +8,5 @@
 	token = ace09087c579aa74ec129713829a365b
 [color]
 	ui = true
+[push]
+	default = simple

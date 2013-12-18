@@ -129,7 +129,7 @@ endfun
 " colorscheme koehler
 " colorscheme mayansmoke
 " colorscheme zenburn
-colorscheme wombat
+colorscheme default
 
 nnoremap <leader>t i<Tab><esc>l
 nnoremap <leader>T i<backspace><esc>l

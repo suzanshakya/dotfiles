@@ -219,7 +219,7 @@ gman() {
 }
 
 calculate() {
-    python -Sc"from __future__ import division; print $*"
+    python -c"from __future__ import division; print $*"
 }
 alias e=calculate
 
