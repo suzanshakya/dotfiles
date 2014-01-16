@@ -183,7 +183,7 @@ source ~/dotfiles/bmark.sh
 
 cache_opera() {
     (( count = 0 ))
-    for each in `find ~/Library/Caches/Opera/cache -type f | grep .tmp | xargs ls -t` ; do
+    for each in `find ~/Library/Caches/com.operasoftware.Opera/Cache -type f | xargs ls -t` ; do
         file_output=`file -b $each`
         # check if filetype contains 'edia' (Media vs media)
         if [[ "$file_output" != *edia* ]] ; then
@@ -196,7 +196,7 @@ cache_opera() {
         (( count += 1 ))
         if test $# -eq 0 ; then
             ls -lh $each
-            if test $count -eq 5 ; then
+            if test $count -eq 10 ; then
                 break
             fi
         elif test $1 -eq $count ; then
