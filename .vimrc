@@ -128,8 +128,8 @@ endfun
 
 " colorscheme koehler
 " colorscheme mayansmoke
-" colorscheme zenburn
-colorscheme default
+colorscheme zenburn
+" colorscheme default
 
 nnoremap <leader>t i<Tab><esc>l
 nnoremap <leader>T i<backspace><esc>l

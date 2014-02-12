@@ -15,6 +15,7 @@ export CELLAR=$BREW
 export PYTHONSTARTUP=~/.pystartup
 
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip-downloads
 
 export entranceprep="/Users/sujanshakya/projects/entranceprep"
 
