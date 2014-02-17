@@ -9,8 +9,8 @@ PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-export BREW=/usr/local/Cellar
-export CELLAR=$BREW
+export CELLAR=/usr/local/Cellar
+export BREW=$CELLAR
 
 export PYTHONSTARTUP=~/.pystartup
 
@@ -180,7 +180,7 @@ topp() {
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-source ~/dotfiles/bmark.sh
+source ~/projects/dotfiles/bmark.sh
 
 cache_opera() {
     (( count = 0 ))
@@ -303,7 +303,7 @@ GREEN="\[\033[0;32m\]"
 
 PS1="$RED\$(date +%H:%M) $YELLOW\W $GREEN\$(parse_git_branch)\$ "
 
-source ~/dotfiles/android-env.rc
+source ~/projects/dotfiles/android-env.rc
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
