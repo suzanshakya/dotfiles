@@ -1,7 +1,7 @@
 install:
-	ln -s dotfiles/.bash_profile ~/
-	ln -s dotfiles/.gitk ~/
-	ln -s dotfiles/.inputrc ~/
-	ln -s dotfiles/.pystartup ~/
-	ln -s dotfiles/.vim ~/
-	ln -s dotfiles/.vimrc ~/
+	ln -sf `pwd`/.bash_profile ~/
+	ln -sf `pwd`/.gitk ~/
+	ln -sf `pwd`/.inputrc ~/
+	ln -sf `pwd`/.pystartup ~/
+	ln -sf `pwd`/.vim ~/
+	ln -sf `pwd`/.vimrc ~/
