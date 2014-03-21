@@ -116,6 +116,9 @@ function cd() {
 alias u='cd ..'
 alias b='pushd +1'
 alias f='pushd -0'
+alias tx='exit'
+alias clc='fc -l -n -1 -1 | pbcopy'
+
 
 # loop the command every 1 second
 loop() {
@@ -269,7 +272,7 @@ load_virtualenvwrapper() {
     export PROJECT_HOME=~/projects
     source /usr/local/bin/virtualenvwrapper_lazy.sh
     end=`python -Sc'import time;print time.time()'`
-    echo "virtualenvwrapper" `echo $end-$start|bc`
+    #echo "virtualenvwrapper" `echo $end-$start|bc`
 }
 load_virtualenvwrapper
 
@@ -279,9 +282,9 @@ load_bash_completion() {
       source /usr/local/etc/profile.d/bash_completion.sh
     fi
     end=`python -Sc'import time;print time.time()'`
-    echo "bash_completion" `echo $end-$start|bc`
+    #echo "bash_completion" `echo $end-$start|bc`
 }
-#load_bash_completion
+load_bash_completion
 
 parse_git_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
