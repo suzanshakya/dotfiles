@@ -282,6 +282,12 @@ endfunction
 command! PythonLocation :call <SID>EchoPythonLocation()
 nnoremap <Leader>/ :PythonLocation<CR>
 
+" Disable audio beep
+set noerrorbells visualbell t_vb=
+if has('autocmd')
+  autocmd GUIEnter * set visualbell t_vb=
+endif
+
 if !has('python')
     finish
 endif
