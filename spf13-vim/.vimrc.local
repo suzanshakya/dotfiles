@@ -1,11 +1,12 @@
 set guifont=Monaco:h12
-colorscheme solarized
+
+filetype plugin on
+syntax on
+set spell!
 
 if has('gui_running')
     set background=light
     set lines=50 columns=200
-else
-    set background=dark
 endif
 
 " Open NERDTree on gvim/macvim startup
@@ -27,7 +28,7 @@ if filereadable(getcwd() . '/.session.vim')
         endfor
     endif
 endif
-syntax on
+    syntax on
 endfunction
 
 fu! DeleteHiddenBuffers()
@@ -38,10 +39,12 @@ fu! DeleteHiddenBuffers()
     endfor
 endfunction
 
-" Save session on quitting Vim
-autocmd VimLeave * NERDTreeTabsClose
-autocmd VimLeave * call DeleteHiddenBuffers()
-autocmd VimLeave * call SaveSession()
+if has('gui_running')
+    " Save session on quitting Vim
+    autocmd VimLeave * NERDTreeTabsClose
+    autocmd VimLeave * call DeleteHiddenBuffers()
+    autocmd VimLeave * call SaveSession()
 
-" Restore session on starting Vim
-autocmd VimEnter * call RestoreSession()
+    " Restore session on starting Vim
+    autocmd VimEnter * call RestoreSession()
+endif
