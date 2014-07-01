@@ -15,6 +15,7 @@ export BREW=$CELLAR
 export PYTHONSTARTUP=~/.pystartup
 
 export PATH="~/bin:/usr/local/bin:/usr/local/sbin:${PATH}"
+export PATH="~/projects/node_modules/.bin:${PATH}"
 export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip-downloads
 
 export entranceprep="/Users/sujanshakya/projects/entranceprep"
@@ -51,6 +52,7 @@ alias g='git'
 alias h='head'
 alias vlc=/Applications/VLC.app/Contents/MacOS/VLC
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera -nomail'
+alias octave='/Applications/Octave.app/Contents/Resources/bin/octave'
 alias c='clear'
 alias pi='pip install'
 alias pu='pip install --upgrade'
