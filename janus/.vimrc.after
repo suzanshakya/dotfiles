@@ -1,2 +1,12 @@
 set guifont=Monaco:h12
-colorscheme solarized
+
+if has("gui_running")
+  color solarized
+else
+  color default
+endif
+
+nnoremap <C-h> <Esc><C-w>h<CR>
+nnoremap <C-j> <Esc><C-w>j<CR>
+nnoremap <C-k> <Esc><C-w>k<CR>
+nnoremap <C-l> <Esc><C-w>l<CR>
