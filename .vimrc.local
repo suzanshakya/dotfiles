@@ -1,0 +1,47 @@
+set guifont=Monaco:h12
+colorscheme solarized
+
+if has('gui_running')
+    set background=light
+    set lines=50 columns=200
+else
+    set background=dark
+endif
+
+" Open NERDTree on gvim/macvim startup
+let g:nerdtree_tabs_open_on_gui_startup=1
+let NERDTreeIgnore+=['\.DS_Store','\.session\.vim']
+
+fu! SaveSession()
+    execute 'mksession! ' . getcwd() . '/.session.vim'
+endfunction
+
+fu! RestoreSession()
+if filereadable(getcwd() . '/.session.vim')
+    execute 'so ' . getcwd() . '/.session.vim'
+    if bufexists(1)
+        for l in range(1, bufnr('$'))
+            if bufwinnr(l) == -1
+                exec 'sbuffer ' . l
+            endif
+        endfor
+    endif
+endif
+syntax on
+endfunction
+
+fu! DeleteHiddenBuffers()
+    let tpbl=[]
+    call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+    for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+        silent execute 'bwipeout' buf
+    endfor
+endfunction
+
+" Save session on quitting Vim
+autocmd VimLeave * NERDTreeTabsClose
+autocmd VimLeave * call DeleteHiddenBuffers()
+autocmd VimLeave * call SaveSession()
+
+" Restore session on starting Vim
+autocmd VimEnter * call RestoreSession()
