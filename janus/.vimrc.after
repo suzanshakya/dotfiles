@@ -6,7 +6,14 @@ else
   color default
 endif
 
+" Move between windows
 nnoremap <C-h> <Esc><C-w>h<CR>
 nnoremap <C-j> <Esc><C-w>j<CR>
 nnoremap <C-k> <Esc><C-w>k<CR>
 nnoremap <C-l> <Esc><C-w>l<CR>
+
+" Hide tilde past end of file
+hi NonText guifg=bg
+
+" Disable scrollbar in Nerdtree
+:set guioptions-=L
