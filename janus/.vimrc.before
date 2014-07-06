@@ -1,0 +1,7 @@
+let mapleader = ","
+
+" Remove trailing whitespace
+nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+
+" Clear last search's highlight
+nnoremap <leader>h <esc>:noh<cr>
