@@ -17,3 +17,16 @@ hi NonText guifg=bg
 
 " Disable scrollbar in Nerdtree
 :set guioptions-=L
+
+" wrap long lines
+set wrap
+
+" Command-T configuration
+let g:CommandTMaxFiles=50000
+
+if has("autocmd")
+  au FileType javascript setlocal softtabstop=4 tabstop=4 shiftwidth=4
+endif
+
+" disable sound
+set vb

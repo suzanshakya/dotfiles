@@ -1,7 +1,7 @@
 grand_start=`python -Sc'import time;print time.time()'`
 
 export HISTCONTROL=ignoredups:ignorespace
-export HISTSIZE=100000
+export HISTSIZE=10000
 export HISTIGNORE="history:&:ls:ll:[bf]g:history:ps:clear"
 shopt -s histappend
 PROMPT_COMMAND="history -a;$PROMPT_COMMAND"
@@ -308,7 +308,12 @@ GREEN="\[\033[0;32m\]"
 
 PS1="$RED\$(date +%H:%M) $YELLOW\W $GREEN\$(parse_git_branch)\$ "
 
+alias viber='nohup /Applications/Viber.app/Contents/MacOS/Viber 2>1 >/dev/null &'
 source ~/projects/dotfiles/android-env.rc
+
+# Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
+export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-js-v3.0-rc2/tools/cocos2d-console/bin
+export PATH=${PATH}:$COCOS_CONSOLE_ROOT
 
 grand_end=`python -Sc'import time;print time.time()'`
 echo $grand_end-$grand_start|bc
