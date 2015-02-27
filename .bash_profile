@@ -1,4 +1,4 @@
-grand_start=`python -Sc'import time;print time.time()'`
+grand_start=`gdate +"%s.%2N"`
 
 export HISTCONTROL=ignoredups:ignorespace
 export HISTSIZE=10000
@@ -50,7 +50,7 @@ alias la='ls -AF'
 alias l='ls -CF'
 alias g='git'
 alias h='head'
-alias vlc=/Applications/VLC.app/Contents/MacOS/VLC
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera -nomail'
 alias octave='/Applications/Octave.app/Contents/Resources/bin/octave'
 alias c='clear'
@@ -106,7 +106,7 @@ agit() {
 
 # cd with automatic pushd
 # from Ivo Danihelka's blog
-function cd() {
+cd() {
   if  [ "x$1" == "x-" ]; then
     popd > /dev/null
   else
@@ -142,6 +142,8 @@ psf() {
     ps -ef | grep -i "$1" | grep -v grep
 }
 
+# open python module in editor
+# edit vi threading
 edit() {
     editor=$1
     shift
@@ -225,7 +227,8 @@ gman() {
 }
 
 calculate() {
-    python -c"from __future__ import division; print $*"
+    #python -c"from __future__ import division; print $@"
+    echo "$@" | bc
 }
 alias e=calculate
 
@@ -269,22 +272,22 @@ mvim() {
 }
 
 load_virtualenvwrapper() {
-    start=`python -Sc'import time;print time.time()'`
+    start=`gdate +"%s.%2N"`
     export WORKON_HOME=~/.virtualenvs
     export PROJECT_HOME=~/projects
     source /usr/local/bin/virtualenvwrapper_lazy.sh
-    end=`python -Sc'import time;print time.time()'`
-    #echo "virtualenvwrapper" `echo $end-$start|bc`
+    end=`gdate +"%s.%2N"`
+    echo "virtualenvwrapper" `echo $end-$start|bc`
 }
 load_virtualenvwrapper
 
 load_bash_completion() {
-    start=`python -Sc'import time;print time.time()'`
+    start=`gdate +"%s.%2N"`
     if [ -f /usr/local/etc/profile.d/bash_completion.sh ]; then
       source /usr/local/etc/profile.d/bash_completion.sh
     fi
-    end=`python -Sc'import time;print time.time()'`
-    #echo "bash_completion" `echo $end-$start|bc`
+    end=`gdate +"%s.%2N"`
+    echo "bash_completion" `echo $end-$start|bc`
 }
 load_bash_completion
 
@@ -308,12 +311,20 @@ GREEN="\[\033[0;32m\]"
 
 PS1="$RED\$(date +%H:%M) $YELLOW\W $GREEN\$(parse_git_branch)\$ "
 
-alias viber='nohup /Applications/Viber.app/Contents/MacOS/Viber 2>1 >/dev/null &'
+#export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+
 source ~/projects/dotfiles/android-env.rc
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
 export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-js-v3.0-rc2/tools/cocos2d-console/bin
 export PATH=${PATH}:$COCOS_CONSOLE_ROOT
 
-grand_end=`python -Sc'import time;print time.time()'`
+export USE_CCACHE=1
+export NDK_CCACHE=/usr/local/bin/ccache
+
+# ml study project
+alias workonml="workon clinicast; cd ~/projects/bmlswp"
+
+grand_end=`gdate +"%s.%2N"`
 echo $grand_end-$grand_start|bc

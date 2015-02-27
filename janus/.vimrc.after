@@ -11,6 +11,8 @@ nnoremap <C-h> <Esc><C-w>h<CR>
 nnoremap <C-j> <Esc><C-w>j<CR>
 nnoremap <C-k> <Esc><C-w>k<CR>
 nnoremap <C-l> <Esc><C-w>l<CR>
+nnoremap <leader>m <esc>:NERDTreeTabsToggle<CR>
+nnoremap <leader>e <esc>:Explore<cr>
 
 " Hide tilde past end of file
 hi NonText guifg=bg
@@ -23,6 +25,9 @@ set wrap
 
 " Command-T configuration
 let g:CommandTMaxFiles=50000
+
+" Disable NerdTree refresh on focus
+"autocmd! AuNERDTreeCmd FocusGained
 
 if has("autocmd")
   au FileType javascript setlocal softtabstop=4 tabstop=4 shiftwidth=4
