@@ -76,6 +76,7 @@ alias gdc='git diff --cached'
 alias gs='git status'
 alias gsu='git status -uno'
 alias gss='git status -s'
+alias gsu='git status -uno'
 alias gssu='git status -suno'
 alias gps='git push'
 alias gpl='git pull'
@@ -228,7 +229,7 @@ gman() {
 
 calculate() {
     #python -c"from __future__ import division; print $@"
-    echo "$@" | bc
+    echo "$@" | bc -l
 }
 alias e=calculate
 
@@ -261,15 +262,16 @@ rm() {
   done
 }
 
-mvim() {
-    if test ! -z "$1"; then
-        if test "`file -b "$1" 2>/dev/null`" = "directory"; then
-            (cd "$1" && /usr/local/bin/mvim)
-            return
-        fi
-    fi
-    /usr/local/bin/mvim -- "$@"
-}
+# this now seems to be the default behaviour, so going to remove
+#mvim() {
+#    if test ! -z "$1"; then
+#        if test "`file -b "$1" 2>/dev/null`" = "directory"; then
+#            (cd "$1" && /usr/local/bin/mvim)
+#            return
+#        fi
+#    fi
+#    /usr/local/bin/mvim -- "$@"
+#}
 
 load_virtualenvwrapper() {
     start=`gdate +"%s.%2N"`
