@@ -35,3 +35,9 @@ endif
 
 " disable sound
 set vb
+
+" local .vimrc
+"set exrc
+
+" Disable NerdTree refresh on focus
+autocmd! AuNERDTreeCmd FocusGained
