@@ -20,10 +20,12 @@ export PIP_DOWNLOAD_CACHE=$HOME/Library/Caches/pip-downloads
 
 export entranceprep="/Users/sujanshakya/projects/entranceprep"
 
+# exit code for vi is being 1 in git merge
+export EDITOR=vim
+
 getPythonPaths() {
-    echo "${PYTHONPATH//:/ } $(dirname `python -c 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
+    echo "${PYTHONPATH//:/ } $(dirname `python -Sc 'from distutils.sysconfig import get_python_lib; print get_python_lib()'`)"
 }
-pythonPaths=`getPythonPaths`;
 
 ctags-pythonpath() {
     pythonPaths=`getPythonPaths`;
@@ -48,7 +50,6 @@ alias lh='ls -lAh'
 alias lS='ls -lAhS'
 alias la='ls -AF'
 alias l='ls -CF'
-alias g='git'
 alias h='head'
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 alias opera='/Applications/Opera.app/Contents/MacOS/Opera -nomail'
@@ -60,6 +61,7 @@ alias bi='brew install'
 alias p='pwd'
 
 # git aliases
+alias g='git'
 alias gb='git branch'
 alias gc='git checkout'
 alias gcp='git checkout -p'
@@ -74,13 +76,11 @@ alias glp='git log -p'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gs='git status'
-alias gsu='git status -uno'
 alias gss='git status -s'
 alias gsu='git status -uno'
 alias gssu='git status -suno'
 alias gps='git push'
 alias gpl='git pull'
-alias gf='git fetch'
 alias gf='git fetch'
 alias gcl='git clone'
 alias gls='git ls-files'
@@ -144,7 +144,9 @@ psf() {
 }
 
 # open python module in editor
-# edit vi threading
+# eg: edit vi threading
+# eg: edit vim threading
+# eg: vimpy gevent
 edit() {
     editor=$1
     shift
@@ -261,17 +263,6 @@ rm() {
     fi
   done
 }
-
-# this now seems to be the default behaviour, so going to remove
-#mvim() {
-#    if test ! -z "$1"; then
-#        if test "`file -b "$1" 2>/dev/null`" = "directory"; then
-#            (cd "$1" && /usr/local/bin/mvim)
-#            return
-#        fi
-#    fi
-#    /usr/local/bin/mvim -- "$@"
-#}
 
 load_virtualenvwrapper() {
     start=`gdate +"%s.%2N"`
