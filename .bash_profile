@@ -73,6 +73,7 @@ alias gcm='git commit -m'
 alias gcma='git commit -a -m'
 alias gl='git log --name-only'
 alias glp='git log -p'
+alias glpc='git log -p -C'
 alias gd='git diff'
 alias gdc='git diff --cached'
 alias gs='git status'
@@ -282,7 +283,8 @@ load_bash_completion() {
     end=`gdate +"%s.%2N"`
     echo "bash_completion" `echo $end-$start|bc`
 }
-load_bash_completion
+# too slow
+# load_bash_completion
 
 parse_git_branch() {
     ref=$(git symbolic-ref HEAD 2> /dev/null) || return
@@ -310,8 +312,8 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 source ~/projects/dotfiles/android-env.rc
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-js-v3.0-rc2/tools/cocos2d-console/bin
-export PATH=${PATH}:$COCOS_CONSOLE_ROOT
+export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-js-v3.6.1/tools/cocos2d-console/bin
+export PATH=$COCOS_CONSOLE_ROOT:$PATH
 
 export USE_CCACHE=1
 export NDK_CCACHE=/usr/local/bin/ccache
