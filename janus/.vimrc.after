@@ -24,10 +24,19 @@ hi NonText guifg=bg
 set wrap
 
 " copy to clipboard also with yy, D, and P
-set clipboard=unnamed
+" set clipboard=unnamed
 
 " Command-T configuration
 let g:CommandTMaxFiles=50000
+
+" Speed up indexing
+let g:ctrlp_user_command = 'ag %s -i --nogroup --hidden -g ""'
+
+" Speed up matching
+let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+
+" disable nerdtree_tabs on gui startup
+let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " Disable NerdTree refresh on focus
 "autocmd! AuNERDTreeCmd FocusGained
@@ -49,6 +58,3 @@ set tags=/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_bottle.tags;/,/
 
 " local .vimrc
 "set exrc
-
-" Disable NerdTree refresh on focus
-autocmd! AuNERDTreeCmd FocusGained

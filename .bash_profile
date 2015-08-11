@@ -36,6 +36,10 @@ ctags-pythonpath() {
     done
 }
 
+ctags-pwd() {
+    ctags -R --python-kinds=-i --languages=+python .
+}
+
 pycscope-pythonpath() {
     pythonPaths=`getPythonPaths`;
     for path in $pythonPaths; do
