@@ -33,7 +33,7 @@ set wrap
 " set clipboard=unnamed
 
 " Speed up indexing ctrlp
-let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden -g ""'
+let g:ctrlp_user_command = 'ack -f %s'
 
 " Speed up matching ctrlp
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }

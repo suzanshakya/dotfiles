@@ -6,7 +6,8 @@ nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
 " Clear last search's highlight
 nnoremap <leader>h <esc>:noh<cr>
 
-call janus#disable_plugin('ack')
+" my strategy: use ag first; if not found use ack
+" call janus#disable_plugin('ack')
 call janus#disable_plugin('unimpaired')
 call janus#disable_plugin('tagbar')
 call janus#disable_plugin('snipmate')
