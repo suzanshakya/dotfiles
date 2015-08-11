@@ -14,6 +14,12 @@ nnoremap <C-l> <Esc><C-w>l<CR>
 nnoremap <leader>m <esc>:NERDTreeTabsToggle<CR>
 nnoremap <leader>e <esc>:Explore<cr>
 
+map gn :bn<cr>
+map gp :bp<cr>
+map gd :bd<cr>
+
+nnoremap <leader>ag :Ag 
+
 " Hide tilde past end of file
 hi NonText guifg=bg
 
@@ -26,13 +32,10 @@ set wrap
 " copy to clipboard also with yy, D, and P
 " set clipboard=unnamed
 
-" Command-T configuration
-let g:CommandTMaxFiles=50000
+" Speed up indexing ctrlp
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden -g ""'
 
-" Speed up indexing
-let g:ctrlp_user_command = 'ag %s -i --nogroup --hidden -g ""'
-
-" Speed up matching
+" Speed up matching ctrlp
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
 
 " disable nerdtree_tabs on gui startup

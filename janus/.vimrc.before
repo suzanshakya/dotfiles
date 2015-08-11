@@ -5,3 +5,14 @@ nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Clear last search's highlight
 nnoremap <leader>h <esc>:noh<cr>
+
+call janus#disable_plugin('ack')
+call janus#disable_plugin('unimpaired')
+call janus#disable_plugin('tagbar')
+call janus#disable_plugin('snipmate')
+call janus#disable_plugin('easymotion')
+call janus#disable_plugin('nrrwrgn')
+call janus#disable_plugin('zoomwin')
+call janus#disable_plugin('buffergator')
+call janus#disable_plugin('vroom')
+call janus#disable_plugin('vim-multiple-colors')
