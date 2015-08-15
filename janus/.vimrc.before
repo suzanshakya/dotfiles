@@ -8,7 +8,7 @@ nnoremap <leader>h <esc>:noh<cr>
 
 " my strategy: use ag first; if not found use ack
 " call janus#disable_plugin('ack')
-call janus#disable_plugin('unimpaired')
+" call janus#disable_plugin('unimpaired')
 call janus#disable_plugin('tagbar')
 call janus#disable_plugin('snipmate')
 call janus#disable_plugin('easymotion')
