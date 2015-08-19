@@ -128,6 +128,9 @@ let g:ctrlp_clear_cache_on_exit = 0
 
 " speed up matching ctrlp using python plugin
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+
+" mapping for toggling background
+call togglebg#map("<leader>bg")
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
