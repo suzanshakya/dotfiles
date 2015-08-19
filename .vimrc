@@ -48,6 +48,9 @@ Plugin 'bling/vim-airline'
 " syntax hightlighting and indentation for jade
 Plugin 'digitaltoad/vim-jade'
 
+" highlight trailing whitespace
+Plugin 'ntpeters/vim-better-whitespace'
+
 " python mode
 "Plugin 'klen/python-mode'
 
@@ -110,6 +113,9 @@ map <leader>m <plug>NERDTreeMirrorToggle<CR>
 " disable nerdtree_tabs on gui startup
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
+" hide *.pyc files in nerdtree
+let NERDTreeIgnore = ['\.pyc$']
+
 " disable NerdTree refresh on focus
 "autocmd! AuNERDTreeCmd FocusGained
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -139,7 +145,7 @@ else
 endif
 
 " set font:size
-set guifont=Monaco:h13
+set guifont=Monaco:h12
 
 " show line num
 set number
