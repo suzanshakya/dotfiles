@@ -51,6 +51,12 @@ Plugin 'digitaltoad/vim-jade'
 " highlight trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
 
+" ack.vim
+Plugin 'mileszs/ack.vim'
+
+" ag.vim
+Plugin 'rking/ag.vim'
+
 " python mode
 "Plugin 'klen/python-mode'
 
@@ -142,7 +148,7 @@ nnoremap <leader>ack :Ack
 syntax on
 if has("gui_running")
   colorscheme solarized
-  set background=dark
+  " set background=dark
 else
   color default
 endif
@@ -167,6 +173,9 @@ set shiftwidth=4
 " for html/jade files, 2 spaces
 autocmd Filetype html setlocal ts=2 sts=2 sw=2 expandtab
 autocmd Filetype jade setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype css  setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2 expandtab
+autocmd Filetype less setlocal ts=2 sts=2 sw=2 expandtab
 
 " for python/js files, 4 spaces
 autocmd Filetype python     setlocal ts=4 sts=4 sw=4 expandtab
