@@ -1,11 +1,11 @@
 # Add environment variable ANT_ROOT
 export ANT_ROOT=/usr/local/bin
-export PATH=${PATH}:$ANT_ROOT
+export PATH=$ANT_ROOT:$PATH
 
 # Add environment variable NDK_ROOT
-export NDK_ROOT=/Users/suzanshakya/projects/android/android-ndk-r10e
-export PATH=${PATH}:$NDK_ROOT
+export NDK_ROOT=$HOME/projects/android/android-ndk-r10e
+export PATH=$NDK_ROOT:$PATH
 
 # Add environment variable ANDROID_SDK_ROOT
-export ANDROID_SDK_ROOT=/Users/suzanshakya/projects/android/android-sdk-macosx
-export PATH=${PATH}:$ANDROID_SDK_ROOT:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
+export ANDROID_SDK_ROOT=$HOME/projects/android/android-sdk-macosx
+export PATH=$ANDROID_SDK_ROOT:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
