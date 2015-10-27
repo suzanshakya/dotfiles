@@ -169,11 +169,11 @@ edit() {
         (cd `dirname "$pyfile"` && $editor "$pyfile")
     fi
 }
-vipy() {
-    edit vi "$@"
+vimpy() {
+    edit vim "$@"
     return $?
 }
-vimpy() {
+mvimpy() {
     edit mvim "$@"
     return $?
 }
