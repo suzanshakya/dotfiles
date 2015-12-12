@@ -91,6 +91,8 @@ alias gcl='git clone'
 alias gls='git ls-files'
 alias gitx='open ~/Applications/gitX.app'
 
+alias vi=vim
+
 # for using git command from outside the git repo dir.
 agit() {
     if test -n "$2"; then
@@ -316,8 +318,12 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
 source ~/projects/dotfiles/android-env.rc
 
 # Add environment variable COCOS_CONSOLE_ROOT for cocos2d-x
-export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-js-v3.6.1/tools/cocos2d-console/bin
+export COCOS_CONSOLE_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-x-3.8.1/tools/cocos2d-console/bin
 export PATH=$COCOS_CONSOLE_ROOT:$PATH
+
+# Add environment variable COCOS_TEMPLATES_ROOT for cocos2d-x
+export COCOS_TEMPLATES_ROOT=/Users/suzanshakya/projects/android/cocos2d/cocos2d-x-3.8.1/templates
+export PATH=$COCOS_TEMPLATES_ROOT:$PATH
 
 export USE_CCACHE=1
 export NDK_CCACHE=/usr/local/bin/ccache
@@ -327,3 +333,9 @@ alias workonml="workon clinicast; cd ~/projects/bmlswp"
 
 grand_end=`gdate +"%s.%2N"`
 echo $grand_end-$grand_start|bc
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/suzanshakya/google-cloud-sdk/path.bash.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/suzanshakya/google-cloud-sdk/completion.bash.inc'

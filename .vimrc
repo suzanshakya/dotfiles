@@ -98,11 +98,11 @@ map <leader>bn <esc>:bn<cr>
 map <leader>bp <esc>:bp<cr>
 map <leader>bd <esc>:bd<cr>
 
-" remove trailing whitespace 
-nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr> 
-  
-" clear last search's highlight 
-nnoremap <leader>h <esc>:noh<cr> 
+" remove trailing whitespace
+nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+
+" clear last search's highlight
+nnoremap <leader>h <esc>:noh<cr>
 
 " explorer of pwd
 nnoremap <leader>e <esc>:Explore<cr>
@@ -117,7 +117,7 @@ map <leader>m <plug>NERDTreeMirrorToggle<CR>
 :set guioptions-=L
 
 " disable nerdtree_tabs on gui startup
-let g:nerdtree_tabs_open_on_gui_startup = 0
+"let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " hide *.pyc files in nerdtree
 let NERDTreeIgnore = ['\.pyc$']
@@ -148,7 +148,7 @@ nnoremap <leader>ack :Ack
 syntax on
 if has("gui_running")
   colorscheme solarized
-  " set background=dark
+  "set background=dark
 else
   color default
 endif
@@ -165,7 +165,7 @@ set laststatus=2
 " copy last line indent
 set autoindent
 
-" by default, the indent is 2 spaces. 
+" by default, the indent is 2 spaces.
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
@@ -206,11 +206,6 @@ hi NonText guifg=bg
 " Store swap files in fixed location, not current directory.
 set dir=~/.vim/swap/
 
-"set clipboard=unnamed
-
-" local .vimrc
-"set exrc
-
 " folding settings
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
@@ -218,3 +213,14 @@ set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
 set tags=/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_bottle.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_nlp.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat.tags;/
+
+"set clipboard=unnamed
+
+" local .vimrc
+"set exrc
+
+" 'find-next' stops at EOF
+"set nowrapscan
+
+" open file in new tab
+"let NERDTreeMapOpenInTab='<ENTER>'
