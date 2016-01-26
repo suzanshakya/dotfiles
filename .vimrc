@@ -107,6 +107,12 @@ nnoremap <leader>h <esc>:noh<cr>
 " explorer of pwd
 nnoremap <leader>e <esc>:Explore<cr>
 
+" save in insert mode
+inoremap <leader>w <c-o>:w<cr>
+
+" execute command mode
+nnoremap <leader>x :!
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins related
@@ -212,7 +218,7 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-set tags=/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_bottle.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_nlp.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat.tags;/
+set tags=/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_bottle.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_nlp.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_pool.tags;/
 
 "set clipboard=unnamed
 
