@@ -87,32 +87,6 @@ filetype plugin indent on    " required
 " set <leader>
 let mapleader = ","
 
-" move between windows
-nnoremap <C-h> <Esc><C-w>h<CR>
-nnoremap <C-j> <Esc><C-w>j<CR>
-nnoremap <C-k> <Esc><C-w>k<CR>
-nnoremap <C-l> <Esc><C-w>l<CR>
-
-" switching buffers
-map <leader>bn <esc>:bn<cr>
-map <leader>bp <esc>:bp<cr>
-map <leader>bd <esc>:bd<cr>
-
-" remove trailing whitespace
-nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
-
-" clear last search's highlight
-nnoremap <leader>h <esc>:noh<cr>
-
-" explorer of pwd
-nnoremap <leader>e <esc>:Explore<cr>
-
-" save in insert mode
-inoremap <leader>w <c-o>:w<cr>
-
-" execute command mode
-nnoremap <leader>x :!
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Plugins related
@@ -140,17 +114,46 @@ let g:ctrlp_clear_cache_on_exit = 0
 
 " speed up matching ctrlp using python plugin
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" move between windows
+nnoremap <C-h> <Esc><C-w>h<CR>
+nnoremap <C-j> <Esc><C-w>j<CR>
+nnoremap <C-k> <Esc><C-w>k<CR>
+nnoremap <C-l> <Esc><C-w>l<CR>
+
+" switching buffers
+map <leader>bn <esc>:bn<cr>
+map <leader>bp <esc>:bp<cr>
+map <leader>bd <esc>:bd<cr>
+
+" explorer of pwd
+nnoremap <leader>e <esc>:Explore<cr>
+
+" remove trailing whitespace
+nnoremap <leader>s :%s/\s\+$//<cr>:let @/=''<cr>
+
+" clear last search's highlight
+nnoremap <leader>h <esc>:noh<cr>
 
 " mapping for toggling background
 call togglebg#map("<leader>bg")
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " find files containting pattern
 nnoremap <leader>ag :Ag 
 nnoremap <leader>ack :Ack 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" save in insert mode
+inoremap <leader>w <c-o>:w<cr>
+
+" execute command mode
+nnoremap <leader>x :!
+
+" squash git commit message
+nnoremap <leader>sq 4jd3j
+
+
 syntax on
 if has("gui_running")
   colorscheme solarized
