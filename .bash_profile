@@ -339,3 +339,5 @@ source '/Users/suzanshakya/google-cloud-sdk/path.bash.inc'
 
 # The next line enables shell command completion for gcloud.
 source '/Users/suzanshakya/google-cloud-sdk/completion.bash.inc'
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
