@@ -42,3 +42,7 @@ alias u="cd .."
 alias b="pushd +1"
 alias f="pushd -0"
 alias c="clear"
+
+alias vi="vim"
+
+bindkey "^P" up-line-or-search
