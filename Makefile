@@ -4,3 +4,4 @@ install:
 	ln -sf `pwd`/.inputrc ~/
 	ln -sf `pwd`/.pystartup ~/
 	ln -sf `pwd`/.vimrc ~/
+	ln -sf `pwd`/vlcrc ~/Library/Preferences/org.videolan.vlc/vlcrc

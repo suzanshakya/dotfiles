@@ -28,7 +28,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 
 " Menu for displaying plugins
-Plugin 'mbadran/headlights'
+"Plugin 'mbadran/headlights'
 
 " git integration in Vim
 Plugin 'tpope/vim-fugitive'
@@ -36,17 +36,11 @@ Plugin 'tpope/vim-fugitive'
 " for moving code blocks
 "Plugin 'tpope/vim-unimpaired'
 
-" syntax checker
-Plugin 'scrooloose/syntastic'
-
 " code commenter for different languages
 Plugin 'scrooloose/nerdcommenter'
 
 " statusline
 Plugin 'bling/vim-airline'
-
-" syntax hightlighting and indentation for jade
-Plugin 'digitaltoad/vim-jade'
 
 " highlight trailing whitespace
 Plugin 'ntpeters/vim-better-whitespace'
@@ -57,11 +51,17 @@ Plugin 'mileszs/ack.vim'
 " ag.vim
 Plugin 'rking/ag.vim'
 
+" syntax checker
+"Plugin 'scrooloose/syntastic'
+
 " python mode
 "Plugin 'klen/python-mode'
 
 " javascript mode
 "Plugin 'pangloss/vim-javascript'
+
+" syntax hightlighting and indentation for jade
+"Plugin 'digitaltoad/vim-jade'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " All of your Plugins must be added before the following line
@@ -100,7 +100,7 @@ map <leader>m <plug>NERDTreeMirrorToggle<CR>
 "let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " hide *.pyc files in nerdtree
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 
 " disable NerdTree refresh on focus
 "autocmd! AuNERDTreeCmd FocusGained
@@ -221,15 +221,18 @@ set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
 set foldlevel=1         "this is just what i use
 
-set tags=/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_bottle.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_nlp.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat.tags;/,/Users/suzanshakya/projects/jobs/Genesys/tango/solariat_pool.tags;/
+if filereadable(glob(".vimrc.local"))
+  source .vimrc.local
+endif
 
 "set clipboard=unnamed
-
-" local .vimrc
-"set exrc
 
 " 'find-next' stops at EOF
 "set nowrapscan
 
 " open file in new tab
 "let NERDTreeMapOpenInTab='<ENTER>'
+
+set wildmode=longest,list,full
+set wildmenu
+set wildignore+=*.pyc
