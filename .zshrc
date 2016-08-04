@@ -44,4 +44,8 @@ alias f="pushd -0"
 alias c="clear"
 
 bindkey "^P" up-line-or-search
+
+# some brews are installed in /usr/local/sbin/
 export PATH="/usr/local/sbin:$PATH"
+
+alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
