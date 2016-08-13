@@ -5,3 +5,4 @@ install:
 	ln -sf `pwd`/.pystartup ~/
 	ln -sf `pwd`/.vimrc ~/
 	ln -sf `pwd`/vlcrc ~/Library/Preferences/org.videolan.vlc/vlcrc
+	ln -sf `pwd`/.gitignore_global ~/
