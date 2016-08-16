@@ -48,4 +48,7 @@ bindkey "^P" up-line-or-search
 # some brews are installed in /usr/local/sbin/
 export PATH="/usr/local/sbin:$PATH"
 
+# my personal bin
+export PATH="$HOME/bin:$PATH"
+
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
