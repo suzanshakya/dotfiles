@@ -1,6 +1,6 @@
 [core]
     ignorecase = false
-	excludesfiles = /Users/suzan/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [user]
 	name = Sujan Shakya
 	email = suzan.shakya@gmail.com
