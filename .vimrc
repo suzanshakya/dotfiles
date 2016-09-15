@@ -239,7 +239,7 @@ set wildignore+=*.pyc
 
 
 " save sessions with .vis extension
-map <leader>ss :mksession!  session.vis<CR>
+map <leader>ss :mksession! session.vis<CR>
 
 " " automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
