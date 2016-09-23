@@ -97,7 +97,7 @@ map <leader>m <plug>NERDTreeMirrorToggle<CR>
 :set guioptions-=L
 
 " disable nerdtree_tabs on gui startup
-"let g:nerdtree_tabs_open_on_gui_startup = 0
+let g:nerdtree_tabs_open_on_gui_startup = 0
 
 " hide *.pyc files in nerdtree
 let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']

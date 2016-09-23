@@ -52,3 +52,6 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH="$HOME/bin:$PATH"
 
 alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
+
+setopt APPEND_HISTORY
+
