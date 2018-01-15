@@ -51,6 +51,8 @@ Plugin 'mileszs/ack.vim'
 " ag.vim
 Plugin 'rking/ag.vim'
 
+Plugin 'ternjs/tern_for_vim'
+
 " syntax checker
 "Plugin 'scrooloose/syntastic'
 
@@ -239,7 +241,12 @@ set wildignore+=*.pyc
 
 
 " save sessions with .vis extension
-map <leader>ss :mksession! session.vis<CR>
+map <leader>ms :mksession! vimsessions/
 
-" " automatically source vim sessions so I can open them with the finder
+" automatically source vim sessions so I can open them with the finder
 au BufRead *.vis so %
+
+" generate ctags
+nnoremap <leader>gt :!ctags -R<cr>
+nnoremap <leader>gp :!ctags -R --languages=python<cr>
+nnoremap <leader>gj :!ctags -R --languages=javascript<cr>
