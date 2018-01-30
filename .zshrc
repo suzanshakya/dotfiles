@@ -113,6 +113,7 @@ export nexus=02db6b59094e1732
 export moto=ZX1D64GSTC
 export karbon=A21
 export redmi=370e8fa
+export oneplus5=2640a1dc
 
 export USE_CCACHE=1
 export NDK_CCACHE=/usr/local/bin/ccache

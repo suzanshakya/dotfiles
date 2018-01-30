@@ -109,10 +109,10 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " speed up indexing ctrlp with custom command
-let g:ctrlp_user_command = 'ack -f %s'
+let g:ctrlp_user_command = 'rg --files -uu %s'
 
 " default behavior seems to clear cache, so disable that
-let g:ctrlp_clear_cache_on_exit = 0
+" let g:ctrlp_clear_cache_on_exit = 0
 
 " speed up matching ctrlp using python plugin
 let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
@@ -191,6 +191,7 @@ autocmd Filetype less setlocal ts=2 sts=2 sw=2 expandtab
 " for python/js files, 4 spaces
 autocmd Filetype python     setlocal ts=4 sts=4 sw=4 expandtab
 autocmd Filetype javascript setlocal ts=4 sts=4 sw=4 expandtab
+autocmd Filetype java       setlocal ts=4 sts=4 sw=4 expandtab
 
 " wrap long lines
 set wrap
