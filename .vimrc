@@ -19,6 +19,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'kien/ctrlp.vim'
 " Python matcher for ctrlp instead of default one
 Plugin 'FelikZ/ctrlp-py-matcher'
+Plugin 'JazzCore/ctrlp-cmatcher'
 
 " Tab Completion; ./install.sh required inside YCM dir
 Plugin 'Valloric/YouCompleteMe'
@@ -109,13 +110,14 @@ let NERDTreeIgnore = ['\.pyc$', '^__pycache__$']
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " speed up indexing ctrlp with custom command
-let g:ctrlp_user_command = 'rg --files -uu %s'
+let g:ctrlp_user_command = 'find %s -type f'
 
 " default behavior seems to clear cache, so disable that
 " let g:ctrlp_clear_cache_on_exit = 0
 
 " speed up matching ctrlp using python plugin
-let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+"let g:ctrlp_match_func = { 'match': 'pymatcher#PyMatch' }
+let g:ctrlp_match_func = { 'match': 'matcher#cmatch' }
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
@@ -239,6 +241,8 @@ endif
 set wildmode=longest,list,full
 set wildmenu
 set wildignore+=*.pyc
+" load local .vimrc
+set exrc
 
 
 " save sessions with .vis extension
