@@ -92,8 +92,7 @@ export PATH=$NDK_ROOT:$PATH
 
 # Add environment variable ANDROID_SDK_ROOT for cocos2d-x
 export ANDROID_SDK_ROOT=/Users/suzan/projects/android/android-sdk-macosx
-export PATH=$ANDROID_SDK_ROOT:$PATH
-export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
+export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/tools/bin:$ANDROID_SDK_ROOT/platform-tools:$PATH
 
 # Add environment variable ANT_ROOT for cocos2d-x
 export ANT_ROOT=/usr/local/Cellar/ant/1.9.7/bin
@@ -117,3 +116,5 @@ export oneplus5=2640a1dc
 
 export USE_CCACHE=1
 export NDK_CCACHE=/usr/local/bin/ccache
+
+export PATH=~/Downloads/flutter/bin:$PATH
